@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('layout/template');
+    return view('index');
 });
