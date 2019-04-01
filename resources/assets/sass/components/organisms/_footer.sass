@@ -1,0 +1,43 @@
+.content-footer
+  +container-fixed(10%)
+  background: $bg-box-benefits
+  padding-top: 50px
+  padding-bottom: 50px
+
+  .title-box-footer
+    color: $color-font-price
+    margin-bottom: 20px
+    text-shadow: 1px 1px 4px $black
+
+  .box-left
+    +make-sm-column(5,0px)
+    border: white 1px solid
+    padding: 20px
+    border-radius: 3px
+
+    color: $white
+    font-weight: $ligth
+
+    .content-question
+      padding: 0px 10px
+
+      a
+        text-decoration: none
+        color: $white
+        .items-ask
+          margin: 10px 0px
+
+  .box-rigth
+    +make-sm-column(5,0px)
+    +make-sm-column-push(1)
+
+    padding: 20px
+    border: white 1px solid
+    border-radius: 3px
+
+    color: $white
+    font-weight: $ligth
+
+  .content-after
+    background-color: $color-spotlight
+

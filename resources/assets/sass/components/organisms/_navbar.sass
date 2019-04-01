@@ -1,3 +1,119 @@
 .content-channels-sales
-  background: #000
-  color: $bg-navbar
+  +container-fixed(10%)
+  padding-top: 5px
+  padding-bottom: 5px
+  background: $black
+  color: $white
+  font-size: 14px
+
+  .title-channels
+    +make-md-column(3,0px)
+    text-transform: uppercase
+    //background: $bg-body
+
+  .content-channels
+    +make-md-column(7,0px)
+    //background: #4dc0b5
+    //width: 400px
+    //text-align: center
+
+    .items-channels
+      display: inline-block
+      margin: 0 20px
+  .location
+    +make-md-column(2,0px)
+    text-align: center
+    display: inline-block
+    //background: $bg-body
+
+.content-navbar
+  +container-fixed(5%)
+  background-image: linear-gradient(0deg, $bg-navbar)
+  padding-top: 15px
+  padding-bottom: 15px
+  .header-navbar
+    background: #5ac0b5
+
+
+    .navbar-brand
+      +make-md-column(3,0px)
+      //background-color: #f66D9b
+
+      a
+        text-decoration: none
+
+        b
+          font-size: 50px
+          font-weight: normal
+          color: $color-spotlight
+
+        .brand-firstname
+          padding-left: 20px
+
+          text-transform: uppercase
+          text-shadow: 3px 1px 4px #000
+          font-size: 35px
+          color: $white
+
+        .brand-secondname
+          margin-right: 60px
+
+          text-align: center
+          color: $color-font-navbar
+          text-transform: uppercase
+          font-size: 18px
+
+
+    .content-menu
+      +make-md-column(5,0px)
+      color: $white
+      font-weight: $ligth
+      line-height: 5
+      text-align: center
+      //background-color: #ffed4a
+
+      a
+        color: $color-font-navbar
+        .items-menu
+          display: inline-block
+          margin: 0 20px
+          text-transform: uppercase
+          transition: color .6s ease-in-out
+          font-weight: $ligth
+
+          &:hover
+            color: $color-spotlight
+            cursor: pointer
+
+
+
+    .box-button
+      +make-md-column(1.5,0px)
+      //background: #cc2229
+      line-height: 4
+      //padding: 0
+
+    .box-number
+      +make-md-column(2.5,0px)
+      +make-md-column-pull(-0)
+      //background: #4dc0b5
+
+
+      .description-call, .attendance-day
+
+        font-size: 12px
+        color: $color-font-navbar
+        text-align: center
+        font-weight: $bolder
+        text-shadow: 2px 2px 5px $color-spotlight-title-section
+
+      .number-phone
+        padding: 5px 0
+        text-shadow: 1px 1px 15px $border-number-phone
+        text-align: center
+
+        font-size: 30px
+        //font-weight: $bolder
+        color: $color-font-phone
+
+
