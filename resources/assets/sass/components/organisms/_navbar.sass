@@ -6,10 +6,54 @@
   color: $white
   font-size: 14px
 
+  +breakpoint($celular)
+    padding-top: 10px
+    padding-bottom: 5px
+
+  .btn-toggle
+    //background-color: #fff
+    width: 50px
+    height: 30px
+    display: none
+
+    +breakpoint($celular)
+      display: block
+      +make-xs-column(4,0px)
+
+
+    span
+      height: 4px
+      width: 50px
+      background-color: #cb3444
+      display: block
+      position: absolute
+      border-radius: 3px
+
+      &:nth-child(2)
+        top: 12px
+
+      &:nth-child(3)
+        top:  25px
+
+
+      +breakpoint($sm_celular)
+        &:nth-child(2)
+          top: 10px
+
+        &:nth-child(3)
+          top: 20px
+
   .title-channels
     +make-md-column(3,0px)
     text-transform: uppercase
-    //background: $bg-body
+    background: $bg-body
+
+    +breakpoint($tablet)
+      +make-sm-column(3,0px)
+
+    +breakpoint($celular)
+      display: none
+
 
   .content-channels
     +make-md-column(7,0px)
@@ -17,14 +61,37 @@
     //width: 400px
     //text-align: center
 
+    +breakpoint($tablet)
+      +make-sm-column(7,0px)
+
+    +breakpoint($celular)
+      display: none
+
     .items-channels
       display: inline-block
       margin: 0 20px
+
+      +breakpoint($tablet)
+        margin: 0 10px
+
   .location
     +make-md-column(2,0px)
     text-align: center
     display: inline-block
     //background: $bg-body
+
+    i
+      margin-right: 10px
+
+    +breakpoint($tablet)
+      +make-sm-column(2,0px)
+
+    +breakpoint($celular)
+      display: block
+      +make-xs-column(5,0px)
+      +make-xs-column-push(3)
+      font-size: 18px
+      line-height: 2
 
 .content-navbar
   +container-fixed(5%)
@@ -32,12 +99,15 @@
   padding-top: 15px
   padding-bottom: 15px
   .header-navbar
-    background: #5ac0b5
+    //background: #5ac0b5
 
 
     .navbar-brand
-      +make-md-column(3,0px)
-      //background-color: #f66D9b
+      +make-sm-column(3,0px)
+      background-color: #f66D9b
+
+      +breakpoint($tablet)
+        +make-sm-column(4,0px)
 
       a
         text-decoration: none
@@ -56,9 +126,9 @@
           color: $white
 
         .brand-secondname
-          margin-right: 60px
+          margin-left: 90px
 
-          text-align: center
+          //text-align: right
           color: $color-font-navbar
           text-transform: uppercase
           font-size: 18px
@@ -70,7 +140,10 @@
       font-weight: $ligth
       line-height: 5
       text-align: center
-      //background-color: #ffed4a
+      background-color: #ffed4a
+
+      +breakpoint($tablet)
+        display: none
 
       a
         color: $color-font-navbar
@@ -92,11 +165,20 @@
       //background: #cc2229
       line-height: 4
       //padding: 0
+      
+      +breakpoint($tablet)
+        background-color: #fff
+        +make-sm-column(2.5,0px)
+        +make-sm-column-push(5)
 
     .box-number
       +make-md-column(2.5,0px)
       +make-md-column-pull(-0)
-      //background: #4dc0b5
+      background: #4dc0b5
+
+      +breakpoint($tablet)
+        +make-sm-column(4,0px)
+        +make-sm-column-push(-2)
 
 
       .description-call, .attendance-day

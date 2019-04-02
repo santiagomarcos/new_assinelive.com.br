@@ -1,5 +1,10 @@
 <div>
     <div class="content-channels-sales">
+        <div class="btn-toggle">
+            <span class="first-toggle"></span>
+            <span class="second-toggle"></span>
+            <span class="third-toggle"></span>
+        </div>
         <div class="title-channels">Canais de atendimento:</div>
         <ul class="content-channels">
             <li class="items-channels">(11) 4890-9324</li>
@@ -7,8 +12,7 @@
             <li class="items-channels">Me ligue</li>
             <li class="items-channels">Chat Online</li>
         </ul>
-
-        <span class="location">São Paulo</span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i>São Paulo</span>
     </div>
     <nav class="content-navbar">
         <div class="header-navbar">
