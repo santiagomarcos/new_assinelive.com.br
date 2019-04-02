@@ -106,8 +106,7 @@ table {
     min-height: 1px;
     padding-right: 0px;
     padding-left: 0px;
-    text-transform: uppercase;
-    background: #dce3e6; }
+    text-transform: uppercase; }
     @media (min-width: 992px) {
       .content-channels-sales .title-channels {
         float: left;
