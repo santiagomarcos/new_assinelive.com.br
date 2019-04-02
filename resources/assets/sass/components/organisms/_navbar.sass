@@ -1,33 +1,36 @@
 .content-channels-sales
   +container-fixed(10%)
   padding-top: 5px
-  padding-bottom: 5px
+  padding-bottom: 10px
   background: $black
   color: $white
   font-size: 14px
 
   +breakpoint($celular)
-    padding-top: 10px
+    padding-top: 5px
     padding-bottom: 5px
 
   .btn-toggle
-    //background-color: #fff
-    width: 50px
-    height: 30px
     display: none
 
     +breakpoint($celular)
       display: block
+      //background-color: #fff
+      width: 50px
+      height: 20px
       +make-xs-column(4,0px)
 
 
     span
-      height: 4px
-      width: 50px
+      height: 3px
+      width: 40px
       background-color: #cb3444
       display: block
       position: absolute
       border-radius: 3px
+
+      +breakpoint($sm_celular)
+        width: 35px
 
       &:nth-child(2)
         top: 12px
@@ -36,12 +39,20 @@
         top:  25px
 
 
-      +breakpoint($sm_celular)
+      +breakpoint($celular)
         &:nth-child(2)
           top: 10px
 
         &:nth-child(3)
           top: 20px
+
+      +breakpoint($sm_celular)
+        &:nth-child(2)
+          top: 8px
+
+        &:nth-child(3)
+          top: 16px
+
 
   .title-channels
     +make-md-column(3,0px)
@@ -90,8 +101,12 @@
       display: block
       +make-xs-column(5,0px)
       +make-xs-column-push(3)
-      font-size: 18px
-      line-height: 2
+      font-size: 16px
+      //padding-top: 5px
+      line-height: 1.5
+
+    +breakpoint($sm_celular)
+      font-size: 14px
 
 .content-navbar
   +container-fixed(5%)
@@ -104,10 +119,16 @@
 
     .navbar-brand
       +make-sm-column(3,0px)
-      background-color: #f66D9b
+      //background-color: #f66D9b
 
       +breakpoint($tablet)
         +make-sm-column(4,0px)
+
+      +breakpoint($celular)
+        +make-xs-column(5,0px)
+
+      +breakpoint($sm_celular)
+        +make-xs-column(6,0px)
 
       a
         text-decoration: none
@@ -117,6 +138,12 @@
           font-weight: normal
           color: $color-spotlight
 
+          +breakpoint($celular)
+            font-size: 40px
+
+          +breakpoint($sm_celular)
+            font-size: 30px
+
         .brand-firstname
           padding-left: 20px
 
@@ -124,6 +151,13 @@
           text-shadow: 3px 1px 4px #000
           font-size: 35px
           color: $white
+
+          +breakpoint($celular)
+            font-size: 25px
+
+          +breakpoint($sm_celular)
+            font-size: 20px
+
 
         .brand-secondname
           margin-left: 90px
@@ -133,6 +167,14 @@
           text-transform: uppercase
           font-size: 18px
 
+          +breakpoint($celular)
+            font-size: 14px
+            font-weight: normal
+            margin-left: 65px
+
+          +breakpoint($sm_celular)
+            font-size: 12px
+            margin-left: 50px
 
     .content-menu
       +make-md-column(5,0px)
@@ -140,7 +182,7 @@
       font-weight: $ligth
       line-height: 5
       text-align: center
-      background-color: #ffed4a
+      //background-color: #ffed4a
 
       +breakpoint($tablet)
         display: none
@@ -167,19 +209,29 @@
       //padding: 0
       
       +breakpoint($tablet)
-        background-color: #fff
+        //background-color: #fff
         +make-sm-column(2.5,0px)
         +make-sm-column-push(5)
+
+      +breakpoint($celular)
+        display: none
 
     .box-number
       +make-md-column(2.5,0px)
       +make-md-column-pull(-0)
-      background: #4dc0b5
+      //background: #4dc0b5
 
       +breakpoint($tablet)
         +make-sm-column(4,0px)
         +make-sm-column-push(-2)
 
+      +breakpoint($celular)
+        +make-xs-column(5,0px)
+        +make-xs-column-offset(1)
+
+      +breakpoint($sm_celular)
+        +make-xs-column(6,0px)
+        +make-xs-column-offset(0)
 
       .description-call, .attendance-day
 
@@ -189,6 +241,12 @@
         font-weight: $bolder
         text-shadow: 2px 2px 5px $color-spotlight-title-section
 
+        +breakpoint($celular)
+          font-size: 10px
+
+        +breakpoint($sm_celular)
+          font-size: 8px
+
       .number-phone
         padding: 5px 0
         text-shadow: 1px 1px 15px $border-number-phone
@@ -197,5 +255,12 @@
         font-size: 30px
         //font-weight: $bolder
         color: $color-font-phone
+
+        +breakpoint($celular)
+          font-size: 25px
+
+        +breakpoint($sm_celular)
+          font-size: 18px
+
 
 

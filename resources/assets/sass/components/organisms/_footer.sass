@@ -18,6 +18,10 @@
     color: $white
     font-weight: $ligth
 
+    +breakpoint($celular)
+      padding: 10px
+      margin-bottom: 30px
+
     .content-question
       padding: 0px 10px
 
@@ -26,6 +30,9 @@
         color: $white
         .items-ask
           margin: 10px 0px
+
+          +breakpoint($tablet)
+            margin: 15px 0px
 
   .box-rigth
     +make-sm-column(5,0px)
@@ -37,6 +44,9 @@
 
     color: $white
     font-weight: $ligth
+
+    +breakpoint($celular)
+      padding: 10px
 
   .content-after
     background-color: $color-spotlight
