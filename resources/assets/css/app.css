@@ -466,6 +466,44 @@ table {
   .content-footer .content-after {
     background-color: #cc2229; }
 
+.header-content {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: block;
+  background-color: #13ccbc; }
+  .header-content .content-bullet {
+    position: absolute;
+    display: block;
+    background: blue;
+    width: 130px;
+    z-index: 10;
+    bottom: 0px;
+    left: 45%; }
+    .header-content .content-bullet input {
+      display: none; }
+    .header-content .content-bullet label {
+      background: red;
+      bottom: 30px;
+      left: 30px;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 60px;
+      height: 3px; }
+      .header-content .content-bullet label:nth-child(2) {
+        left: 180px; }
+      .header-content .content-bullet label:nth-child(1) {
+        left: 100px; }
+  .header-content .banner-content {
+    position: absolute; }
+    .header-content .banner-content img {
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      background-size: contain; }
+
 .btn-buy-now {
   background-color: #0dc111;
   border: 0;
