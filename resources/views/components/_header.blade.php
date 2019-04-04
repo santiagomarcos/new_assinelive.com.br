@@ -8,7 +8,7 @@
     </div>
 
     <div id="item-1" class="banner-content">
-        <img src="https://i.imgur.com/xj2UOAS.jpg" alt="">
+        <img src="https://i.imgur.com/IUTvUup.jpg" alt="">
         <div class="banner-caption">
             <div class="banner-call-plan"></div>
             <div class="banner-value-plan">

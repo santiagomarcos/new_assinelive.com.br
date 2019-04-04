@@ -1,0 +1,137 @@
+.container-carousel
+  .content-carousel
+    +container-fixed(10%)
+    //background-color: #fc55a2
+    display: block
+    margin-top: 30px
+
+    .items-plan-content
+      +make-sm-column(4,0px)
+
+      .items-plan-box
+        background: rgba(52,199,204,0)
+        margin: 0px 20px
+        height: auto
+        border: 1px solid $color-font-body
+        box-shadow: 2px 1px 2px $color-font-body-ligth, inset 2px 1px 5px $color-font-desc-car
+        
+        .items-plan-header
+          //background-color: #34c7cc
+          display: block
+          position: relative
+          
+          .normal-offer
+            margin: 2px 2px
+            margin-bottom: 55px
+            width: 100%
+            height: 3px
+            background: $color-spotlight
+            display: block
+
+
+          .focus-offer
+            //background-color: #121eaa
+            display: inline-block
+            border: 30px solid
+            border-color: $color-spotlight
+            border-bottom-color: transparent
+            border-right-color: transparent
+            width: 0px
+            height: 0px
+            
+            .icon-offer-focus
+              color: $white
+              position: absolute
+              top: 8px
+              left: 8px
+              text-decoration: none
+              font-size: 18px
+
+          
+          .limit-time
+            display: inline-block
+            text-align: center
+            //background-color: #6574cd
+            position: absolute
+            left: 33%
+            top: 20px
+
+            color: $color-spotlight
+            font-weight: normal
+            
+            
+          .desc-plan
+            display: block
+            //background-color: #b8eeac
+            text-align: center
+
+            .number-plan , .limit-band
+              font-weight: normal
+              color: $color-font-car
+              text-shadow: 2px 1px 3px $color-font-body
+
+            .number-plan
+              font-size: 80px
+
+            .limit-band
+              font-size: 40px
+              text-transform: uppercase
+
+
+
+        .items-plan-body
+          //background-color: #cc5423
+          padding: 20px 25px
+          color: $border-number-phone
+
+          .content-items-include
+            //background-color: #5D54D1
+            display: block
+            margin-top: 25px
+
+            .items-include-plan
+              margin: 15px 2px
+              color: $color-font-body
+              font-weight: normal
+
+          .content-price
+            background-color: #eeb8ff
+            display: block
+            text-align: center
+
+            .begin-in
+              color: $color-font-body
+              margin: 3px 0px
+
+            .box-prices
+              background-color: #ffffff
+              display: block
+
+              .type-money
+                background-color: #1589ac
+                display: inline-block
+
+              .value
+                font-size: 70px
+                font-weight: $bold
+                color: $color-font-car
+                text-shadow: 2px 1px 5px $color-font-body-ligth , 2px 2px 2px $color-title-test-internet
+
+          .content-btn-contract
+            background-color: #89cbb0
+            display: block
+            text-align: center
+
+
+
+        .items-plan-footer
+          background-color: $color-font-car
+          display: block
+          text-align: center
+          padding: 1px 0px
+          a
+            color: $border-number-phone
+            text-decoration: none
+            font-size: 14px
+
+
