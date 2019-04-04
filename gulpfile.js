@@ -10,11 +10,14 @@ let destOutWatch = 'resources/assets/css/*.css';
 
 
 const  buildCss = [
+    "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+    "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
     "resources/assets/css/*.css"
 ]
 
 const buildJs = [
-    "resources/assests/js/*.js"
+    "node_modules/owl.carousel/dist/owl.carousel.js",
+    "resources/assets/js/*.js"
 ]
 
 const webAssetsDir = 'public/'

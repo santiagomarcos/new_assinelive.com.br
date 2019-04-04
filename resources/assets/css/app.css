@@ -572,9 +572,9 @@ table {
             color: #082b35;
             text-shadow: 2px 1px 3px #6b7272; }
           .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-header .desc-plan .number-plan {
-            font-size: 80px; }
+            font-size: 65px; }
           .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-header .desc-plan .limit-band {
-            font-size: 40px;
+            font-size: 35px;
             text-transform: uppercase; }
       .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body {
         padding: 20px 25px;
@@ -587,25 +587,37 @@ table {
             color: #6b7272;
             font-weight: normal; }
         .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price {
-          background-color: #eeb8ff;
           display: block;
-          text-align: center; }
-          .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .begin-in {
+          text-align: center;
+          margin-top: 40px;
+          margin-bottom: 20px; }
+          .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .begin-in, .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .at-old-price {
             color: #6b7272;
             margin: 3px 0px; }
           .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .box-prices {
-            background-color: #ffffff;
-            display: block; }
+            display: block;
+            color: #082b35;
+            font-weight: normal; }
             .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .box-prices .type-money {
-              background-color: #1589ac;
-              display: inline-block; }
+              display: inline-block;
+              letter-spacing: -1px;
+              font-size: 20px; }
             .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .box-prices .value {
-              font-size: 70px;
+              letter-spacing: -5px;
+              font-size: 75px;
               font-weight: 600;
-              color: #082b35;
               text-shadow: 2px 1px 5px #A1A9A9, 2px 2px 2px #87ebd5; }
+            .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .box-prices .mounth-and-cents {
+              display: inline-block;
+              position: relative; }
+              .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .box-prices .mounth-and-cents .cents {
+                margin-bottom: 5px;
+                font-size: 20px; }
+          .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price .rate-hability {
+            font-size: 14px;
+            font-weight: normal;
+            color: #082b35; }
         .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-btn-contract {
-          background-color: #89cbb0;
           display: block;
           text-align: center; }
       .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-footer {
@@ -628,3 +640,17 @@ table {
   text-transform: uppercase;
   font-weight: bolder;
   text-shadow: 1px 1px 2px #6b7272; }
+
+.btn-contract {
+  background-color: #09a809;
+  color: #fff;
+  border: none;
+  width: 180px;
+  padding: 5px 10px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #146700;
+  cursor: pointer; }
+  .btn-contract:active, .btn-contract:visited, .btn-contract:focus {
+    border: none; }
