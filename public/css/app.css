@@ -240,7 +240,7 @@
 /* == media queries == */
 body {
   height: 100%;
-  font-family: 'Signika', sans-serif;
+  font-family: 'Signika', sans-serif !important;
   font-weight: 300;
   line-height: 1;
   overflow-x: hidden; }
@@ -904,6 +904,42 @@ table {
       .container-carousel .content-carousel .owl-nav span:hover, .container-carousel .content-carousel .owl-next span:hover, .container-carousel .content-carousel .owl-prev span:hover {
         color: red;
         transition: color 1s ease-in-out; }
+
+.digital-services {
+  background-color: #d3f0f8;
+  display: block;
+  padding: 10px; }
+  .digital-services .content-digital-services {
+    background-color: #741BBB;
+    display: block;
+    padding: 10px; }
+    .digital-services .content-digital-services .digital-services-header .call-section-digital-services {
+      background-color: #333aec; }
+      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main {
+        font-size: 30px;
+        color: #6b7272;
+        text-shadow: 2px 1px 2px #042656;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 10px 0px; }
+        .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main .title-spotlight {
+          color: #042656; }
+      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .description-call {
+        text-align: center;
+        color: #6b7272;
+        background-color: #3d4852;
+        font-size: 18px;
+        font-weight: normal;
+        width: 50%;
+        display: block;
+        margin: auto; }
+      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .line-bottom {
+        height: 2px;
+        width: 30%;
+        background-color: #6b7272;
+        display: block;
+        margin: auto;
+        margin-top: 10px; }
 
 .btn-buy-now {
   background-color: #0dc111;

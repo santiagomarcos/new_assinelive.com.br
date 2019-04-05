@@ -4,7 +4,7 @@ $(document).ready(function () {
         margin:10,
         loop:false,
         nav:true,
-        dots:true,
+        dots:false,
         responsive:{
             0:{
                 items:1
