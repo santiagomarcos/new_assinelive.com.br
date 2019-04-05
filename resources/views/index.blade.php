@@ -117,7 +117,7 @@
                                 </ul>
                                 <div class="content-price">
                                     {{--<div class="begin-in">A partir de:</div>--}}
-                                    <div class="at-old-price">de <s>R$115,00</s>por</div>
+                                    <div class="at-old-price">de <s>R$130,00</s>por</div>
                                     <div class="box-prices">
                                         <span class="type-money">R$</span>
                                         <span class="value">89</span>
@@ -127,7 +127,53 @@
                                     </span>
                                     </div>
                                     <div class="rate-hability">
-                                        <p class="text">Habilitação 12x R$5,00</p>
+                                        <p class="text">Habilitação 12x R$10,00</p>
+                                    </div>
+                                </div>
+                                <div class="content-btn-contract">
+                                    <button class="btn-contract">Contratar</button>
+                                </div>
+                            </div>
+                            <div class="items-plan-footer">
+                                <a href="#">Mais beneficíos v</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-plan-content">
+                        <div class="items-plan-box">
+                            <div class="items-plan-header">
+                            <span class="focus-offer">
+                                <p class="icon-offer-focus">@</p>
+                            </span>
+                                <span class="limit-time">Por tempo limitado</span>
+                                <div class="desc-plan">
+                                    <div class="number-plan">150</div>
+                                    <div class="limit-band">Mega</div>
+                                </div>
+                            </div>
+                            <div class="items-plan-body">
+                                <div class="tip-for-usability">
+                                    <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                </div>
+                                <ul class="content-items-include">
+                                    <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
+                                    <li class="items-include-plan">Modem de wi-fi</li>
+                                    <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> 60 MB</strong> de upload</li>
+                                    <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa limitada local</li>
+                                </ul>
+                                <div class="content-price">
+                                    {{--<div class="begin-in">A partir de:</div>--}}
+                                    <div class="at-old-price">de <s>R$160,00</s>por</div>
+                                    <div class="box-prices">
+                                        <span class="type-money">R$</span>
+                                        <span class="value">120</span>
+                                        <span class="mounth-and-cents">
+                                        <div class="cents">,00</div>
+                                        <div class="mounth">/mês</div>
+                                    </span>
+                                    </div>
+                                    <div class="rate-hability">
+                                        <p class="text">Habilitação 12x R$10,00</p>
                                     </div>
                                 </div>
                                 <div class="content-btn-contract">
@@ -167,30 +213,3 @@
         <div class="boxspeed-test">Teste de Internet</div>
     </div>
 @endsection
-
-@section('extra-scripts')
-    <script>
-        //owl carousel
-        $('.owl-carousel').owlCarousel({
-            margin:10,
-            loop:true,
-            nav:true,
-            dots:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:4
-                },
-                1200:{
-                    items:5
-                }
-            }
-        });
-    </script>
-@endsection
-

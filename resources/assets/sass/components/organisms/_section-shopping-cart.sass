@@ -6,7 +6,8 @@
     margin-top: 30px
 
     .items-plan-content
-      +make-sm-column(4,0px)
+      //+make-sm-column(10,0px)
+      //+container-fixed(15%)
 
       .items-plan-box
         background: rgba(52,199,204,0)
@@ -152,5 +153,61 @@
             color: $border-number-phone
             text-decoration: none
             font-size: 14px
+
+
+    .owl-nav
+      display: block !important
+      text-align: center
+      //background-color: #741cbb
+      margin: 10px 10px
+      font-size: 110px
+      color: $color-spotlight
+      font-weight: 900
+
+      +breakpoint($celular)
+        font-size: 90px
+
+    .owl-nav, .owl-next, .owl-prev
+      padding: 35px
+      margin: 0px 25px
+      text-shadow: 1px 1px 1px #888
+
+      &:active, &:visited, &:focus
+        outline: none
+
+      .owl-next, .owl-prev
+        position: absolute
+        top: 205px
+
+      .owl-next
+        right: -75px
+
+        +breakpoint($desktop)
+          right: -60px
+
+        +breakpoint($celular)
+          right: -50px
+
+        +breakpoint($sm_celular)
+          right: -40px
+
+      .owl-prev
+        left: -75px
+
+        +breakpoint($desktop)
+          left: -60px
+
+        +breakpoint($celular)
+          left: -50px
+
+        +breakpoint($sm_celular)
+          left: -40px
+
+      span
+        transition: all 1s
+        &:hover
+          color: red
+          transition: color 1s ease-in-out
+
 
 
