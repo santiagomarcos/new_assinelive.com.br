@@ -1,16 +1,18 @@
 .digital-services
-  background-color: $color-font-price
+  +container-fixed(10%)
+  //background-color: #6574cd
   display: block
-  padding: 10px
+  padding-bottom: 70px
+  padding-top: 20px
 
   .content-digital-services
-    background-color: #741BBB
+    //background-color: #741BBB
     display: block
-    padding:  10px
+    //padding:  10px
 
     .digital-services-header
       .call-section-digital-services
-        background-color: #333aec
+        //background-color: #333aec
 
         .title-main
           font-size: 30px
@@ -18,7 +20,7 @@
           text-shadow: 2px 1px 2px $color-spotlight-title-section
           text-align: center
           text-transform: uppercase
-          margin: 10px 0px
+          margin: 15px 0px
 
           .title-spotlight
             color: $color-spotlight-title-section
@@ -26,17 +28,118 @@
         .description-call
           text-align: center
           color: $color-font-body
-          background-color: #3d4852
+          //background-color: #3d4852
           font-size: 18px
           font-weight: normal
           width: 50%
           display: block
           margin: auto
+          margin-bottom: 25px
 
         .line-bottom
           height: 2px
-          width: 30%
+          width: 20%
           background-color: $color-font-body
           display: block
           margin: auto
           margin-top: 10px
+
+
+
+    .digital-services-body
+      margin-top: 40px
+      
+      .content-channels
+        //+container-fixed(10%)
+        +make-sm-column(7,0px)
+        
+        //background-color: #cc2229     
+        
+        .call-channels
+          //background-color: #4dc0b5
+          display: block
+          width: 500px
+          margin: auto
+          margin-bottom: 15px
+          text-align: center
+
+          .title-channels
+            font-size: 20px
+            color: $color-spotlight-title-section
+
+            
+        .content-show-channels
+          //background-color: #6574cd
+          display: block
+
+          .monitor-channels
+            display: inline-block
+            //background-color: #cc2229
+            position: absolute
+            left: 40px
+            img
+              width: 530px
+
+          .tablet-channels
+            display: inline-block
+            //background-color: #f6993f
+            position: absolute
+            right: 5px
+            top: 220px
+            img
+              width: 350px
+
+
+          .cellphone-channels
+            display: inline-block
+            //background-color: #b8c2cc
+            position: absolute
+            top: 160px
+            img
+              width: 100%
+
+      .content-app
+        +make-sm-column(5,0px)
+        //background-color: #d2dbfa
+
+        .title-app
+          text-align: center
+          color: $color-spotlight-title-section
+
+        .call-app
+          //background-color: #f66D9b
+          text-align: center
+          .title-app
+            font-size:  20px
+
+
+        .row-up
+          margin: 20px 0px
+
+        .row-up, .row-bottom
+          +make-row(0px)
+          padding: 10px 15px
+
+          .tim-learn, .power-wifi, .protect, .virtual-library
+            +make-sm-column(6,0px)
+            display: block
+            text-align: center
+            font-size: 14px
+            color: $color-font-body
+
+            .box-space
+              padding: 15px
+              //background-color: #6574cd
+              //border: 1px solid #e3342f
+
+              .title-app
+                margin-bottom: 20px
+                text-transform: uppercase
+
+              .plan-disponibility
+                padding: 15px 0px
+
+                .spotiligh
+                  color: $color-spotlight
+                  font-weight: bold
+                  text-transform: uppercase

@@ -906,40 +906,252 @@ table {
         transition: color 1s ease-in-out; }
 
 .digital-services {
-  background-color: #d3f0f8;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
   display: block;
-  padding: 10px; }
+  padding-bottom: 70px;
+  padding-top: 20px; }
+  .digital-services:before, .digital-services:after {
+    display: table;
+    content: " "; }
+  .digital-services:after {
+    clear: both; }
   .digital-services .content-digital-services {
-    background-color: #741BBB;
-    display: block;
-    padding: 10px; }
-    .digital-services .content-digital-services .digital-services-header .call-section-digital-services {
-      background-color: #333aec; }
-      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main {
-        font-size: 30px;
-        color: #6b7272;
-        text-shadow: 2px 1px 2px #042656;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 10px 0px; }
-        .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main .title-spotlight {
+    display: block; }
+    .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main {
+      font-size: 30px;
+      color: #6b7272;
+      text-shadow: 2px 1px 2px #042656;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 15px 0px; }
+      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main .title-spotlight {
+        color: #042656; }
+    .digital-services .content-digital-services .digital-services-header .call-section-digital-services .description-call {
+      text-align: center;
+      color: #6b7272;
+      font-size: 18px;
+      font-weight: normal;
+      width: 50%;
+      display: block;
+      margin: auto;
+      margin-bottom: 25px; }
+    .digital-services .content-digital-services .digital-services-header .call-section-digital-services .line-bottom {
+      height: 2px;
+      width: 20%;
+      background-color: #6b7272;
+      display: block;
+      margin: auto;
+      margin-top: 10px; }
+    .digital-services .content-digital-services .digital-services-body {
+      margin-top: 40px; }
+      .digital-services .content-digital-services .digital-services-body .content-channels {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
+        @media (min-width: 768px) {
+          .digital-services .content-digital-services .digital-services-body .content-channels {
+            float: left;
+            width: 58.33333%; } }
+        .digital-services .content-digital-services .digital-services-body .content-channels .call-channels {
+          display: block;
+          width: 500px;
+          margin: auto;
+          margin-bottom: 15px;
+          text-align: center; }
+          .digital-services .content-digital-services .digital-services-body .content-channels .call-channels .title-channels {
+            font-size: 20px;
+            color: #042656; }
+        .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels {
+          display: block; }
+          .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .monitor-channels {
+            display: inline-block;
+            position: absolute;
+            left: 40px; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .monitor-channels img {
+              width: 530px; }
+          .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels {
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+            top: 220px; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels img {
+              width: 350px; }
+          .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels {
+            display: inline-block;
+            position: absolute;
+            top: 160px; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
+              width: 100%; }
+      .digital-services .content-digital-services .digital-services-body .content-app {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
+        @media (min-width: 768px) {
+          .digital-services .content-digital-services .digital-services-body .content-app {
+            float: left;
+            width: 41.66667%; } }
+        .digital-services .content-digital-services .digital-services-body .content-app .title-app {
+          text-align: center;
           color: #042656; }
-      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .description-call {
-        text-align: center;
-        color: #6b7272;
-        background-color: #3d4852;
-        font-size: 18px;
-        font-weight: normal;
-        width: 50%;
-        display: block;
-        margin: auto; }
-      .digital-services .content-digital-services .digital-services-header .call-section-digital-services .line-bottom {
-        height: 2px;
-        width: 30%;
-        background-color: #6b7272;
-        display: block;
-        margin: auto;
-        margin-top: 10px; }
+        .digital-services .content-digital-services .digital-services-body .content-app .call-app {
+          text-align: center; }
+          .digital-services .content-digital-services .digital-services-body .content-app .call-app .title-app {
+            font-size: 20px; }
+        .digital-services .content-digital-services .digital-services-body .content-app .row-up {
+          margin: 20px 0px; }
+        .digital-services .content-digital-services .digital-services-body .content-app .row-up, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom {
+          margin-right: 0px;
+          margin-left: 0px;
+          padding: 10px 15px; }
+          .digital-services .content-digital-services .digital-services-body .content-app .row-up:before, .digital-services .content-digital-services .digital-services-body .content-app .row-up:after, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom:before, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom:after {
+            display: table;
+            content: " "; }
+          .digital-services .content-digital-services .digital-services-body .content-app .row-up:after, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom:after {
+            clear: both; }
+          .digital-services .content-digital-services .digital-services-body .content-app .row-up .tim-learn, .digital-services .content-digital-services .digital-services-body .content-app .row-up .power-wifi, .digital-services .content-digital-services .digital-services-body .content-app .row-up .protect, .digital-services .content-digital-services .digital-services-body .content-app .row-up .virtual-library, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .tim-learn, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .power-wifi, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .protect, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .virtual-library {
+            position: relative;
+            min-height: 1px;
+            padding-right: 0px;
+            padding-left: 0px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: #6b7272; }
+            @media (min-width: 768px) {
+              .digital-services .content-digital-services .digital-services-body .content-app .row-up .tim-learn, .digital-services .content-digital-services .digital-services-body .content-app .row-up .power-wifi, .digital-services .content-digital-services .digital-services-body .content-app .row-up .protect, .digital-services .content-digital-services .digital-services-body .content-app .row-up .virtual-library, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .tim-learn, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .power-wifi, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .protect, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .virtual-library {
+                float: left;
+                width: 50%; } }
+            .digital-services .content-digital-services .digital-services-body .content-app .row-up .tim-learn .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-up .power-wifi .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-up .protect .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-up .virtual-library .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .tim-learn .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .power-wifi .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .protect .box-space, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .virtual-library .box-space {
+              padding: 15px; }
+              .digital-services .content-digital-services .digital-services-body .content-app .row-up .tim-learn .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-up .power-wifi .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-up .protect .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-up .virtual-library .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .tim-learn .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .power-wifi .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .protect .box-space .title-app, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .virtual-library .box-space .title-app {
+                margin-bottom: 20px;
+                text-transform: uppercase; }
+              .digital-services .content-digital-services .digital-services-body .content-app .row-up .tim-learn .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-up .power-wifi .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-up .protect .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-up .virtual-library .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .tim-learn .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .power-wifi .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .protect .box-space .plan-disponibility, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .virtual-library .box-space .plan-disponibility {
+                padding: 15px 0px; }
+                .digital-services .content-digital-services .digital-services-body .content-app .row-up .tim-learn .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-up .power-wifi .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-up .protect .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-up .virtual-library .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .tim-learn .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .power-wifi .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .protect .box-space .plan-disponibility .spotiligh, .digital-services .content-digital-services .digital-services-body .content-app .row-bottom .virtual-library .box-space .plan-disponibility .spotiligh {
+                  color: #cc2229;
+                  font-weight: bold;
+                  text-transform: uppercase; }
+
+.benefits .content-benefits .benefits-header {
+  background-color: #4dc0b5;
+  display: block;
+  padding: 20px; }
+  .benefits .content-benefits .benefits-header .call-section-benefits {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #f6993f;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center; }
+    .benefits .content-benefits .benefits-header .call-section-benefits:before, .benefits .content-benefits .benefits-header .call-section-benefits:after {
+      display: table;
+      content: " "; }
+    .benefits .content-benefits .benefits-header .call-section-benefits:after {
+      clear: both; }
+    .benefits .content-benefits .benefits-header .call-section-benefits .title-main {
+      font-size: 30px;
+      color: #6b7272;
+      text-shadow: 2px 1px 2px #042656;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 15px 0px; }
+      .benefits .content-benefits .benefits-header .call-section-benefits .title-main .title-spotlight {
+        color: #042656; }
+    .benefits .content-benefits .benefits-header .call-section-benefits .line-bottom {
+      height: 2px;
+      width: 20%;
+      background-color: #6b7272;
+      display: block;
+      margin: auto;
+      margin-top: 25px; }
+    .benefits .content-benefits .benefits-header .call-section-benefits .description-call {
+      text-align: center;
+      color: #6b7272;
+      font-size: 18px;
+      font-weight: normal;
+      width: 50%;
+      display: block;
+      margin: auto; }
+
+.benefits .content-benefits .benefits-body {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f66D9b;
+  display: block;
+  color: #fff; }
+  .benefits .content-benefits .benefits-body:before, .benefits .content-benefits .benefits-body:after {
+    display: table;
+    content: " "; }
+  .benefits .content-benefits .benefits-body:after {
+    clear: both; }
+  .benefits .content-benefits .benefits-body:before, .benefits .content-benefits .benefits-body:after {
+    display: table;
+    content: " "; }
+  .benefits .content-benefits .benefits-body:after {
+    clear: both; }
+  .benefits .content-benefits .benefits-body .description-plan-call {
+    text-transform: uppercase;
+    font-size: 25px; }
+  .benefits .content-benefits .benefits-body .box-local-space, .benefits .content-benefits .benefits-body .box-space-international, .benefits .content-benefits .benefits-body .box-national-space {
+    padding: 0px 30px; }
+  .benefits .content-benefits .benefits-body .benefits-box-local {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px; }
+    @media (min-width: 768px) {
+      .benefits .content-benefits .benefits-body .benefits-box-local {
+        float: left;
+        width: 33.33333%; } }
+    .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space {
+      display: block;
+      background-color: #042656; }
+      .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space .box-local-header {
+        font-size: 50px;
+        text-align: center; }
+      .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space .box-local-footer .description-plan-call {
+        text-transform: uppercase;
+        font-size: 25px; }
+  .benefits .content-benefits .benefits-body .benefits-box-local-hover {
+    display: none; }
+  .benefits .content-benefits .benefits-body .benefits-box-national {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px; }
+    @media (min-width: 768px) {
+      .benefits .content-benefits .benefits-body .benefits-box-national {
+        float: left;
+        width: 33.33333%; } }
+    .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
+      display: block;
+      background-color: #042656; }
+  .benefits .content-benefits .benefits-body .benefits-box-national-hover {
+    display: none; }
+  .benefits .content-benefits .benefits-body .benefits-box-international {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px; }
+    @media (min-width: 768px) {
+      .benefits .content-benefits .benefits-body .benefits-box-international {
+        float: left;
+        width: 33.33333%; } }
+    .benefits .content-benefits .benefits-body .benefits-box-international .box-space-international {
+      display: block; }
+  .benefits .content-benefits .benefits-body .benefits-box-international-hover {
+    display: none; }
 
 .btn-buy-now {
   background-color: #0dc111;
