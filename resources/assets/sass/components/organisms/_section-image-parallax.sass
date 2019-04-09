@@ -1,0 +1,57 @@
+.image-parallax
+  height: 70vh
+  overflow-x: hidden
+  overflow-y: hidden
+  perspective: 2px
+  //transform-style: preserve-3d
+
+  .section
+    position: relative
+    height: 70vh
+    min-height: 350px
+    transform-style: inherit
+    background-image: linear-gradient(rgba(4, 6, 16, 0.21), rgba(6, 34, 79, 0.45) , rgba(4, 6, 16, 0.21))
+
+    &:before
+      content: " "
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: -1
+
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center center
+      background-attachment: fixed
+
+      transform: translateX(-1px) scale(1.2)
+
+
+    .caption-parallax
+        position: absolute
+        top: 35%
+        width: 100%
+        padding: 20px 0px
+
+        color: $white
+
+        //font-size: 40px
+        text-align: center
+
+        .title-spotlight-parallax
+          font-weight: bold
+          color: #cc2229
+          text-shadow: 1px 2px 5px #000
+          font-size: 70px
+          text-transform: uppercase
+
+        .subtitle-spotligth
+          font-size: 35px
+          text-shadow: 0px 0px 5px #000
+
+  .bg1
+    &:before
+      background-image: url('https://i.imgur.com/eeP7pMC.jpg')
+

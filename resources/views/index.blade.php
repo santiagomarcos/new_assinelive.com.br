@@ -323,8 +323,8 @@
                     <div class="box-national-space">
                         <div class="box-national-header">
                             <span class="icon-phone"><i class="fas fa-phone-volume"></i></span>
-                            <span class="icon-brazil"><i class="fas fa-arrow-right"></i></span>
-                            <span class="icon-arrow"><img src="https://i.imgur.com/hzYveca.png" alt=""></span>
+                            <span class="icon-arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="icon-brazil"><img src="https://i.imgur.com/hzYveca.png" alt=""></span>
                         </div>
                         <div class="box-national-footer">
                             <p class="description-plan-call">Voz ilimitado brasil</p>
@@ -341,9 +341,9 @@
                 <div class="benefits-box-international">
                     <div class="box-space-international">
                         <div class="box-international-header">
-                            <span class="icon-phone"></span>
-                            <span class="icon-arrow"></span>
-                            <span class="icon-brazil"></span>
+                            <span class="icon-phone"><i class="fas fa-phone-volume"></i></span>
+                            <span class="icon-arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="icon-word"><i class="fas fa-globe-americas"></i></span>
                         </div>
                         <div class="box-international-footer">
                             <p class="description-plan-call">Voz ilimitado br + ldi</p>
@@ -359,13 +359,26 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
-        <div class="contetn-contact-us">
-            <div class="contact-us-header"></div>
-            <div class="contact-us-body"></div>
+    <section class="image-parallax">
+        <div class="section bg1">
+            <div class="caption-parallax">
+                <p class="title-spotlight-parallax">Tim live</p>
+                <div class="subtitle-spotligth">A evolução da internet.</div>
+            </div>
         </div>
     </section>
     <div class="speed-test-band">
-        <div class="boxspeed-test">Teste de Internet</div>
+        <a href="https://www.speedtest.net/pt" target="_blank" class="boxspeed-test">
+            <div class="boxspeed-header"><span></span><span class="star"></span></div>
+            <div class="boxspeed-body">Faça o teste da velocidade da sua internet <br><span class="target-click">Clique aqui !!</span></div>
+
+            <div class="boxspeed-footer">
+                <div class="content-boxspeed">
+                    <i class="fas fa-signal"></i>
+                    <span class="line-conection"></span>
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+            </div>
+        </a>
     </div>
 @endsection

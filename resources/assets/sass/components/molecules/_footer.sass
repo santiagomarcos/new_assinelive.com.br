@@ -1,8 +1,15 @@
 .content-footer
   +container-fixed(10%)
+  display: block
   background: $bg-box-benefits
   padding-top: 50px
-  padding-bottom: 50px
+  //padding-bottom: 50px
+  
+  &:after
+    display: block
+    width: 100%
+    content: ''
+    margin-bottom: 30px
 
   .title-box-footer
     color: $color-font-price
@@ -14,6 +21,7 @@
     border: white 1px solid
     padding: 20px
     border-radius: 3px
+    display: block
 
     color: $white
     font-weight: $ligth
@@ -38,16 +46,31 @@
     +make-sm-column(5,0px)
     +make-sm-column-push(1)
 
+    display: block
     padding: 20px
+    height: 115px
     border: white 1px solid
     border-radius: 3px
 
     color: $white
     font-weight: $ligth
 
+    .icons-redes
+      font-size: 35px
+      margin-left: 20px
+
+      i
+        margin: 0 15px
+
     +breakpoint($celular)
       padding: 10px
 
+
   .content-after
-    background-color: $color-spotlight
+    +make-sm-column(12,0px)
+    display: block
+    width: 100%
+    position: relative
+    margin-bottom: 100px
+    border: 1px solid #87ebd5
 

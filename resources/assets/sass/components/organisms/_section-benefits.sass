@@ -1,13 +1,15 @@
 .benefits
+  margin-bottom: 80px
   .content-benefits
     .benefits-header
-      background-color: #4dc0b5
+      //background-color: #4dc0b5
       display: block
       padding: 20px
+      margin-bottom: 50px
 
       .call-section-benefits
         +make-row(0px)
-        background-color: #f6993f
+        //background-color: #f6993f
         display: block
         margin: auto
         margin-bottom: 15px
@@ -44,17 +46,23 @@
 
     .benefits-body
       +make-row(0px)
-      +container-fixed(10%)
-      background-color: #f66D9b
+      +container-fixed(25%)
+      //background-color: #f66D9b
       display: block
       color: $white
 
       .description-plan-call
         text-transform: uppercase
+        font-size: 20px
+        text-align: center
+        padding-bottom: 10px
+
+      .icon-arrow
         font-size: 25px
+        margin: 0px 20px
 
       .box-local-space, .box-space-international, .box-national-space
-        padding: 0px 30px
+        margin: 0px 30px
 
       .benefits-box-local
         +make-sm-column(4,0px)
@@ -65,11 +73,7 @@
           .box-local-header
             font-size: 50px
             text-align: center
-
-          .box-local-footer
-            .description-plan-call
-              text-transform: uppercase
-              font-size: 25px
+            padding: 15px 0px 100px 0px
 
       .benefits-box-local-hover
         display: none
@@ -79,6 +83,19 @@
         .box-national-space
           display: block
           background-color: $color-spotlight-title-section
+          .box-national-header
+            font-size: 50px
+            margin: auto
+            display: block
+            //background-color: #d2dbfa
+            padding: 15px 0px 100px 30px
+            width: 200px
+
+            img
+              position: absolute
+              width: 60px
+              padding: 0px 10px
+              //background-color: #cc2229
 
       .benefits-box-national-hover
         display: none
@@ -86,8 +103,13 @@
       .benefits-box-international
         +make-sm-column(4,0px)
         .box-space-international
+          background-color: $color-spotlight-title-section
+          .box-international-header
+            font-size: 50px
+            text-align: center
+            padding: 15px 0px 100px 0px
 
-          display: block
+          //display: block
 
       .benefits-box-international-hover
         display: none

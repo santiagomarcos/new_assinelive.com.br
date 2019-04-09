@@ -11,11 +11,14 @@
     <div class="box-rigth">
         <h2 class="title-box-footer">Siga-nos nas redes sociais</h2>
         <div class="icons-redes">
-            <i>Face</i>
-            <i>insta</i>
-            <i>Tiwtter</i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
         </div>
     </div>
 
-    <div class="content-after"></div>
+    <div class="content-after">
+        <div class="coopright">@ 2019 Assine Live. Todos os direitod reservados</div>
+        <div class="developing">Desenvolvido por <a href="#">FFXSistemas</a></div>
+    </div>
 </footer>
