@@ -518,12 +518,28 @@ table {
         .content-footer .container-footer .box-rigth {
           padding: 10px; } }
 
+@keyframes slideUp {
+  0% {
+    bottom: 0; }
+  20% {
+    bottom: 0; }
+  40% {
+    bottom: 380px; }
+  60% {
+    bottom: 380px; }
+  80% {
+    bottom: 760px; }
+  100% {
+    bottom: 760px; } }
+
 .header-content {
   width: 100%;
-  height: 400px;
+  height: 380px;
   position: relative;
   display: block;
-  background-color: #13ccbc; }
+  background-color: #13ccbc;
+  overflow: hidden;
+  margin: auto; }
   .header-content .content-bullet {
     position: absolute;
     display: block;
@@ -548,13 +564,27 @@ table {
         left: 180px; }
       .header-content .content-bullet label:nth-child(1) {
         left: 100px; }
-  .header-content .banner-content {
-    position: absolute; }
-    .header-content .banner-content img {
-      margin: auto;
-      height: 100%;
+  .header-content .slide-content {
+    animation: slideUp 10s alternate infinite;
+    position: relative; }
+    .header-content .slide-content .banner-content {
       width: 100%;
-      background-size: contain; }
+      height: 380px; }
+      .header-content .slide-content .banner-content.bg1 {
+        background-image: url("https://i.imgur.com/IUTvUup.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .header-content .slide-content .banner-content.bg2 {
+        background: url("https://i.imgur.com/xj2UOAS.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .header-content .slide-content .banner-content.bg3 {
+        background: url("https://i.imgur.com/FNQko84.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
 
 .container-carousel .content-carousel {
   padding-right: 5%;
