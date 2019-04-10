@@ -1,76 +1,95 @@
 .content-footer
-  +container-fixed(10%)
+  //width: 100%
+  background-color: $bg-box-benefits
   display: block
-  background: $bg-box-benefits
-  padding-top: 50px
-  //padding-bottom: 50px
-  
-  &:after
-    display: block
-    width: 100%
-    content: ''
-    margin-bottom: 30px
-
-  .title-box-footer
-    color: $color-font-price
-    margin-bottom: 20px
-    text-shadow: 1px 1px 4px $black
-
-  .box-left
-    +make-sm-column(5,0px)
-    border: white 1px solid
-    padding: 20px
-    border-radius: 3px
-    display: block
-
-    color: $white
-    font-weight: $ligth
-
-    +breakpoint($celular)
-      padding: 10px
-      margin-bottom: 30px
-
-    .content-question
-      padding: 0px 10px
-
-      a
-        text-decoration: none
-        color: $white
-        .items-ask
-          margin: 10px 0px
-
-          +breakpoint($tablet)
-            margin: 15px 0px
-
-  .box-rigth
-    +make-sm-column(5,0px)
-    +make-sm-column-push(1)
-
-    display: block
-    padding: 20px
-    height: 115px
-    border: white 1px solid
-    border-radius: 3px
-
-    color: $white
-    font-weight: $ligth
-
-    .icons-redes
-      font-size: 35px
-      margin-left: 20px
-
-      i
-        margin: 0 15px
-
-    +breakpoint($celular)
-      padding: 10px
-
+  //padding: 10px
 
   .content-after
-    +make-sm-column(12,0px)
+    +container-fixed(5%)
     display: block
-    width: 100%
     position: relative
-    margin-bottom: 100px
-    border: 1px solid #87ebd5
+    padding-bottom: 80px
+    font-size: 12px
+
+    .coopright
+      +make-sm-column(6,0px)
+      //background-color: #f6993f
+      color: $color-title-test-internet
+      
+    .developing
+      +make-sm-column(6,0px)
+      //background-color: #cc2229
+      text-align: right
+      color: $color-title-test-internet
+      a
+        color: $color-title-test-internet
+        text-decoration: none
+
+
+  .container-footer
+    +container-fixed(10%)
+    display: block
+    background: $bg-box-benefits
+    padding-top: 50px
+    //padding-bottom: 50px
+
+    &:after
+      display: block
+      width: 100%
+      content: ''
+      margin-bottom: 30px
+
+    .title-box-footer
+      color: $color-font-price
+      margin-bottom: 20px
+      text-shadow: 1px 1px 4px $black
+
+    .box-left
+      +make-sm-column(5,0px)
+      border: white 1px solid
+      padding: 20px
+      border-radius: 3px
+      display: block
+
+      color: $white
+      font-weight: $ligth
+
+      +breakpoint($celular)
+        padding: 10px
+        margin-bottom: 30px
+
+      .content-question
+        padding: 0px 10px
+
+        a
+          text-decoration: none
+          color: $white
+          .items-ask
+            margin: 10px 0px
+
+            +breakpoint($tablet)
+              margin: 15px 0px
+
+    .box-rigth
+      +make-sm-column(5,0px)
+      +make-sm-column-push(1)
+
+      display: block
+      padding: 20px
+      height: 115px
+      border: white 1px solid
+      border-radius: 3px
+
+      color: $white
+      font-weight: $ligth
+
+      .icons-redes
+        font-size: 35px
+        margin-left: 20px
+
+        i
+          margin: 0 15px
+
+      +breakpoint($celular)
+        padding: 10px
 
