@@ -8,22 +8,31 @@
     </div>
 
     <div class="slide-content">
+        {{--wathcing series--}}
         <div class="banner-content bg1">
-            {{--<img src="https://i.imgur.com/IUTvUup.jpg" alt="">--}}
-            <div class="banner-caption">
-                <div class="banner-call-plan"></div>
+            <div class="banner-caption cap1 ">
+                <div class="banner-call-plan">Aproveite as melhores séries e filmes com a nossa <strong>internet fibra.</strong> </div>
                 <div class="banner-value-plan">
-                    <div class="limit-band"></div>
+                    <div class="content-left">
+                        <div class="limit-band">60</div>
+                        <div class="desc-band">mega</div>
+                    </div>
+                    <div class="type-money">R$</div>
                     <div class="price-band">
-                        <div class="type-money"></div>
-                        <div class="description-value"></div>
-                        <div class="price"></div>
-                        <div class="zero-mounth"></div>
+                        <div class="description-value">de <s>R$130,00</s> por </div>
+                        <div class="price">105</div>
+                        <div class="zero-mounth">
+                            <div class="zero">,80</div>
+                            <div class="mounth">/mês</div>
+                        </div>
                     </div>
                     <div class="spotligth-channels">
-                        <div class="icon-channels"></div>
-                        <div class="icon-plus"></div>
-                        <div class="qtd-channels"></div>
+                        <div class="icon-channels"><img src="https://i.imgur.com/4FHlcUo.png" alt=""></div>
+                        <div class="icon-plus">+</div>
+                        <div class="qtd-channels">
+                            <div class="channels-number">12</div>
+                            <div class="channels-desc">canais online</div>
+                        </div>
                     </div>
                     <div class="button-banner">
                         <button class="btn-banner">Contratar</button>
@@ -33,20 +42,32 @@
         </div>
         <div class="banner-content bg2">
             {{--<img src="https://i.imgur.com/xj2UOAS.jpg" alt="">--}}
-            <div class="banner-caption">
-                <div class="banner-call-plan"></div>
+            <div class="banner-caption cap2">
+                <div class="banner-call-plan">
+                    Jogar online agora será sensacional, esteja entre os
+                    tops dos rankings nos E-sports conectado com a TIM Fibra.
+                </div>
                 <div class="banner-value-plan">
-                    <div class="limit-band"></div>
+                    <div class="content-left">
+                        <div class="limit-band">100</div>
+                        <div class="desc-band">mega</div>
+                    </div>
+                    <div class="type-money">R$</div>
                     <div class="price-band">
-                        <div class="type-money"></div>
-                        <div class="description-value"></div>
-                        <div class="price"></div>
-                        <div class="zero-mounth"></div>
+                        <div class="description-value">de <s>R$115,00</s> por </div>
+                        <div class="price">117</div>
+                        <div class="zero-mounth">
+                            <div class="zero">,00</div>
+                            <div class="mounth">/mês</div>
+                        </div>
                     </div>
                     <div class="spotligth-channels">
-                        <div class="icon-channels"></div>
-                        <div class="icon-plus"></div>
-                        <div class="qtd-channels"></div>
+                        <div class="icon-channels"><img src="https://i.imgur.com/UPQVCmB.png" alt=""></div>
+                        <div class="icon-plus">+</div>
+                        <div class="qtd-channels">
+                            <div class="channels-number">2</div>
+                            <div class="channels-desc">canais online</div>
+                        </div>
                     </div>
                     <div class="button-banner">
                         <button class="btn-banner">Contratar</button>
@@ -56,20 +77,32 @@
         </div>
         <div class="banner-content bg3">
             {{--<img src="https://i.imgur.com/xj2UOAS.jpg" alt="">--}}
-            <div class="banner-caption">
-                <div class="banner-call-plan"></div>
+            <div class="banner-caption cap2">
+                <div class="banner-call-plan">
+                    Jogar online agora será sensacional, esteja entre os
+                    tops dos rankings nos E-sports conectado com a TIM Fibra.
+                </div>
                 <div class="banner-value-plan">
-                    <div class="limit-band"></div>
+                    <div class="content-left">
+                        <div class="limit-band">100</div>
+                        <div class="desc-band">mega</div>
+                    </div>
+                    <div class="type-money">R$</div>
                     <div class="price-band">
-                        <div class="type-money"></div>
-                        <div class="description-value"></div>
-                        <div class="price"></div>
-                        <div class="zero-mounth"></div>
+                        <div class="description-value">de <s>R$115,00</s> por </div>
+                        <div class="price">117</div>
+                        <div class="zero-mounth">
+                            <div class="zero">,00</div>
+                            <div class="mounth">/mês</div>
+                        </div>
                     </div>
                     <div class="spotligth-channels">
-                        <div class="icon-channels"></div>
-                        <div class="icon-plus"></div>
-                        <div class="qtd-channels"></div>
+                        <div class="icon-channels"><img src="https://i.imgur.com/UPQVCmB.png" alt=""></div>
+                        <div class="icon-plus">+</div>
+                        <div class="qtd-channels">
+                            <div class="channels-number">2</div>
+                            <div class="channels-desc">canais online</div>
+                        </div>
                     </div>
                     <div class="button-banner">
                         <button class="btn-banner">Contratar</button>

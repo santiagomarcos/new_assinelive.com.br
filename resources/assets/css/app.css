@@ -45,6 +45,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.btn-buy-now {
+  background-color: #0dc111;
+  border: 0;
+  padding: 15px 5px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 5px #6b7272;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #6b7272; }
+
+.btn-contract {
+  background-color: #09a809;
+  color: #fff;
+  border: none;
+  width: 180px;
+  padding: 5px 10px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #146700;
+  cursor: pointer; }
+  .btn-contract:active, .btn-contract:visited, .btn-contract:focus {
+    border: none; }
+
+.btn-banner {
+  background-color: #09a809;
+  color: #fff;
+  border: none;
+  width: 210px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #146700;
+  cursor: pointer; }
+  .btn-banner:active, .btn-banner:visited, .btn-banner:focus {
+    border: none; }
+
 .content-channels-sales {
   padding-right: 5%;
   padding-left: 5%;
@@ -520,9 +560,9 @@ table {
 
 @keyframes slideUp {
   0% {
-    bottom: 0; }
+    bottom: 0px; }
   20% {
-    bottom: 0; }
+    bottom: 0px; }
   40% {
     bottom: 380px; }
   60% {
@@ -581,10 +621,114 @@ table {
         background-position: center;
         background-repeat: no-repeat; }
       .header-content .slide-content .banner-content.bg3 {
-        background: url("https://i.imgur.com/FNQko84.jpg");
+        background: url("https://i.imgur.com/vgFvY5N.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
+      .header-content .slide-content .banner-content .banner-caption {
+        display: inline-block;
+        width: 600px;
+        margin: 30px; }
+        .header-content .slide-content .banner-content .banner-caption .banner-call-plan {
+          color: #fff;
+          font-size: 30px;
+          font-weight: bolder;
+          line-height: 1; }
+          .header-content .slide-content .banner-content .banner-caption .banner-call-plan strong {
+            font-weight: 600; }
+        .header-content .slide-content .banner-content .banner-caption .banner-value-plan {
+          margin-top: 30px; }
+          .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left {
+            display: inline-block; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left .limit-band {
+              font-size: 70px;
+              color: #cc2229;
+              font-weight: 600; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left .desc-band {
+              color: #d3f0f8;
+              font-size: 25px;
+              text-transform: uppercase;
+              font-weight: 600; }
+          .header-content .slide-content .banner-content .banner-caption .banner-value-plan .type-money {
+            display: inline-block;
+            font-size: 24px;
+            color: #d3f0f8; }
+          .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band {
+            display: inline-block;
+            width: 250px;
+            color: #d3f0f8; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .description-value {
+              display: block;
+              margin-bottom: 5px;
+              font-size: 18px; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .price {
+              display: inline-block;
+              font-size: 90px;
+              font-weight: bold; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth {
+              display: inline-block;
+              position: relative;
+              top: 0px;
+              margin-left: -5px; }
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth .zero {
+                font-size: 40px;
+                line-height: 1.5; }
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth .mounth {
+                font-size: 28px; }
+          .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels {
+            display: block;
+            width: 250px;
+            margin-top: 5px;
+            color: #fff; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-channels {
+              display: inline-block;
+              position: relative;
+              top: 5px; }
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-channels img {
+                width: 40px; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-plus {
+              display: inline-block;
+              position: relative;
+              font-size: 50px;
+              font-weight: bolder;
+              margin-left: 15px;
+              top: 5px; }
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels {
+              display: inline-block;
+              margin-left: 15px; }
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels .channels-number {
+                font-size: 40px;
+                display: inline-block;
+                letter-spacing: -2px; }
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels .channels-desc {
+                font-size: 18px;
+                width: 80px;
+                display: inline-block;
+                font-style: italic; }
+        .header-content .slide-content .banner-content .banner-caption.cap2 {
+          float: right; }
+          .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
+            font-size: 26px;
+            text-align: center;
+            line-height: 1; }
+          .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan {
+            display: inline-block;
+            text-align: center;
+            margin-left: 18%; }
+            .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels {
+              margin-left: auto;
+              margin-right: auto; }
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-channels {
+                background-color: #fff; }
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-channels img {
+                  width: 90px; }
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-plus {
+                margin-left: 0px;
+                font-size: 35px; }
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .channels-number {
+                font-size: 35px; }
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .qtd-channels {
+                margin-left: 0px; }
 
 .container-carousel .content-carousel {
   padding-right: 5%;
@@ -1126,28 +1270,3 @@ table {
         .speed-test-band .boxspeed-test .boxspeed-footer .content-boxspeed .fa-tachometer-alt {
           display: inline-block;
           position: relative; }
-
-.btn-buy-now {
-  background-color: #0dc111;
-  border: 0;
-  padding: 15px 5px;
-  border-radius: 2px;
-  box-shadow: 1px 2px 5px #6b7272;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px #6b7272; }
-
-.btn-contract {
-  background-color: #09a809;
-  color: #fff;
-  border: none;
-  width: 180px;
-  padding: 5px 10px;
-  font-size: 20px;
-  letter-spacing: 1.5px;
-  border-radius: 3px;
-  box-shadow: 2px 2px 3px #146700;
-  cursor: pointer; }
-  .btn-contract:active, .btn-contract:visited, .btn-contract:focus {
-    border: none; }
