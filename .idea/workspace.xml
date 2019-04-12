@@ -80,8 +80,8 @@
       <file leaf-file-name="_header.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/molecules/_header.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="37">
+              <caret line="298" column="28" lean-forward="true" selection-start-line="298" selection-start-column="28" selection-end-line="298" selection-end-column="28" />
               <folding>
                 <element signature="e#5489#6633#0" />
               </folding>
@@ -92,8 +92,8 @@
       <file leaf-file-name="_buttons.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/atoms/buttons/_buttons.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="207">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -101,8 +101,8 @@
       <file leaf-file-name="_variables1.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/atoms/_variables1.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="156">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -165,7 +165,6 @@
         <option value="$PROJECT_DIR$/resources/views/pages/index/_section-benefits.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/components/molecules/_reset.sass" />
         <option value="$PROJECT_DIR$/resources/assets/sass/components/organisms/_section-digital-services.sass" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/components/atoms/_variables1.sass" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/components/organisms/_section-test-internet.sass" />
         <option value="$PROJECT_DIR$/resources/assets/sass/components/organisms/_section-benefits.sass" />
@@ -173,8 +172,9 @@
         <option value="$PROJECT_DIR$/resources/views/components/_footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/components/molecules/_footer.sass" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.sass" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/components/atoms/buttons/_buttons.sass" />
         <option value="$PROJECT_DIR$/resources/views/components/_header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/components/atoms/_variables1.sass" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/components/atoms/buttons/_buttons.sass" />
         <option value="$PROJECT_DIR$/resources/assets/sass/components/molecules/_header.sass" />
       </list>
     </option>
@@ -312,7 +312,7 @@
               <item name="new_assinelive.com.br" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_assinelive.com.br" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,12 +374,12 @@
       <workItem from="1554904266192" duration="572000" />
       <workItem from="1554906723993" duration="4090000" />
       <workItem from="1554990555084" duration="21295000" />
-      <workItem from="1555076559248" duration="10684000" />
+      <workItem from="1555076559248" duration="23032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221118000" />
+    <option name="totallyTimeSpent" value="233466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -680,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/atoms/buttons/_buttons.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/components/_footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -698,13 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/atoms/_variables1.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -722,10 +708,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/atoms/_variables1.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/atoms/buttons/_buttons.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/components/molecules/_header.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="37">
+          <caret line="298" column="28" lean-forward="true" selection-start-line="298" selection-start-column="28" selection-end-line="298" selection-end-column="28" />
           <folding>
             <element signature="e#5489#6633#0" />
           </folding>

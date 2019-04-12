@@ -1,25 +1,35 @@
 @keyframes slideUp
+    //0%
+    //  bottom: 20px
+    //20%
+    //  bottom: 20px
+    //40%
+    //  bottom: 420px
+    //60%
+    //  bottom: 420px
+    //80%
+    //  bottom: 830px
+    //100%
+    //  bottom: 830px
+
+
     0%
-      bottom: 20px
-    20%
-      bottom: 20px
-    40%
       bottom: 420px
-    60%
-      bottom: 420px
-    80%
-      bottom: 830px
+
     100%
-      bottom: 830px
+      bottom: 420px
 
 .header-content
   width: 100%
   height: 380px
   position: relative
   display: block
-  background-color: #13ccbc
+  //background-color: #13ccbc
   overflow: hidden
   margin: auto
+
+  +breakpoint($md_celular)
+    height: 300px
 
   //.content-bullet
   //  position: absolute
@@ -62,17 +72,36 @@
       height: 400px
 
       &.bg1
-        background-image: url("https://i.imgur.com/IUTvUup.jpg")
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
+        background:
+          size: cover
+          position: center
+          repeat: no-repeat
+          image: url("https://i.imgur.com/IUTvUup.jpg")
 
+        +breakpoint($celular)
+          background:
+            position-x: -475px
+
+        +breakpoint($md_celular)
+          background:
+            image: radial-gradient(#221c15 15%, #000000 85%)
+            position: center
 
       &.bg2
         background: url("https://i.imgur.com/xj2UOAS.jpg")
         background-size: cover
         background-position: center
         background-repeat: no-repeat
+
+
+        +breakpoint($celular)
+          background:
+            //position-x: -475px
+
+        +breakpoint($md_celular)
+          background:
+            image: radial-gradient(#221c15 15%, #000000 85%)
+            position: center
 
 
       &.bg3
@@ -85,31 +114,52 @@
         //background-color: #fff
         display: inline-block
         width: 600px
-        margin: 30px
-        margin-left: 80px
+        margin: 30px 30px 30px 80px
         //text-align: center
+
+        +breakpoint($celular)
+          width: 450px
+          margin-left: 40px
+
+        +breakpoint($md_celular)
+          width: 100%
+          margin: 0px
+          //background-color: #082b35
+          //padding: 30px
+          text-align: center
 
         .banner-call-plan
           color: $white
           font-size: 24px
-          font-weight: bolder
+          //font-weight: bolder
           line-height: 1
           text-transform: uppercase
 
+          +breakpoint($md_celular)
+            font-size: 15px
+            padding: 25px 0px
+
           .spoligth-cap1
-            text-shadow: 1px -1px 2px #87ebd5
+            text-shadow: 1px -1px 1px #87ebd5
             color: $color-font-price
 
         .banner-value-plan
           margin-top: 30px
 
+          +breakpoint($md_celular)
+            margin-top: 25px
+
           .content-left
             display: inline-block
             margin-right: 20px
+
             .limit-band
               font-size: 70px
               color: $color-spotlight
               font-weight: 600
+
+              +breakpoint($md_celular)
+                font-size: 40px
 
             .desc-band
               color: $color-font-price
@@ -117,18 +167,27 @@
               text-transform: uppercase
               font-weight: 600
 
+              +breakpoint($md_celular)
+                font-size: 18px
+
           .type-money
             display: inline-block
             //background-color: #4dc0b5
             font-size: 24px
             color: $color-font-price
 
+            +breakpoint($md_celular)
+              font-size: 18px
+
           .price-band
             //background-color: #1390d4
             display: inline-block
             width: 250px
             color: $color-font-price
+            text-align: left
 
+            +breakpoint($md_celular)
+              width: 115px
 
             .description-value
               display: block
@@ -136,6 +195,9 @@
               margin-bottom: 5px
               font-size: 18px
 
+              +breakpoint($md_celular)
+                font-size: 14px
+                margin-bottom: 2px
 
             .price
               //background-color: #cc2229
@@ -143,7 +205,9 @@
               font-size: 90px
               font-weight: bold
 
-              
+              +breakpoint($md_celular)
+                font-size: 45px
+
             .zero-mounth
               display: inline-block
               //background-color: #f6993f
@@ -155,9 +219,14 @@
                 font-size:  40px
                 line-height: 1.5
 
+                +breakpoint($md_celular)
+                  font-size: 20px
+
               .mounth
                 font-size: 28px
 
+                +breakpoint($md_celular)
+                  font-size: 18px
 
           .spotligth-channels
             //background-color: #87ebd5
@@ -165,6 +234,10 @@
             width: 250px
             margin-top: 5px
             color: $white
+
+            +breakpoint($md_celular)
+              margin: auto
+              margin-top: 15px
 
             .icon-channels
               display: inline-block
@@ -174,6 +247,10 @@
               img
                 width: 40px
 
+                +breakpoint($md_celular)
+                  width: 25px
+                  top: 0px
+
             .icon-plus
               display: inline-block
               position: relative
@@ -182,16 +259,26 @@
               margin-left: 15px
               top: 5px
 
+              +breakpoint($md_celular)
+                font-size: 30px
+
+
             .qtd-channels
               //background-color: #3490dc
               display: inline-block
               //width: 50px
               margin-left: 15px
 
+              +breakpoint($md_celular)
+                margin-left: 5px
+
               .channels-number
                 font-size: 40px
                 display: inline-block
                 letter-spacing: -2px
+
+                +breakpoint($md_celular)
+                  font-size: 28px
 
               .channels-desc
                 font-size: 18px
@@ -199,6 +286,9 @@
                 display: inline-block
                 font-style: italic
 
+                +breakpoint($md_celular)
+                  font-size: 14px
+                  width: 30px
 
         &.cap2
           //background-color: $bg-cellphone
@@ -209,9 +299,13 @@
             text-align: center
             line-height: 1
 
+            +breakpoint($md_celular)
+              font-size: 16px
+
             .spoligth-cap2
               text-shadow: 1px -1px 2px #87ebd5
               color: $color-font-price
+
           .banner-value-plan
             display: inline-block
             //background-color: #011553

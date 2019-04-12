@@ -74,7 +74,7 @@ table {
   background-color: #09a809;
   color: #fff;
   border: none;
-  width: 210px;
+  width: 150px;
   margin: 5px 0px;
   padding: 5px 10px;
   font-size: 20px;
@@ -560,26 +560,20 @@ table {
 
 @keyframes slideUp {
   0% {
-    bottom: 20px; }
-  20% {
-    bottom: 20px; }
-  40% {
     bottom: 420px; }
-  60% {
-    bottom: 420px; }
-  80% {
-    bottom: 830px; }
   100% {
-    bottom: 830px; } }
+    bottom: 420px; } }
 
 .header-content {
   width: 100%;
   height: 380px;
   position: relative;
   display: block;
-  background-color: #13ccbc;
   overflow: hidden;
   margin: auto; }
+  @media (max-width: 595px) {
+    .header-content {
+      height: 300px; } }
   .header-content .slide-content {
     animation: slideUp 20s alternate infinite;
     position: relative; }
@@ -587,15 +581,26 @@ table {
       width: 100%;
       height: 400px; }
       .header-content .slide-content .banner-content.bg1 {
-        background-image: url("https://i.imgur.com/IUTvUup.jpg");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-image: url("https://i.imgur.com/IUTvUup.jpg"); }
+        @media (max-width: 767px) {
+          .header-content .slide-content .banner-content.bg1 {
+            background-position-x: -475px; } }
+        @media (max-width: 595px) {
+          .header-content .slide-content .banner-content.bg1 {
+            background-image: radial-gradient(#221c15 15%, #000000 85%);
+            background-position: center; } }
       .header-content .slide-content .banner-content.bg2 {
         background: url("https://i.imgur.com/xj2UOAS.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
+        @media (max-width: 595px) {
+          .header-content .slide-content .banner-content.bg2 {
+            background-image: radial-gradient(#221c15 15%, #000000 85%);
+            background-position: center; } }
       .header-content .slide-content .banner-content.bg3 {
         background: url("https://i.imgur.com/vgFvY5N.jpg");
         background-size: cover;
@@ -604,19 +609,33 @@ table {
       .header-content .slide-content .banner-content .banner-caption {
         display: inline-block;
         width: 600px;
-        margin: 30px;
-        margin-left: 80px; }
+        margin: 30px 30px 30px 80px; }
+        @media (max-width: 767px) {
+          .header-content .slide-content .banner-content .banner-caption {
+            width: 450px;
+            margin-left: 40px; } }
+        @media (max-width: 595px) {
+          .header-content .slide-content .banner-content .banner-caption {
+            width: 100%;
+            margin: 0px;
+            text-align: center; } }
         .header-content .slide-content .banner-content .banner-caption .banner-call-plan {
           color: #fff;
           font-size: 24px;
-          font-weight: bolder;
           line-height: 1;
           text-transform: uppercase; }
+          @media (max-width: 595px) {
+            .header-content .slide-content .banner-content .banner-caption .banner-call-plan {
+              font-size: 15px;
+              padding: 25px 0px; } }
           .header-content .slide-content .banner-content .banner-caption .banner-call-plan .spoligth-cap1 {
-            text-shadow: 1px -1px 2px #87ebd5;
+            text-shadow: 1px -1px 1px #87ebd5;
             color: #d3f0f8; }
         .header-content .slide-content .banner-content .banner-caption .banner-value-plan {
           margin-top: 30px; }
+          @media (max-width: 595px) {
+            .header-content .slide-content .banner-content .banner-caption .banner-value-plan {
+              margin-top: 25px; } }
           .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left {
             display: inline-block;
             margin-right: 20px; }
@@ -624,27 +643,47 @@ table {
               font-size: 70px;
               color: #cc2229;
               font-weight: 600; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left .limit-band {
+                  font-size: 40px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left .desc-band {
               color: #d3f0f8;
               font-size: 25px;
               text-transform: uppercase;
               font-weight: 600; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption .banner-value-plan .content-left .desc-band {
+                  font-size: 18px; } }
           .header-content .slide-content .banner-content .banner-caption .banner-value-plan .type-money {
             display: inline-block;
             font-size: 24px;
             color: #d3f0f8; }
+            @media (max-width: 595px) {
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .type-money {
+                font-size: 18px; } }
           .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band {
             display: inline-block;
             width: 250px;
-            color: #d3f0f8; }
+            color: #d3f0f8;
+            text-align: left; }
+            @media (max-width: 595px) {
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band {
+                width: 115px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .description-value {
               display: block;
               margin-bottom: 5px;
               font-size: 18px; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .description-value {
+                  font-size: 14px;
+                  margin-bottom: 2px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .price {
               display: inline-block;
               font-size: 90px;
               font-weight: bold; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .price {
+                  font-size: 45px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth {
               display: inline-block;
               position: relative;
@@ -653,19 +692,33 @@ table {
               .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth .zero {
                 font-size: 40px;
                 line-height: 1.5; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth .zero {
+                    font-size: 20px; } }
               .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth .mounth {
                 font-size: 28px; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption .banner-value-plan .price-band .zero-mounth .mounth {
+                    font-size: 18px; } }
           .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels {
             display: block;
             width: 250px;
             margin-top: 5px;
             color: #fff; }
+            @media (max-width: 595px) {
+              .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels {
+                margin: auto;
+                margin-top: 15px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-channels {
               display: inline-block;
               position: relative;
               top: 5px; }
               .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-channels img {
                 width: 40px; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-channels img {
+                    width: 25px;
+                    top: 0px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-plus {
               display: inline-block;
               position: relative;
@@ -673,24 +726,40 @@ table {
               font-weight: bolder;
               margin-left: 15px;
               top: 5px; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .icon-plus {
+                  font-size: 30px; } }
             .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels {
               display: inline-block;
               margin-left: 15px; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels {
+                  margin-left: 5px; } }
               .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels .channels-number {
                 font-size: 40px;
                 display: inline-block;
                 letter-spacing: -2px; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels .channels-number {
+                    font-size: 28px; } }
               .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels .channels-desc {
                 font-size: 18px;
                 width: 80px;
                 display: inline-block;
                 font-style: italic; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption .banner-value-plan .spotligth-channels .qtd-channels .channels-desc {
+                    font-size: 14px;
+                    width: 30px; } }
         .header-content .slide-content .banner-content .banner-caption.cap2 {
           float: right; }
           .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
             font-size: 22px;
             text-align: center;
             line-height: 1; }
+            @media (max-width: 595px) {
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
+                font-size: 16px; } }
             .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan .spoligth-cap2 {
               text-shadow: 1px -1px 2px #87ebd5;
               color: #d3f0f8; }
