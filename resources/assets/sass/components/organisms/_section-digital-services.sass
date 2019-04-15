@@ -22,6 +22,9 @@
           text-transform: uppercase
           margin: 15px 0px
 
+          +breakpoint($celular)
+            font-size: 24px
+
           .title-spotlight
             color: $color-spotlight-title-section
 
@@ -35,6 +38,10 @@
           display: block
           margin: auto
           margin-bottom: 25px
+
+          +breakpoint($celular)
+            width: 100%
+            font-size: 16px
 
         .line-bottom
           height: 2px
@@ -52,8 +59,13 @@
       .content-channels
         //+container-fixed(10%)
         +make-sm-column(7,0px)
-        
-        //background-color: #cc2229     
+        display: block
+        position: relative
+        height: 580px
+
+        +breakpoint($tablet)
+          +make-sm-column(12,0px)
+        //background-color: #cc2229
         
         .call-channels
           //background-color: #4dc0b5
@@ -67,18 +79,27 @@
             font-size: 20px
             color: $color-spotlight-title-section
 
-            
+            +breakpoint($celular)
+              font-size: 16px
+
         .content-show-channels
-          //background-color: #6574cd
+          background-color: #6574cd
           display: block
+
+
 
           .monitor-channels
             display: inline-block
             //background-color: #cc2229
             position: absolute
             left: 40px
+
             img
-              width: 530px
+              width: 500px
+
+              +breakpoint($celular)
+                +img-responsive(block)
+
 
           .tablet-channels
             display: inline-block
@@ -86,21 +107,45 @@
             position: absolute
             right: 5px
             top: 220px
+
+            +breakpoint($tablet)
+              right: 10%
+
+            +breakpoint($celular)
+              right: 0px
             img
               width: 350px
 
+              +breakpoint($md_celular)
+                width: 300px
+
+              +breakpoint($sm_celular)
+                width: 180px
 
           .cellphone-channels
             display: inline-block
             //background-color: #b8c2cc
             position: absolute
             top: 160px
+
+
             img
               width: 100%
+
+              +breakpoint($md_celular)
+                width: 90%
+
+              +breakpoint($sm_celular)
+                width: 50%
 
       .content-app
         +make-sm-column(5,0px)
         //background-color: #d2dbfa
+        display: block
+        position: relative
+
+        +breakpoint($tablet)
+          +make-sm-column(12,0px)
 
         .title-app
           text-align: center

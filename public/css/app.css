@@ -1405,6 +1405,9 @@ table {
       text-align: center;
       text-transform: uppercase;
       margin: 15px 0px; }
+      @media (max-width: 767px) {
+        .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main {
+          font-size: 24px; } }
       .digital-services .content-digital-services .digital-services-header .call-section-digital-services .title-main .title-spotlight {
         color: #042656; }
     .digital-services .content-digital-services .digital-services-header .call-section-digital-services .description-call {
@@ -1416,6 +1419,10 @@ table {
       display: block;
       margin: auto;
       margin-bottom: 25px; }
+      @media (max-width: 767px) {
+        .digital-services .content-digital-services .digital-services-header .call-section-digital-services .description-call {
+          width: 100%;
+          font-size: 16px; } }
     .digital-services .content-digital-services .digital-services-header .call-section-digital-services .line-bottom {
       height: 2px;
       width: 20%;
@@ -1429,11 +1436,24 @@ table {
         position: relative;
         min-height: 1px;
         padding-right: 0px;
-        padding-left: 0px; }
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        height: 580px; }
         @media (min-width: 768px) {
           .digital-services .content-digital-services .digital-services-body .content-channels {
             float: left;
             width: 58.33333%; } }
+        @media (max-width: 992px) {
+          .digital-services .content-digital-services .digital-services-body .content-channels {
+            position: relative;
+            min-height: 1px;
+            padding-right: 0px;
+            padding-left: 0px; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    .digital-services .content-digital-services .digital-services-body .content-channels {
+      float: left;
+      width: 100%; } }
         .digital-services .content-digital-services .digital-services-body .content-channels .call-channels {
           display: block;
           width: 500px;
@@ -1443,36 +1463,75 @@ table {
           .digital-services .content-digital-services .digital-services-body .content-channels .call-channels .title-channels {
             font-size: 20px;
             color: #042656; }
+            @media (max-width: 767px) {
+              .digital-services .content-digital-services .digital-services-body .content-channels .call-channels .title-channels {
+                font-size: 16px; } }
         .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels {
+          background-color: #6574cd;
           display: block; }
           .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .monitor-channels {
             display: inline-block;
             position: absolute;
             left: 40px; }
             .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .monitor-channels img {
-              width: 530px; }
+              width: 500px; }
+              @media (max-width: 767px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .monitor-channels img {
+                  display: block;
+                  max-width: 100%;
+                  height: auto; } }
           .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels {
             display: inline-block;
             position: absolute;
             right: 5px;
             top: 220px; }
+            @media (max-width: 992px) {
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels {
+                right: 10%; } }
+            @media (max-width: 767px) {
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels {
+                right: 0px; } }
             .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels img {
               width: 350px; }
+              @media (max-width: 595px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels img {
+                  width: 300px; } }
+              @media (max-width: 474px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels img {
+                  width: 180px; } }
           .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels {
             display: inline-block;
             position: absolute;
             top: 160px; }
             .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
               width: 100%; }
+              @media (max-width: 595px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
+                  width: 90%; } }
+              @media (max-width: 474px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
+                  width: 50%; } }
       .digital-services .content-digital-services .digital-services-body .content-app {
         position: relative;
         min-height: 1px;
         padding-right: 0px;
-        padding-left: 0px; }
+        padding-left: 0px;
+        display: block;
+        position: relative; }
         @media (min-width: 768px) {
           .digital-services .content-digital-services .digital-services-body .content-app {
             float: left;
             width: 41.66667%; } }
+        @media (max-width: 992px) {
+          .digital-services .content-digital-services .digital-services-body .content-app {
+            position: relative;
+            min-height: 1px;
+            padding-right: 0px;
+            padding-left: 0px; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    .digital-services .content-digital-services .digital-services-body .content-app {
+      float: left;
+      width: 100%; } }
         .digital-services .content-digital-services .digital-services-body .content-app .title-app {
           text-align: center;
           color: #042656; }
@@ -1709,6 +1768,9 @@ table {
     padding-top: 10px;
     text-decoration: none;
     cursor: pointer; }
+    @media (max-width: 992px) {
+      .speed-test-band .boxspeed-test {
+        width: auto; } }
     .speed-test-band .boxspeed-test .boxspeed-header span {
       width: 96%;
       height: 2px;
