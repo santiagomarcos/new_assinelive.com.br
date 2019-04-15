@@ -798,9 +798,17 @@ table {
 
 @keyframes slideUp {
   0% {
+    bottom: 20px; }
+  20% {
+    bottom: 20px; }
+  40% {
     bottom: 420px; }
+  60% {
+    bottom: 420px; }
+  80% {
+    bottom: 830px; }
   100% {
-    bottom: 420px; } }
+    bottom: 830px; } }
 
 .header-content {
   width: 100%;
@@ -831,23 +839,39 @@ table {
             background-image: radial-gradient(#221c15 15%, #000000 85%);
             background-position: center; } }
       .header-content .slide-content .banner-content.bg2 {
-        background: url("https://i.imgur.com/xj2UOAS.jpg");
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-image: url("https://i.imgur.com/xj2UOAS.jpg"); }
+        @media (max-width: 1248px) {
+          .header-content .slide-content .banner-content.bg2 {
+            background-position-x: 4%; } }
+        @media (max-width: 992px) {
+          .header-content .slide-content .banner-content.bg2 {
+            background-size: 141% 100%; } }
+        @media (max-width: 767px) {
+          .header-content .slide-content .banner-content.bg2 {
+            background-size: 143% 100%;
+            background-position-x: -25px; } }
         @media (max-width: 595px) {
           .header-content .slide-content .banner-content.bg2 {
             background-image: radial-gradient(#221c15 15%, #000000 85%);
             background-position: center; } }
       .header-content .slide-content .banner-content.bg3 {
-        background: url("https://i.imgur.com/vgFvY5N.jpg");
+        background-image: url("https://i.imgur.com/vgFvY5N.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
+        @media (max-width: 992px) {
+          .header-content .slide-content .banner-content.bg3 {
+            background-position-x: 79%; } }
+        @media (max-width: 595px) {
+          .header-content .slide-content .banner-content.bg3 {
+            background-image: radial-gradient(#221c15 15%, #000000 85%);
+            background-position: center; } }
       .header-content .slide-content .banner-content .banner-caption {
         display: inline-block;
         width: 600px;
-        margin: 30px 30px 30px 80px; }
+        margin: 30px 3px 30px 80px; }
         @media (max-width: 767px) {
           .header-content .slide-content .banner-content .banner-caption {
             width: 450px;
@@ -991,40 +1015,130 @@ table {
                     width: 30px; } }
         .header-content .slide-content .banner-content .banner-caption.cap2 {
           float: right; }
+          @media (max-width: 1248px) {
+            .header-content .slide-content .banner-content .banner-caption.cap2 {
+              margin-left: 3px; } }
+          @media (max-width: 767px) {
+            .header-content .slide-content .banner-content .banner-caption.cap2 {
+              width: auto; } }
           .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
             font-size: 22px;
             text-align: center;
-            line-height: 1; }
+            line-height: 1;
+            float: right; }
+            @media (max-width: 1248px) {
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
+                font-size: 18px; } }
+            @media (max-width: 992px) {
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
+                text-align: center;
+                width: 310px; } }
+            @media (max-width: 767px) {
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
+                float: none;
+                text-align: center;
+                font-size: 16px; } }
             @media (max-width: 595px) {
               .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan {
-                font-size: 16px; } }
+                font-size: 14px;
+                width: 100%;
+                margin-top: 10px; } }
             .header-content .slide-content .banner-content .banner-caption.cap2 .banner-call-plan .spoligth-cap2 {
               text-shadow: 1px -1px 2px #87ebd5;
               color: #d3f0f8; }
           .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan {
             display: inline-block;
+            float: right;
             text-align: center;
             margin-left: 18%; }
+            @media (max-width: 767px) {
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan {
+                float: none;
+                margin-left: 0px;
+                margin-top: 5px; } }
+            @media (max-width: 767px) {
+              .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .content-left {
+                margin-right: 0px; } }
+            .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .content-left .limit-band {
+              font-size: 47px; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .content-left .limit-band {
+                  font-size: 45px; } }
             .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .content-left .desc-band {
               font-size: 35px; }
+              @media (max-width: 1248px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .content-left .desc-band {
+                  font-size: 22px; } }
+              @media (max-width: 767px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .content-left .desc-band {
+                  font-size: 20px; } }
+            .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .price-band .description-value {
+              font-size: 16px; }
+            .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .price-band .price {
+              font-size: 75px; }
+              @media (max-width: 767px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .price-band .price {
+                  font-size: 65px; } }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .price-band .price {
+                  font-size: 55px; } }
+            .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .zero-mounth .zero {
+              font-size: 25px; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .zero-mounth .zero {
+                  font-size: 18px; } }
+            .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .zero-mounth .mounth {
+              font-size: 20px; }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .zero-mounth .mounth {
+                  font-size: 16px; } }
             .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .type-money {
               margin-left: 25px; }
+              @media (max-width: 1248px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .type-money {
+                  font-size: 20px; } }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .type-money {
+                  margin-left: 0px; } }
             .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .price-band {
               text-align: left; }
+              @media (max-width: 992px) {
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .price-band {
+                  width: 170px; } }
             .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels {
               margin-left: auto;
               margin-right: auto; }
               .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-channels img {
                 width: 110px; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-channels img {
+                    width: 95px; } }
               .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-plus {
                 margin: 0 5px;
                 font-size: 30px; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .icon-plus {
+                    font-size: 24px; } }
               .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .channels-number {
                 font-size: 35px; }
+                @media (max-width: 595px) {
+                  .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .channels-number {
+                    font-size: 28px; } }
               .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .qtd-channels {
                 margin-left: 0px; }
+                .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .qtd-channels .channels-desc {
+                  font-size: 12px;
+                  width: 40px; }
+                  @media (max-width: 767px) {
+                    .header-content .slide-content .banner-content .banner-caption.cap2 .banner-value-plan .spotligth-channels .qtd-channels .channels-desc {
+                      font-size: 14px; } }
         .header-content .slide-content .banner-content .banner-caption.cap3 {
-          float: right; }
+          float: right;
+          width: 551px; }
+          @media (max-width: 595px) {
+            .header-content .slide-content .banner-content .banner-caption.cap3 {
+              width: 100%;
+              float: none; } }
           .header-content .slide-content .banner-content .banner-caption.cap3 .banner-call-plan {
             position: relative;
             font-size: 24px;
@@ -1033,6 +1147,18 @@ table {
             width: 500px;
             text-transform: uppercase;
             float: right; }
+            @media (max-width: 1248px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-call-plan {
+                width: 400px;
+                font-size: 20px; } }
+            @media (max-width: 992px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-call-plan {
+                width: 350px;
+                font-size: 18px; } }
+            @media (max-width: 595px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-call-plan {
+                width: 100%;
+                font-size: 14px; } }
             .header-content .slide-content .banner-content .banner-caption.cap3 .banner-call-plan .spoligth-cap3 {
               text-shadow: 1px -1px 2px #87ebd5;
               color: #d3f0f8; }
@@ -1040,12 +1166,47 @@ table {
             display: inline-block;
             text-align: center;
             margin-left: 18%; }
-            .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .content-left .desc-band {
-              font-size: 35px; }
+            @media (max-width: 1248px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan {
+                float: inherit; } }
+            @media (max-width: 595px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan {
+                float: none;
+                margin: 0px; } }
+            @media (max-width: 992px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .content-left .limit-band {
+                font-size: 55px; } }
+            @media (max-width: 767px) {
+              .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .content-left .limit-band {
+                font-size: 45px; } }
             .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .type-money {
               margin-left: 25px; }
+              @media (max-width: 1248px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .type-money {
+                  margin-left: 0px; } }
             .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band {
               text-align: left; }
+              @media (max-width: 992px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band {
+                  font-size: 55px; } }
+              @media (max-width: 767px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band {
+                  font-size: 40px; } }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band {
+                  width: 140px; } }
+              @media (max-width: 767px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band .price {
+                  font-size: 75px; } }
+              @media (max-width: 595px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band .price {
+                  font-size: 55px; } }
+              @media (max-width: 767px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band .zero-mounth .zero {
+                  font-size: 25px; } }
+              @media (max-width: 767px) {
+                .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .price-band .zero-mounth .mounth {
+                  font-size: 18px; } }
             .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .spotligth-channels {
               margin-left: auto;
               margin-right: auto; }

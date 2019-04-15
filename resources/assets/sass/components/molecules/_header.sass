@@ -1,23 +1,23 @@
 @keyframes slideUp
-    //0%
-    //  bottom: 20px
-    //20%
-    //  bottom: 20px
-    //40%
-    //  bottom: 420px
-    //60%
-    //  bottom: 420px
-    //80%
-    //  bottom: 830px
-    //100%
-    //  bottom: 830px
-
-
     0%
+      bottom: 20px
+    20%
+      bottom: 20px
+    40%
       bottom: 420px
-
+    60%
+      bottom: 420px
+    80%
+      bottom: 830px
     100%
-      bottom: 420px
+      bottom: 830px
+
+
+    //0%
+    //  bottom: 820px
+    //
+    //100%
+    //  bottom: 820px
 
 .header-content
   width: 100%
@@ -88,33 +88,51 @@
             position: center
 
       &.bg2
-        background: url("https://i.imgur.com/xj2UOAS.jpg")
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
+        background:
+          size: cover
+          repeat: no-repeat
+          image: url("https://i.imgur.com/xj2UOAS.jpg")
 
+
+        +breakpoint($desktop-md)
+          background:
+            position-x: 4%
+
+        +breakpoint($tablet)
+          background:
+            size: 141% 100%
 
         +breakpoint($celular)
           background:
-            //position-x: -475px
+            size: 143% 100%
+            position-x: -25px
 
         +breakpoint($md_celular)
           background:
             image: radial-gradient(#221c15 15%, #000000 85%)
             position: center
 
-
       &.bg3
-        background: url("https://i.imgur.com/vgFvY5N.jpg")
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
+        background:
+          image: url("https://i.imgur.com/vgFvY5N.jpg")
+          size: cover
+          position: center
+          repeat: no-repeat
+
+        +breakpoint($tablet)
+          background:
+            position-x: 79%
+
+        +breakpoint($md_celular)
+          background:
+            image: radial-gradient(#221c15 15%, #000000 85%)
+            position: center
 
       .banner-caption
         //background-color: #fff
         display: inline-block
         width: 600px
-        margin: 30px 30px 30px 80px
+        margin: 30px 3px 30px 80px
         //text-align: center
 
         +breakpoint($celular)
@@ -294,13 +312,46 @@
           //background-color: $bg-cellphone
           float: right
 
+          +breakpoint($desktop-md)
+            margin-left: 3px
+            
+          +breakpoint($celular)
+            //float: right
+
+            //background-color: #082b35
+            width: auto
+            //margin-left: 25%
+            //margin-right: 25%
+
+          +breakpoint($md_celular)
+            //width: 100%
+            //margin: auto
+
           .banner-call-plan
             font-size: 22px
             text-align: center
             line-height: 1
+            float: right
+
+
+            +breakpoint($desktop-md)
+              font-size: 18px
+
+
+            +breakpoint($tablet)
+              text-align: center
+              //background-color: #1390d4
+              width: 310px
+
+            +breakpoint($celular)
+              float: none
+              text-align: center
+              font-size: 16px
 
             +breakpoint($md_celular)
-              font-size: 16px
+              font-size: 14px
+              width: 100%
+              margin-top: 10px
 
             .spoligth-cap2
               text-shadow: 1px -1px 2px #87ebd5
@@ -309,21 +360,81 @@
           .banner-value-plan
             display: inline-block
             //background-color: #011553
-            //float: right
+            float: right
             text-align: center
             margin-left: 18%
+            
+            +breakpoint($celular)
+              float: none
+              margin-left: 0px
+              margin-top: 5px
 
             .content-left
+
+              +breakpoint($celular)
+                margin-right: 0px
+
+              .limit-band
+                font-size: 47px
+
+                +breakpoint($md_celular)
+                  font-size: 45px
+
               .desc-band
                 font-size: 35px
+                //background-color: #cc2229
+
+                +breakpoint($desktop-md)
+                  font-size: 22px
+
+                +breakpoint($celular)
+                  font-size: 20px
+
+            .price-band
+              //background-color: #f6993f
+              //width: 150px
+
+              .description-value
+                font-size: 16px
+
+              .price
+                font-size: 75px
+
+                +breakpoint($celular)
+                  font-size: 65px
+
+                +breakpoint($md_celular)
+                  font-size: 55px
+
+            .zero-mounth
+              .zero
+                font-size: 25px
+
+                +breakpoint($md_celular)
+                  font-size: 18px
+
+              .mounth
+                font-size: 20px
+
+                +breakpoint($md_celular)
+                  font-size: 16px
 
             .type-money
               //background-color: #011553
               margin-left: 25px
 
+              +breakpoint($desktop-md)
+                font-size: 20px
+
+              +breakpoint($md_celular)
+                margin-left: 0px
+
             .price-band
               //background-color: #17066b
               text-align: left
+
+              +breakpoint($tablet)
+                width: 170px
 
             .spotligth-channels
               //background-color: #011553
@@ -335,21 +446,40 @@
                   width: 110px
                   //background-color: rgb(187, 236, 238)
 
+                  +breakpoint($md_celular)
+                    width: 95px
+
               .icon-plus
                 margin: 0 5px
                 font-size: 30px
 
+                +breakpoint($md_celular)
+                  font-size: 24px
+
               .channels-number
                 font-size: 35px
+
+                +breakpoint($md_celular)
+                  font-size: 28px
 
               .qtd-channels
                 margin-left: 0px
 
+                .channels-desc
+                  font-size: 12px
+                  width: 40px
+
+                  +breakpoint($celular)
+                    font-size: 14px
 
         &.cap3
           //background-color: $bg-cellphone
           float: right
+          width: 551px
 
+          +breakpoint($md_celular)
+            width: 100%
+            float: none
 
           .banner-call-plan
             position: relative
@@ -359,6 +489,18 @@
             width: 500px
             text-transform: uppercase
 
+            +breakpoint($desktop-md)
+              width: 400px
+              font-size: 20px
+
+            +breakpoint($tablet)
+              width: 350px
+              font-size: 18px
+
+            +breakpoint($md_celular)
+              width: 100%
+              font-size: 14px
+
             .spoligth-cap3
               text-shadow: 1px -1px 2px #87ebd5
               color: $color-font-price
@@ -367,22 +509,60 @@
             float: right
           .banner-value-plan
             display: inline-block
-            //background-color: #011553
+            //background-color: #53252b
             //float: right
             text-align: center
             margin-left: 18%
 
-            .content-left
-              .desc-band
-                font-size: 35px
+            +breakpoint($desktop-md)
+              float: inherit
 
+            +breakpoint($md_celular)
+              float: none
+              margin: 0px
+
+
+            .content-left
+              .limit-band
+                +breakpoint($tablet)
+                  font-size: 55px
+
+                +breakpoint($celular)
+                  font-size: 45px
             .type-money
               //background-color: #011553
               margin-left: 25px
 
+              +breakpoint($desktop-md)
+                margin-left: 0px
+
             .price-band
               //background-color: #17066b
               text-align: left
+
+              +breakpoint($tablet)
+                font-size: 55px
+
+              +breakpoint($celular)
+                font-size: 40px
+
+              +breakpoint($md_celular)
+                width: 140px
+
+              .price
+                +breakpoint($celular)
+                  font-size: 75px
+
+                +breakpoint($md_celular)
+                  font-size: 55px
+
+              .zero-mounth
+                .zero
+                  +breakpoint($celular)
+                    font-size: 25px
+                +breakpoint($celular)
+                  .mounth
+                    font-size: 18px
 
             .spotligth-channels
               //background-color: #011553
