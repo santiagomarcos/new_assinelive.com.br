@@ -15,12 +15,19 @@
       +make-sm-column(6,0px)
       //background-color: #f6993f
       color: $color-title-test-internet
+
+      +breakpoint($md_celular)
+        text-align: center
+
       
     .developing
       +make-sm-column(6,0px)
       //background-color: #cc2229
       text-align: right
       color: $color-title-test-internet
+
+      +breakpoint($md_celular)
+        text-align: center
       a
         color: $color-title-test-internet
         text-decoration: none
@@ -58,6 +65,7 @@
         padding: 10px
         margin-bottom: 30px
 
+
       .content-question
         padding: 0px 10px
 
@@ -70,6 +78,7 @@
             +breakpoint($tablet)
               margin: 15px 0px
 
+
     .box-rigth
       +make-sm-column(5,0px)
       +make-sm-column-push(1)
@@ -79,6 +88,9 @@
       height: 115px
       border: white 1px solid
       border-radius: 3px
+
+      +breakpoint($celular)
+        text-align: center
 
       color: $white
       font-weight: $ligth
@@ -90,6 +102,4 @@
         i
           margin: 0 15px
 
-      +breakpoint($celular)
-        padding: 10px
 

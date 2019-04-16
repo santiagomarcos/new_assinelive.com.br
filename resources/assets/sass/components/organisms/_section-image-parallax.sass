@@ -5,6 +5,9 @@
   perspective: 2px
   //transform-style: preserve-3d
 
+  +breakpoint($tablet)
+    height: 50vh
+
   .section
     position: relative
     height: 70vh
@@ -28,24 +31,27 @@
 
       transform: translateX(-1px) scale(1.2)
 
+      +breakpoint($tablet)
+        height: 50vh
 
     .caption-parallax
-        position: absolute
-        top: 35%
-        width: 100%
-        padding: 20px 0px
+      position: absolute
+      top: 35%
+      width: 100%
+      padding: 20px 0px
+      color: $white
+      //font-size: 40px
+      text-align: center
 
-        color: $white
+      +breakpoint($tablet)
+        top: 20%
 
-        //font-size: 40px
-        text-align: center
-
-        .title-spotlight-parallax
-          font-weight: bold
-          color: #cc2229
-          text-shadow: 1px 2px 5px #000
-          font-size: 70px
-          text-transform: uppercase
+      .title-spotlight-parallax
+        font-weight: bold
+        color: #cc2229
+        text-shadow: 1px 2px 5px #000
+        font-size: 70px
+        text-transform: uppercase
 
         .subtitle-spotligth
           font-size: 35px

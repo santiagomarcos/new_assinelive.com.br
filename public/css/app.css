@@ -323,6 +323,16 @@ table {
   .btn-banner:active, .btn-banner:visited, .btn-banner:focus {
     border: none; }
 
+.btn-band-plan {
+  background-color: transparent;
+  color: #cacccd;
+  border: 1px solid #cacccd;
+  width: 50px;
+  margin: 5px 5px;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 12px; }
+
 .content-channels-sales {
   padding-right: 5%;
   padding-left: 5%;
@@ -703,6 +713,9 @@ table {
         .content-footer .content-after .coopright {
           float: left;
           width: 50%; } }
+      @media (max-width: 595px) {
+        .content-footer .content-after .coopright {
+          text-align: center; } }
     .content-footer .content-after .developing {
       position: relative;
       min-height: 1px;
@@ -714,6 +727,9 @@ table {
         .content-footer .content-after .developing {
           float: left;
           width: 50%; } }
+      @media (max-width: 595px) {
+        .content-footer .content-after .developing {
+          text-align: center; } }
       .content-footer .content-after .developing a {
         color: #87ebd5;
         text-decoration: none; }
@@ -787,14 +803,14 @@ table {
       @media (min-width: 768px) {
         .content-footer .container-footer .box-rigth {
           left: 8.33333%; } }
+      @media (max-width: 767px) {
+        .content-footer .container-footer .box-rigth {
+          text-align: center; } }
       .content-footer .container-footer .box-rigth .icons-redes {
         font-size: 35px;
         margin-left: 20px; }
         .content-footer .container-footer .box-rigth .icons-redes i {
           margin: 0 15px; }
-      @media (max-width: 767px) {
-        .content-footer .container-footer .box-rigth {
-          padding: 10px; } }
 
 @keyframes slideUp {
   0% {
@@ -1460,6 +1476,9 @@ table {
           margin: auto;
           margin-bottom: 15px;
           text-align: center; }
+          @media (max-width: 595px) {
+            .digital-services .content-digital-services .digital-services-body .content-channels .call-channels {
+              width: auto; } }
           .digital-services .content-digital-services .digital-services-body .content-channels .call-channels .title-channels {
             font-size: 20px;
             color: #042656; }
@@ -1503,14 +1522,59 @@ table {
             display: inline-block;
             position: absolute;
             top: 160px; }
-            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
-              width: 100%; }
-              @media (max-width: 595px) {
-                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
-                  width: 90%; } }
-              @media (max-width: 474px) {
-                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
-                  width: 50%; } }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-header {
+              position: absolute;
+              padding: 10px 2px;
+              top: 30px;
+              left: 8px;
+              width: 125px;
+              border-radius: 5px;
+              background-color: #3b4286;
+              box-shadow: 2px 1px 5px #333367;
+              color: #FFFFFF;
+              font-size: 12px;
+              text-align: center;
+              text-shadow: 2px 2px 2px #08090b; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-body {
+              position: absolute;
+              width: 150px;
+              margin-top: 110px;
+              margin-left: 10px; }
+          .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body {
+            background-color: #fff;
+            width: 261px;
+            display: block;
+            padding: 15px;
+            position: absolute;
+            top: 14px;
+            left: 29px;
+            height: 190px; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body .tablet-title {
+              text-align: center;
+              font-size: 12px;
+              color: #6b7272; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body .band-limit-tablet {
+              font-size: 16px; }
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body .content-image-channel .item-channels {
+              position: relative;
+              float: left;
+              width: 25%;
+              min-height: 1px;
+              padding-right: 0px;
+              padding-left: 0px;
+              text-align: center;
+              height: 20px;
+              float: left; }
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body .content-image-channel .item-channels #fox-icon {
+                width: 20px; }
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body .content-image-channel .item-channels img {
+                width: 25px; }
+          @media (max-width: 595px) {
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels img {
+              width: 90%; } }
+          @media (max-width: 474px) {
+            .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels img {
+              width: 50%; } }
       .digital-services .content-digital-services .digital-services-body .content-app {
         position: relative;
         min-height: 1px;
@@ -1600,6 +1664,9 @@ table {
         text-align: center;
         text-transform: uppercase;
         margin: 15px 0px; }
+        @media (max-width: 767px) {
+          .benefits .content-benefits .benefits-header .call-section-benefits .title-main {
+            font-size: 24px; } }
         .benefits .content-benefits .benefits-header .call-section-benefits .title-main .title-spotlight {
           color: #042656; }
       .benefits .content-benefits .benefits-header .call-section-benefits .line-bottom {
@@ -1617,6 +1684,12 @@ table {
         width: 50%;
         display: block;
         margin: auto; }
+        @media (max-width: 992px) {
+          .benefits .content-benefits .benefits-header .call-section-benefits .description-call {
+            width: auto; } }
+        @media (max-width: 767px) {
+          .benefits .content-benefits .benefits-header .call-section-benefits .description-call {
+            font-size: 16px; } }
   .benefits .content-benefits .benefits-body {
     margin-right: 0px;
     margin-left: 0px;
@@ -1641,11 +1714,20 @@ table {
       font-size: 20px;
       text-align: center;
       padding-bottom: 10px; }
+      @media (max-width: 1024px) {
+        .benefits .content-benefits .benefits-body .description-plan-call {
+          font-size: 18px; } }
+      @media (max-width: 992px) {
+        .benefits .content-benefits .benefits-body .description-plan-call {
+          font-size: 16px; } }
     .benefits .content-benefits .benefits-body .icon-arrow {
       font-size: 25px;
       margin: 0px 20px; }
     .benefits .content-benefits .benefits-body .box-local-space, .benefits .content-benefits .benefits-body .box-space-international, .benefits .content-benefits .benefits-body .box-national-space {
-      margin: 0px 30px; }
+      margin: 0px 10px; }
+      @media (max-width: 992px) {
+        .benefits .content-benefits .benefits-body .box-local-space, .benefits .content-benefits .benefits-body .box-space-international, .benefits .content-benefits .benefits-body .box-national-space {
+          margin: 0px 2px; } }
     .benefits .content-benefits .benefits-body .benefits-box-local {
       position: relative;
       min-height: 1px;
@@ -1676,16 +1758,25 @@ table {
       .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
         display: block;
         background-color: #042656; }
+        @media (max-width: 767px) {
+          .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
+            margin: 10px 0px; } }
         .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space .box-national-header {
           font-size: 50px;
           margin: auto;
           display: block;
           padding: 15px 0px 100px 30px;
           width: 200px; }
+          @media (max-width: 992px) {
+            .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space .box-national-header {
+              padding-left: 20px; } }
           .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space .box-national-header img {
             position: absolute;
             width: 60px;
             padding: 0px 10px; }
+            @media (max-width: 992px) {
+              .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space .box-national-header img {
+                padding: 0px; } }
     .benefits .content-benefits .benefits-body .benefits-box-national-hover {
       display: none; }
     .benefits .content-benefits .benefits-body .benefits-box-international {
@@ -1711,6 +1802,9 @@ table {
   overflow-x: hidden;
   overflow-y: hidden;
   perspective: 2px; }
+  @media (max-width: 992px) {
+    .image-parallax {
+      height: 50vh; } }
   .image-parallax .section {
     position: relative;
     height: 70vh;
@@ -1730,6 +1824,9 @@ table {
       background-position: center center;
       background-attachment: fixed;
       transform: translateX(-1px) scale(1.2); }
+      @media (max-width: 992px) {
+        .image-parallax .section:before {
+          height: 50vh; } }
     .image-parallax .section .caption-parallax {
       position: absolute;
       top: 35%;
@@ -1737,15 +1834,18 @@ table {
       padding: 20px 0px;
       color: #fff;
       text-align: center; }
+      @media (max-width: 992px) {
+        .image-parallax .section .caption-parallax {
+          top: 20%; } }
       .image-parallax .section .caption-parallax .title-spotlight-parallax {
         font-weight: bold;
         color: #cc2229;
         text-shadow: 1px 2px 5px #000;
         font-size: 70px;
         text-transform: uppercase; }
-      .image-parallax .section .caption-parallax .subtitle-spotligth {
-        font-size: 35px;
-        text-shadow: 0px 0px 5px #000; }
+        .image-parallax .section .caption-parallax .title-spotlight-parallax .subtitle-spotligth {
+          font-size: 35px;
+          text-shadow: 0px 0px 5px #000; }
   .image-parallax .bg1:before {
     background-image: url("https://i.imgur.com/eeP7pMC.jpg"); }
 
@@ -1811,6 +1911,9 @@ table {
         display: block;
         margin: auto;
         cursor: pointer; }
+        @media (max-width: 595px) {
+          .speed-test-band .boxspeed-test .boxspeed-footer .content-boxspeed {
+            width: 51%; } }
         .speed-test-band .boxspeed-test .boxspeed-footer .content-boxspeed .fa-signal {
           display: inline-block;
           position: relative; }
@@ -1819,6 +1922,9 @@ table {
           width: 79%;
           border-bottom: dotted 2px #87ebd5;
           margin-bottom: 5px; }
+          @media (max-width: 595px) {
+            .speed-test-band .boxspeed-test .boxspeed-footer .content-boxspeed .line-conection {
+              width: 45%; } }
         .speed-test-band .boxspeed-test .boxspeed-footer .content-boxspeed .fa-tachometer-alt {
           display: inline-block;
           position: relative; }

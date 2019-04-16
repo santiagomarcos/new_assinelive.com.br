@@ -75,6 +75,9 @@
           margin-bottom: 15px
           text-align: center
 
+          +breakpoint($md_celular)
+            width: auto
+
           .title-channels
             font-size: 20px
             color: $color-spotlight-title-section
@@ -128,9 +131,65 @@
             position: absolute
             top: 160px
 
+            .cellphone-header
+              position: absolute
+              padding: 10px 2px
+              top: 30px
+              left: 8px
+              width: 125px
+              //border: 1px solid #ccc
+              border-radius: 5px
+              background-color: $bg-box-cellphone
+              box-shadow: 2px 1px 5px #333367
+              color: #FFFFFF
+              font-size: 12px
+              text-align: center
+              text-shadow: 2px 2px 2px #08090b
 
+            .cellphone-body
+              position: absolute
+              width: 150px
+              margin-top: 110px
+              margin-left: 10px
+
+          .tablet-channels
+            .tablet-body
+              background-color: #fff
+              width: 261px
+              display: block
+              //position: absolute
+              padding: 15px
+              position: absolute
+              top: 14px
+              left: 29px
+              height: 190px
+
+              .tablet-title
+                text-align: center
+                font-size: 12px
+                color: $color-font-body
+
+              .band-limit-tablet
+                font-size: 16px
+
+
+              .content-image-channel
+                .item-channels
+                  +make-xs-column(3,0px)
+                  text-align: center
+                  //width: 25%
+                  height: 20px
+                  float: left
+                  //background-color: #cc2229
+                  //margin: 2px
+
+                  #fox-icon
+                    width: 20px
+
+                  img
+                    width: 25px
             img
-              width: 100%
+              //width: 100%
 
               +breakpoint($md_celular)
                 width: 90%
