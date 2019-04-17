@@ -8,18 +8,21 @@
 
   +breakpoint($celular)
     padding-top: 5px
-    padding-bottom: 5px
+    padding-bottom: 0px
 
   .btn-toggle
     display: none
 
-    +breakpoint($celular)
+    +breakpoint($tablet)
       display: block
       //background-color: #fff
       width: 50px
-      height: 20px
-      +make-xs-column(4,0px)
+      height: 15px
+      cursor: pointer
+      +make-xs-column(1,0px)
 
+    +breakpoint($celular)
+      height: 25px
 
     span
       height: 3px
@@ -33,10 +36,10 @@
         width: 35px
 
       &:nth-child(2)
-        top: 12px
+        top: 10px
 
       &:nth-child(3)
-        top:  25px
+        top:  20px
 
 
       +breakpoint($celular)
@@ -60,7 +63,7 @@
     //background: $bg-body
 
     +breakpoint($tablet)
-      +make-sm-column(3,0px)
+      display: none
 
     +breakpoint($celular)
       display: none
@@ -73,10 +76,10 @@
     //text-align: center
 
     +breakpoint($tablet)
-      +make-sm-column(7,0px)
+      display: none
 
     +breakpoint($celular)
-      display: none
+
 
     .items-channels
       display: inline-block
@@ -95,7 +98,8 @@
       margin-right: 10px
 
     +breakpoint($tablet)
-      +make-sm-column(2,0px)
+      +make-sm-column(8,0px)
+      +make-sm-column-pull(-3)
 
     +breakpoint($celular)
       display: block

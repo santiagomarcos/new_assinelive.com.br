@@ -38,3 +38,4 @@
         </div>
     </nav>
 </div>
+@include('components._menu-responsive')

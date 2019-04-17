@@ -374,20 +374,24 @@ table {
   @media (max-width: 767px) {
     .content-channels-sales {
       padding-top: 5px;
-      padding-bottom: 5px; } }
+      padding-bottom: 0px; } }
   .content-channels-sales .btn-toggle {
     display: none; }
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       .content-channels-sales .btn-toggle {
         display: block;
         width: 50px;
-        height: 20px;
+        height: 15px;
+        cursor: pointer;
         position: relative;
         float: left;
-        width: 33.33333%;
+        width: 8.33333%;
         min-height: 1px;
         padding-right: 0px;
         padding-left: 0px; } }
+    @media (max-width: 767px) {
+      .content-channels-sales .btn-toggle {
+        height: 25px; } }
     .content-channels-sales .btn-toggle span {
       height: 3px;
       width: 40px;
@@ -399,9 +403,9 @@ table {
         .content-channels-sales .btn-toggle span {
           width: 35px; } }
       .content-channels-sales .btn-toggle span:nth-child(2) {
-        top: 12px; }
+        top: 10px; }
       .content-channels-sales .btn-toggle span:nth-child(3) {
-        top: 25px; }
+        top: 20px; }
       @media (max-width: 767px) {
         .content-channels-sales .btn-toggle span:nth-child(2) {
           top: 10px; }
@@ -424,14 +428,7 @@ table {
         width: 25%; } }
     @media (max-width: 992px) {
       .content-channels-sales .title-channels {
-        position: relative;
-        min-height: 1px;
-        padding-right: 0px;
-        padding-left: 0px; } }
-  @media (max-width: 992px) and (min-width: 768px) {
-    .content-channels-sales .title-channels {
-      float: left;
-      width: 25%; } }
+        display: none; } }
     @media (max-width: 767px) {
       .content-channels-sales .title-channels {
         display: none; } }
@@ -445,16 +442,6 @@ table {
         float: left;
         width: 58.33333%; } }
     @media (max-width: 992px) {
-      .content-channels-sales .content-channels {
-        position: relative;
-        min-height: 1px;
-        padding-right: 0px;
-        padding-left: 0px; } }
-  @media (max-width: 992px) and (min-width: 768px) {
-    .content-channels-sales .content-channels {
-      float: left;
-      width: 58.33333%; } }
-    @media (max-width: 767px) {
       .content-channels-sales .content-channels {
         display: none; } }
     .content-channels-sales .content-channels .items-channels {
@@ -485,7 +472,10 @@ table {
   @media (max-width: 992px) and (min-width: 768px) {
     .content-channels-sales .location {
       float: left;
-      width: 16.66667%; } }
+      width: 66.66667%; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    .content-channels-sales .location {
+      right: -25%; } }
     @media (max-width: 767px) {
       .content-channels-sales .location {
         display: block;
@@ -1258,6 +1248,41 @@ table {
                 font-size: 35px; }
               .header-content .slide-content .banner-content .banner-caption.cap3 .banner-value-plan .spotligth-channels .qtd-channels {
                 margin-left: 0px; }
+
+.menu-responsive-content {
+  display: block;
+  padding: 0px 20px;
+  width: 280px;
+  top: 0px;
+  background-color: #000;
+  position: fixed;
+  z-index: 1040;
+  transition: top ease-in-out .8s;
+  color: #A1A9A9; }
+  .menu-responsive-content.active {
+    top: 0px; }
+  .menu-responsive-content .content-channels-button-close {
+    display: block;
+    margin-top: 5px;
+    text-align: right; }
+    .menu-responsive-content .content-channels-button-close span {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      color: #cc2229; }
+  .menu-responsive-content .content-channels-sales-responsive {
+    background-color: #082b35;
+    display: block; }
+    .menu-responsive-content .content-channels-sales-responsive .title-channels-responsive {
+      background-color: #3490dc;
+      display: block; }
+    .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive {
+      display: block;
+      background-color: #011553;
+      padding: 5px; }
+      .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive .items-channels-responsive {
+        display: inline-block;
+        padding: 0px 2px; }
 
 .container-carousel .content-carousel {
   padding-right: 5%;
