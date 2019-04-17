@@ -55,6 +55,11 @@
   border-radius: 5px
   font-size: 12px
 
+  +breakpoint($md_celular)
+    margin: 3px 3px
+    padding: 2px
+    font-size: 10px
+
 .btn-contact-tablet
   background-color: $button-buy-car
   color: $white
@@ -69,3 +74,7 @@
   display: block
   position: relative
   top: 10px
+
+  +breakpoint($sm_celular)
+    top: 0px
+    font-size: 11px

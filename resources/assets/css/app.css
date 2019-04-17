@@ -94,6 +94,11 @@ table {
   padding: 3px;
   border-radius: 5px;
   font-size: 12px; }
+  @media (max-width: 595px) {
+    .btn-band-plan {
+      margin: 3px 3px;
+      padding: 2px;
+      font-size: 10px; } }
 
 .btn-contact-tablet {
   background-color: #09a809;
@@ -108,6 +113,10 @@ table {
   display: block;
   position: relative;
   top: 10px; }
+  @media (max-width: 474px) {
+    .btn-contact-tablet {
+      top: 0px;
+      font-size: 11px; } }
 
 .content-channels-sales {
   padding-right: 5%;
@@ -1262,7 +1271,6 @@ table {
               .digital-services .content-digital-services .digital-services-body .content-channels .call-channels .title-channels {
                 font-size: 16px; } }
         .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels {
-          background-color: #6574cd;
           display: block; }
           .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .monitor-channels {
             display: inline-block;
@@ -1288,7 +1296,7 @@ table {
                 right: 10%; } }
             @media (max-width: 767px) {
               .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels {
-                right: 15%; } }
+                right: 10%; } }
             @media (max-width: 595px) {
               .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels {
                 left: 10%;
@@ -1313,10 +1321,12 @@ table {
               height: 190px; }
               @media (max-width: 595px) {
                 .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body {
-                  width: 76%; } }
+                  width: 81%;
+                  left: 5%; } }
               @media (max-width: 474px) {
                 .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body {
-                  padding: 0px 11px; } }
+                  padding: 0px 11px;
+                  left: 6%; } }
               .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .tablet-channels .tablet-body .tablet-title {
                 text-align: center;
                 font-size: 12px;
@@ -1364,10 +1374,24 @@ table {
             display: inline-block;
             position: absolute;
             top: 160px; }
+            @media (max-width: 474px) {
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels img {
+                height: 275px; } }
             @media (max-width: 595px) {
               .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels {
                 transform: rotate(90deg);
-                top: 235px; } }
+                top: 250px;
+                left: 35%;
+                position: relative;
+                display: table; } }
+            @media (max-width: 474px) {
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels {
+                position: inherit;
+                margin-top: -40px;
+                margin-left: 33%; } }
+            @media (max-width: 390px) {
+              .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels {
+                margin-left: 26%; } }
             .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-header {
               position: absolute;
               padding: 10px 2px;
@@ -1375,17 +1399,38 @@ table {
               left: 8px;
               width: 125px;
               border-radius: 5px;
-              background-color: #3b4286;
-              box-shadow: 2px 1px 5px #333367;
+              background-color: #0f0f1021;
+              box-shadow: 2px 1px 5px #33336761;
               color: #FFFFFF;
               font-size: 12px;
               text-align: center;
               text-shadow: 2px 2px 2px #08090b; }
+              @media (max-width: 595px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-header {
+                  transform: rotate(-90deg);
+                  top: 132px;
+                  width: 269px;
+                  left: -104px; } }
+              @media (max-width: 474px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-header {
+                  width: 240px;
+                  top: 116px;
+                  left: -90px; } }
             .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-body {
               position: absolute;
               width: 150px;
               margin-top: 110px;
               margin-left: 10px; }
+              @media (max-width: 595px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-body {
+                  transform: rotate(-90deg);
+                  width: 238px;
+                  top: 10px;
+                  right: -70px; } }
+              @media (max-width: 474px) {
+                .digital-services .content-digital-services .digital-services-body .content-channels .content-show-channels .cellphone-channels .cellphone-body {
+                  right: -75px;
+                  top: -6px; } }
       .digital-services .content-digital-services .digital-services-body .content-app {
         position: relative;
         min-height: 1px;

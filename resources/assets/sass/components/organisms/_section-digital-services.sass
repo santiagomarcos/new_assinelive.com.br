@@ -86,7 +86,7 @@
               font-size: 16px
 
         .content-show-channels
-          background-color: #6574cd
+          //background-color: #6574cd
           display: block
 
           .monitor-channels
@@ -116,7 +116,7 @@
               right: 10%
 
             +breakpoint($celular)
-              right: 15%
+              right: 10%
 
             +breakpoint($md_celular)
               left: 10%
@@ -147,10 +147,12 @@
               height: 190px
 
               +breakpoint($md_celular)
-                width: 76%
+                width: 81%
+                left: 5%
 
               +breakpoint($sm_celular)
                 padding: 0px 11px
+                left: 6%
 
               .tablet-title
                 text-align: center
@@ -210,9 +212,24 @@
             position: absolute
             top: 160px
 
+            img
+              +breakpoint($sm_celular)
+                height: 275px
+
             +breakpoint($md_celular)
               transform: rotate(90deg)
-              top: 235px
+              top: 250px
+              left: 35%
+              position: relative
+              display: table
+
+            +breakpoint($sm_celular)
+              position: inherit
+              margin-top: -40px
+              margin-left: 33%
+
+            +breakpoint($xs_celular)
+              margin-left: 26%
 
             .cellphone-header
               position: absolute
@@ -222,12 +239,24 @@
               width: 125px
               //border: 1px solid #ccc
               border-radius: 5px
-              background-color: $bg-box-cellphone
-              box-shadow: 2px 1px 5px #333367
+              background-color: #0f0f1021
+              box-shadow: 2px 1px 5px #33336761
               color: #FFFFFF
               font-size: 12px
               text-align: center
               text-shadow: 2px 2px 2px #08090b
+
+              +breakpoint($md_celular)
+                transform: rotate(-90deg)
+                top: 132px
+                width: 269px
+                left: -104px
+
+              +breakpoint($sm_celular)
+                width: 240px
+                top: 116px
+                left: -90px
+
 
             .cellphone-body
               position: absolute
@@ -235,6 +264,16 @@
               margin-top: 110px
               margin-left: 10px
 
+              +breakpoint($md_celular)
+                transform: rotate(-90deg)
+                //background-color: #000
+                width: 238px
+                top: 10px
+                right: -70px
+
+              +breakpoint($sm_celular)
+                right: -75px
+                top: -6px
 
       .content-app
         +make-sm-column(5,0px)
