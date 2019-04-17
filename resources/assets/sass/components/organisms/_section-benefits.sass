@@ -23,6 +23,9 @@
           text-transform: uppercase
           margin: 15px 0px
 
+          +breakpoint($celular)
+            font-size: 24px
+
           .title-spotlight
             color: $color-spotlight-title-section
 
@@ -44,6 +47,12 @@
           display: block
           margin: auto
 
+          +breakpoint($tablet)
+            width: auto
+
+          +breakpoint($celular)
+            font-size: 16px
+
     .benefits-body
       +make-row(0px)
       +container-fixed(25%)
@@ -57,15 +66,26 @@
         text-align: center
         padding-bottom: 10px
 
+
+        +breakpoint($desktop)
+          font-size: 18px
+
+        +breakpoint($tablet)
+          font-size: 16px
+
       .icon-arrow
         font-size: 25px
         margin: 0px 20px
 
       .box-local-space, .box-space-international, .box-national-space
-        margin: 0px 30px
+        margin: 0px 10px
+
+        +breakpoint($tablet)
+          margin: 0px 2px
 
       .benefits-box-local
         +make-sm-column(4,0px)
+
         .box-local-space
           display: block
           background-color: $color-spotlight-title-section
@@ -83,6 +103,9 @@
         .box-national-space
           display: block
           background-color: $color-spotlight-title-section
+
+          +breakpoint($celular)
+             margin: 10px 0px
           .box-national-header
             font-size: 50px
             margin: auto
@@ -91,11 +114,17 @@
             padding: 15px 0px 100px 30px
             width: 200px
 
+            +breakpoint($tablet)
+              padding-left: 20px
+
             img
               position: absolute
               width: 60px
               padding: 0px 10px
               //background-color: #cc2229
+
+              +breakpoint($tablet)
+                padding: 0px
 
       .benefits-box-national-hover
         display: none

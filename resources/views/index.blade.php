@@ -211,9 +211,48 @@
                             <img src="https://i.imgur.com/aVMNG44.png" alt="">
                         </div>
                         <div class="tablet-channels">
+                            <div class="tablet-body">
+                                <div class="tablet-title">
+                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteudo infantil.
+                                </div>
+                                <div class="band-limit-tablet">60 mega</div>
+                                <div class="content-image-channel">
+                                    <div class="item-channels"><img src="https://i.imgur.com/UPQVCmB.png" id="icon-ei-1" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/vjh5FzJ.png" id="icon-ei-2" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/rj9Chaf.png" id="icon-ei-3" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/plRNoMP.png" id="icon-fox-1" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/dclY7MS.png" id="icon-fox-2" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/8Ae9rde.png" id="icon-foxlife"alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/JGozTsS.png" id="icon-baby" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/B3AxKzo.png" id="icon-kids" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/pW9gg2o.png" id="icon-natgeo" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/JXqE3cC.png" id="icon-wild" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/qdQdlBA.png" id="icon-cartoon" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/2c2HXuv.png" id="icon-fox-sports-1" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/5aKdpkU.png" id="icon-fox-sports-2" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/6vorpOT.png" id="icon-looke" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/iAMIBym.png" id="icon-fx" alt=""></div>
+                                    <div class="item-channels"><img src="https://i.imgur.com/4FHlcUo.png" id="fox-icon" alt=""></div>
+                                </div>
+                                <button class="btn-contact-tablet">Contratar</button>
+                            </div>
                             <img src="https://i.imgur.com/j9wcPLz.png" alt="">
+
                         </div>
                         <div class="cellphone-channels">
+                            <div class="cellphone-header">
+                                Clique nas velocidades para saber os canais disponiveís.
+                            </div>
+                            <div class="cellphone-body">
+                                <button class="btn-band-plan">40 <br>MB</button>
+                                <button class="btn-band-plan">60 <br>MB</button>
+                                <button class="btn-band-plan">100<br>MB</button>
+                                <button class="btn-band-plan">150 <br>MB</button>
+                                <button class="btn-band-plan">300 <br>MB</button>
+                                <button class="btn-band-plan">500 <br>MB</button>
+                                <button class="btn-band-plan">1 <br>GB</button>
+                                <button class="btn-band-plan">2 <br>GB</button>
+                            </div>
                             <img src="https://i.imgur.com/copuma5.png" alt="">
                         </div>
                     </div>

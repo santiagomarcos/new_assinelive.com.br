@@ -75,6 +75,9 @@
           margin-bottom: 15px
           text-align: center
 
+          +breakpoint($md_celular)
+            width: auto
+
           .title-channels
             font-size: 20px
             color: $color-spotlight-title-section
@@ -86,13 +89,14 @@
           background-color: #6574cd
           display: block
 
-
-
           .monitor-channels
             display: inline-block
             //background-color: #cc2229
             position: absolute
             left: 40px
+
+            +breakpoint($md_celular)
+              display: none
 
             img
               width: 500px
@@ -112,15 +116,93 @@
               right: 10%
 
             +breakpoint($celular)
-              right: 0px
+              right: 15%
+
+            +breakpoint($md_celular)
+              left: 10%
+              top: 60px
+
+            +breakpoint($sm_celular)
+              position: relative
+              top: 0px
+              left: 0px
+              display: block
+              margin: auto
+
             img
-              width: 350px
+              //width: 100%
 
               +breakpoint($md_celular)
-                width: 300px
+                width: 100%
+
+            .tablet-body
+              //background-color: #fff
+              width: 261px
+              display: block
+              //position: absolute
+              padding: 15px
+              position: absolute
+              top: 14px
+              left: 29px
+              height: 190px
+
+              +breakpoint($md_celular)
+                width: 76%
 
               +breakpoint($sm_celular)
-                width: 180px
+                padding: 0px 11px
+
+              .tablet-title
+                text-align: center
+                font-size: 12px
+                color: $color-font-body
+
+
+                +breakpoint($sm_celular)
+                  margin-top: 10px
+
+              .band-limit-tablet
+                font-size: 16px
+                margin: 15px 0px
+                //background-color: #6cb2eb
+                text-align: center
+                text-transform: uppercase
+
+                +breakpoint($sm_celular)
+                  font-size: 14px
+                  margin: 10px 0px
+
+                &:after
+                  content: ""
+                  width: 40px
+                  height: 1px
+                  background-color: #000000
+                  display: block
+                  margin: auto
+                  position: relative
+
+              .content-image-channel
+                .item-channels
+                  +make-xs-column(3,0px)
+                  text-align: center
+                  //width: 25%
+                  height: 20px
+                  float: left
+                  //background-color: #cc2229
+                  margin: 1px 0px
+
+                  #fox-icon
+                    width: 20px
+
+                  #icon-ei-1, #icon-ei-2, #icon-ei-3, #icon-fox-1, #icon-fox-2
+                    width: 45px
+
+                  #icon-foxlife, #icon-wild, #icon-natgeo, #icon-kids
+                    width: 35px
+
+
+                  img
+                    width: 25px
 
           .cellphone-channels
             display: inline-block
@@ -128,15 +210,31 @@
             position: absolute
             top: 160px
 
+            +breakpoint($md_celular)
+              transform: rotate(90deg)
+              top: 235px
 
-            img
-              width: 100%
+            .cellphone-header
+              position: absolute
+              padding: 10px 2px
+              top: 30px
+              left: 8px
+              width: 125px
+              //border: 1px solid #ccc
+              border-radius: 5px
+              background-color: $bg-box-cellphone
+              box-shadow: 2px 1px 5px #333367
+              color: #FFFFFF
+              font-size: 12px
+              text-align: center
+              text-shadow: 2px 2px 2px #08090b
 
-              +breakpoint($md_celular)
-                width: 90%
+            .cellphone-body
+              position: absolute
+              width: 150px
+              margin-top: 110px
+              margin-left: 10px
 
-              +breakpoint($sm_celular)
-                width: 50%
 
       .content-app
         +make-sm-column(5,0px)

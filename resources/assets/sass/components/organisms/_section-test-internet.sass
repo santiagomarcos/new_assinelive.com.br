@@ -69,6 +69,10 @@
         display: block
         margin: auto
         cursor: pointer
+
+        +breakpoint($md_celular)
+          width: 51%
+
         .fa-signal
           //background-color: #17066b
           display: inline-block
@@ -81,6 +85,9 @@
           //background-color: $color-title-test-internet
           border-bottom: dotted 2px $color-title-test-internet
           margin-bottom: 5px
+
+          +breakpoint($md_celular)
+            width: 45%
 
         .fa-tachometer-alt
           //background-color: #17066b
