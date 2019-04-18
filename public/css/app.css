@@ -1253,7 +1253,7 @@ table {
   display: block;
   padding: 0px 20px;
   width: 280px;
-  top: 0px;
+  top: -230px;
   background-color: #042656;
   position: fixed;
   z-index: 1040;

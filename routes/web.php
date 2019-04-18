@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::group(['prefix' => 'pages', 'as' => 'pages.'], function (){
+   Route::get('/verification',['uses' => 'PagesController@verification', 'as' => 'verification']);
+});

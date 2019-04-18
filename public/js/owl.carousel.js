@@ -3,8 +3,8 @@ if (module.hot) {(function () {  module.hot.accept()
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-230529dd", module.exports)
+    hotAPI.createRecord("_v-4dbaf7bc", module.exports)
   } else {
-    hotAPI.update("_v-230529dd", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-4dbaf7bc", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}

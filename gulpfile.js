@@ -1,6 +1,7 @@
 let gulp = require('gulp');
 let sass = require('gulp-sass');
 let concat = require('gulp-concat');
+let vuefiy = require('gulp-vueify');
 // let uglyfi = require('gulp-uglify');
 // let cleanCSS = require('gulp-clean-assets');
 
@@ -45,10 +46,16 @@ const webAssetsDir = 'public/'
             .pipe(gulp.dest(webAssetsDir+'js/'))
     });
 
+    gulp.task('vueify', function () {
+        return gulp.src(buildJs)
+            .pipe(vuefiy())
+            .pipe(gulp.dest(webAssetsDir+'js/'))
+    })
+
     gulp.task('watch', function () {
         // Uma lista de observação em tempo real, definindo que tarefa será executando em determinados arquivos ou pastas
         gulp.watch(destOrigin,['sass']);
         gulp.watch(destOutWatch,['workInCss']);
     });
 
-    gulp.task('default',['sass','watch','workInCss','workJs']);
+    gulp.task('default',['sass','watch','workInCss','workJs', 'vueify']);
