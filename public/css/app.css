@@ -1254,35 +1254,60 @@ table {
   padding: 0px 20px;
   width: 280px;
   top: 0px;
-  background-color: #000;
+  background-color: #042656;
   position: fixed;
   z-index: 1040;
   transition: top ease-in-out .8s;
-  color: #A1A9A9; }
+  color: #A1A9A9;
+  box-shadow: 1px 1px 2px #222; }
   .menu-responsive-content.active {
     top: 0px; }
+  @media (max-width: 474px) {
+    .menu-responsive-content {
+      width: 90vw; } }
   .menu-responsive-content .content-channels-button-close {
     display: block;
-    margin-top: 5px;
+    margin-top: 15px;
     text-align: right; }
     .menu-responsive-content .content-channels-button-close span {
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
-      color: #cc2229; }
+      color: #bbecee;
+      text-shadow: 1px 1px 1px #120044; }
   .menu-responsive-content .content-channels-sales-responsive {
-    background-color: #082b35;
     display: block; }
     .menu-responsive-content .content-channels-sales-responsive .title-channels-responsive {
-      background-color: #3490dc;
-      display: block; }
+      display: block;
+      padding: 10px 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 1px 0px 2px #000; }
     .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive {
       display: block;
-      background-color: #011553;
-      padding: 5px; }
+      padding: 5px 10px; }
       .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive .items-channels-responsive {
         display: inline-block;
         padding: 0px 2px; }
+  .menu-responsive-content .line-bottom-responsive {
+    width: 85%;
+    height: 1px;
+    background-color: #042656;
+    box-shadow: #0b4860 0px 2px 1px;
+    margin: 10px 0px;
+    display: block; }
+  .menu-responsive-content .content-items-menu .title-menu-responsive {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #000; }
+  .menu-responsive-content .content-items-menu .content-menu-responsive {
+    padding: 10px; }
+    .menu-responsive-content .content-items-menu .content-menu-responsive a {
+      text-decoration: none; }
+      .menu-responsive-content .content-items-menu .content-menu-responsive a .items-menu-responsive {
+        color: #A1A9A9;
+        margin: 5px 0px; }
 
 .container-carousel .content-carousel {
   padding-right: 5%;
