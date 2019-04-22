@@ -1,6 +1,6 @@
 #section-verification
   .content-verification
-  display: block
+  display: none
   +container-fixed(10%)
   margin-top: 30px
   margin-bottom: 30px
@@ -25,7 +25,7 @@
       margin-bottom: 20px
       +breakpoint($celular)
         width: 100%
-        //border: solid 1px #00ffff
+
 #section-contract
   +container-fixed(10%)
   .content-contract
@@ -122,3 +122,192 @@
 
             .modem
               margin: 10px 0px
+
+.form-contract-content
+
+  //background-color: #afd9ee
+  border: 1px solid #c0c0c0
+  display: block
+  position: relative
+
+  .form-contract-header
+    background-color: $color-font-car
+    display: block
+    position: relative
+    color: $white
+
+    .title-form-contract
+       font-size: 18px
+       font-weight: bold
+       padding: 20px
+
+  .form-contract-body
+    display: block
+    background-color: #d7b4af
+    padding: 20px
+
+    .data-people-content
+      +make-row(0px)
+      //background-color: #f800ae
+      margin-top: 80px
+      display: block
+      position: relative
+
+      .title-form-contract
+        padding-bottom: 10px
+        font-size: 20px
+        font-weight: bolder
+        text-transform: uppercase
+        color: $color-font-car
+    .form-contract
+      display: block
+      position: relative
+      //background-color: red
+      width: 100%
+      height: 200px
+
+      &.maturity
+        height: auto
+
+      &.conditions
+        height: auto
+        margin: 30px 0 80px 0
+
+      +breakpoint($tablet)
+        height: auto
+
+
+      .box-form-contract
+        +make-row(0px)
+        +make-md-column(6,0px)
+        margin-top: 10px
+        //background-color: #778899
+        display: block
+
+        #name, #mother_name
+          text-transform: uppercase
+
+          &::placeholder
+            text-transform: lowercase
+
+
+        input
+          +make-md-column(11,0px)
+
+        +breakpoint($tablet)
+          //background-color: $bg-arrow-carousel
+          +make-sm-column(12,0px)
+
+          input
+            width: 100%
+
+        .errorMsg
+          color: red
+          font-size: 11px
+
+      .box-form-contract-address
+        +make-row(0px)
+        +make-md-column(6,0px)
+        margin-top: 10px
+        display: block
+        &.zip
+          //background-color: #165bcb
+          +make-md-column(12,0px)
+
+          input
+            +make-md-column(3,0px)
+
+        input
+          +make-md-column(10,0px)
+
+        +breakpoint($tablet)
+          //background-color: $bg-arrow-carousel
+          +make-sm-column(12,0px)
+
+          input
+            width: 100%
+
+
+        .box-form-contract-address
+          &.addres
+            +make-md-column(8,0px)
+            //background-color: #abf900
+
+            input
+              +make-md-column(11,0px)
+
+        .box-form-contract-address
+          &.number
+            +make-md-column(3,0px)
+
+            input
+              +make-md-column(12,0px)
+
+        .box-form-contract-address
+          &.state
+            +make-md-column(9,0px)
+
+            input
+              +make-md-column(11,0px)
+
+        .box-form-contract-address
+          &.city
+            +make-md-column(2,0px)
+
+            input
+              +make-md-column(12,0px)
+
+
+        .box-form-contract-maturity
+          margin-top: 5px
+          padding: 0 10px
+          //background-color: #cccccc
+          display: block
+          position: relative
+
+          label
+            border: 1.5px solid #777
+            border-radius: 100%
+            display: inline-block
+            width: 40px
+            height: 40px
+            padding-top: 10px
+            margin: 0 2px
+            cursor: pointer
+
+            font-weight: 400
+
+
+            &:hover, &.active-label
+              background: #777
+              color: #fff
+
+
+            text-align: center
+            color: #777
+
+
+            +breakpoint($sm_celular)
+              margin: 0px
+
+          .btn-radio
+            display: none
+
+        .content-maturity-invoice
+          //background-color: #165bcc
+          display: block
+          margin-top: 70px
+
+          .title-maturity-invoice
+            font-size: 16px
+            font-weight: 400
+            padding: 10px 0
+            color: #000
+
+        .terms-conditions
+          color: #777
+
+      .mbt
+        margin: 20px 0 50px 0
+        padding: 15px 30px
+
