@@ -1,4 +1,20 @@
 .container-carousel
+  .title-call
+    font-size: 35px
+    color: $color-font-body
+    text-shadow: 2px 1px 2px $color-spotlight-title-section
+    text-align: center
+    text-transform: uppercase
+    margin: 35px 0px
+    //background-color: #f6993f
+    display: block
+
+    +breakpoint($celular)
+      font-size: 24px
+
+    .title-spotlight
+      color: $color-spotlight-title-section
+
   .content-carousel
     +container-fixed(10%)
     //background-color: #fc55a2
@@ -15,12 +31,12 @@
         height: auto
         border: 1px solid $color-font-body
         box-shadow: 2px 1px 2px $color-font-body-ligth, inset 2px 1px 5px $color-font-desc-car
-        
+
         .items-plan-header
           //background-color: #34c7cc
           display: block
           position: relative
-          
+
           .normal-offer
             margin: 2px 2px
             margin-bottom: 55px
@@ -39,7 +55,7 @@
             border-right-color: transparent
             width: 0px
             height: 0px
-            
+
             .icon-offer-focus
               color: $white
               position: absolute
@@ -48,7 +64,7 @@
               text-decoration: none
               font-size: 18px
 
-          
+
           .limit-time
             display: inline-block
             text-align: center
@@ -59,8 +75,8 @@
 
             color: $color-spotlight
             font-weight: normal
-            
-            
+
+
           .desc-plan
             display: block
             //background-color: #b8eeac
@@ -122,7 +138,7 @@
                 font-size: 75px
                 font-weight: $bold
                 text-shadow: 2px 1px 5px $color-font-body-ligth , 2px 2px 2px $color-title-test-internet
-                
+
               .mounth-and-cents
                 //background-color: #bbecee
                 display: inline-block

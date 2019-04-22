@@ -1,0 +1,124 @@
+#section-verification
+  .content-verification
+  display: block
+  +container-fixed(10%)
+  margin-top: 30px
+  margin-bottom: 30px
+  .title-verification
+    font-size: 16px
+    padding: 10px 20px
+    background-color: $color-font-car
+    color: $white
+
+  .form-verification
+    //background-color: #3490dc
+    display: block
+    height: 200px
+    padding: 10px 20px
+    border: 1px solid $color-font-car
+
+    +breakpoint($celular)
+      height: auto
+
+    .box-form-verification
+      +make-sm-column(6,0px)
+      margin-bottom: 20px
+      +breakpoint($celular)
+        width: 100%
+        //border: solid 1px #00ffff
+#section-contract
+  +container-fixed(10%)
+  .content-contract
+    +make-row(0px)
+    background-color: #1390d4
+    display: block
+    height: auto
+    margin-top: 10px
+    margin-bottom: 10px
+
+    .description-plan-content
+      display: block
+      background-color: #f6993f
+      padding: 5px
+
+      .description-plan-header
+        text-align: center
+        margin: 10px 0px
+
+        .title-choose-plan
+          font-size: 22px
+
+      .description-plan-body
+        .sumary-price
+          +make-sm-column(4,0px)
+          //background-color: #323232
+          display: block
+          margin-top: 20px
+          .limit-broadband
+            display: block
+            text-align: center
+
+            .description-item-broadband
+              font-size: 16px
+              font-weight: bold
+              margin: 5px
+
+            .desc-limit-broadband
+              font-size: 35px
+
+          .box-price-broadband
+            text-align: center
+            .type-money, .value-broadband
+              font-size: 35px
+              //background-color: #fff
+              display: inline-block
+              margin: 10px 0px
+              font-weight: bold
+
+            .payment-mounth
+              font-size: 16px
+              font-weight: bold
+
+        .box-info-plans
+          +make-sm-column(4,0px)
+          //background-color: #b8c2cc
+          display: block
+          margin-top: 20px
+
+          .title-info-plans
+            font-size: 16px
+            font-weight: bold
+            text-align: center
+            margin: 5px
+
+          .box-chanells-plans
+            .description-chanells
+              margin: 10px 5px
+
+            .chanells-content
+              margin: 10px 5px
+              text-align: center
+              font-size: 13px
+
+        .box-contract-plan
+          +make-sm-column(4,0px)
+          //background-color: #64d5ca
+          display: block
+          margin-top: 20px
+
+          .contract-title
+            text-align: center
+            font-weight: bold
+            margin:  5px
+
+          .description-contract
+            text-align: center
+            font-size: 13px
+
+            .desc-taxa
+              margin: 10px 0px
+            .loyatlity
+              margin: 10px 0px
+
+            .modem
+              margin: 10px 0px

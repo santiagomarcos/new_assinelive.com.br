@@ -45,6 +45,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+label {
+  display: block;
+  margin: 5px 0;
+  font-weight: normal; }
+
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #082b35;
+  padding: 5px;
+  color: #777777; }
+  input::placeholder {
+    font-size: 13px;
+    color: #A1A9A9; }
+  input:focus {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #cc2229;
+    transition: all .7s; }
+
 .btn-buy-now {
   background-color: #0dc111;
   border: 0;
@@ -1071,6 +1091,20 @@ table {
         color: #A1A9A9;
         margin: 5px 0px; }
 
+.container-carousel .title-call {
+  font-size: 35px;
+  color: #6b7272;
+  text-shadow: 2px 1px 2px #042656;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 35px 0px;
+  display: block; }
+  @media (max-width: 767px) {
+    .container-carousel .title-call {
+      font-size: 24px; } }
+  .container-carousel .title-call .title-spotlight {
+    color: #042656; }
+
 .container-carousel .content-carousel {
   padding-right: 5%;
   padding-left: 5%;
@@ -1834,3 +1868,152 @@ table {
         .speed-test-band .boxspeed-test .boxspeed-footer .content-boxspeed .fa-tachometer-alt {
           display: inline-block;
           position: relative; }
+
+#section-verification {
+  display: block;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #section-verification:before, #section-verification:after {
+    display: table;
+    content: " "; }
+  #section-verification:after {
+    clear: both; }
+  #section-verification .title-verification {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #082b35;
+    color: #fff; }
+  #section-verification .form-verification {
+    display: block;
+    height: 200px;
+    padding: 10px 20px;
+    border: 1px solid #082b35; }
+    @media (max-width: 767px) {
+      #section-verification .form-verification {
+        height: auto; } }
+    #section-verification .form-verification .box-form-verification {
+      position: relative;
+      min-height: 1px;
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        #section-verification .form-verification .box-form-verification {
+          float: left;
+          width: 50%; } }
+      @media (max-width: 767px) {
+        #section-verification .form-verification .box-form-verification {
+          width: 100%; } }
+
+#section-contract {
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto; }
+  #section-contract:before, #section-contract:after {
+    display: table;
+    content: " "; }
+  #section-contract:after {
+    clear: both; }
+  #section-contract .content-contract {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #1390d4;
+    display: block;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #section-contract .content-contract:before, #section-contract .content-contract:after {
+      display: table;
+      content: " "; }
+    #section-contract .content-contract:after {
+      clear: both; }
+    #section-contract .content-contract .description-plan-content {
+      display: block;
+      background-color: #f6993f;
+      padding: 5px; }
+      #section-contract .content-contract .description-plan-content .description-plan-header {
+        text-align: center;
+        margin: 10px 0px; }
+        #section-contract .content-contract .description-plan-content .description-plan-header .title-choose-plan {
+          font-size: 22px; }
+      #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block;
+        margin-top: 20px; }
+        @media (min-width: 768px) {
+          #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price {
+            float: left;
+            width: 33.33333%; } }
+        #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband {
+          display: block;
+          text-align: center; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband .description-item-broadband {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband .desc-limit-broadband {
+            font-size: 35px; }
+        #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband {
+          text-align: center; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband .type-money, #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband .value-broadband {
+            font-size: 35px;
+            display: inline-block;
+            margin: 10px 0px;
+            font-weight: bold; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband .payment-mounth {
+            font-size: 16px;
+            font-weight: bold; }
+      #section-contract .content-contract .description-plan-content .description-plan-body .box-info-plans {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block;
+        margin-top: 20px; }
+        @media (min-width: 768px) {
+          #section-contract .content-contract .description-plan-content .description-plan-body .box-info-plans {
+            float: left;
+            width: 33.33333%; } }
+        #section-contract .content-contract .description-plan-content .description-plan-body .box-info-plans .title-info-plans {
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          margin: 5px; }
+        #section-contract .content-contract .description-plan-content .description-plan-body .box-info-plans .box-chanells-plans .description-chanells {
+          margin: 10px 5px; }
+        #section-contract .content-contract .description-plan-content .description-plan-body .box-info-plans .box-chanells-plans .chanells-content {
+          margin: 10px 5px;
+          text-align: center;
+          font-size: 13px; }
+      #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block;
+        margin-top: 20px; }
+        @media (min-width: 768px) {
+          #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan {
+            float: left;
+            width: 33.33333%; } }
+        #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan .contract-title {
+          text-align: center;
+          font-weight: bold;
+          margin: 5px; }
+        #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract {
+          text-align: center;
+          font-size: 13px; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .desc-taxa {
+            margin: 10px 0px; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .loyatlity {
+            margin: 10px 0px; }
+          #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .modem {
+            margin: 10px 0px; }

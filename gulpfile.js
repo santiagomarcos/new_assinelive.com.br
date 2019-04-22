@@ -46,16 +46,10 @@ const webAssetsDir = 'public/'
             .pipe(gulp.dest(webAssetsDir+'js/'))
     });
 
-    gulp.task('vueify', function () {
-        return gulp.src(buildJs)
-            .pipe(vuefiy())
-            .pipe(gulp.dest(webAssetsDir+'js/'))
-    })
-
     gulp.task('watch', function () {
         // Uma lista de observação em tempo real, definindo que tarefa será executando em determinados arquivos ou pastas
         gulp.watch(destOrigin,['sass']);
         gulp.watch(destOutWatch,['workInCss']);
     });
 
-    gulp.task('default',['sass','watch','workInCss','workJs', 'vueify']);
+    gulp.task('default',['sass','watch','workInCss','workJs']);

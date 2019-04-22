@@ -45,3 +45,25 @@ q
 table
   border-collapse: collapse
   border-spacing: 0
+
+label
+  display: block
+  margin: 5px 0
+  font-weight: normal
+input
+  border: none
+  background-color: transparent
+  border-bottom: 1px solid $color-font-car
+  padding: 5px
+  color: #777777
+
+
+  &::placeholder
+    font-size: 13px
+    color: $color-font-body-ligth
+
+  &:focus
+    border: none
+    outline: 0
+    border-bottom: 1px solid $color-spotlight
+    transition: all .7s

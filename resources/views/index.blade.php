@@ -3,6 +3,7 @@
 @section('content')
     @include('components._header')
     <section class="container-carousel">
+        <div class="title-call">Confira nossas melhores <span class="title-spotlight">ofertas</span></div>
         <div class="content-carousel">
             <div class="owl-carousel">
                 <div class="items-plan-content">
