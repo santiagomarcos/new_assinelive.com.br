@@ -124,105 +124,103 @@
             </div>
 
             <div class="form-contract-body" >
-                <form action="">
-                    <div class="form-contract">
-                        <div class="box-form-contract">
-                            <label for="name">Nome</label>
-                            <input type="text" name="name" id="name" placeholder="Nome sobrenome" class="disabled-input" disabled value="">
-                        </div>
-                        <div class="box-form-contract">
-                            <label for="document">CPF:</label>
-                            <input type="text" name="document" id="document" placeholder="___.___.___-__" required>
-                        </div>
-                        <div class="box-form-contract">
-                            <label for="cellphone">Celular:</label>
-                            <input type="tel" name="cellphone" id="cellphone" placeholder="(__)_____-____" class="disabled-input"  required value="" disabled >
-                        </div>
-                        <div class="box-form-contract">
-                            <label for="second-tel">Telefone :</label>
-                            <input type="tel" name="second-tel" id="second-tel" placeholder="(__)_____-____"  required>
-                        </div>
-                        <div class="box-form-contract">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="example@email.com.br" class="disabled-input" disabled required value="">
-                        </div>
-                        <div class="box-form-contract">
-                            <label for="mother_name">Nome da mãe</label>
-                            <input type="text" name="mother_name" id="mother_name" placeholder="Nome completo" required>
-                        </div>
-                        <div class="box-form-contract">
-                            <label for="born">Data de nascimento:</label>
-                            <input type="date" name="born" id="born" required>
-                        </div>
+                <div class="form-contract">
+                    <div class="box-form-contract">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome sobrenome" class="disabled-input" disabled value="">
                     </div>
-
-                    <div class="form-contract">
-                        <div class="data-people-content">
-                            <h1 class="title-form-contract">Endereço de instalação</h1>
-                        </div>
-                        <div class="box-form-contract-address zip">
-                            <label for="zip-code-show">CEP:</label>
-                            <input type="text" name="zip-code-show" id="zip-code-show" class="disabled-input" disabled
-                                   value="" >
-                        </div>
-                        <div class="box-form-contract-address addres">
-                            <label for="address">Endereço:</label>
-                            <input type="tel" name="address-show" id="address-show" placeholder="Endereço" class="disabled-input" disabled
-                                   value="" >
-                        </div>
-                        <div class="box-form-contract-address number">
-                            <label for="number-show">Número</label>
-                            <input type="tel" name="number-show" id="number-show" placeholder="N°" class="disabled-input" disabled
-                                   value="" >
-                        </div>
-                        <div class="box-form-contract-address">
-                            <label for="complement">Complemento</label>
-                            <input type="text" name="complement" id="complement" placeholder="Complemento" >
-                        </div>
-                        <div class="box-form-contract-address">
-                            <label for="neighborhood">Bairro</label>
-                            <input type="neighborhood" name="neighborhood" id="neighborhood" placeholder="Bairro" class="disabled-input" disabled
-                                   value="" >
-                        </div>
-                        <div class="box-form-contract-address state">
-                            <label for="town">Cidade</label>
-                            <input type="text" name="state" id="state" placeholder="Cidade" class="disabled-input" disabled
-                                   value="">
-                        </div>
-                        <div class="box-form-contract-address city">
-                            <label for="state">Estado</label>
-                            <input type="text" name="city" id="city" placeholder="Estado" class="disabled-input" disabled
-                                   value="">
-                        </div>
+                    <div class="box-form-contract">
+                        <label for="document">CPF:</label>
+                        <input type="text" name="document" id="document" placeholder="___.___.___-__" required>
                     </div>
-
-                    <div class="form-contract maturity">
-                        <div class="content-maturity-invoice">
-                            <h3 class="title-maturity-invoice">Data de vencimento da fatura:</h3>
-                        </div>
-                        <div class="box-form-contract-maturity">
-                            <label class="day-" for="day-7">7</label>
-                            <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-7" value="7">
-                            <label class="day-" for="day-10">10</label>
-                            <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-10" value="10">
-                            <label class="day-" for="day-12">12</label>
-                            <input type="radio" name="day-maturity-invoice" class="btn-radio"  id="day-12" value="12">
-                            <label class="day-" for="day-15">15</label>
-                            <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-15" value="15">
-                            <label class="day-" for="day-20">20</label>
-                            <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-20" value="20">
-                        </div>
+                    <div class="box-form-contract">
+                        <label for="cellphone">Celular:</label>
+                        <input type="tel" name="cellphone" id="cellphone" placeholder="(__)_____-____" class="disabled-input"  required value="" disabled >
                     </div>
-
-                    <div class="form-contract conditions">
-                        <label for="terms-conditions">
-                            <input type="radio" name="terms-conditions" id="terms-conditions"> Estou ciente da fidelização do plano
-                            e do <a target="_blank" href="" class="terms-conditions">Contrato de Prestação de Serviço</a>, e autorizo a TIM a entrar em contato comigo nos telefones informados.
-                        </label>
-
-                        <button class="btnVerification mbt" type="submit" id="btnNext" disabled >Contratar</button>
+                    <div class="box-form-contract">
+                        <label for="second-tel">Telefone :</label>
+                        <input type="tel" name="second-tel" id="second-tel" placeholder="(__)_____-____"  required>
                     </div>
-                </form>
+                    <div class="box-form-contract">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com.br" class="disabled-input" disabled required value="">
+                    </div>
+                    <div class="box-form-contract">
+                        <label for="mother_name">Nome da mãe</label>
+                        <input type="text" name="mother_name" id="mother_name" placeholder="Nome completo" required>
+                    </div>
+                    <div class="box-form-contract">
+                        <label for="born">Data de nascimento:</label>
+                        <input type="date" name="born" id="born" required>
+                    </div>
+                </div>
+
+                <div class="form-contract">
+                    <div class="data-people-content">
+                        <h1 class="title-form-contract">Endereço de instalação</h1>
+                    </div>
+                    <div class="box-form-contract-address zip">
+                        <label for="zip-code-show">CEP:</label>
+                        <input type="text" name="zip-code-show" id="zip-code-show" class="disabled-input" disabled
+                               value="" >
+                    </div>
+                    <div class="box-form-contract-address addres">
+                        <label for="address">Endereço:</label>
+                        <input type="tel" name="address-show" id="address-show" placeholder="Endereço" class="disabled-input" disabled
+                               value="" >
+                    </div>
+                    <div class="box-form-contract-address number">
+                        <label for="number-show">Número</label>
+                        <input type="tel" name="number-show" id="number-show" placeholder="N°" class="disabled-input" disabled
+                               value="" >
+                    </div>
+                    <div class="box-form-contract-address">
+                        <label for="complement">Complemento</label>
+                        <input type="text" name="complement" id="complement" placeholder="Complemento" >
+                    </div>
+                    <div class="box-form-contract-address">
+                        <label for="neighborhood">Bairro</label>
+                        <input type="neighborhood" name="neighborhood" id="neighborhood" placeholder="Bairro" class="disabled-input" disabled
+                               value="" >
+                    </div>
+                    <div class="box-form-contract-address state">
+                        <label for="town">Cidade</label>
+                        <input type="text" name="state" id="state" placeholder="Cidade" class="disabled-input" disabled
+                               value="">
+                    </div>
+                    <div class="box-form-contract-address city">
+                        <label for="state">Estado</label>
+                        <input type="text" name="city" id="city" placeholder="Estado" class="disabled-input" disabled
+                               value="">
+                    </div>
+                </div>
+
+                <div class="form-contract maturity">
+                    <div class="content-maturity-invoice">
+                        <h3 class="title-maturity-invoice">Data de vencimento da fatura:</h3>
+                    </div>
+                    <div class="box-form-contract-maturity">
+                        <label class="day-" for="day-7">7</label>
+                        <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-7" value="7">
+                        <label class="day-" for="day-10">10</label>
+                        <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-10" value="10">
+                        <label class="day-" for="day-12">12</label>
+                        <input type="radio" name="day-maturity-invoice" class="btn-radio"  id="day-12" value="12">
+                        <label class="day-" for="day-15">15</label>
+                        <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-15" value="15">
+                        <label class="day-" for="day-20">20</label>
+                        <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-20" value="20">
+                    </div>
+                </div>
+
+                <div class="form-contract conditions">
+                    <label for="terms-conditions">
+                        <input type="radio" name="terms-conditions" id="terms-conditions"> Estou ciente da fidelização do plano
+                        e do <a target="_blank" href="" class="terms-conditions">Contrato de Prestação de Serviço</a>, e autorizo a TIM a entrar em contato comigo nos telefones informados.
+                    </label>
+
+                    <button class="btn-banner mbt" type="submit" id="btnNext" disabled >Contratar</button>
+                </div>
             </div>
             <!--gif reload-->
             <div class="gif" id="loading">
@@ -252,6 +250,7 @@
                 </div>
                 <div class="network-social"></div>
             </div>
+
         </div>
     </section>
 @endsection

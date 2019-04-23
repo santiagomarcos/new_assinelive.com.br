@@ -1928,8 +1928,8 @@ input {
     background-color: #1390d4;
     display: block;
     height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 30px;
+    margin-bottom: 20px; }
     #section-contract .content-contract:before, #section-contract .content-contract:after {
       display: table;
       content: " "; }
@@ -1937,11 +1937,12 @@ input {
       clear: both; }
     #section-contract .content-contract .description-plan-content {
       display: block;
-      background-color: #f6993f;
-      padding: 5px; }
+      background-color: #082b35;
+      padding: 1px;
+      color: #fff; }
       #section-contract .content-contract .description-plan-content .description-plan-header {
         text-align: center;
-        margin: 10px 0px; }
+        margin: 8px 0px; }
         #section-contract .content-contract .description-plan-content .description-plan-header .title-choose-plan {
           font-size: 22px; }
       #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price {
@@ -1949,8 +1950,8 @@ input {
         min-height: 1px;
         padding-right: 0px;
         padding-left: 0px;
-        display: block;
-        margin-top: 20px; }
+        background-image: linear-gradient(#082b35, #354b51, #082b35);
+        display: block; }
         @media (min-width: 768px) {
           #section-contract .content-contract .description-plan-content .description-plan-body .sumary-price {
             float: left;
@@ -1979,8 +1980,7 @@ input {
         min-height: 1px;
         padding-right: 0px;
         padding-left: 0px;
-        display: block;
-        margin-top: 20px; }
+        display: block; }
         @media (min-width: 768px) {
           #section-contract .content-contract .description-plan-content .description-plan-body .box-info-plans {
             float: left;
@@ -2001,8 +2001,7 @@ input {
         min-height: 1px;
         padding-right: 0px;
         padding-left: 0px;
-        display: block;
-        margin-top: 20px; }
+        display: block; }
         @media (min-width: 768px) {
           #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan {
             float: left;
@@ -2024,7 +2023,8 @@ input {
 .form-contract-content {
   border: 1px solid #c0c0c0;
   display: block;
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
   .form-contract-content .form-contract-header {
     background-color: #082b35;
     display: block;
@@ -2033,11 +2033,12 @@ input {
     .form-contract-content .form-contract-header .title-form-contract {
       font-size: 18px;
       font-weight: bold;
-      padding: 20px; }
+      padding: 10px 20px; }
   .form-contract-content .form-contract-body {
     display: block;
-    background-color: #d7b4af;
     padding: 20px; }
+    .form-contract-content .form-contract-body label {
+      font-size: 14px; }
     .form-contract-content .form-contract-body .data-people-content {
       margin-right: 0px;
       margin-left: 0px;
@@ -2049,6 +2050,9 @@ input {
         content: " "; }
       .form-contract-content .form-contract-body .data-people-content:after {
         clear: both; }
+      @media (max-width: 992px) {
+        .form-contract-content .form-contract-body .data-people-content {
+          display: inline-block; } }
       .form-contract-content .form-contract-body .data-people-content .title-form-contract {
         padding-bottom: 10px;
         font-size: 20px;
@@ -2064,7 +2068,7 @@ input {
         height: auto; }
       .form-contract-content .form-contract-body .form-contract.conditions {
         height: auto;
-        margin: 30px 0 80px 0; }
+        margin: 30px 0px; }
       @media (max-width: 992px) {
         .form-contract-content .form-contract-body .form-contract {
           height: auto; } }
@@ -2133,6 +2137,23 @@ input {
           .form-contract-content .form-contract-body .form-contract .box-form-contract-address {
             float: left;
             width: 50%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-address input {
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px; }
+          @media (min-width: 992px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address input {
+              float: left;
+              width: 83.33333%; } }
+          @media (max-width: 992px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address input {
+              position: relative;
+              float: left;
+              width: 100%;
+              min-height: 1px;
+              padding-right: 0px;
+              padding-left: 0px; } }
         .form-contract-content .form-contract-body .form-contract .box-form-contract-address.zip {
           position: relative;
           min-height: 1px;
@@ -2151,135 +2172,169 @@ input {
               .form-contract-content .form-contract-body .form-contract .box-form-contract-address.zip input {
                 float: left;
                 width: 25%; } }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address input {
-          position: relative;
-          min-height: 1px;
-          padding-right: 0px;
-          padding-left: 0px; }
-          @media (min-width: 992px) {
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address input {
-              float: left;
-              width: 83.33333%; } }
-        @media (max-width: 992px) {
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address {
-            position: relative;
-            min-height: 1px;
-            padding-right: 0px;
-            padding-left: 0px; } }
+          @media (max-width: 992px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address.zip {
+              position: relative;
+              min-height: 1px;
+              padding-right: 0px;
+              padding-left: 0px; } }
   @media (max-width: 992px) and (min-width: 768px) {
-    .form-contract-content .form-contract-body .form-contract .box-form-contract-address {
+    .form-contract-content .form-contract-body .form-contract .box-form-contract-address.zip {
       float: left;
       width: 100%; } }
-        @media (max-width: 992px) {
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address input {
+          @media (max-width: 992px) {
+              .form-contract-content .form-contract-body .form-contract .box-form-contract-address.zip input {
+                width: 100%; } }
+      .form-contract-content .form-contract-body .form-contract .box-form-contract-address.addres {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
+        @media (min-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract .box-form-contract-address.addres {
+            float: left;
+            width: 66.66667%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-address.addres input {
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px; }
+          @media (min-width: 992px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address.addres input {
+              float: left;
+              width: 91.66667%; } }
+      .form-contract-content .form-contract-body .form-contract .box-form-contract-address.number {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
+        @media (min-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract .box-form-contract-address.number {
+            float: left;
+            width: 25%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-address.number input {
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px; }
+          @media (min-width: 768px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address.number input {
+              float: left;
               width: 100%; } }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.addres {
+      .form-contract-content .form-contract-body .form-contract .box-form-contract-address.state {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
+        @media (min-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract .box-form-contract-address.state {
+            float: left;
+            width: 75%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-address.state input {
           position: relative;
           min-height: 1px;
           padding-right: 0px;
           padding-left: 0px; }
           @media (min-width: 992px) {
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.addres {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address.state input {
               float: left;
-              width: 66.66667%; } }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.addres input {
-            position: relative;
-            min-height: 1px;
-            padding-right: 0px;
-            padding-left: 0px; }
-            @media (min-width: 992px) {
-              .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.addres input {
-                float: left;
-                width: 91.66667%; } }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.number {
+              width: 91.66667%; } }
+      .form-contract-content .form-contract-body .form-contract .box-form-contract-address.city {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
+        @media (min-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract .box-form-contract-address.city {
+            float: left;
+            width: 16.66667%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-address.city input {
           position: relative;
           min-height: 1px;
           padding-right: 0px;
           padding-left: 0px; }
-          @media (min-width: 992px) {
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.number {
+          @media (min-width: 768px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-address.city input {
               float: left;
-              width: 25%; } }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.number input {
-            position: relative;
-            min-height: 1px;
-            padding-right: 0px;
-            padding-left: 0px; }
-            @media (min-width: 992px) {
-              .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.number input {
-                float: left;
-                width: 100%; } }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.state {
-          position: relative;
-          min-height: 1px;
-          padding-right: 0px;
-          padding-left: 0px; }
-          @media (min-width: 992px) {
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.state {
-              float: left;
-              width: 75%; } }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.state input {
-            position: relative;
-            min-height: 1px;
-            padding-right: 0px;
-            padding-left: 0px; }
-            @media (min-width: 992px) {
-              .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.state input {
-                float: left;
-                width: 91.66667%; } }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.city {
-          position: relative;
-          min-height: 1px;
-          padding-right: 0px;
-          padding-left: 0px; }
-          @media (min-width: 992px) {
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.city {
-              float: left;
-              width: 16.66667%; } }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.city input {
-            position: relative;
-            min-height: 1px;
-            padding-right: 0px;
-            padding-left: 0px; }
-            @media (min-width: 992px) {
-              .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-address.city input {
-                float: left;
-                width: 100%; } }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-maturity {
-          margin-top: 5px;
-          padding: 0 10px;
-          display: block;
-          position: relative; }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-maturity label {
-            border: 1.5px solid #777;
-            border-radius: 100%;
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            padding-top: 10px;
-            margin: 0 2px;
-            cursor: pointer;
-            font-weight: 400;
-            text-align: center;
-            color: #777; }
-            .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-maturity label:hover, .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-maturity label.active-label {
-              background: #777;
-              color: #fff; }
-            @media (max-width: 474px) {
-              .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-maturity label {
-                margin: 0px; } }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .box-form-contract-maturity .btn-radio {
-            display: none; }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .content-maturity-invoice {
-          display: block;
-          margin-top: 70px; }
-          .form-contract-content .form-contract-body .form-contract .box-form-contract-address .content-maturity-invoice .title-maturity-invoice {
-            font-size: 16px;
-            font-weight: 400;
-            padding: 10px 0;
-            color: #000; }
-        .form-contract-content .form-contract-body .form-contract .box-form-contract-address .terms-conditions {
-          color: #777; }
+              width: 100%; } }
+      .form-contract-content .form-contract-body .form-contract .content-maturity-invoice {
+        display: block;
+        margin-top: 70px; }
+        @media (max-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract .content-maturity-invoice {
+            margin-top: 0px; } }
+        .form-contract-content .form-contract-body .form-contract .content-maturity-invoice .title-maturity-invoice {
+          font-size: 16px;
+          font-weight: 400;
+          padding: 50px 0;
+          color: #000; }
+      .form-contract-content .form-contract-body .form-contract .terms-conditions {
+        color: #cc2229; }
+      .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity {
+        margin-top: 5px;
+        padding: 0 10px;
+        display: block;
+        position: relative; }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity .btn-radio {
+          display: none; }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity label {
+          border: 1.5px solid #cc2229;
+          border-radius: 100%;
+          display: inline-block;
+          width: 40px;
+          height: 30px;
+          padding-top: 10px;
+          margin: 0 2px;
+          cursor: pointer;
+          text-align: center;
+          font-weight: 400; }
+          @media (max-width: 474px) {
+            .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity label {
+              margin: 0px; } }
+          .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity label:hover, .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity label.active-label {
+            background: #cc2229;
+            color: #fff; }
       .form-contract-content .form-contract-body .form-contract .mbt {
-        margin: 20px 0 50px 0;
+        margin: 45px 0 5px 0;
         padding: 15px 30px; }
+
+.sucess-content {
+  display: none;
+  background-color: rgba(245, 248, 255, 0.83);
+  width: 80%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  box-shadow: 1px 2px 2px rgba(214, 217, 223, 0.83); }
+  .sucess-content p {
+    line-height: 1.5;
+    font-size: 18px; }
+    .sucess-content p .name-client {
+      text-transform: uppercase; }
+
+.inviability-content {
+  display: none;
+  background-color: rgba(245, 248, 255, 0.83);
+  width: 80%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  box-shadow: 1px 2px 2px rgba(214, 217, 223, 0.83); }
+  .inviability-content .limit-band-modal {
+    color: #cc2229; }
+  .inviability-content .content-btn {
+    width: 100%;
+    height: 50px;
+    padding-left: 40%;
+    padding-top: 15px; }
+    @media (max-width: 767px) {
+      .inviability-content .content-btn {
+        padding-left: 35%; } }
+    @media (max-width: 474px) {
+      .inviability-content .content-btn {
+        padding-left: 30%; } }
+
+.gif {
+  display: none; }
