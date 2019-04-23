@@ -22,6 +22,12 @@ const buildJs = [
     "resources/assets/js/main/*.js"
 ]
 
+
+const resources = [
+    "resources/assets/images/"
+]
+
+
 const webAssetsDir = 'public/'
 
     gulp.task('sass',function () {
@@ -46,10 +52,17 @@ const webAssetsDir = 'public/'
             .pipe(gulp.dest(webAssetsDir+'js/'))
     });
 
+    gulp.task('copyResources', function () {
+        resources.forEach(function (res) {
+            gulp.src(res+'**/*')
+                .pipe(gulp.dest(webAssetsDir+res.split("/")[2]))
+        })
+    });
+
     gulp.task('watch', function () {
         // Uma lista de observação em tempo real, definindo que tarefa será executando em determinados arquivos ou pastas
         gulp.watch(destOrigin,['sass']);
         gulp.watch(destOutWatch,['workInCss']);
     });
 
-    gulp.task('default',['sass','watch','workInCss','workJs']);
+    gulp.task('default',['sass','watch','workInCss','workJs','copyResources']);
