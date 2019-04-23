@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/**
+ * V1 API routes
+ */
+Route::group(['prefix' => 'v1', 'as' => 'v1.'], function(){
+    Route::group(['prefix' => 'consult', 'as' => 'consult.'], function() {
+        Route::get('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
+    });
+});
+
