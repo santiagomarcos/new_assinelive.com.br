@@ -13812,7 +13812,14 @@ return jQuery;
 
 })(window.Zepto || window.jQuery, window, document);
 
-
+const app = new Vue({
+    el: '#content-header',
+    methods:{
+        buyBanner: function (e) {
+            alert('Clicou');
+        }
+    }
+});
 $(document).ready(function () {
     //owl carousel
     $('.owl-carousel').owlCarousel({

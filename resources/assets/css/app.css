@@ -626,7 +626,7 @@ input {
 
 .header-content {
   width: 100%;
-  height: 380px;
+  height: 390px;
   position: relative;
   display: block;
   overflow: hidden;
@@ -639,7 +639,7 @@ input {
     position: relative; }
     .header-content .slide-content .banner-content {
       width: 100%;
-      height: 400px; }
+      height: 409px; }
       .header-content .slide-content .banner-content.bg1 {
         background-size: cover;
         background-position: center;

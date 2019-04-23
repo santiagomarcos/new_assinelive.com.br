@@ -1,12 +1,4 @@
-<header class="header-content">
-
-    <div class="content-bullet">
-        <label for="slide1"></label>
-        <input type="radio" name="slide" id="slide1">
-        <label for="slide2"></label>
-        <input type="radio" name="slide" id="slide2">
-    </div>
-
+<header :id="content-header" class="header-content">
     <div class="slide-content">
         {{--wathcing series--}}
         <div class="banner-content bg1">
@@ -35,7 +27,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <button class="btn-banner">Contratar</button>
+                        <button class="btn-banner" @:click="buyBanner" >Contratar</button>
                     </div>
                 </div>
             </div>
