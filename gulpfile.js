@@ -19,6 +19,7 @@ const  buildCss = [
 const buildJs = [
     "node_modules/jquery/dist/jquery.js",
     "node_modules/owl.carousel/dist/owl.carousel.js",
+    "node_modules/vue/dist/vue.js",
     "resources/assets/js/main/*.js"
 ]
 
