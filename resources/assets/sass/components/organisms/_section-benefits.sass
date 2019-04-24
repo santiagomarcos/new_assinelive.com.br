@@ -59,6 +59,8 @@
       //background-color: #f66D9b
       display: block
       color: $white
+      overflow-y: hidden
+      height: 197px
 
       .description-plan-call
         text-transform: uppercase
@@ -90,13 +92,31 @@
           display: block
           background-color: $color-spotlight-title-section
 
+
+          &.hover
+            display: block
+            background-color: $bg-hover-benefits
+            position: relative
+            margin-top: -200px
+
+            .box-local-header-hover
+              padding: 33px 20px
+
+            .box-local-footer-hover
+              margin-top: 50px
+              padding: 10px
+              background: linear-gradient(90deg, #bbb,#ddd)
+              color: $bg-box-benefits
+
+              .text-spotligth
+                color: $color-spotlight
+                font-weight: bold
+
           .box-local-header
             font-size: 50px
             text-align: center
             padding: 15px 0px 100px 0px
 
-      .benefits-box-local-hover
-        display: none
 
       .benefits-box-national
         +make-sm-column(4,0px)

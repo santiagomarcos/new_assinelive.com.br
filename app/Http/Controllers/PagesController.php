@@ -22,6 +22,7 @@ class PagesController extends Controller
     {
         $plan = $request->plan;
         $plan = (is_null($plan)) ? "60" : $plan;
+//        dd($plan);
 
         return view('pages.function.verification')
             ->withPlan($plan);

@@ -25760,16 +25760,22 @@ return jQuery;
 const app = new Vue({
     el: '#content-header',
     data:{
-      msg: 'Clicou agora'
+        plan_tablet: ''
     },
     methods: {
-        buyBanner: function (e) {
+        c_40mb: function (e) {
+            this.plan_tablet = '40 mega'
         }
     },
 
-    el: '#section-verification',
+    el: '#digital_services',
     data:{
-        description: 'Verificar'
+        plan_tablet: ''
+    },
+    methods: {
+        c_40mb: function (e) {
+            this.plan_tablet = '40 mega'
+        }
     }
 });
 $(document).ready(function () {

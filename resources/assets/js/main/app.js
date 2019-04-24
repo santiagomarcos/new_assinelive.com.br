@@ -1,15 +1,27 @@
 const app = new Vue({
     el: '#content-header',
-    data:{
-      msg: 'Clicou agora'
-    },
-    methods: {
-        buyBanner: function (e) {
-        }
+        data:{
+
+        },
+        methods: {
+
     },
 
-    el: '#section-verification',
-    data:{
-        description: 'Verificar'
+    el: '#digital_services',
+        data:{
+            plan_tablet: ''
+        },
+        methods: {
+
+            cleaer_channels: function(){
+
+            },
+            c_40mb: function (e) {
+                this.plan_tablet = '40 mega'
+            },
+
+        template: {
+
+        }
     }
 });

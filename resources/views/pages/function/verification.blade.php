@@ -60,7 +60,7 @@
                     <span class="loading-viability"><img src="" alt=""></span>
 
                     <div class="box-form-button">
-                        <button class="btn-banner" id="btnVerification" v-text="description" disabled="true">@{{ description }}</button>
+                        <button class="btn-banner" id="btnVerification" disabled="true"></button>
                     </div>
                 </form>
                 <span id="desc-limit-broadband"></span>

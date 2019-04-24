@@ -1641,7 +1641,9 @@ input {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    color: #fff; }
+    color: #fff;
+    overflow-y: hidden;
+    height: 197px; }
     .benefits .content-benefits .benefits-body:before, .benefits .content-benefits .benefits-body:after {
       display: table;
       content: " "; }
@@ -1683,12 +1685,25 @@ input {
       .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space {
         display: block;
         background-color: #042656; }
+        .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover {
+          display: block;
+          background-color: #07358a;
+          position: relative;
+          margin-top: -200px; }
+          .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-header-hover {
+            padding: 33px 20px; }
+          .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover {
+            margin-top: 50px;
+            padding: 10px;
+            background: linear-gradient(90deg, #bbb, #ddd);
+            color: #042656; }
+            .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover .text-spotligth {
+              color: #cc2229;
+              font-weight: bold; }
         .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space .box-local-header {
           font-size: 50px;
           text-align: center;
           padding: 15px 0px 100px 0px; }
-    .benefits .content-benefits .benefits-body .benefits-box-local-hover {
-      display: none; }
     .benefits .content-benefits .benefits-body .benefits-box-national {
       position: relative;
       min-height: 1px;

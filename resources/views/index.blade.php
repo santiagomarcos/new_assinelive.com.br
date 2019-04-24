@@ -357,7 +357,7 @@
             </div>
         </div>
     </section>
-    <section class="digital-services">
+    <section id="digital_services" class="digital-services">
         <div class="content-digital-services">
             <div class="digital-services-header">
                 <div class="call-section-digital-services">
@@ -384,7 +384,7 @@
                                 <div class="tablet-title">
                                     Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteudo infantil.
                                 </div>
-                                <div class="band-limit-tablet">60 mega</div>
+                                <div class="band-limit-tablet" v-text="plan_tablet">@{{ plan_tablet }}</div>
                                 <div class="content-image-channel">
                                     <div class="item-channels"><img src="https://i.imgur.com/UPQVCmB.png" id="icon-ei-1" alt=""></div>
                                     <div class="item-channels"><img src="https://i.imgur.com/vjh5FzJ.png" id="icon-ei-2" alt=""></div>
@@ -413,7 +413,7 @@
                                 Clique nas velocidades para saber os canais disponiveís.
                             </div>
                             <div class="cellphone-body">
-                                <button class="btn-band-plan">40 <br>MB</button>
+                                <button class="btn-band-plan" @click="c_40mb">40 <br>MB</button>
                                 <button class="btn-band-plan">60 <br>MB</button>
                                 <button class="btn-band-plan">100<br>MB</button>
                                 <button class="btn-band-plan">150 <br>MB</button>
@@ -519,11 +519,11 @@
                             <p class="description-plan-call">Voz ilimitado local</p>
                         </div>
                     </div>
-                </div>
-                <div class="benefits-box-local-hover">
-                    <div class="box-local-space">
-                        <div class="box-local-header-hover"></div>
-                        <div class="box-local-footer-hover"></div>
+                    <div class="box-local-space hover">
+                        <div class="box-local-header-hover">
+                            Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
+                        </div>
+                        <div class="box-local-footer-hover">Disponivel em <span class="text-spotligth">Todos os planos</span></div>
                     </div>
                 </div>
 
@@ -538,9 +538,7 @@
                             <p class="description-plan-call">Voz ilimitado brasil</p>
                         </div>
                     </div>
-                </div>
-                <div class="benefits-box-national-hover">
-                    <div class="box-national-space">
+                    <div class="box-national-space hover">
                         <div class="box-national-header-hover"></div>
                         <div class="box-national-footer-hover"></div>
                     </div>
@@ -557,9 +555,7 @@
                             <p class="description-plan-call">Voz ilimitado br + ldi</p>
                         </div>
                     </div>
-                </div>
-                <div class="benefits-box-international-hover">
-                    <div class="box-international-space">
+                    <div class="box-space-international hover">
                         <div class="box-international-header-hover"></div>
                         <div class="box-international-footer-hover"></div>
                     </div>
