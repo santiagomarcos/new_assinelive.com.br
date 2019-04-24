@@ -10,7 +10,7 @@ let destOut = 'resources/assets/css';
 let destOutWatch = 'resources/assets/css/*.css';
 
 
-const  buildCss = [
+const buildCss = [
     "node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
     "resources/assets/css/*.css"
@@ -19,6 +19,8 @@ const  buildCss = [
 const buildJs = [
     "node_modules/jquery/dist/jquery.js",
     "node_modules/owl.carousel/dist/owl.carousel.js",
+    "node_modules/axios/dist/axios.js",
+    "node_modules/jquery-mask-plugin/dist/jquery.mask.js",
     "resources/assets/js/main/*.js"
 ]
 

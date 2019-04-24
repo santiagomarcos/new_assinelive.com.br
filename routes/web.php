@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/{code?}', function () {
+
     return view('index');
 });
 
 Route::group(['prefix' => 'pages', 'as' => 'pages.'], function (){
    Route::get('/verification',['uses' => 'PagesController@verification', 'as' => 'verification']);
+   Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('test');
+
 });
+
