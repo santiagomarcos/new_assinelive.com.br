@@ -57,10 +57,10 @@
                         <label for="number-home">Número:</label>
                         <input type="tel" id="number-home" name="number-home" class="" placeholder="N°">
                     </div>
-                    <span class="loading-viability"><img src="../../assets/images/mini-loading.gif" alt=""></span>
+                    <span class="loading-viability"><img src="" alt=""></span>
 
                     <div class="box-form-button">
-                        <button class="btn-banner" id="btnVerification" disabled="true">Continuar</button>
+                        <button class="btn-banner" id="btnVerification" v-text="description" disabled="true">@{{ description }}</button>
                     </div>
                 </form>
                 <span id="desc-limit-broadband"></span>
@@ -225,7 +225,7 @@
             <!--gif reload-->
             <div class="gif" id="loading">
                 <div class="content-gif">
-                    <img src="../../assets/images/loader.gif" height="150" width="150" alt="">
+                    <img src="" height="150" width="150" alt="">
                 </div>
                 <h3>Estamos processando seu pedido...</h3>
             </div>

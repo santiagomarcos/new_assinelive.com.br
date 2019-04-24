@@ -1416,7 +1416,7 @@ input {
         display: block;
         margin-top: 25px; }
         .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-items-include .items-include-plan {
-          margin: 15px 2px;
+          margin: 10px 2px;
           color: #6b7272;
           font-weight: normal; }
       .container-carousel .content-carousel .items-plan-content .items-plan-box .items-plan-body .content-price {
@@ -2111,7 +2111,7 @@ input {
           position: relative; }
 
 #section-verification {
-  display: none;
+  display: block;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
@@ -2151,6 +2151,7 @@ input {
           width: 100%; } }
 
 #section-contract {
+  display: none;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;

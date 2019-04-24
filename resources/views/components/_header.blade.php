@@ -1,4 +1,4 @@
-<header :id="content-header" class="header-content">
+<header id="content-header" class="header-content">
     <div class="slide-content">
         {{--wathcing series--}}
         <div class="banner-content bg1">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <button class="btn-banner" @:click="buyBanner" >Contratar</button>
+                        <a href="{{ route('pages.verifications', ['plan'=>'60']) }}"><button class="btn-banner" @click="buyBanner" >Contratar</button></a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <button class="btn-banner">Contratar</button>
+                        <a href="{{ route('pages.verifications',['plan'=>'100']) }}"><button class="btn-banner" >Contratar</button></a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <button class="btn-banner">Contratar</button>
+                        <a href="{{ route('pages.verifications',['plan'=>'150']) }}"><button class="btn-banner"  >Contratar</button></a>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,15 @@
 const app = new Vue({
     el: '#content-header',
-    methods:{
+    data:{
+      msg: 'Clicou agora'
+    },
+    methods: {
         buyBanner: function (e) {
-            alert('Clicou');
         }
+    },
+
+    el: '#section-verification',
+    data:{
+        description: 'Verificar'
     }
 });
