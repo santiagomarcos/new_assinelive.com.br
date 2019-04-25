@@ -28,7 +28,7 @@
                 <a href="#"><li class="items-menu">FAQ</li></a>
             </ul>
             <div class="box-button">
-                <button class="btn-buy-now">Contrate Agora</button>
+                <a href="{{ route('pages.verifications') }}"><button class="btn-buy-now" >Contratar</button></a>
             </div>
             <div class="box-number">
                 <div class="description-call">Assine pelo nosso número</div>

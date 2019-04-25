@@ -20,10 +20,8 @@ Route::group([ 'middleware' => 'analytics'], function() {
 
     });
 
-    Route::group(['prefix' => 'pages', 'as' => 'pages.'], function (){
-        Route::get('/verification',['uses' => 'PagesController@verification', 'as' => 'verification']);
-        Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('test');
-
-    });
+Route::group(['prefix' => 'pages', 'as' => 'pages.'], function (){
+   Route::get('/verification',['uses' => 'PagesController@verification', 'as' => 'verification']);
+   Route::get('/verifications/{plan?}','PagesController@verifications')->name('verifications');
 });
 

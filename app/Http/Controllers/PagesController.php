@@ -20,8 +20,13 @@ class PagesController extends Controller
 
     public function verifications(Request $request)
     {
+
+        $plan = $request->plan;
+        $plan = (is_null($plan)) ? "60" : $plan;
+//        dd($plan);
+
         return view('pages.function.verification')
-            ->withPlan($request->plan);
+            ->withPlan($plan);
 
     }
 }

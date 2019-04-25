@@ -59,8 +59,9 @@
                     </div>
                     <span class="loading-viability"><img src="/images/mini-loading.gif" alt=""></span>
 
+
                     <div class="box-form-button">
-                        <button class="btn-banner" id="btnVerification" disabled="true">Continuar</button>
+                        <button class="btn-banner" id="btnVerification" disabled="true"></button>
                     </div>
                 </form>
                 <span id="desc-limit-broadband"></span>
@@ -228,6 +229,7 @@
             <div class="gif" id="loading" align="center">
                 <div class="content-gif">
                     <img src="/images/loader.gif" height="150" width="150" alt="">
+
                 </div>
                 <h3>Estamos processando seu pedido...</h3>
             </div>

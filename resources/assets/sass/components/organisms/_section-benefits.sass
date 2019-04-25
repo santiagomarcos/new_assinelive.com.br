@@ -59,6 +59,12 @@
       //background-color: #f66D9b
       display: block
       color: $white
+      overflow-y: hidden
+      height: 197px
+
+      +breakpoint($celular)
+        overflow-y: auto
+        height: auto
 
       .description-plan-call
         text-transform: uppercase
@@ -89,14 +95,37 @@
         .box-local-space
           display: block
           background-color: $color-spotlight-title-section
+          height: 197px
+          transition: all .6s
+
+          &.hover
+            display: block
+            background-color: $bg-hover-benefits
+            position: relative
+            margin-top: -197px
+            transition: .6s margin-top ease-in-out
+
+            .box-local-header-hover
+              padding: 25px 15px
+
+            .box-local-footer-hover
+              margin-top: 50px
+              padding: 10px
+              background: linear-gradient(90deg, #c3e8f3,#07358a00)
+              color: $bg-box-benefits
+              position: absolute
+              bottom: 0px
+              width: 93%
+
+              .text-spotligth
+                color: $color-spotlight
+                font-weight: bold
 
           .box-local-header
             font-size: 50px
             text-align: center
             padding: 15px 0px 100px 0px
 
-      .benefits-box-local-hover
-        display: none
 
       .benefits-box-national
         +make-sm-column(4,0px)
@@ -142,5 +171,3 @@
 
       .benefits-box-international-hover
         display: none
-
-
