@@ -51,11 +51,11 @@
                     </div>
                     <div class="box-form-verification">
                         <label for="zip-code">CEP:</label>
-                        <input type="tel" id="zip-code" name="zip-code" class="" placeholder="_____-___">
+                        <input type="text" id="zip-code" name="zip-code" class="" placeholder="_____-___">
                     </div>
                     <div class="box-form-verification">
                         <label for="number-home">Número:</label>
-                        <input type="tel" id="number-home" name="number-home" class="" placeholder="N°">
+                        <input type="text" id="number-home" name="number-home" class="" placeholder="N°">
                     </div>
                     
                     <span class="loading-viability" style="display: none;">
@@ -63,10 +63,39 @@
                     </span>
 
                     <div class="box-form-button">
-                        <button class="btn-banner" id="btnVerification" disabled="true">Verificar</button>
+                        <button class="btn-banner" id="btnVerification" type="button">Verificar Cobertura</button>
                     </div>
                 </form>
+                <!--gif reload-->
+                <div class="gif" id="loading-viability" align="center">
+                    <div class="content-gif">
+                        <img src="/images/loader.gif" height="150" width="150" alt="">
+                    </div>
+                    <h3>Aguarde... Estamos pesquisando a viabilidade.</h3>
+                </div>
                 <span id="desc-limit-broadband"></span>
+                <div class="inviability-content" id="inviability-content">
+                    <div class="content-text-inviability">
+                        <h1> Desculpe :( </h1> <br>
+                        Não temos ainda viabilidade no seu endereço, mas não se preocupe! quando estivermos chegando em sua região entraremos em contato via e-mail ou telefone.
+                    </div>
+                    <div class="content-btn">
+                        <a href="../index.php"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
+                    </div>
+                    <div class="network-social"></div>
+                </div>
+
+                <div class="inviability-content" id="minimum-content">
+                    <div class="content-text-inviability">
+                        O limite de internet disponível em sua região no momento é no <span class="limit-band-modal"></span>
+                        volte para página principal e escolha o limite da sua região.
+                    </div>
+                    <div class="content-btn">
+                        <a href="../index.php"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
+                    </div>
+                    <div class="network-social"></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -248,16 +277,6 @@
                 <div class="network-social"></div>
             </div>
 
-            <div class="inviability-content">
-                <div class="content-text-inviability">
-                    O limite de internet disponível em sua região no momento é no <span class="limit-band-modal"></span>
-                    volte para página principal e escolha o limite da sua região.
-                </div>
-                <div class="content-btn">
-                    <a href="../index.php"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
-                </div>
-                <div class="network-social"></div>
-            </div>
         </div>
     </section>
 
@@ -266,6 +285,59 @@
 @section('extra-scripts')
     <script type="text/javascript">
         $('document').ready(function () {
+
+            let request_disabled_verify = false;
+
+            $("#btnVerification").click(function() {
+
+                var callbackInputSuccess = function (res) {
+                    if (!res.data.success) {
+                        request_disabled_insert = false;
+                        $("#loading-viability").hide();
+                        $("#inviability-content").show();
+                    } else {
+                        console.log(res.data.status);
+                        if(res.data.status == "OK") {
+
+                        } else {
+                            $("#loading-viability").hide();
+                            $("#inviability-content").show();
+                        }
+                        var plan_wan =  $("#confirm-plan-wan").val();
+                        $('#finalizado').show();
+                        $('#loading').hide();
+                        $('#waiting').hide();
+                        $("#contract-plan").html(plan_wan);
+                        $("#number-order").html(res.data.id);
+                        request_disabled_verify = false;
+                    }
+                };
+
+                /**
+                 * Callback Fail (Internet Disconnect or No returned Data).
+                 * @param res
+                 */
+                var callbackInputFail = function (res) {
+                    request_disabled_verify = false;
+                    $('#finalizado').show();
+                    $('#loading').hide();
+                    $('#waiting').hide();
+                };
+
+
+                if (!request_disabled_verify) {
+                    $("#form_verification").hide();
+                    $("#loading-viability").show();
+                    var zipcode = $("#zip-code").val();
+                    var numberhome = $("#number-home").val();
+                    request_disabled_verify = true;
+                    axios.post('{{ route('v1.consult.search') }}', {
+                        zip: zipcode,
+                        number: numberhome,
+                    }).then(callbackInputSuccess, callbackInputFail);
+                }
+            });
+
             // mask's on inputs
             $('#zip-code').mask('00000-000');
             $('#document').mask('000.000.000-00');
