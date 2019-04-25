@@ -496,7 +496,7 @@
             </div>
         </div>
     </section>
-    <section class="benefits">
+    <section id="benefits" class="benefits">
         <div class="content-benefits">
             <div class="benefits-header">
                 <div class="call-section-benefits">

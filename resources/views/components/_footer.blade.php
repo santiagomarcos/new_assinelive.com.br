@@ -1,6 +1,6 @@
 <footer class="content-footer">
     <div class="container-footer">
-        <div class="box-left">
+        <div id="faq" class="box-left">
             <h2 class="title-box-footer">Perguntas frequentes ?</h2>
 
             <ul class="content-question">

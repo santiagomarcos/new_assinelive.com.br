@@ -209,4 +209,45 @@ $(document).ready(function () {
         show_channels($(this).html());
         $('#ancor_btn_contract').prop('href', '/pages/verifications/2');
     })
+
+    $('.btn-toggle').on('click',function () {
+        $('.menu-responsive-content').toggleClass('active');
+    })
+    $('#btn-close').on('click',function () {
+        $('.menu-responsive-content').toggleClass('active');
+    })
+
+    //efeito scroll menu items
+    $('.content-menu a[href^="#"]').on('click',
+        function(e) {
+            e.preventDefault();
+            var id = $(this).attr('href'), targetOffset = $(id).offset().top;
+
+            $('html, body').animate({
+                scrollTop: targetOffset  -10
+            }, 750);
+        });
+
+    //efeito scroll menu reponsive
+    $('.content-limit-brand h3[id^="cn"]').on('click',
+        function(e) {
+            e.preventDefault();
+            var id = $('#cic'), targetOffset = $(id).offset().top;
+
+            $('html, body').animate({
+                scrollTop: targetOffset  -150
+            }, 750);
+        });
+
+    $('.content-menu-responsive a[href^="#"]').on('click',
+        function(e) {
+            $('.menu-responsive-content').toggleClass('active');
+            e.preventDefault();
+            var id = $(this).attr('href'), targetOffset = $(id).offset().top;
+
+            $('html, body').animate({
+                scrollTop: targetOffset  -80
+            }, 750);
+        });
+
 })
