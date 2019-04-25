@@ -17,7 +17,7 @@
     <nav class="content-navbar">
         <div class="header-navbar">
             <div class="navbar-brand">
-                <a href="#" class="brand">
+                <a href="{{ route('home') }}" class="brand">
                     <p class="brand-firstname"><b>A</b>ssine live</p>
                     <p class="brand-secondname">Internet fibra</p>
                 </a>

@@ -22,7 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  */
 Route::group(['prefix' => 'v1', 'as' => 'v1.'], function(){
     Route::group(['prefix' => 'consult', 'as' => 'consult.'], function() {
-        Route::get('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
+        Route::post('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
     });
 });
 
