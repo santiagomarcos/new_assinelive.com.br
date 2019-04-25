@@ -519,7 +519,7 @@
                             <p class="description-plan-call">Voz ilimitado local</p>
                         </div>
                     </div>
-                    <div class="box-local-space hover">
+                    <div class="box-local-space">
                         <div class="box-local-header-hover">
                             Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
                         </div>

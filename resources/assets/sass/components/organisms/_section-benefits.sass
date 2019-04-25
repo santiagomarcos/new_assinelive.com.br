@@ -62,6 +62,10 @@
       overflow-y: hidden
       height: 197px
 
+      +breakpoint($celular)
+        overflow-y: auto
+        height: auto
+
       .description-plan-call
         text-transform: uppercase
         font-size: 20px
@@ -91,22 +95,27 @@
         .box-local-space
           display: block
           background-color: $color-spotlight-title-section
-
+          height: 197px
+          transition: all .6s
 
           &.hover
             display: block
             background-color: $bg-hover-benefits
             position: relative
-            margin-top: -200px
+            margin-top: -197px
+            transition: .6s margin-top ease-in-out
 
             .box-local-header-hover
-              padding: 33px 20px
+              padding: 25px 15px
 
             .box-local-footer-hover
               margin-top: 50px
               padding: 10px
-              background: linear-gradient(90deg, #bbb,#ddd)
+              background: linear-gradient(90deg, #c3e8f3,#07358a00)
               color: $bg-box-benefits
+              position: absolute
+              bottom: 0px
+              width: 93%
 
               .text-spotligth
                 color: $color-spotlight
@@ -162,5 +171,3 @@
 
       .benefits-box-international-hover
         display: none
-
-

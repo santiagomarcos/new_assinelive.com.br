@@ -1654,6 +1654,10 @@ input {
       content: " "; }
     .benefits .content-benefits .benefits-body:after {
       clear: both; }
+    @media (max-width: 767px) {
+      .benefits .content-benefits .benefits-body {
+        overflow-y: auto;
+        height: auto; } }
     .benefits .content-benefits .benefits-body .description-plan-call {
       text-transform: uppercase;
       font-size: 20px;
@@ -1684,19 +1688,25 @@ input {
           width: 33.33333%; } }
       .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space {
         display: block;
-        background-color: #042656; }
+        background-color: #042656;
+        height: 197px;
+        transition: all .6s; }
         .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover {
           display: block;
           background-color: #07358a;
           position: relative;
-          margin-top: -200px; }
+          margin-top: -197px;
+          transition: .6s margin-top ease-in-out; }
           .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-header-hover {
-            padding: 33px 20px; }
+            padding: 25px 15px; }
           .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover {
             margin-top: 50px;
             padding: 10px;
-            background: linear-gradient(90deg, #bbb, #ddd);
-            color: #042656; }
+            background: linear-gradient(90deg, #c3e8f3, #07358a00);
+            color: #042656;
+            position: absolute;
+            bottom: 0px;
+            width: 93%; }
             .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover .text-spotligth {
               color: #cc2229;
               font-weight: bold; }
