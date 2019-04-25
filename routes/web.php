@@ -18,7 +18,7 @@ Route::group([ 'middleware' => 'analytics'], function() {
         getPartner($code);
         return view('index');
 
-    });
+    })->name('home');
 
     Route::group(['prefix' => 'pages', 'as' => 'pages.'], function () {
         Route::get('/verification', ['uses' => 'PagesController@verification', 'as' => 'verification']);
