@@ -34,7 +34,7 @@
     {{--@include('components._header')--}}
     <section id="section-verification">
         <div class="content-verification">
-            <h1 class="title-verification">Verificar Cobertura</h1>
+            <h1 class="title-verification">Verificar Cobertura:</h1>
             <div class="form-verification">
                 <form id="form_verification" action="" method="post">
                     <div class="box-form-verification">
@@ -57,11 +57,13 @@
                         <label for="number-home">Número:</label>
                         <input type="tel" id="number-home" name="number-home" class="" placeholder="N°">
                     </div>
-                    <span class="loading-viability"><img src="/images/mini-loading.gif" alt=""></span>
-
+                    
+                    <span class="loading-viability" style="display: none;">
+                        <img src="/images/mini-loading.gif" alt="">
+                    </span>
 
                     <div class="box-form-button">
-                        <button class="btn-banner" id="btnVerification" disabled="true"></button>
+                        <button class="btn-banner" id="btnVerification" disabled="true">Verificar</button>
                     </div>
                 </form>
                 <span id="desc-limit-broadband"></span>
@@ -77,7 +79,7 @@
                 <div class="description-plan-body">
 
                     <div class="box-info-plans">
-                        <p class="title-info-plans">Informações gerais</p>
+                        <p class="title-info-plans">Informações gerais: </p>
                         <div class="box-chanells-plans">
                             <p class="description-chanells">
                                 Canais inclusos no plano:
@@ -105,7 +107,7 @@
                     </div>
 
                     <div class="box-contract-plan">
-                        <p class="contract-title">Contrato</p>
+                        <p class="contract-title">Contrato:</p>
                         <div class="description-contract">
                             <p class="desc-taxa">
                                 Taxa de adesão/instalação:
@@ -121,11 +123,14 @@
 
         <div class="form-contract-content">
             <div class="form-contract-header">
-                <h1 class="title-form-contract">Dados Pessoais:</h1>
+                <h1 class="title-form-contract">Formulário de Pedido:</h1>
             </div>
 
             <div class="form-contract-body" >
                 <div class="form-contract">
+                    <div class="data-people-content">
+                        <h1 class="title-form-contract">Dados Pessoais:</h1>
+                    </div>
                     <div class="box-form-contract">
                         <label for="name">Nome</label>
                         <input type="text" name="name" id="name" placeholder="EX: JOÃO MANOEL SANTOS LIMA" class="disabled-input" disabled value="">
@@ -186,12 +191,12 @@
                     </div>
                     <div class="box-form-contract-address state">
                         <label for="town">Cidade:</label>
-                        <input type="text" name="state" id="state" placeholder="Cidade" class="disabled-input" disabled
+                        <input type="text" name="city" id="city"  placeholder="Cidade" class="disabled-input" disabled
                                value="">
                     </div>
                     <div class="box-form-contract-address city">
                         <label for="state">Estado:</label>
-                        <input type="text" name="city" id="city" placeholder="Estado" class="disabled-input" disabled
+                        <input type="text" name="state" id="state" placeholder="Estado" class="disabled-input" disabled
                                value="">
                     </div>
                 </div>
@@ -222,21 +227,20 @@
                         e do <a target="_blank" href="" class="terms-conditions">Contrato de Prestação de Serviço</a>, e autorizo a TIM a entrar em contato comigo nos telefones informados.
                     </label>
 
-                    <button class="btn-banner mbt" type="button" id="btnNextContract" >Contratar</button>
+                    <button class="btn-banner mbt" type="button" id="btnNextContract" >Solicitar Plano</button>
                 </div>
             </div>
             <!--gif reload-->
             <div class="gif" id="loading" align="center">
                 <div class="content-gif">
                     <img src="/images/loader.gif" height="150" width="150" alt="">
-
                 </div>
                 <h3>Estamos processando seu pedido...</h3>
             </div>
 
             <div class="sucess-content" id="sucess-content">
                 <p>
-                    Parabéns <strong class="name-client">   </strong> seu pedido foi ralizado com sucesso.
+                    Parabéns <strong class="name-client">   </strong>! seu pedido foi ralizado com sucesso.
                     Se desejar pode conferir a descrição do plano contratado na caixa "PLANO ESCOLHIDO", o numero do seu pedido é : N°
                     <strong class="number-order"></strong>.<br>
                     Em até 24hr entraremos em contato para a finalização da sua compra.
@@ -276,7 +280,8 @@
                 $('label[class^="day-"]').removeClass('active-label');
                 $(this).addClass('active-label');
             });
-            var request_disabled_insert = false;
+
+            let request_disabled_insert = false;
 
             /**
              * Send Data in API.
@@ -314,32 +319,43 @@
                 };
 
                 /**
-                 * Variables for INPUT
+                 * Variables for INPUT BASIC DATA
                  */
                 var name = $("#name").val();
-                var user = $('#user').val();
+                var user = '{{ session('partner')['name'] }}';
                 var document = $("#document").val();
                 var phone_cel = $("#cellphone").val();
                 var phone_fixo = $("#second-tel").val();
-                var state = $("#uf").val();
                 var mother = $("#confirm-mother").val();
                 var birth = $("#born").val();
-                var zipcode = $('#cep').val();
-                var street = $('#rua').val();
-                var neighborhood = $('#bairro').val();
-                var city = $('#cidade').val();
-                var numberstreet = $('#numero').val();
+                var email = $("#email").val();
+                /**
+                 * INPUT Address
+                 * @type {*|jQuery}
+                 */
+                var zipcode = $('#zip-code-show').val();
+                var street = $('#address-show').val();
+                var number = $('#number-show').val();
+                var complement =  $("#complement").val();
+                var neighborhood = $('#neighborhood').val();
+                var city = $('#city').val();
+                var state = $("#state").val();
+                /**
+                 * INPUT Plans
+                 * @type {*|jQuery}
+                 */
                 var plan_wan =  $("#confirm-plan-wan").val();
                 var maturity_date =  $("#maturity_date").val();
-                var complemento =  $("#complemento").val();
                 var plan_phone =  $("#confirm_plan_phone").val();
                 var portability =  $("#portability").val();
                 var number_portability = $("#number_portability").val();
                 var operator = $("#operator").val();
 
-
-
                 if (!request_disabled_insert) {
+
+                    $(".form-contract-body").hide();
+                    $("#loading").show();
+
                     request_disabled_insert = true;
                     axios.post('https://nox.ffxsistemas.com/api/v1/inputs/site', {
                         name: name,
@@ -355,8 +371,8 @@
                         name_mother: mother,
                         date_birth: birth,
                         BAIRRO: neighborhood,
-                        NUMEROEND: numeroCasa,
-                        COMPLEMENTO: complemento,
+                        NUMEROEND: number,
+                        COMPLEMENTO: complement,
                         email: email,
                         maturity_date: maturity_date,
                         plan_phone: plan_phone,
