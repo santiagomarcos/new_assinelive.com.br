@@ -7,8 +7,8 @@
         </div>
         <div class="title-channels">Canais de atendimento:</div>
         <ul class="content-channels">
-            <li class="items-channels">(11) 4890-9324</li>
-            <li class="items-channels">Whatsapp</li>
+            <li class="items-channels">{{ session('partner')['phone'] }}</li>
+            <li class="items-channels">WhatAapp</li>
             <li class="items-channels">Me ligue</li>
             <li class="items-channels">Chat Online</li>
         </ul>
@@ -32,7 +32,7 @@
             </div>
             <div class="box-number">
                 <div class="description-call">Assine pelo nosso número</div>
-                <div class="number-phone">(11) 4890-9324</div>
+                <div class="number-phone">{{ session('partner')['phone'] }}</div>
                 <div class="attendance-day">Seg. a Sex 9h às 19h | Sab. 10h às 16h </div>
             </div>
         </div>

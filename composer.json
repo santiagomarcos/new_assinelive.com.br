@@ -55,7 +55,8 @@
             "Tests\\": "tests/"
         },
         "files": [
-            "helpers/superlist.php"
+            "helpers/superlist.php",
+            "helpers/common.php"
         ]
     },
     "minimum-stability": "dev",
