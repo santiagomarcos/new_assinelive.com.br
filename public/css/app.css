@@ -1928,13 +1928,13 @@ input {
         display: block;
         background-color: #042656;
         height: 197px;
-        transition: all .6s; }
+        transition: all .8s; }
         .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover {
           display: block;
           background-color: #07358a;
           position: relative;
           margin-top: -197px;
-          transition: .6s margin-top ease-in-out; }
+          transition: .8s margin-top ease-in-out; }
           .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-header-hover {
             padding: 25px 15px; }
           .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover {
@@ -1963,7 +1963,28 @@ input {
           width: 33.33333%; } }
       .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
         display: block;
-        background-color: #042656; }
+        background-color: #042656;
+        height: 197px;
+        transition: all .8s; }
+        .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover {
+          display: block;
+          background-color: #07358a;
+          position: relative;
+          margin-top: -197px;
+          transition: .8s margin-top ease-in-out; }
+          .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover .box-national-header-hover {
+            padding: 25px 15px; }
+          .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover .box-national-footer-hover {
+            margin-top: 50px;
+            padding: 10px;
+            background: linear-gradient(90deg, #c3e8f3, #07358a00);
+            color: #042656;
+            position: absolute;
+            bottom: 0px;
+            width: 93%; }
+            .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover .box-national-footer-hover .text-spotligth {
+              color: #cc2229;
+              font-weight: bold; }
         @media (max-width: 767px) {
           .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
             margin: 10px 0px; } }
@@ -1994,9 +2015,31 @@ input {
         .benefits .content-benefits .benefits-body .benefits-box-international {
           float: left;
           width: 33.33333%; } }
-      .benefits .content-benefits .benefits-body .benefits-box-international .box-space-international {
-        background-color: #042656; }
-        .benefits .content-benefits .benefits-body .benefits-box-international .box-space-international .box-international-header {
+      .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space {
+        background-color: #042656;
+        height: 197px;
+        transition: all .8s;
+        display: block; }
+        .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space.hover {
+          display: block;
+          background-color: #07358a;
+          position: relative;
+          margin-top: -197px;
+          transition: .8s margin-top ease-in-out; }
+          .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space.hover .box-international-header-hover {
+            padding: 25px 15px; }
+          .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space.hover .box-international-footer-hover {
+            margin-top: 50px;
+            padding: 10px;
+            background: linear-gradient(90deg, #c3e8f3, #07358a00);
+            color: #042656;
+            position: absolute;
+            bottom: 0px;
+            width: 93%; }
+            .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space.hover .box-international-footer-hover .text-spotligth {
+              color: #cc2229;
+              font-weight: bold; }
+        .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space .box-international-header {
           font-size: 50px;
           text-align: center;
           padding: 15px 0px 100px 0px; }

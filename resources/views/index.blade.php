@@ -509,7 +509,7 @@
 
             <div class="benefits-body">
                 <div class="benefits-box-local">
-                    <div class="box-local-space">
+                    <div class="box-local-space one">
                         <div class="box-local-header">
                             <span class="icon-phone"><i class="fas fa-phone-volume"></i></span>
                             <span class="icon-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -519,7 +519,7 @@
                             <p class="description-plan-call">Voz ilimitado local</p>
                         </div>
                     </div>
-                    <div class="box-local-space">
+                    <div class="box-local-space two">
                         <div class="box-local-header-hover">
                             Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
                         </div>
@@ -528,7 +528,7 @@
                 </div>
 
                 <div class="benefits-box-national">
-                    <div class="box-national-space">
+                    <div class="box-national-space one">
                         <div class="box-national-header">
                             <span class="icon-phone"><i class="fas fa-phone-volume"></i></span>
                             <span class="icon-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -538,14 +538,16 @@
                             <p class="description-plan-call">Voz ilimitado brasil</p>
                         </div>
                     </div>
-                    <div class="box-national-space hover">
-                        <div class="box-national-header-hover"></div>
-                        <div class="box-national-footer-hover"></div>
+                    <div class="box-national-space two">
+                        <div class="box-national-header-hover">
+                            Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
+                        </div>
+                        <div class="box-national-footer-hover">Disponivel em <span class="text-spotligth">Todos os planos</span></div>
                     </div>
                 </div>
 
                 <div class="benefits-box-international">
-                    <div class="box-space-international">
+                    <div class="box-international-space one">
                         <div class="box-international-header">
                             <span class="icon-phone"><i class="fas fa-phone-volume"></i></span>
                             <span class="icon-arrow"><i class="fas fa-arrow-right"></i></span>
@@ -555,9 +557,11 @@
                             <p class="description-plan-call">Voz ilimitado br + ldi</p>
                         </div>
                     </div>
-                    <div class="box-space-international hover">
-                        <div class="box-international-header-hover"></div>
-                        <div class="box-international-footer-hover"></div>
+                    <div class="box-international-space two">
+                        <div class="box-international-header-hover">
+                            Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
+                        </div>
+                        <div class="box-international-footer-hover">Disponivel em <span class="text-spotligth">Todos os planos</span></div>
                     </div>
                 </div>
             </div>

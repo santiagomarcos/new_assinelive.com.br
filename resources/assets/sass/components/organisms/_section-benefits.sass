@@ -96,14 +96,14 @@
           display: block
           background-color: $color-spotlight-title-section
           height: 197px
-          transition: all .6s
+          transition: all .8s
 
           &.hover
             display: block
             background-color: $bg-hover-benefits
             position: relative
             margin-top: -197px
-            transition: .6s margin-top ease-in-out
+            transition: .8s margin-top ease-in-out
 
             .box-local-header-hover
               padding: 25px 15px
@@ -132,9 +132,35 @@
         .box-national-space
           display: block
           background-color: $color-spotlight-title-section
+          height: 197px
+          transition: all .8s
+
+          &.hover
+            display: block
+            background-color: $bg-hover-benefits
+            position: relative
+            margin-top: -197px
+            transition: .8s margin-top ease-in-out
+
+            .box-national-header-hover
+              padding: 25px 15px
+
+            .box-national-footer-hover
+              margin-top: 50px
+              padding: 10px
+              background: linear-gradient(90deg, #c3e8f3,#07358a00)
+              color: $bg-box-benefits
+              position: absolute
+              bottom: 0px
+              width: 93%
+
+              .text-spotligth
+                color: $color-spotlight
+                font-weight: bold
 
           +breakpoint($celular)
              margin: 10px 0px
+
           .box-national-header
             font-size: 50px
             margin: auto
@@ -160,8 +186,35 @@
 
       .benefits-box-international
         +make-sm-column(4,0px)
-        .box-space-international
+        .box-international-space
           background-color: $color-spotlight-title-section
+          height: 197px
+          transition: all .8s
+          display: block
+
+          &.hover
+            display: block
+            background-color: $bg-hover-benefits
+            position: relative
+            margin-top: -197px
+            transition: .8s margin-top ease-in-out
+
+            .box-international-header-hover
+              padding: 25px 15px
+
+            .box-international-footer-hover
+              margin-top: 50px
+              padding: 10px
+              background: linear-gradient(90deg, #c3e8f3,#07358a00)
+              color: $bg-box-benefits
+              position: absolute
+              bottom: 0px
+              width: 93%
+
+              .text-spotligth
+                color: $color-spotlight
+                font-weight: bold
+
           .box-international-header
             font-size: 50px
             text-align: center
