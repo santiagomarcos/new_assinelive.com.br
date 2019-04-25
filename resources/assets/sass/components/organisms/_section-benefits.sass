@@ -91,6 +91,9 @@
 
       .benefits-box-local
         +make-sm-column(4,0px)
+        +breakpoint($celular)
+          overflow-y: hidden
+          height: 197px
 
         .box-local-space
           display: block
@@ -129,6 +132,10 @@
 
       .benefits-box-national
         +make-sm-column(4,0px)
+        +breakpoint($celular)
+          overflow-y: hidden
+          height: 197px
+          margin: 10px 0px 10px
         .box-national-space
           display: block
           background-color: $color-spotlight-title-section
@@ -159,7 +166,7 @@
                 font-weight: bold
 
           +breakpoint($celular)
-             margin: 10px 0px
+             margin: 0px
 
           .box-national-header
             font-size: 50px
@@ -186,6 +193,9 @@
 
       .benefits-box-international
         +make-sm-column(4,0px)
+        +breakpoint($celular)
+          overflow-y: hidden
+          height: 197px
         .box-international-space
           background-color: $color-spotlight-title-section
           height: 197px

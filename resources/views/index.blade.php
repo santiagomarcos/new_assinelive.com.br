@@ -386,24 +386,26 @@
                                 </div>
                                 <div class="band-limit-tablet" v-text="plan_tablet">@{{ plan_tablet }}</div>
                                 <div class="content-image-channel">
-                                    <div class="item-channels"><img src="https://i.imgur.com/UPQVCmB.png" id="icon-ei-1" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/vjh5FzJ.png" id="icon-ei-2" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/rj9Chaf.png" id="icon-ei-3" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/plRNoMP.png" id="icon-fox-1" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/dclY7MS.png" id="icon-fox-2" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/8Ae9rde.png" id="icon-foxlife"alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/JGozTsS.png" id="icon-baby" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/B3AxKzo.png" id="icon-kids" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/pW9gg2o.png" id="icon-natgeo" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/JXqE3cC.png" id="icon-wild" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/qdQdlBA.png" id="icon-cartoon" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/2c2HXuv.png" id="icon-fox-sports-1" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/5aKdpkU.png" id="icon-fox-sports-2" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/6vorpOT.png" id="icon-looke" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/iAMIBym.png" id="icon-fx" alt=""></div>
-                                    <div class="item-channels"><img src="https://i.imgur.com/4FHlcUo.png" id="fox-icon" alt=""></div>
+                                    <div class="item-channels" id="cnt_ei1"><img src="https://i.imgur.com/UPQVCmB.png" id="icon-ei-1" alt=""></div>
+                                    <div class="item-channels" id="cnt_ei2"><img src="https://i.imgur.com/vjh5FzJ.png" id="icon-ei-2" alt=""></div>
+                                    <div class="item-channels" id="cnt_ei3"><img src="https://i.imgur.com/rj9Chaf.png" id="icon-ei-3" alt=""></div>
+                                    <div class="item-channels" id="cnt_fox1"><img src="https://i.imgur.com/plRNoMP.png" id="icon-fox-1" alt=""></div>
+                                    <div class="item-channels" id="cnt_fox2"><img src="https://i.imgur.com/dclY7MS.png" id="icon-fox-2" alt=""></div>
+                                    <div class="item-channels" id="cnt_foxl"><img src="https://i.imgur.com/8Ae9rde.png" id="icon-foxlife"alt=""></div>
+                                    <div class="item-channels" id="cnt_baby"><img src="https://i.imgur.com/JGozTsS.png" id="icon-baby" alt=""></div>
+                                    <div class="item-channels" id="cnt_kids"><img src="https://i.imgur.com/B3AxKzo.png" id="icon-kids" alt=""></div>
+                                    <div class="item-channels" id="cnt_natgeo"><img src="https://i.imgur.com/pW9gg2o.png" id="icon-natgeo" alt=""></div>
+                                    <div class="item-channels" id="cnt_wild"><img src="https://i.imgur.com/JXqE3cC.png" id="icon-wild" alt=""></div>
+                                    <div class="item-channels" id="cnt_cartoon"><img src="https://i.imgur.com/qdQdlBA.png" id="icon-cartoon" alt=""></div>
+                                    <div class="item-channels" id="cnt_fs1"><img src="https://i.imgur.com/2c2HXuv.png" id="icon-fox-sports-1" alt=""></div>
+                                    <div class="item-channels" id="cnt_fs2"><img src="https://i.imgur.com/5aKdpkU.png" id="icon-fox-sports-2" alt=""></div>
+                                    <div class="item-channels" id="cnt_looke"><img src="https://i.imgur.com/6vorpOT.png" id="icon-looke" alt=""></div>
+                                    <div class="item-channels" id="cnt_fx"><img src="https://i.imgur.com/iAMIBym.png" id="icon-fx" alt=""></div>
+                                    <div class="item-channels" id="cnt_fox"><img src="https://i.imgur.com/4FHlcUo.png" id="fox-icon" alt=""></div>
                                 </div>
-                                <button class="btn-contact-tablet">Contratar</button>
+                                <div class="content-button">
+                                    <a id="ancor_btn_contract" href="{{ route('pages.verifications',['plan'=>'40']) }}"><button class="btn-contact-tablet">Contratar</button></a>
+                                </div>
                             </div>
                             <img src="https://i.imgur.com/j9wcPLz.png" alt="">
 
@@ -413,14 +415,14 @@
                                 Clique nas velocidades para saber os canais disponiveís.
                             </div>
                             <div class="cellphone-body">
-                                <button class="btn-band-plan" @click="c_40mb">40 <br>MB</button>
-                                <button class="btn-band-plan">60 <br>MB</button>
-                                <button class="btn-band-plan">100<br>MB</button>
-                                <button class="btn-band-plan">150 <br>MB</button>
-                                <button class="btn-band-plan">300 <br>MB</button>
-                                <button class="btn-band-plan">500 <br>MB</button>
-                                <button class="btn-band-plan">1 <br>GB</button>
-                                <button class="btn-band-plan">2 <br>GB</button>
+                                <button class="btn-band-plan" id="c_40mb" @click="c_40mb">40<br>MB</button>
+                                <button class="btn-band-plan" id="c_60mb" @click="c_60mb">60<br>MB</button>
+                                <button class="btn-band-plan" id="c_100mb" @click="c_100mb">100<br>MB</button>
+                                <button class="btn-band-plan" id="c_150mb" @click="c_150mb">150<br>MB</button>
+                                <button class="btn-band-plan" id="c_300mb" @click="c_300mb">300<br>MB</button>
+                                <button class="btn-band-plan" id="c_500mb" @click="c_500mb">500<br>MB</button>
+                                <button class="btn-band-plan" id="c_1gb" @click="c_1gb">1 <br>GB</button>
+                                <button class="btn-band-plan" id="c_2gb" @click="c_2gb">2 <br>GB</button>
                             </div>
                             <img src="https://i.imgur.com/copuma5.png" alt="">
                         </div>
@@ -494,7 +496,7 @@
             </div>
         </div>
     </section>
-    <section class="benefits">
+    <section id="benefits" class="benefits">
         <div class="content-benefits">
             <div class="benefits-header">
                 <div class="call-section-benefits">

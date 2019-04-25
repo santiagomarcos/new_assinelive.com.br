@@ -1,5 +1,5 @@
 <div class="menu-responsive-content">
-    <div class="content-channels-button-close"><span class="far fa-times"></span></div>
+    <div class="content-channels-button-close"><span id="btn-close" class="far fa-times"></span></div>
     <div class="content-channels-sales-responsive">
         <div class="title-channels-responsive">Canais de atendimento</div>
         <ul class="content-channels-responsive">
@@ -14,9 +14,9 @@
     <div class="content-items-menu">
         <div class="title-menu-responsive">Menu</div>
         <ul class="content-menu-responsive">
-            <a href="#"><li class="items-menu-responsive">Beneficios</li></a>
-            <a href="#"><li class="items-menu-responsive">Canais digitais</li></a>
-            <a href="#"><li class="items-menu-responsive">FAQ</li></a>
+            <a href="#benefits"><li class="items-menu-responsive">Beneficios</li></a>
+            <a href="#digital_services"><li class="items-menu-responsive">Canais digitais</li></a>
+            <a href="#faq"><li class="items-menu-responsive">FAQ</li></a>
         </ul>
     </div>
 </div>

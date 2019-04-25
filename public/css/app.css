@@ -361,21 +361,25 @@ input {
       padding: 2px;
       font-size: 10px; } }
 
-.btn-contact-tablet {
-  background-color: #09a809;
-  color: #fff;
-  border: none;
-  padding: 2px 10px;
-  letter-spacing: 1.5px;
-  border-radius: 3px;
-  box-shadow: 2px 2px 3px #146700;
-  cursor: pointer;
-  margin: auto;
-  display: block;
-  position: relative;
-  top: 10px; }
+.content-button {
+  clear: both; }
+  .content-button a {
+    text-decoration: none; }
+  .content-button .btn-contact-tablet {
+    background-color: #09a809;
+    color: #fff;
+    border: none;
+    padding: 2px 10px;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #146700;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 10px; }
   @media (max-width: 474px) {
-    .btn-contact-tablet {
+    .content-button {
       top: 0px;
       font-size: 11px; } }
 
@@ -1924,6 +1928,10 @@ input {
         .benefits .content-benefits .benefits-body .benefits-box-local {
           float: left;
           width: 33.33333%; } }
+      @media (max-width: 767px) {
+        .benefits .content-benefits .benefits-body .benefits-box-local {
+          overflow-y: hidden;
+          height: 197px; } }
       .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space {
         display: block;
         background-color: #042656;
@@ -1961,6 +1969,11 @@ input {
         .benefits .content-benefits .benefits-body .benefits-box-national {
           float: left;
           width: 33.33333%; } }
+      @media (max-width: 767px) {
+        .benefits .content-benefits .benefits-body .benefits-box-national {
+          overflow-y: hidden;
+          height: 197px;
+          margin: 10px 0px 10px; } }
       .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
         display: block;
         background-color: #042656;
@@ -1987,7 +2000,7 @@ input {
               font-weight: bold; }
         @media (max-width: 767px) {
           .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
-            margin: 10px 0px; } }
+            margin: 0px; } }
         .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space .box-national-header {
           font-size: 50px;
           margin: auto;
@@ -2015,6 +2028,10 @@ input {
         .benefits .content-benefits .benefits-body .benefits-box-international {
           float: left;
           width: 33.33333%; } }
+      @media (max-width: 767px) {
+        .benefits .content-benefits .benefits-body .benefits-box-international {
+          overflow-y: hidden;
+          height: 197px; } }
       .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space {
         background-color: #042656;
         height: 197px;
@@ -2217,6 +2234,11 @@ input {
       @media (max-width: 767px) {
         #section-verification .form-verification .box-form-verification {
           width: 100%; } }
+      #section-verification .form-verification .box-form-verification .loading-viability {
+        background-color: #082b35;
+        display: none; }
+        #section-verification .form-verification .box-form-verification .loading-viability img {
+          display: none; }
 
 #section-contract {
   display: none;

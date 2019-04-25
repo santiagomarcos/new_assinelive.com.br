@@ -23,9 +23,9 @@
                 </a>
             </div>
             <ul class="content-menu">
-                <a href="#"><li class="items-menu">Beneficios</li></a>|
-                <a href="#"><li class="items-menu">Canais digitais</li></a>|
-                <a href="#"><li class="items-menu">FAQ</li></a>
+                <a href="#benefits"><li class="items-menu">Beneficios</li></a>|
+                <a href="#digital_services"><li class="items-menu">Canais digitais</li></a>|
+                <a href="#faq"><li class="items-menu">FAQ</li></a>
             </ul>
             <div class="box-button">
                 <a href="{{ route('pages.verifications') }}"><button class="btn-buy-now" >Contratar</button></a>

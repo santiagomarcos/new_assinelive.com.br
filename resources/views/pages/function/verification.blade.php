@@ -56,8 +56,7 @@
                     <div class="box-form-verification">
                         <label for="number-home">Número:</label>
                         <input type="text" id="number-home" name="number-home" class="" placeholder="N°">
-                    </div>
-                    
+                    </div> 
                     <span class="loading-viability" style="display: none;">
                         <img src="/images/mini-loading.gif" alt="">
                     </span>
