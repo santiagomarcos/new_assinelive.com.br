@@ -30,7 +30,8 @@ class AffiliatesRepository extends Repository
     {
         return $this->getModel()
             ->where('code', $partner)
-            ->get();
+            ->get()
+            ->first();
     }
 
 

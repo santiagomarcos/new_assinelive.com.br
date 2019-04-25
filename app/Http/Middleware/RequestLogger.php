@@ -37,8 +37,7 @@ class RequestLogger
                 'status_code' => ($response->exception->getMessage()),
                 'hour' => $requestTime->hour,
                 'ip' => $request->ip(),
-                'locale' => $request->getLocale(),
-
+                'fingerprint' => $request->getLocale(),
             ]);
         } else {
             $request = RequestLog::create([
@@ -51,8 +50,7 @@ class RequestLogger
                 'status_code' => $response->getStatusCode(),
                 'hour' => $requestTime->hour,
                 'ip' => $request->ip(),
-                'locale' => $request->fingerprint(),
-
+                'fingerprint' => $request->fingerprint(),
             ]);
         }
         return $response;
