@@ -20,8 +20,9 @@ class SuperListController extends Controller
         /**
          * Método que pega o Caché no periodo de 24 Horas para realizar consulta no banco, assim mínimizando a quantidade
          * de querys no DB que já é uma bosta realizar uma query em 1 milhão de linhas....
+         *
          */
-        $search = searchSuperList($args['zip'], $args['number']);
+        $search = searchSuperList(str_replace('-','', $args['zip']), $args['number']);
         /**
          * Enum com todas as campanhas listadas até o momento.
          * Ps. nem eles se decidem o que vão trabalhar nessa porra.
