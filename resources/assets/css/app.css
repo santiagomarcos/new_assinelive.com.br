@@ -1098,6 +1098,28 @@ input {
         color: #A1A9A9;
         margin: 5px 0px; }
 
+.content-navbar-bottom {
+  background-color: #cb3444;
+  display: block;
+  position: fixed;
+  bottom: -80px;
+  width: 100%;
+  z-index: 1050;
+  transition: all .6s; }
+  .content-navbar-bottom.up {
+    bottom: 0px;
+    transition: bottom .6s ease-in-out; }
+  .content-navbar-bottom .box-navbar-bottom {
+    width: 75%;
+    background-color: #414ba5;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1050;
+    padding: 15px;
+    text-align: center; }
+
 .container-carousel .title-call {
   font-size: 35px;
   color: #6b7272;

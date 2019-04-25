@@ -250,4 +250,13 @@ $(document).ready(function () {
             }, 750);
         });
 
+    $(document).scroll(function () {
+        if ($(this).scrollTop()>120){
+            $('.content-navbar-bottom').addClass('up');
+        } else{
+            $('.content-navbar-bottom').removeClass('up');
+        }
+    })
+
+
 })

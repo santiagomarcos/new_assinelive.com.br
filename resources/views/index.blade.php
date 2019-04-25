@@ -591,4 +591,5 @@
             </div>
         </a>
     </div>
+    @include('components._navbar-bottom')
 @endsection
