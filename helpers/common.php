@@ -14,6 +14,7 @@ if( !function_exists('getPartner')) {
     {
         $repository = (new \App\Repositories\AffiliatesRepository());
         $affiliate = $repository->findByAffiliate($partner);
-        return ($affiliate->isEmpty()) ? $repository->find(1):$affiliate;
+        $session = (session('partner') == null) ? session(['partner' => ($affiliate) ? $affiliate:$repository->find(1)]) : session('partner') ;
+        return $session;
     }
 }
