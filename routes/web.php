@@ -11,14 +11,19 @@
 |
 */
 
-Route::get('/{code?}', function () {
+Route::group([ 'middleware' => 'analytics'], function() {
+    Route::get('/{code?}', function ($code = null) {
 
-    return view('index');
-});
+        $request = (new \Illuminate\Http\Request());
+        getPartner($code);
+        return view('index');
 
-Route::group(['prefix' => 'pages', 'as' => 'pages.'], function (){
-   Route::get('/verification',['uses' => 'PagesController@verification', 'as' => 'verification']);
-   Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('test');
+    });
 
+    Route::group(['prefix' => 'pages', 'as' => 'pages.'], function (){
+        Route::get('/verification',['uses' => 'PagesController@verification', 'as' => 'verification']);
+        Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('test');
+
+    });
 });
 
