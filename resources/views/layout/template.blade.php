@@ -42,4 +42,6 @@
         }
     });
 </script>
+@yield("extra-scripts")
+
 </html>

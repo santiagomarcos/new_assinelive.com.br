@@ -20,6 +20,7 @@ class PagesController extends Controller
 
     public function verifications(Request $request)
     {
+
         $plan = $request->plan;
         $plan = (is_null($plan)) ? "60" : $plan;
 //        dd($plan);

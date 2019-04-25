@@ -10,7 +10,7 @@ let destOut = 'resources/assets/css';
 let destOutWatch = 'resources/assets/css/*.css';
 
 
-const  buildCss = [
+const buildCss = [
     "node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
     "resources/assets/css/*.css"
@@ -19,9 +19,17 @@ const  buildCss = [
 const buildJs = [
     "node_modules/jquery/dist/jquery.js",
     "node_modules/owl.carousel/dist/owl.carousel.js",
+    "node_modules/axios/dist/axios.js",
+    "node_modules/jquery-mask-plugin/dist/jquery.mask.js",
     "node_modules/vue/dist/vue.js",
     "resources/assets/js/main/*.js"
 ]
+
+
+const resources = [
+    "resources/assets/images/"
+]
+
 
 const webAssetsDir = 'public/'
 
@@ -47,10 +55,17 @@ const webAssetsDir = 'public/'
             .pipe(gulp.dest(webAssetsDir+'js/'))
     });
 
+    gulp.task('copyResources', function () {
+        resources.forEach(function (res) {
+            gulp.src(res+'**/*')
+                .pipe(gulp.dest(webAssetsDir+res.split("/")[2]))
+        })
+    });
+
     gulp.task('watch', function () {
         // Uma lista de observação em tempo real, definindo que tarefa será executando em determinados arquivos ou pastas
         gulp.watch(destOrigin,['sass']);
         gulp.watch(destOutWatch,['workInCss']);
     });
 
-    gulp.task('default',['sass','watch','workInCss','workJs']);
+    gulp.task('default',['sass','watch','workInCss','workJs','copyResources']);
