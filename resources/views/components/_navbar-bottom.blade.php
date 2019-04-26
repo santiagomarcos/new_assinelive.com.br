@@ -1,16 +1,17 @@
 <div class="content-navbar-bottom">
     <div class="box-navbar-bottom">
         <button class="description-navbar-bottom">Assine <br> agora</button>
-
-        <button class="we-calling-you">
-            <span class="contten-button">
-                <span class="icon-button"><i class="fas fa-phone-volume"></i></span>
-                <span class="value-button">
-                    <p class="first-btn-title">Nós ligamos</p>
-                    <p class="second-btn-title">para você</p>
+        <a href="#" id="weCalling" data-toggle="modal" data-target="#weCall">
+            <button class="we-calling-you">
+                <span class="contten-button">
+                    <span class="icon-button"><i class="fas fa-phone-volume"></i></span>
+                    <span class="value-button">
+                        <p class="first-btn-title">Nós ligamos</p>
+                        <p class="second-btn-title">para você</p>
+                    </span>
                 </span>
-            </span>
-        </button>
+            </button>
+        </a>
         <button class="buy-to-chat">
             <span class="contten-button">
                 <span class="icon-button"><i class="fas fa-comments"></i></span>
@@ -37,7 +38,7 @@
                 <p id="btn-up" class="desc-arrow-up">Topo</p>
             </span>
         </button>
-        <div class="row">
+        <div class="">
             <button class="box-number-navbar-bottom">
                 <span class="contten-button">
                     <div class="description-number-navbar-bottom">Assine pelo nosso número</div>

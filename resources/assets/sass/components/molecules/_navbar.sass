@@ -84,6 +84,10 @@
     .items-channels
       display: inline-block
       margin: 0 20px
+      padding: 2px
+      background-image: linear-gradient(90deg, rgba(30, 30, 30, 0.33), rgba(58, 53, 53, 0.96),rgba(30, 30, 30, 0.33))
+      color: $white
+      border-radius: 2px
 
       +breakpoint($tablet)
         margin: 0 10px
@@ -204,29 +208,27 @@
             color: $color-spotlight
             cursor: pointer
 
-
-
     .box-button
-      +make-md-column(1.5,0px)
+      +make-md-column(1,0px)
       //background: #cc2229
       line-height: 4
       //padding: 0
       
       +breakpoint($tablet)
         //background-color: #fff
-        +make-sm-column(2.5,0px)
-        +make-sm-column-push(5)
+        +make-sm-column(3,0px)
+        +make-sm-column-push(6)
 
       +breakpoint($celular)
         display: none
 
     .box-number
       +make-md-column(2.5,0px)
-      +make-md-column-pull(-0)
+      right: -5%
       //background: #4dc0b5
 
       +breakpoint($tablet)
-        +make-sm-column(4,0px)
+        +make-sm-column(3.5,0px)
         +make-sm-column-push(-2)
 
       +breakpoint($celular)
@@ -234,7 +236,7 @@
         +make-xs-column-offset(1)
 
       +breakpoint($sm_celular)
-        +make-xs-column(6,0px)
+        //+make-xs-column(6,0px)
         +make-xs-column-offset(0)
 
       .description-call, .attendance-day
