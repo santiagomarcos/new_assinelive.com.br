@@ -11,7 +11,7 @@
             left: auto;
             width: auto;
             text-align: center;
-            height: 80px;
+            height: auto;
         }
 
         .content-navbar .header-navbar .content-menu, .box-button{
@@ -20,6 +20,10 @@
 
         .content-navbar .header-navbar .box-number{
             float: right;
+        }
+
+        .content-navbar .header-navbar .box-number{
+            right: 0px;
         }
 
         @media (max-width: 992px) {

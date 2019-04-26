@@ -1,0 +1,91 @@
+.modal
+  .modal-dialog
+    .modal-content
+      background-image: linear-gradient($color-font-car, #354b51, $color-font-car)
+      .modal-header
+        border: none
+        //.modal-brand
+        //  img
+        //    width: 80px
+        //    height: 50px
+        //    //background-color: #165cba
+        //    display: block
+        //    position: relative
+
+        .modal-title
+          //background-color: #fff
+          //margin-left: 110px
+          //width: 85%
+          display: block
+
+          +breakpoint($celular)
+            margin-left: 0px
+            margin-top: 15px
+
+          .first-title-modal
+            font-size: 30px
+            font-weight: bolder
+            text-shadow: 2px 2px 5px $color-font-body
+            color: $white
+            margin-bottom: 10px
+
+            .limit-band-modal
+              color: $button-buy-car
+              text-shadow: 1px 2px 2px $color-font-body-dark
+
+          .second-title-modal
+            font-size: 20px
+            font-weight: bolder
+            color: $white
+            text-shadow: 1px 1px 3px #000
+
+        .close
+          //background-color: #FFc
+          margin-top: -50px
+
+          +breakpoint($sm_celular)
+      .modal-body
+        form
+          margin-left: 110px
+
+          +breakpoint($celular)
+            margin-left: 0px
+
+          .input-modal
+            border: none
+            background-color: transparent
+            border-bottom: 2px solid $white
+            display: block
+            width: 80%
+            margin-bottom: 50px
+            padding: 5px
+            color: $white
+            text-transform: uppercase
+
+            &::placeholder
+              color: $color-font-title-section
+              text-transform: capitalize
+
+
+            &:focus
+              border: none
+              outline: 0
+              border-bottom: 2px solid $color-spotlight
+              transition: all .7s
+
+          .sendData
+            border: none
+            background-color: $bg-navbar
+            padding: 10px 26px
+            border-radius: 3px
+            color: $color-spotlight
+            font-size: 18px
+
+            i
+              margin-left: 20px
+
+      .modal-footer
+        border: none
+        img
+          width: 120px
+      //background-color: #fff

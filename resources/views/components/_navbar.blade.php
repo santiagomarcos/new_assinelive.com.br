@@ -8,9 +8,9 @@
         <div class="title-channels">Canais de atendimento:</div>
         <ul class="content-channels">
             <li class="items-channels">{{ session('partner')['phone'] }}</li>
-            <li class="items-channels">WhatAapp</li>
-            <li class="items-channels">Me ligue</li>
-            <li class="items-channels">Chat Online</li>
+            <a href=""><li class="items-channels">WhatAapp</li></a> |
+            <a href=""><li class="items-channels">Me ligue</li></a> |
+            <a href=""><li class="items-channels">Chat Online</li></a> |
         </ul>
         <span class="location"><i class="fas fa-map-marker-alt"></i>São Paulo</span>
     </div>

@@ -13,6 +13,7 @@ let destOutWatch = 'resources/assets/css/*.css';
 const buildCss = [
     "node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
+    "node_modules/bootstrap/dist/css/bootstrap.css",
     "resources/assets/css/*.css"
 ]
 
@@ -22,6 +23,7 @@ const buildJs = [
     "node_modules/axios/dist/axios.js",
     "node_modules/jquery-mask-plugin/dist/jquery.mask.js",
     "node_modules/vue/dist/vue.js",
+    "node_modules/bootstrap/dist/js/bootstrap.js",
     "resources/assets/js/main/*.js"
 ]
 
