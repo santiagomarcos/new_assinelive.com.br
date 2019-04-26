@@ -62,7 +62,7 @@
                     </span>
 
                     <div class="box-form-button">
-                        <button class="btn-banner" id="btnVerification" type="button">Verificar Cobertura</button>
+                        <button class="btn-banner" id="btnVerification" type="button">Verificar</button>
                     </div>
                 </form>
                 <!--gif reload-->
@@ -79,18 +79,17 @@
                         Não temos ainda viabilidade no seu endereço, mas não se preocupe! quando estivermos chegando em sua região entraremos em contato via e-mail ou telefone.
                     </div>
                     <div class="content-btn">
-                        <a href="../index.php"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
+                        <a href="{{ route('home') }}"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
                     </div>
                     <div class="network-social"></div>
                 </div>
 
                 <div class="inviability-content" id="minimum-content">
                     <div class="content-text-inviability">
-                        O limite de internet disponível em sua região no momento é no <span class="limit-band-modal"></span>
-                        volte para página principal e escolha o limite da sua região.
+                        O limite de internet disponível em sua região no momento é <span class="limit-band-modal"></span>. Volte para página principal e escolha a velocidade de acordo com o critério acima.
                     </div>
                     <div class="content-btn">
-                        <a href="../index.php"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
+                        <a href="{{ route('home') }}"><button class="btnSearch btn-contract"><i class="fas fa-arrow-left"></i>Voltar</button></a>
                     </div>
                     <div class="network-social"></div>
                 </div>
@@ -128,9 +127,9 @@
                             <p id="teste"></p>
                         </div>
                         <div class="box-price-broadband">
-                            <span class="type-money">R$</span>
-                            <span class="value-broadband">105,00</span>
-                            <p class="payment-mounth">por mês</p>
+                            <span class="type-money"></span>
+                            <span class="value-broadband">105,00</span> /mês
+                            {{--<p class="payment-mounth">por mês</p>--}}
                         </div>
                     </div>
 
@@ -285,11 +284,34 @@
     <script type="text/javascript">
         $('document').ready(function () {
 
-            let request_disabled_verify = false;
+            // mask's on inputs
+            $('#zip-code').mask('00000-000');
+            $('#document').mask('000.000.000-00');
+            $('#cellphone').mask('(00) 00000-0000');
+            $('#second-tel').mask('(00) 00000-0000');
+            $('#telephone').mask('(00) 00000-0000');
+            $('#phone').mask('(00) 00000-0000');
+            /**
+             * Check Maturity Date
+             */
+            $('label[class^="day-"]').on('click', function () {
+                $('label[class^="day-"]').removeClass('active-label');
+                $(this).addClass('active-label');
+            });
 
+
+            let request_disabled_verify = false;
+            let plan_request = "{{ $plan }}";
+            let have_plan = false;
+
+            /**
+             * Send ZIP code and Number for search IN API
+             */
             $("#btnVerification").click(function() {
 
+                //*Success Callback == Status Code 200
                 var callbackInputSuccess = function (res) {
+                    //* Verify success (Boolean)
                     if (!res.data.success) {
                         request_disabled_insert = false;
                         $("#loading-viability").hide();
@@ -297,7 +319,28 @@
                     } else {
                         console.log(res.data.status);
                         if(res.data.status == "OK") {
+                            $.each( res.data.values, function( key, value ) {
+                                if(key == plan_request) {
+                                    have_plan = true;
+                                    $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M","MB").replace('G',"GB"));
+                                    $(".value-broadband").html(value.replace("R$", "R$ "));
+                                    $("#section-verification").hide();
+                                    $("#loading-viability").hide();
+                                    $("#section-contract").show();
+                                } else {
+                                    have_plan = false;
+                                    if(res.data.campaign == 1 || res.data.campaign == 2){
+                                        $(".limit-band-modal").html("de 100 Mega até 2 Gigas;");
+                                    } else if(res.data.campaign == 3 || res.data.campaign == 4){
+                                        $(".limit-band-modal").html("Até 60 Mega");
+                                    }
+                                    $("#loading-viability").hide();
 
+                                    $("#minimum-content").show();
+                                }
+                            });
+
+                            console.log(have_plan);
                         } else {
                             $("#loading-viability").hide();
                             $("#inviability-content").show();
@@ -337,23 +380,7 @@
                 }
             });
 
-            // mask's on inputs
-            $('#zip-code').mask('00000-000');
-            $('#document').mask('000.000.000-00');
-            $('#cellphone').mask('(00) 00000-0000');
-            $('#second-tel').mask('(00) 00000-0000');
-            $('#telephone').mask('(00) 00000-0000');
-            $('#phone').mask('(00) 00000-0000');
-            /**
-             * Check Maturity Date
-             */
-            $('label[class^="day-"]').on('click', function () {
-                $('label[class^="day-"]').removeClass('active-label');
-                $(this).addClass('active-label');
-            });
-
             let request_disabled_insert = false;
-
             /**
              * Send Data in API.
              */
