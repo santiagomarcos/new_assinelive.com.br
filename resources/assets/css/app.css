@@ -145,6 +145,38 @@ input {
       top: 0px;
       font-size: 11px; } }
 
+.we-calling-you, .buy-to-chat, .chat-online {
+  border: none;
+  border-radius: 2px;
+  padding: 3px 40px;
+  box-shadow: 0px 2px 3px #2a2625;
+  color: #2a2625;
+  background-image: linear-gradient(to bottom, #d4cccc, #f6f1f7, #d4cccc); }
+  @media (max-width: 595px) {
+    .we-calling-you, .buy-to-chat, .chat-online {
+      padding: 3px 20px; } }
+  @media (max-width: 474px) {
+    .we-calling-you, .buy-to-chat, .chat-online {
+      padding: 1px 5px;
+      font-size: 12px; } }
+  .we-calling-you .first-btn-title, .buy-to-chat .first-btn-title, .chat-online .first-btn-title {
+    color: #6b7272; }
+  .we-calling-you .second-btn-title, .buy-to-chat .second-btn-title, .chat-online .second-btn-title {
+    font-weight: bold; }
+  .we-calling-you .contten-button .value-button, .buy-to-chat .contten-button .value-button, .chat-online .contten-button .value-button {
+    display: inline-grid; }
+  .we-calling-you .contten-button .icon-button, .buy-to-chat .contten-button .icon-button, .chat-online .contten-button .icon-button {
+    display: inline-grid;
+    position: relative;
+    font-size: 26px;
+    top: 8px;
+    left: -5px; }
+    @media (max-width: 474px) {
+      .we-calling-you .contten-button .icon-button, .buy-to-chat .contten-button .icon-button, .chat-online .contten-button .icon-button {
+        top: 5px;
+        font-size: 20px;
+        left: -2px; } }
+
 .content-channels-sales {
   padding-right: 5%;
   padding-left: 5%;
@@ -1099,10 +1131,10 @@ input {
         margin: 5px 0px; }
 
 .content-navbar-bottom {
-  background-color: #cb3444;
+  background-color: #cc2229;
   display: block;
   position: fixed;
-  bottom: -80px;
+  bottom: -100px;
   width: 100%;
   z-index: 1050;
   transition: all .6s; }
@@ -1110,15 +1142,50 @@ input {
     bottom: 0px;
     transition: bottom .6s ease-in-out; }
   .content-navbar-bottom .box-navbar-bottom {
-    width: 75%;
-    background-color: #414ba5;
+    width: 90%;
     display: block;
     position: relative;
     margin-right: auto;
     margin-left: auto;
     z-index: 1050;
-    padding: 15px;
+    padding: 10px 10px 0px 10px;
     text-align: center; }
+    @media (max-width: 767px) {
+      .content-navbar-bottom .box-navbar-bottom {
+        width: 100%;
+        padding: 10px 0px; } }
+    @media (max-width: 474px) {
+      .content-navbar-bottom .box-navbar-bottom {
+        padding-bottom: 5px; } }
+    .content-navbar-bottom .box-navbar-bottom .description-navbar-bottom, .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom, .content-navbar-bottom .box-navbar-bottom .top-page {
+      background-color: transparent;
+      display: inline-block;
+      position: relative;
+      font-size: 16px;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      text-align: left;
+      text-shadow: 1px 1px 2px #222; }
+      @media (max-width: 767px) {
+        .content-navbar-bottom .box-navbar-bottom .description-navbar-bottom, .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom, .content-navbar-bottom .box-navbar-bottom .top-page {
+          display: none; } }
+    .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom {
+      font-size: 11px;
+      text-align: center;
+      cursor: none; }
+      .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom:visited, .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom:active {
+        border: none; }
+      .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom .number-phone-navbar-bottom {
+        font-size: 18px;
+        text-shadow: 1px 1px 15px #14b1fa; }
+      .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom .description-number-navbar-bottom {
+        font-weight: normal; }
+    .content-navbar-bottom .box-navbar-bottom .top-page {
+      text-align: center;
+      text-shadow: 1px 1px 2px #222; }
+      .content-navbar-bottom .box-navbar-bottom .top-page .desc-arrow-up {
+        font-size: 12px; }
 
 .container-carousel .title-call {
   font-size: 35px;

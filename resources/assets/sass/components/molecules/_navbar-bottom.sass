@@ -1,8 +1,8 @@
 .content-navbar-bottom
-  background-color: #cb3444
+  background-color: $color-spotlight
   display: block
   position: fixed
-  bottom: -80px
+  bottom: -100px
   width: 100%
   z-index: 1050
   transition: all .6s
@@ -11,14 +11,60 @@
     bottom: 0px
     transition: bottom .6s ease-in-out
 
-
   .box-navbar-bottom
-    width: 75%
-    background-color: #414ba5
+    width: 90%
+    //background-color: #414ba5
     display: block
     position: relative
     margin-right: auto
     margin-left: auto
     z-index: 1050
-    padding: 15px
+    padding: 10px 10px 0px 10px
     text-align: center
+
+    +breakpoint($celular)
+      width: 100%
+      padding: 10px 0px
+
+    +breakpoint($sm_celular)
+      padding-bottom: 5px
+
+    .description-navbar-bottom ,.box-number-navbar-bottom, .top-page
+      background-color: transparent
+      display: inline-block
+      position: relative
+      font-size: 16px
+      color: $white
+      font-weight: bold
+      border: none
+      text-align: left
+      text-shadow: 1px 1px 2px #222
+
+      +breakpoint($celular)
+        display: none
+
+
+    .box-number-navbar-bottom
+      font-size:  11px
+      text-align: center
+      //top: -19px
+      cursor: none
+
+      &:visited, &:active
+        border: none
+
+      .number-phone-navbar-bottom
+        font-size: 18px
+        text-shadow: 1px 1px 15px $border-number-phone
+
+      .description-number-navbar-bottom
+        font-weight: normal
+
+    .top-page
+      text-align: center
+      //float: right
+      text-shadow: 1px 1px 2px #222
+
+      .desc-arrow-up
+        font-size: 12px
+

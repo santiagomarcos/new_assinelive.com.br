@@ -83,3 +83,45 @@
   +breakpoint($sm_celular)
     top: 0px
     font-size: 11px
+    
+.we-calling-you, .buy-to-chat, .chat-online
+  border: none
+  border-radius: 2px
+  padding: 3px 40px
+  box-shadow: 0px 2px 3px $color-font-body-dark
+  color: $color-font-body-dark
+  background-image: linear-gradient(to bottom, #d4cccc, #f6f1f7, #d4cccc)
+  //text-align: left
+
+  +breakpoint($md_celular)
+    padding: 3px 20px
+
+  +breakpoint($sm_celular)
+    padding: 1px 5px
+    font-size: 12px
+
+  .first-btn-title
+    color: $color-font-body
+
+  .second-btn-title
+    font-weight: bold
+
+  .contten-button
+    .value-button
+      display: inline-grid
+      //background-color: #221c15
+
+    .icon-button
+      display: inline-grid
+      //background-color: #606f7b
+      position: relative
+      font-size: 26px
+      //padding-top: 10px
+      top: 8px
+      left: -5px
+
+      +breakpoint($sm_celular)
+        top: 5px
+        font-size: 20px
+        left: -2px
+
