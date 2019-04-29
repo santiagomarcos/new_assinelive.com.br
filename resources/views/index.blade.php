@@ -41,12 +41,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'40']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN40M']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>
+                        {{--<div class="items-plan-footer">--}}
+                            {{--<a href="#">Mais beneficíos v</a>--}}
+                        {{--</div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -87,12 +87,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'60']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN60M']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                        {{--<div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -133,12 +133,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'100']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN100M']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                       {{-- <div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -179,12 +179,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'150']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN150M']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                        {{--<div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -221,12 +221,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'300']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN300M']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                        {{--<div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -263,12 +263,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'500']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN500M']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                        {{--<div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -305,12 +305,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'1']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN1G']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                        {{--<div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
                 <div class="items-plan-content">
@@ -347,12 +347,12 @@
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'2']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN2G']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
-                        <div class="items-plan-footer">
+                        {{--<div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -526,7 +526,7 @@
                         <div class="box-local-header-hover">
                             Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
                         </div>
-                        <div class="box-local-footer-hover">Disponivel em <span class="text-spotligth">Todos os planos</span></div>
+                        <div class="box-local-footer-hover">Disponivel nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
                     </div>
                 </div>
 
@@ -545,7 +545,7 @@
                         <div class="box-national-header-hover">
                             Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
                         </div>
-                        <div class="box-national-footer-hover">Disponivel em <span class="text-spotligth">Todos os planos</span></div>
+                        <div class="box-national-footer-hover">Disponivel nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
                     </div>
                 </div>
 
@@ -564,7 +564,7 @@
                         <div class="box-international-header-hover">
                             Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
                         </div>
-                        <div class="box-international-footer-hover">Disponivel em <span class="text-spotligth">Todos os planos</span></div>
+                        <div class="box-international-footer-hover">Disponivel nos planos <span class="text-spotligth">1 e 2 giga</span></div>
                     </div>
                 </div>
             </div>

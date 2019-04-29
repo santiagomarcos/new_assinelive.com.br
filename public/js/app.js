@@ -32412,7 +32412,7 @@ const app = new Vue({
 
     el: '#digital_services',
         data:{
-            plan_tablet: '',
+            plan_tablet: '60 mega',
 
             obj_ei1:{
                 display: 'block'
@@ -32420,28 +32420,28 @@ const app = new Vue({
         },
         methods: {
             c_40mb: function (e) {
-                this.plan_tablet = '40mega'
+                this.plan_tablet = '40 mega'
             },
             c_60mb: function (e) {
-                this.plan_tablet = '60mega'
+                this.plan_tablet = '60 mega'
             },
             c_100mb: function (e) {
-                this.plan_tablet = '100mega'
+                this.plan_tablet = '100 mega'
             },
             c_150mb: function (e) {
                 this.plan_tablet = '150mega'
             },
             c_300mb: function (e) {
-                this.plan_tablet = '300mega'
+                this.plan_tablet = '300 mega'
             },
             c_500mb: function (e) {
-                this.plan_tablet = '500mega'
+                this.plan_tablet = '500 mega'
             },
             c_1gb: function (e) {
-                this.plan_tablet = '1giga'
+                this.plan_tablet = '1 giga'
             },
             c_2gb: function (e) {
-                this.plan_tablet = '2giga'
+                this.plan_tablet = '2 giga'
             },
     }
 });
@@ -32626,35 +32626,35 @@ $(document).ready(function () {
 
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/40');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN40M');
     })
     $('#c_60mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/60');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN60M');
     })
     $('#c_100mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/100');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN100M');
     })
     $('#c_150mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/150');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN150M');
     })
     $('#c_300mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/300');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN300M');
     })
     $('#c_500mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/500');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN500M');
     })
     $('#c_1gb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/1');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN1G');
     })
     $('#c_2gb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/2');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN2G');
     })
 
     $('.btn-toggle').on('click',function () {
@@ -32710,4 +32710,6 @@ $(document).ready(function () {
             scrollTop: 0
         }, 750);
     })
+
+
 })

@@ -7,10 +7,10 @@
         </div>
         <div class="title-channels">Canais de atendimento:</div>
         <ul class="content-channels">
-            <li class="items-channels">{{ session('partner')['phone'] }}</li>
+            <li class="items-channels">{{ session('partner')['phone'] }}</li> |
             <a href=""><li class="items-channels">WhatAapp</li></a> |
-            <a href=""><li class="items-channels">Me ligue</li></a> |
-            <a href=""><li class="items-channels">Chat Online</li></a> |
+            <a href="" id="weCalling" data-toggle="modal" data-target="#weCall"><li class="items-channels">Me ligue</li></a> |
+            <a href=""><li class="items-channels">Chat Online</li></a>
         </ul>
         <span class="location"><i class="fas fa-map-marker-alt"></i>São Paulo</span>
     </div>
@@ -28,7 +28,7 @@
                 <a href="#faq"><li class="items-menu">FAQ</li></a>
             </ul>
             <div class="box-button">
-                <a href="{{ route('pages.verifications') }}"><button class="btn-buy-now" >Contratar</button></a>
+                <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-buy-now" >Assine já</button></a>
             </div>
             <div class="box-number">
                 <div class="description-call">Assine pelo nosso número</div>

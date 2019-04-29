@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <a href="{{ route('pages.verifications', ['plan'=>'60']) }}"><button class="btn-banner" @click="buyBanner" >Contratar</button></a>
+                        <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-banner" @click="buyBanner" >Contratar</button></a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <a href="{{ route('pages.verifications',['plan'=>'100']) }}"><button class="btn-banner" >Contratar</button></a>
+                        <a href="{{ route('pages.verifications',['plan'=>'PLAN100M']) }}"><button class="btn-banner" >Contratar</button></a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class="button-banner">
-                        <a href="{{ route('pages.verifications',['plan'=>'150']) }}"><button class="btn-banner"  >Contratar</button></a>
+                        <a href="{{ route('pages.verifications',['plan'=>'PLAN150M']) }}"><button class="btn-banner"  >Contratar</button></a>
                     </div>
                 </div>
             </div>
