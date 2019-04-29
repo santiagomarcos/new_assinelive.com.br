@@ -594,3 +594,33 @@
     </div>
     @include('components._navbar-bottom')
 @endsection
+@section('extra-scripts')
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#inputPhone').mask('(00) 00000-0000');
+            let request_disabled_verify = false;
+            $('#sendData').click(function () {
+                if (!request_disabled_verify) {
+
+                    var name = $('#inputName').val();
+                    var phone = $('#inputPhone').val();
+                    request_disabled_verify = true;
+                    axios.post('{{ route('api.calling.send') }}', {
+                        name: name,
+                        phone: phone,
+                    });
+                    $('.form').hide();
+                    $('.message_success').show();
+                    $('.message_success').html('Informações enviadas com sucesso !!');
+                    setTimeout(function() {
+                        $('#weCall').modal('hide');
+                    }, 3500)
+                }
+
+
+            });
+        });
+
+    </script>
+@endsection

@@ -11463,6 +11463,10 @@ input {
   background-image: linear-gradient(#082b35, #354b51, #082b35); }
   .modal .modal-dialog .modal-content .modal-header {
     border: none; }
+    .modal .modal-dialog .modal-content .modal-header .close {
+      margin-top: 0px !important;
+      position: absolute;
+      right: 30px; }
     .modal .modal-dialog .modal-content .modal-header .modal-title {
       display: block; }
       @media (max-width: 767px) {
@@ -11485,6 +11489,17 @@ input {
         text-shadow: 1px 1px 3px #000; }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -50px; }
+  .modal .modal-dialog .modal-content .modal-body .message_success {
+    display: none;
+    background: #299e43;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px; }
   .modal .modal-dialog .modal-content .modal-body form {
     margin-left: 110px; }
     @media (max-width: 767px) {
