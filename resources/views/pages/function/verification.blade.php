@@ -288,6 +288,51 @@
     <script type="text/javascript">
         $('document').ready(function () {
 
+            function limpa_formulário_cep() {
+                $("#street").val("");
+                $("#neighborhood").val("");
+                $("#city").val("");
+                $("#state").val("");
+                $("#ibge").val("");
+            }
+
+            $("#zip-code").blur(function () {
+                var cep = $(this).val();
+                if (cep != "") {
+                    var validacep = /^[0-9]{5}-?[0-9]{3}$/;
+                    if (validacep.test(cep)) {
+                        $("#address-show").val("...")
+                        $("#neighborhood").val("...")
+                        $("#city").val("...")
+                        $("#state").val("...")
+                        $("#ibge").val("...")
+
+                        $.getJSON("//viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+                            if (!("erro" in dados)) {
+                                $('#zip-code-show').val(cep);
+                                $("#address-show").val(dados.logradouro);
+                                $("#neighborhood").val(dados.bairro);
+                                $("#city").val(dados.localidade);
+                                $("#state").val(dados.uf);
+                                $("#ibge").val(dados.ibge);
+                                $("#number-show").val($("#number-home").val());
+
+                            }
+                            else {
+                                limpa_formulário_cep();
+                                alert("CEP não encontrado.");
+                            }
+                        });
+                    }
+                    else {
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                }
+                else {
+                    limpa_formulário_cep();
+                }
+            });
             // mask's on inputs
             $('#zip-code').mask('00000-000');
             $('#document').mask('000.000.000-00');
@@ -302,6 +347,7 @@
                 $('label[class^="day-"]').removeClass('active-label');
                 $(this).addClass('active-label');
             });
+
 
 
             let request_disabled_verify = false;
@@ -374,9 +420,20 @@
                 if (!request_disabled_verify) {
                     $("#form_verification").hide();
                     $("#loading-viability").show();
+                    var name = $("#l-name").val();
+                    $("#name").val($("#l-name")).val();
+                    var phone = $("#telephone").val();
+                    var email = $("#l-email").val();
                     var zipcode = $("#zip-code").val();
                     var numberhome = $("#number-home").val();
                     request_disabled_verify = true;
+                    axios.post('{{ route('v1.consult.viability') }}', {
+                        name: name,
+                        phone: phone,
+                        email : email,
+                        zip: zipcode,
+                        number: numberhome,
+                    });
                     axios.post('{{ route('v1.consult.search') }}', {
                         zip: zipcode,
                         number: numberhome,
