@@ -17,6 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(['prefix' => 'api', 'as' => 'api.'], function (){
+    Route::group(['prefix' => 'calling', 'as' => 'calling.'], function (){
+        Route::post('/send', 'API\\CallingMeController@create')->name('send');
+    });
+});
+
 /**
  * V1 API routes
  */

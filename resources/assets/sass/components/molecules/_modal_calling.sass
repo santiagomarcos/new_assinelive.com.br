@@ -12,6 +12,12 @@
         //    display: block
         //    position: relative
 
+
+        .close
+          margin-top: 0px !important
+          position: absolute
+          right: 30px
+
         .modal-title
           //background-color: #fff
           //margin-left: 110px
@@ -44,7 +50,19 @@
           margin-top: -50px
 
           +breakpoint($sm_celular)
+
       .modal-body
+        .message_success
+          display: none
+          background: #299e43
+          padding: 10px
+          text-align: center
+          border-radius: 5px
+          color: white
+          width: 70%
+          margin: auto
+          font-weight: bold
+          font-size: 18px
         form
           margin-left: 110px
 
