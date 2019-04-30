@@ -467,6 +467,7 @@
                             var plan_wan =  $("#confirm-plan-wan").val();
                             $('#loading').hide();
                             $('#waiting').hide();
+                            $(".name-client").val($("#name").val());
                             $("#sucess-content").show();
                             $("#contract-plan").html(plan_wan);
                             $(".number-order").html(res.data.id);

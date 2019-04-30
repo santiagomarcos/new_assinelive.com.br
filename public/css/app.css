@@ -12402,7 +12402,7 @@ input {
           position: relative; }
 
 #section-verification .content-verification {
-  display: none;
+  display: flex;
   height: auto;
   padding-right: 5%;
   padding-left: 5%;
@@ -12426,7 +12426,7 @@ input {
       #section-verification .content-verification .title-verification {
         padding: 10px 10px; } }
   #section-verification .content-verification .form-verification {
-    display: none;
+    display: block;
     height: auto;
     padding: 10px 20px;
     border: 1px solid #A1A9A9;
@@ -12456,7 +12456,7 @@ input {
           display: none; }
 
 #section-contract {
-  display: block;
+  display: none;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
