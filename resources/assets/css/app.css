@@ -1710,7 +1710,8 @@ input {
       width: 100%; } }
         .digital-services .content-digital-services .digital-services-body .content-app .title-app {
           text-align: center;
-          color: #042656; }
+          color: #042656;
+          font-weight: bold; }
         .digital-services .content-digital-services .digital-services-body .content-app .call-app {
           text-align: center; }
           .digital-services .content-digital-services .digital-services-body .content-app .call-app .title-app {
