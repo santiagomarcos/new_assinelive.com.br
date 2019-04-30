@@ -176,6 +176,17 @@ $(document).ready(function () {
             $('#cnt_looke').show();
         }
     }
+    function validate_inputs (){
+        if ($('#l-name').val() == '' ||
+            $('#l-email').val() == '' ||
+            $('#telephone').val() =='' ||
+            $('#zip-code').val() == '' ||
+            $('#number-home').val() === ""){
+            $('#btnVerification').prop('disabled',true);
+        }else{
+            $('#btnVerification').prop('disabled',false);
+        }
+    }
 
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
@@ -263,6 +274,11 @@ $(document).ready(function () {
             scrollTop: 0
         }, 750);
     })
+
+    $('#btnVerification').on('click',function () {
+
+    })
+
 
 
 })
