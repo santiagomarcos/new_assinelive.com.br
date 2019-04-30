@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="content-after">
-        <div class="coopright">@ 2019 Assine Live. Todos os direitos reservados;</div>
+        <div class="coopright">@ 2019 Assine Live. Todos os direitos reservados.</div>
         <div class="developing">Desenvolvido por <a href="https://ffxsistemas.com">FFX Sistemas</a></div>
     </div>
 </footer>
