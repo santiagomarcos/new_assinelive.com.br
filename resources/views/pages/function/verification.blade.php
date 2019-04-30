@@ -38,7 +38,7 @@
     {{--@include('components._header')--}}
     <section id="section-verification">
         <div class="content-verification">
-            <h1 class="title-verification">Verificar Cobertura:</h1>
+            <h1 class="title-verification">Verificar Cobertura</h1>
             <div class="form-verification">
                 <form id="form_verification" action="" method="post">
                     <div class="box-form-verification">
@@ -105,16 +105,13 @@
         <div class="content-contract">
             <div class="description-plan-content">
                 <div class="description-plan-header">
-                    <h1 class="title-choose-plan">Plano escolhido:</h1>
+                    <h1 class="title-choose-plan">Plano escolhido</h1>
                 </div>
                 <div class="description-plan-body">
 
                     <div class="box-info-plans">
-                        <p class="title-info-plans">Informações gerais: </p>
+                        <p class="title-info-plans">Canais inclusos no plano</p>
                         <div class="box-chanells-plans">
-                            <p class="description-chanells">
-                                Canais inclusos no plano:
-                            </p>
                             <div class="chanells-content">
                                 Fox Life, FX, Esporte Interativo, National Geographic, National Geo kids,
                                 National Geo Wild, Fox Sports, National Geographic, Cartoon network Já,
@@ -138,10 +135,10 @@
                     </div>
 
                     <div class="box-contract-plan">
-                        <p class="contract-title">Contrato:</p>
+                        <p class="contract-title">Contrato</p>
                         <div class="description-contract">
                             <p class="desc-taxa">
-                                Taxa de adesão/instalação:
+                                Taxa de adesão/instalação
                                 <strong >12x de R$ <span class="taxa-instalation"></span></strong>
                             </p>
                             <p class="loyatlity">Fidelização 12 meses</p>
@@ -154,13 +151,13 @@
 
         <div class="form-contract-content">
             <div class="form-contract-header">
-                <h1 class="title-form-contract">Formulário de Pedido:</h1>
+                <h1 class="title-form-contract">Formulário de Pedido</h1>
             </div>
 
             <div class="form-contract-body" >
                 <div class="form-contract">
                     <div class="data-people-content">
-                        <h1 class="title-form-contract">Dados Pessoais:</h1>
+                        <h1 class="title-form-contract">Dados Pessoais</h1>
                     </div>
                     <div class="box-form-contract">
                         <label for="name">Nome</label>
