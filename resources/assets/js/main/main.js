@@ -5,6 +5,12 @@
 
 mt('send', 'pageview');
 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-129140158-1');
+
 $(document).ready(function () {
     //owl carousel
     $('.owl-carousel').owlCarousel({
