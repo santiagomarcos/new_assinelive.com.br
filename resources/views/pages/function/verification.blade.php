@@ -315,7 +315,6 @@
                                 $("#city").val(dados.localidade);
                                 $("#state").val(dados.uf);
                                 $("#ibge").val(dados.ibge);
-                                $("#number-show").val($("#number-home").val());
 
                             }
                             else {
@@ -345,6 +344,9 @@
              */
             $('label[class^="day-"]').on('click', function () {
                 $('label[class^="day-"]').removeClass('active-label');
+                labelID = $(this).attr('for');
+                $('#'+labelID).attr('checked','checked');
+                console.log(labelID);
                 $(this).addClass('active-label');
             });
 
@@ -359,6 +361,11 @@
              */
             $("#btnVerification").click(function() {
 
+                $("#number-show").val($("#number-home").val());
+                $("#cellphone").val($("#telephone").val());
+                $("#email").val($("#l-email").val());
+
+
                 //*Success Callback == Status Code 200
                 var callbackInputSuccess = function (res) {
                     //* Verify success (Boolean)
@@ -371,6 +378,7 @@
                         if(res.data.status == "OK") {
                             $.each( res.data.values, function( key, value ) {
                                 if(key == plan_request) {
+
                                     have_plan = true;
                                     $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M","MB").replace('G',"GB"));
                                     $(".value-broadband").html(value.replace("R$", "R$ "));
@@ -421,74 +429,74 @@
                     $("#form_verification").hide();
                     $("#loading-viability").show();
                     var name = $("#l-name").val();
-                    $("#name").val($("#l-name")).val();
+                    $("#name").val($("#l-name").val());
                     var phone = $("#telephone").val();
                     var email = $("#l-email").val();
                     var zipcode = $("#zip-code").val();
                     var numberhome = $("#number-home").val();
                     request_disabled_verify = true;
-                    axios.post('{{ route('v1.consult.viability') }}', {
+                 axios.post('{{ route('v1.consult.viability') }}', {
                         name: name,
                         phone: phone,
                         email : email,
                         zip: zipcode,
                         number: numberhome,
                     });
-                    axios.post('{{ route('v1.consult.search') }}', {
+                 axios.post('{{ route('v1.consult.search') }}', {
                         zip: zipcode,
                         number: numberhome,
                     }).then(callbackInputSuccess, callbackInputFail);
-                }
-            });
+                 }
+                 });
 
-            let request_disabled_insert = false;
-            /**
-             * Send Data in API.
-             */
-            $("#btnNextContract").click(function() {
-
-                /**
-                 * Callback Success
-                 * @param res
+                 let request_disabled_insert = false;
+                 /**
+                 * Send Data in API.
                  */
-                var callbackInputSuccess = function (res) {
-                    if (!res.data.success) {
+                $("#btnNextContract").click(function() {
+
+                    /**
+                     * Callback Success
+                     * @param res
+                     */
+                    var callbackInputSuccess = function (res) {
+                        if (!res.data.success) {
+                            request_disabled_insert = false;
+                            $('#finalizado').hide();
+                        } else {
+                            var plan_wan =  $("#confirm-plan-wan").val();
+                            $('#loading').hide();
+                            $('#waiting').hide();
+                            $("#sucess-content").show();
+                            $("#contract-plan").html(plan_wan);
+                            $(".number-order").html(res.data.id);
+                            request_disabled_insert = false;
+                        }
+                    };
+
+                    /**
+                     * Callback Fail (Internet Disconnect or No returned Data).
+                     * @param res
+                     */
+                    var callbackInputFail = function (res) {
                         request_disabled_insert = false;
-                        $('#finalizado').hide();
-                    } else {
-                        var plan_wan =  $("#confirm-plan-wan").val();
                         $('#finalizado').show();
                         $('#loading').hide();
                         $('#waiting').hide();
-                        $("#contract-plan").html(plan_wan);
-                        $("#number-order").html(res.data.id);
-                        request_disabled_insert = false;
-                    }
-                };
+                    };
 
-                /**
-                 * Callback Fail (Internet Disconnect or No returned Data).
-                 * @param res
-                 */
-                var callbackInputFail = function (res) {
-                    request_disabled_insert = false;
-                    $('#finalizado').show();
-                    $('#loading').hide();
-                    $('#waiting').hide();
-                };
-
-                /**
-                 * Variables for INPUT BASIC DATA
-                 */
-                var name = $("#name").val();
-                var user = '{{ session('partner')['name'] }}';
-                var document = $("#document").val();
-                var phone_cel = $("#cellphone").val();
-                var phone_fixo = $("#second-tel").val();
-                var mother = $("#confirm-mother").val();
-                var birth = $("#born").val();
-                var email = $("#email").val();
-                /**
+                    /**
+                     * Variables for INPUT BASIC DATA
+                     */
+                    var name = $("#name").val();
+                    var user = '{{ session('partner')['name'] }}';
+                    var document = $("#document").val();
+                    var phone_cel = $("#cellphone").val();
+                    var phone_fixo = $("#second-tel").val();
+                    var mother = $("#mother_name").val();
+                    var birth = $("#born").val();
+                    var email = $("#email").val();
+                    /**
                  * INPUT Address
                  * @type {*|jQuery}
                  */
@@ -526,18 +534,18 @@
                         UF: state,
                         phone_fixo: phone_fixo,
                         phone_cel: phone_cel,
-                        plan_wan: plan_wan,
+                        plan_wan: plan_request,
                         name_mother: mother,
                         date_birth: birth,
                         BAIRRO: neighborhood,
                         NUMEROEND: number,
                         COMPLEMENTO: complement,
                         email: email,
-                        maturity_date: maturity_date,
+                        maturity_date: $('input[name=day-maturity-invoice]:checked').val(),
                         plan_phone: plan_phone,
-                        portability: portability,
-                        number_portability: number_portability,
-                        operator: operator
+                        number_portability: null,
+                        portability: "NAO",
+                        operator: "NENHUM"
                     }).then(callbackInputSuccess, callbackInputFail);
                 }
             })
