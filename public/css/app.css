@@ -12402,7 +12402,7 @@ input {
           position: relative; }
 
 #section-verification .content-verification {
-  display: flex;
+  display: none;
   height: auto;
   padding-right: 5%;
   padding-left: 5%;
@@ -12426,7 +12426,7 @@ input {
       #section-verification .content-verification .title-verification {
         padding: 10px 10px; } }
   #section-verification .content-verification .form-verification {
-    display: block;
+    display: none;
     height: auto;
     padding: 10px 20px;
     border: 1px solid #A1A9A9;
@@ -12456,7 +12456,7 @@ input {
           display: none; }
 
 #section-contract {
-  display: none;
+  display: block;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
@@ -12826,7 +12826,7 @@ input {
           border-radius: 100%;
           display: inline-block;
           width: 40px;
-          height: 30px;
+          height: 40px;
           padding-top: 10px;
           margin: 0 2px;
           cursor: pointer;

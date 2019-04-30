@@ -32407,7 +32407,6 @@ const app = new Vue({
 
         },
         methods: {
-
     },
 
     el: '#digital_services',
