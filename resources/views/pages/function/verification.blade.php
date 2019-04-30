@@ -255,7 +255,7 @@
                         e do <a target="_blank" href="" class="terms-conditions">Contrato de Prestação de Serviço</a>, e autorizo a TIM a entrar em contato comigo nos telefones informados.
                     </label>
 
-                    <button class="btn-banner mbt" type="button" id="btnNextContract" >Solicitar Plano</button>
+                    <button class="btn-banner mbt" type="button" id="btnNextContract" disabled >Solicitar Plano</button>
                 </div>
             </div>
             <!--gif reload-->
@@ -268,7 +268,7 @@
 
             <div class="sucess-content" id="sucess-content">
                 <p>
-                    Parabéns <strong class="name-client">   </strong>! seu pedido foi reaçozadp com sucesso.
+                    Parabéns <strong class="name-client">   </strong>! seu pedido foi realizado com sucesso.
                     Se desejar pode conferir a descrição do plano contratado na caixa "PLANO ESCOLHIDO", o numero do seu pedido é : N°
                     <strong class="number-order"></strong>.<br>
                     Em até 24hr entraremos em contato para a finalização da sua compra.
@@ -298,6 +298,60 @@
         }
 
         $('document').ready(function () {
+
+            function inputEmpty(){
+                if ($('#name').val() == "" ||
+                    $('#document').val() == "" ||
+                    $('#cellphone').val() == "" ||
+                    $('#second-tel').val() == "" ||
+                    $('#email').val() == "" ||
+                    $('#mother_name').val() == "" ||
+                    $('#born').val() == ""){
+                    return false;
+                } else{
+                    return true;
+                }
+            }
+
+            $('input:radio[name="terms-conditions"]').change(function() {
+                if ($("input[name='terms-conditions']:checked")) {
+                    if (inputEmpty()){
+                        $('#btnNextContract').prop('disabled', false);
+                    }else{
+                        if ($('#name').val() == ""){
+                            $('#name').prop('placeholder','Preencha este campo corretamente');
+                            $('#name').css('background','#fff5e7');
+                            $('#name').focus();
+                        } else if ($('#document').val()==""){
+                            $('#document').prop('placeholder','Preencha este campo corretamente');
+                            $('#document').css('background','#FFF5E7');
+                            $('#document').focus();
+                        } else if ($('#cellphone').val()==""){
+                            $('#cellphone').prop('placeholder','Preencha este campo corretamente');
+                            $('#cellphone').css('background','#FFF5E7');
+                            $('#cellphone').focus();
+                        } else if ($('#second-tel').val()==""){
+                            $('#second-tel').prop('placeholder','Preencha este campo corretamente');
+                            $('#second-tel').css('background','#FFF5E7');
+                            $('#second-tel').focus();
+                        } else if ($('#email').val()==""){
+                            $('#email').prop('placeholder','Preencha este campo corretamente');
+                            $('#email').css('background','#FFF5E7');
+                            $('#email').focus();
+                        } else if ($('#mother_name').val()==""){
+                            $('#mother_name').prop('placeholder','Preencha este campo corretamente');
+                            $('#mother_name').css('background','#FFF5E7');
+                            $('#mother_name').focus();
+                        } else if ($('#complement').val()==""){
+                            $('#complement').prop('placeholder','Preencha este campo corretamente');
+                            $('#complement').css('background','#FFF5E7');
+                            $('#complement').focus();
+                        }
+                        $(this).prop('checked',false);
+                    }
+                }
+            });
+
 
 
 
