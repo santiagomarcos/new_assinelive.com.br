@@ -2180,7 +2180,7 @@ input {
           display: none; }
 
 #section-contract {
-  display: block;
+  display: none;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;

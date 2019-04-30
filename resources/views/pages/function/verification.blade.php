@@ -165,7 +165,7 @@
                     </div>
                     <div class="box-form-contract">
                         <label for="document">CPF:</label>
-                        <input type="text" name="document" id="document" placeholder="___.___.___-__" required>
+                        <input type="text" name="document" onchange="enviaCPF(this.value);" id="document" placeholder="___.___.___-__" required>
                     </div>
                     <div class="box-form-contract">
                         <label for="cellphone">Celular:</label>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="box-form-contract">
                         <label for="born">Data de nascimento:</label>
-                        <input type="date" name="born" id="born" required>
+                        <input type="text" name="born" id="born" required>
                     </div>
                 </div>
 
@@ -268,7 +268,7 @@
 
             <div class="sucess-content" id="sucess-content">
                 <p>
-                    Parabéns <strong class="name-client">   </strong>! seu pedido foi ralizado com sucesso.
+                    Parabéns <strong class="name-client">   </strong>! seu pedido foi reaçozadp com sucesso.
                     Se desejar pode conferir a descrição do plano contratado na caixa "PLANO ESCOLHIDO", o numero do seu pedido é : N°
                     <strong class="number-order"></strong>.<br>
                     Em até 24hr entraremos em contato para a finalização da sua compra.
@@ -283,7 +283,23 @@
 
 @section('extra-scripts')
     <script type="text/javascript">
+        function enviaCPF(obj) {
+            if (obj != '') {
+                $.get("https://nox.ffxsistemas.com/api/v1/consult/document?document=" + obj, function (data) {
+                    var arr = data.split('|');
+                    $('#name').val(arr['0']);
+                    $('#sex').val(arr[1]);
+                    $('#born').val(arr[2]);
+                    $('#lifestatus').val(arr[3]);
+                    $('#irf').val(arr[4]);
+                    $('#mother_name').val(arr[5]);
+                });
+            }
+        }
+
         $('document').ready(function () {
+
+
 
             function limpa_formulário_cep() {
                 $("#street").val("");
@@ -332,6 +348,8 @@
             // mask's on inputs
             $('#zip-code').mask('00000-000');
             $('#document').mask('000.000.000-00');
+
+            $('#born').mask('00/00/0000');
             $('#cellphone').mask('(00) 00000-0000');
             $('#second-tel').mask('(00) 00000-0000');
             $('#telephone').mask('(00) 00000-0000');
@@ -442,7 +460,12 @@
                  axios.post('{{ route('v1.consult.search') }}', {
                         zip: zipcode,
                         number: numberhome,
-                    }).then(callbackInputSuccess, callbackInputFail);
+                    }, {
+                     headers: {
+                         'Access-Control-Allow-Origin': 'https://assinelive.com.br',
+                     }
+                 }
+                 ).then(callbackInputSuccess, callbackInputFail);
                  }
                  });
 
@@ -464,6 +487,7 @@
                             var plan_wan =  $("#confirm-plan-wan").val();
                             $('#loading').hide();
                             $('#waiting').hide();
+                            $(".name-client").val($("#name").val());
                             $("#sucess-content").show();
                             $("#contract-plan").html(plan_wan);
                             $(".number-order").html(res.data.id);
@@ -543,7 +567,10 @@
                         number_portability: null,
                         portability: "NAO",
                         operator: "NENHUM"
-                    }).then(callbackInputSuccess, callbackInputFail);
+                    }, {
+                        headers: {
+                            'Access-Control-Allow-Origin': 'https://assinelive.com.br',
+                        }}).then(callbackInputSuccess, callbackInputFail);
                 }
             })
         });
