@@ -271,7 +271,7 @@
 
             <div class="sucess-content" id="sucess-content">
                 <p>
-                    Parabéns <strong class="name-client">   </strong>! seu pedido foi ralizado com sucesso.
+                    Parabéns <strong class="name-client">   </strong>! seu pedido foi reaçozadp com sucesso.
                     Se desejar pode conferir a descrição do plano contratado na caixa "PLANO ESCOLHIDO", o numero do seu pedido é : N°
                     <strong class="number-order"></strong>.<br>
                     Em até 24hr entraremos em contato para a finalização da sua compra.
