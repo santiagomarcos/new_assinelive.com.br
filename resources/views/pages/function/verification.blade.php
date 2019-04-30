@@ -445,7 +445,12 @@
                  axios.post('{{ route('v1.consult.search') }}', {
                         zip: zipcode,
                         number: numberhome,
-                    }).then(callbackInputSuccess, callbackInputFail);
+                    }, {
+                     headers: {
+                         'Access-Control-Allow-Origin': 'https://assinelive.com.br',
+                     }
+                 }
+                 ).then(callbackInputSuccess, callbackInputFail);
                  }
                  });
 
@@ -547,7 +552,10 @@
                         number_portability: null,
                         portability: "NAO",
                         operator: "NENHUM"
-                    }).then(callbackInputSuccess, callbackInputFail);
+                    }, {
+                        headers: {
+                            'Access-Control-Allow-Origin': 'https://assinelive.com.br',
+                        }}).then(callbackInputSuccess, callbackInputFail);
                 }
             })
         });
