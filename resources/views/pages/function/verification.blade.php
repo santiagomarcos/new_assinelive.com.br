@@ -424,6 +424,17 @@
             let request_disabled_verify = false;
             let plan_request = "{{ $plan }}";
             let have_plan = false;
+            function validate_inputs (){
+                if ($('#l-name').val() == '' ||
+                    $('#l-email').val() == '' ||
+                    $('#telephone').val() =='' ||
+                    $('#zip-code').val() == '' ||
+                    $('#number-home').val() === ""){
+                    return false;
+                }else{
+                    return true;
+                }
+            }
 
             /**
              * Send ZIP code and Number for search IN API
@@ -433,94 +444,126 @@
                 $("#number-show").val($("#number-home").val());
                 $("#cellphone").val($("#telephone").val());
                 $("#email").val($("#l-email").val());
+                $("#name").val($("#l-name").val());
+                $("#zip").val($("#zip-code").val());
 
+                if (validate_inputs()){
 
-                //*Success Callback == Status Code 200
-                var callbackInputSuccess = function (res) {
-                    //* Verify success (Boolean)
-                    if (!res.data.success) {
-                        request_disabled_insert = false;
-                        $("#loading-viability").hide();
-                        $("#inviability-content").show();
-                    } else {
-                        console.log(res.data.status);
-                        if(res.data.status == "OK") {
-                            $.each( res.data.values, function( key, value ) {
-                                if(key == plan_request) {
+                    $('#btnVerification').prop('disabled', false);
 
-                                    have_plan = true;
-                                    $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M","MB").replace('G',"GB"));
-                                    $(".value-broadband").html(value.replace("R$", "R$ "));
-                                    $("#section-verification").hide();
-                                    $("#loading-viability").hide();
-                                    $("#section-contract").show();
-                                } else {
-                                    have_plan = false;
-                                    if(res.data.campaign == 1 || res.data.campaign == 2){
-                                        $(".limit-band-modal").html("de 100 Mega até 2 Gigas;");
-                                    } else if(res.data.campaign == 3 || res.data.campaign == 4){
-                                        $(".limit-band-modal").html("Até 60 Mega");
-                                    }
-                                    $("#loading-viability").hide();
-
-                                    $("#minimum-content").show();
-                                }
-                            });
-
-                            console.log(have_plan);
-                        } else {
+                    //*Success Callback == Status Code 200
+                    var callbackInputSuccess = function (res) {
+                        //* Verify success (Boolean)
+                        if (!res.data.success) {
+                            request_disabled_insert = false;
                             $("#loading-viability").hide();
                             $("#inviability-content").show();
+                        } else {
+                            console.log(res.data.status);
+                            if(res.data.status == "OK") {
+                                $.each( res.data.values, function( key, value ) {
+                                    if(key == plan_request) {
+
+                                        have_plan = true;
+                                        $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M","MB").replace('G',"GB"));
+                                        $(".value-broadband").html(value.replace("R$", "R$ "));
+                                        $("#section-verification").hide();
+                                        $("#loading-viability").hide();
+                                        $("#section-contract").show();
+                                    } else {
+                                        have_plan = false;
+                                        if(res.data.campaign == 1 || res.data.campaign == 2){
+                                            $(".limit-band-modal").html("de 100 Mega até 2 Gigas;");
+                                        } else if(res.data.campaign == 3 || res.data.campaign == 4){
+                                            $(".limit-band-modal").html("Até 60 Mega");
+                                        }
+                                        $("#loading-viability").hide();
+
+                                        $("#minimum-content").show();
+                                    }
+                                });
+
+                                console.log(have_plan);
+                            } else {
+                                $("#loading-viability").hide();
+                                $("#inviability-content").show();
+                            }
+                            var plan_wan =  $("#confirm-plan-wan").val();
+                            $('#finalizado').show();
+                            $('#loading').hide();
+                            $('#waiting').hide();
+                            $("#contract-plan").html(plan_wan);
+                            $("#number-order").html(res.data.id);
+                            request_disabled_verify = false;
                         }
-                        var plan_wan =  $("#confirm-plan-wan").val();
+                    };
+
+                    /**
+                     * Callback Fail (Internet Disconnect or No returned Data).
+                     * @param res
+                     */
+                    var callbackInputFail = function (res) {
+                        request_disabled_verify = false;
                         $('#finalizado').show();
                         $('#loading').hide();
                         $('#waiting').hide();
-                        $("#contract-plan").html(plan_wan);
-                        $("#number-order").html(res.data.id);
-                        request_disabled_verify = false;
+                    };
+
+
+                    if (!request_disabled_verify) {
+                        $("#form_verification").hide();
+                        $("#loading-viability").show();
+                        var name = $("#l-name").val();
+                        $("#name").val($("#l-name").val());
+                        var phone = $("#telephone").val();
+                        var email = $("#l-email").val();
+                        var zipcode = $("#zip-code").val();
+                        var numberhome = $("#number-home").val();
+                        request_disabled_verify = true;
+                        axios.post('{{ route('v1.consult.viability') }}', {
+                            name: name,
+                            phone: phone,
+                            email : email,
+                            zip: zipcode,
+                            number: numberhome,
+                        });
+                        axios.post('{{ route('v1.consult.search') }}', {
+                                zip: zipcode,
+                                number: numberhome,
+                            }, {
+                                headers: {
+                                    'Access-Control-Allow-Origin': 'https://assinelive.com.br',
+                                }
+                            }
+                        ).then(callbackInputSuccess, callbackInputFail);
                     }
-                };
+                }else{
+                    if ($('#l-name').val() == ""){
+                        $('#l-name').prop('placeholder','Preencha este campo corretamente');
+                        $('#l-name').css('background','#fff5e7');
+                        $('#l-name').focus();
+                    } else if ($('#telephone').val()==""){
+                        $('#telephone').prop('placeholder','Preencha este campo corretamente');
+                        $('#telephone').css('background','#FFF5E7');
+                        $('#telephone').focus();
+                    } else if ($('#l-email').val()==""){
+                        $('#l-email').prop('placeholder','Preencha este campo corretamente');
+                        $('#l-email').css('background','#FFF5E7');
+                        $('#l-email').focus();
+                    } else if ($('#number-home').val()==""){
+                        $('#number-home').prop('placeholder','Preencha este campo corretamente');
+                        $('#number-home').css('background','#FFF5E7');
+                        $('#number-home').focus();
+                    } else if ($('#zip-code').val()==""){
+                        $('#zip-code').prop('placeholder','Preencha este campo corretamente');
+                        $('#zip-code').css('background','#FFF5E7');
+                        $('#zip-code').focus();
+                    }
+                    // $('#btnVerification').prop('disabled', true);
 
-                /**
-                 * Callback Fail (Internet Disconnect or No returned Data).
-                 * @param res
-                 */
-                var callbackInputFail = function (res) {
-                    request_disabled_verify = false;
-                    $('#finalizado').show();
-                    $('#loading').hide();
-                    $('#waiting').hide();
-                };
+                }
 
 
-                if (!request_disabled_verify) {
-                    $("#form_verification").hide();
-                    $("#loading-viability").show();
-                    var name = $("#l-name").val();
-                    $("#name").val($("#l-name").val());
-                    var phone = $("#telephone").val();
-                    var email = $("#l-email").val();
-                    var zipcode = $("#zip-code").val();
-                    var numberhome = $("#number-home").val();
-                    request_disabled_verify = true;
-                 axios.post('{{ route('v1.consult.viability') }}', {
-                        name: name,
-                        phone: phone,
-                        email : email,
-                        zip: zipcode,
-                        number: numberhome,
-                    });
-                 axios.post('{{ route('v1.consult.search') }}', {
-                        zip: zipcode,
-                        number: numberhome,
-                    }, {
-                     headers: {
-                         'Access-Control-Allow-Origin': 'https://assinelive.com.br',
-                     }
-                 }
-                 ).then(callbackInputSuccess, callbackInputFail);
-                 }
                  });
 
                  let request_disabled_insert = false;

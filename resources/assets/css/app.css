@@ -2178,6 +2178,10 @@ input {
         display: none; }
         #section-verification .content-verification .form-verification .box-form-verification .loading-viability img {
           display: none; }
+    #section-verification .content-verification .form-verification #btnVerification:disabled {
+      background-color: rgba(7, 158, 7, 0.45);
+      color: #ddd;
+      box-shadow: inset 2px 2px 3px rgba(5, 52, 5, 0.48); }
 
 #section-contract {
   display: none;
