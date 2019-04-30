@@ -1,43 +1,50 @@
 #section-verification
-  .content-verification
-  display: block
-  +container-fixed(10%)
-  margin-top: 30px
-  margin-bottom: 30px
-  .title-verification
-    font-size: 16px
-    padding: 10px 20px
-    background-color: $color-font-car
-    color: $white
-
-  .form-verification
-    //background-color: #3490dc
-    display: block
-    height: auto
-    padding: 10px 20px
-    border: 1px solid $color-font-car
-
-    +breakpoint($celular)
+    .content-verification
+      display: none
       height: auto
+      +container-fixed(10%)
+      margin-top: 30px
+      margin-bottom: 30px
+      .title-verification
+        font-size: 16px
+        padding: 10px 20px
+        background-image: linear-gradient(to top right, #082b35, #1e5463)
+        color: $color-font-price
+        text-shadow: 2px 2px 5px $black
+        font-weight: bold
 
-    .box-form-verification
-      +make-sm-column(6,0px)
-      margin-bottom: 20px
-      +breakpoint($celular)
-        width: 100%
-        input
-          width: 100%
+        +breakpoint($sm_celular)
+          padding: 10px 10px
 
-      .loading-viability
-        background-color: #082b35
+      .form-verification
+        //background-color: #3490dc
         display: none
+        height: auto
+        padding: 10px 20px
+        border: 1px solid $color-font-body-ligth
+        box-shadow: inset -3px 3px 7px #082b3547
 
-        img
-          display: none
+        +breakpoint($celular)
+          height: auto
+
+        .box-form-verification
+          +make-sm-column(6,0px)
+          margin-bottom: 20px
+          +breakpoint($celular)
+            width: 100%
+            input
+              width: 100%
+
+          .loading-viability
+            background-color: #082b35
+            display: none
+
+            img
+              display: none
 
 
 #section-contract
-  display: none
+  display: block
   +container-fixed(10%)
   .content-contract
     +make-row(0px)
@@ -313,7 +320,7 @@
           border-radius: 100%
           display: inline-block
           width: 40px
-          height: 30px
+          height: 40px
           padding-top: 10px
           margin: 0 2px
           cursor: pointer

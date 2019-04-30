@@ -10345,15 +10345,17 @@ input {
   background-color: #dddddd; }
 
 .btn-buy-now {
+  width: 100px;
   background-color: #0dc111;
   border: 0;
-  padding: 0px 5px;
+  padding: 0px 10px;
   border-radius: 2px;
-  box-shadow: 1px 2px 5px #6b7272;
   color: #fff;
   text-transform: uppercase;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px #6b7272; }
+  text-shadow: 1px 1px 2px #6b7272;
+  font-size: 14px;
+  line-height: 3; }
 
 .btn-contract {
   background-color: #09a809;
@@ -12135,7 +12137,7 @@ input {
           height: 197px; } }
       .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space {
         display: block;
-        background-color: #042656;
+        background-image: linear-gradient(to top right, #004691, #002A59);
         height: 197px;
         transition: all .8s; }
         .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover {
@@ -12149,14 +12151,15 @@ input {
           .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover {
             margin-top: 50px;
             padding: 10px;
-            background: linear-gradient(90deg, #c3e8f3, #07358a00);
-            color: #042656;
+            background: linear-gradient(90deg, #202527, #07358a00);
+            color: #d3f0f8;
             position: absolute;
             bottom: 0px;
             width: 93%; }
             .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space.hover .box-local-footer-hover .text-spotligth {
-              color: #cc2229;
-              font-weight: bold; }
+              color: #d3f0f8;
+              font-weight: bold;
+              text-shadow: 1px 1px 2px #052f33; }
         .benefits .content-benefits .benefits-body .benefits-box-local .box-local-space .box-local-header {
           font-size: 50px;
           text-align: center;
@@ -12177,7 +12180,7 @@ input {
           margin: 10px 0px 10px; } }
       .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
         display: block;
-        background-color: #042656;
+        background-image: linear-gradient(to top right, #004691, #002A59);
         height: 197px;
         transition: all .8s; }
         .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover {
@@ -12191,14 +12194,15 @@ input {
           .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover .box-national-footer-hover {
             margin-top: 50px;
             padding: 10px;
-            background: linear-gradient(90deg, #c3e8f3, #07358a00);
-            color: #042656;
+            background: linear-gradient(90deg, #202527, #07358a00);
+            color: #d3f0f8;
             position: absolute;
             bottom: 0px;
             width: 93%; }
             .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space.hover .box-national-footer-hover .text-spotligth {
-              color: #cc2229;
-              font-weight: bold; }
+              color: #d3f0f8;
+              font-weight: bold;
+              text-shadow: 1px 1px 2px #052f33; }
         @media (max-width: 767px) {
           .benefits .content-benefits .benefits-body .benefits-box-national .box-national-space {
             margin: 0px; } }
@@ -12234,7 +12238,7 @@ input {
           overflow-y: hidden;
           height: 197px; } }
       .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space {
-        background-color: #042656;
+        background-image: linear-gradient(to top right, #004691, #002A59);
         height: 197px;
         transition: all .8s;
         display: block; }
@@ -12249,14 +12253,15 @@ input {
           .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space.hover .box-international-footer-hover {
             margin-top: 50px;
             padding: 10px;
-            background: linear-gradient(90deg, #c3e8f3, #07358a00);
-            color: #042656;
+            background: linear-gradient(90deg, #202527, #07358a00);
+            color: #d3f0f8;
             position: absolute;
             bottom: 0px;
             width: 93%; }
             .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space.hover .box-international-footer-hover .text-spotligth {
-              color: #cc2229;
-              font-weight: bold; }
+              color: #d3f0f8;
+              font-weight: bold;
+              text-shadow: 1px 1px 2px #052f33; }
         .benefits .content-benefits .benefits-body .benefits-box-international .box-international-space .box-international-header {
           font-size: 50px;
           text-align: center;
@@ -12396,55 +12401,62 @@ input {
           display: inline-block;
           position: relative; }
 
-#section-verification {
-  display: block;
+#section-verification .content-verification {
+  display: none;
+  height: auto;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
   margin-bottom: 30px; }
-  #section-verification:before, #section-verification:after {
+  #section-verification .content-verification:before, #section-verification .content-verification:after {
     display: table;
     content: " "; }
-  #section-verification:after {
+  #section-verification .content-verification:after {
     clear: both; }
-  #section-verification .title-verification {
+  #section-verification .content-verification .title-verification {
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #082b35;
-    color: #fff; }
-  #section-verification .form-verification {
-    display: block;
+    background-image: linear-gradient(to top right, #082b35, #1e5463);
+    color: #d3f0f8;
+    text-shadow: 2px 2px 5px #000;
+    font-weight: bold; }
+    @media (max-width: 474px) {
+      #section-verification .content-verification .title-verification {
+        padding: 10px 10px; } }
+  #section-verification .content-verification .form-verification {
+    display: none;
     height: auto;
     padding: 10px 20px;
-    border: 1px solid #082b35; }
+    border: 1px solid #A1A9A9;
+    box-shadow: inset -3px 3px 7px #082b3547; }
     @media (max-width: 767px) {
-      #section-verification .form-verification {
+      #section-verification .content-verification .form-verification {
         height: auto; } }
-    #section-verification .form-verification .box-form-verification {
+    #section-verification .content-verification .form-verification .box-form-verification {
       position: relative;
       min-height: 1px;
       padding-right: 0px;
       padding-left: 0px;
       margin-bottom: 20px; }
       @media (min-width: 768px) {
-        #section-verification .form-verification .box-form-verification {
+        #section-verification .content-verification .form-verification .box-form-verification {
           float: left;
           width: 50%; } }
       @media (max-width: 767px) {
-        #section-verification .form-verification .box-form-verification {
+        #section-verification .content-verification .form-verification .box-form-verification {
           width: 100%; }
-          #section-verification .form-verification .box-form-verification input {
+          #section-verification .content-verification .form-verification .box-form-verification input {
             width: 100%; } }
-      #section-verification .form-verification .box-form-verification .loading-viability {
+      #section-verification .content-verification .form-verification .box-form-verification .loading-viability {
         background-color: #082b35;
         display: none; }
-        #section-verification .form-verification .box-form-verification .loading-viability img {
+        #section-verification .content-verification .form-verification .box-form-verification .loading-viability img {
           display: none; }
 
 #section-contract {
-  display: none;
+  display: block;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
@@ -12814,7 +12826,7 @@ input {
           border-radius: 100%;
           display: inline-block;
           width: 40px;
-          height: 30px;
+          height: 40px;
           padding-top: 10px;
           margin: 0 2px;
           cursor: pointer;

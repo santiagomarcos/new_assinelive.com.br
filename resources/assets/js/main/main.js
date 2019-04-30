@@ -179,35 +179,35 @@ $(document).ready(function () {
 
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/40');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN40M');
     })
     $('#c_60mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/60');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN60M');
     })
     $('#c_100mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/100');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN100M');
     })
     $('#c_150mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/150');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN150M');
     })
     $('#c_300mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/300');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN300M');
     })
     $('#c_500mb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/500');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN500M');
     })
     $('#c_1gb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/1');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN1G');
     })
     $('#c_2gb').on('click',function () {
         show_channels($(this).html());
-        $('#ancor_btn_contract').prop('href', '/pages/verifications/2');
+        $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN2G');
     })
 
     $('.btn-toggle').on('click',function () {
