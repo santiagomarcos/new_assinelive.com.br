@@ -36,15 +36,17 @@
 
     .caption-parallax
       position: absolute
-      top: 35%
-      width: 100%
+      top: 0px
+      //width: 100%
       padding: 20px 0px
       color: $white
+      margin: 30px
       //font-size: 40px
-      text-align: center
+      //text-align: center
 
       +breakpoint($tablet)
-        top: 20%
+        //top: 20%
+        margin: 10px
 
       .title-spotlight-parallax
         font-weight: bold
@@ -53,11 +55,30 @@
         font-size: 70px
         text-transform: uppercase
 
-        .subtitle-spotligth
-          font-size: 35px
-          text-shadow: 0px 0px 5px #000
+      .subtitle-spotligth
+        font-size: 16px
+        text-shadow: 0px 0px 5px #000
+        text-align: center
+        text-transform: uppercase
+
+    //.box-right-parallax
+    //  //background-color: #042656
+    //  border-left: solid 150px transparent
+    //  border-top: solid 160px transparent
+    //  border-bottom: solid 160px $color-spotlight-title-section
+    //  border-right: solid 160px $color-spotlight-title-section
+    //  opacity: .6
+    //  position: relative
+    //  display: block
+    //  width: 350px
+    //  height: 150px
+    //  float: right
+
+
 
   .bg1
     &:before
       background-image: url('https://i.imgur.com/eeP7pMC.jpg')
+
+
 

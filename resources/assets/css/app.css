@@ -1172,8 +1172,6 @@ input {
       font-size: 11px;
       text-align: center;
       cursor: none; }
-      .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom:visited, .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom:active {
-        border: none; }
       .content-navbar-bottom .box-navbar-bottom .box-number-navbar-bottom .number-phone-navbar-bottom {
         font-size: 18px;
         text-shadow: 1px 1px 15px #14b1fa; }
@@ -1182,6 +1180,8 @@ input {
     .content-navbar-bottom .box-navbar-bottom .top-page {
       text-align: center;
       text-shadow: 1px 1px 2px #222; }
+      .content-navbar-bottom .box-navbar-bottom .top-page:focus {
+        outline: none; }
       .content-navbar-bottom .box-navbar-bottom .top-page .desc-arrow-up {
         font-size: 12px; }
 
@@ -2026,23 +2026,24 @@ input {
           height: 50vh; } }
     .image-parallax .section .caption-parallax {
       position: absolute;
-      top: 35%;
-      width: 100%;
+      top: 0px;
       padding: 20px 0px;
       color: #fff;
-      text-align: center; }
+      margin: 30px; }
       @media (max-width: 992px) {
         .image-parallax .section .caption-parallax {
-          top: 20%; } }
+          margin: 10px; } }
       .image-parallax .section .caption-parallax .title-spotlight-parallax {
         font-weight: bold;
         color: #cc2229;
         text-shadow: 1px 2px 5px #000;
         font-size: 70px;
         text-transform: uppercase; }
-        .image-parallax .section .caption-parallax .title-spotlight-parallax .subtitle-spotligth {
-          font-size: 35px;
-          text-shadow: 0px 0px 5px #000; }
+      .image-parallax .section .caption-parallax .subtitle-spotligth {
+        font-size: 16px;
+        text-shadow: 0px 0px 5px #000;
+        text-align: center;
+        text-transform: uppercase; }
   .image-parallax .bg1:before {
     background-image: url("https://i.imgur.com/eeP7pMC.jpg"); }
 

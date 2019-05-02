@@ -32,10 +32,12 @@
             </span>
             </button>
         </a>
-        <button class="top-page">
+        <button id="btn-up" class="top-page">
             <span class="contten-button">
-                <i class="fas fa-angle-double-up"></i>
-                <p id="btn-up" class="desc-arrow-up">Topo</p>
+                <p>
+                    <i class="fas fa-angle-double-up"></i>
+                    <p class="desc-arrow-up">Topo</p>
+                </p>
             </span>
         </button>
         <div class="">
