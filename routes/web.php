@@ -32,12 +32,15 @@ Route::group([ 'middleware' => 'analytics'], function() {
         Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => 'analytics'], function(){
             Route::get('/login', ['uses' => 'AuthController@login', 'as' => 'login']);
             Route::post('/login', ['uses' => 'AuthController@authenticate', 'as' => 'authenticate']);
+            Route::get('/logout', ['uses' => 'AuthController@logout', 'as' => 'logout']);
         });
 
         Route::group(['middleware' => 'usersession'], function () {
             Route::get('/home', function () {
                 return view('pages.admin.pages.home');
             })->name('home');
+
+
         });
 
     });
