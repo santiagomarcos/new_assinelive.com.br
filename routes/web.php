@@ -24,5 +24,20 @@ Route::group([ 'middleware' => 'analytics'], function() {
         Route::get('/verification', ['uses' => 'PagesController@verification', 'as' => 'verification']);
         Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('verifications');
     });
+
+    Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+        /**
+         * Auth Routes
+         */
+        Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => 'analytics'], function(){
+            Route::get('/login', ['uses' => 'AuthController@login', 'as' => 'login']);
+            Route::post('/login', ['uses' => 'AuthController@authenticate', 'as' => 'authenticate']);
+        });
+
+        Route::group(['middleware' => 'usersession'], function () {
+
+        });
+
+    });
 });
 
