@@ -25,15 +25,35 @@ const buildJs = [
     "node_modules/vue/dist/vue.js",
     "node_modules/bootstrap/dist/js/bootstrap.js",
     "resources/assets/js/main/*.js"
-]
+];
 
 
 const resources = [
-    "resources/assets/images/"
-]
+    "resources/assets/images/",
+    "resources/assets/fonts/"
+];
+
+const buildCssAdmin = [
+    "resources/assets/admin/css/*.css",
+    "resources/assets/admin/css/themes/flat-blue.css",
+
+];
+
+const buildJsAdmin = [
+    "resources/assets/admin/js/jquery.min.js",
+    "resources/assets/admin/js/bootstrap.min.js",
+    "resources/assets/admin/js/app.js",
+    "resources/assets/admin/js/bootstrap-switch.min.js",
+    "resources/assets/admin/js/jquery.dataTables.min.js",
+    "resources/assets/admin/js/jquery.matchHeight-min.js",
+    "resources/assets/admin/js/select2.full.min.js",
+    "resources/assets/admin/js/theming.js",
+    "resources/assets/admin/js/ace/*.js",
+
+];
 
 
-const webAssetsDir = 'public/'
+const webAssetsDir = 'public/';
 
     gulp.task('sass',function () {
         return gulp.src(destOrigin)
@@ -57,6 +77,18 @@ const webAssetsDir = 'public/'
             .pipe(gulp.dest(webAssetsDir+'js/'))
     });
 
+gulp.task('workInCssAdmin',function () {
+    return gulp.src(buildCssAdmin)
+        .pipe(concat('admin.css'))
+        .pipe(gulp.dest(webAssetsDir+'css/'))
+});
+
+gulp.task('workJsAdmin',function () {
+    return gulp.src(buildJsAdmin)
+        .pipe(concat('admin.js'))
+        .pipe(gulp.dest(webAssetsDir+'js/'))
+});
+
     gulp.task('copyResources', function () {
         resources.forEach(function (res) {
             gulp.src(res+'**/*')
@@ -70,4 +102,4 @@ const webAssetsDir = 'public/'
         gulp.watch(destOutWatch,['workInCss']);
     });
 
-    gulp.task('default',['sass','watch','workInCss','workJs','copyResources']);
+    gulp.task('default',['workJsAdmin','workInCssAdmin','sass','watch','workInCss','workJs','copyResources']);
