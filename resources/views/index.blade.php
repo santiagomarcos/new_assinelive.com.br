@@ -63,7 +63,7 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para aproveitar as melhores séries online, musicas e downloads.</p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +12 canais online</li>
@@ -109,7 +109,7 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para jogar online, streamings e outros tipos de midias digitais.</p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para produção de conteúdo digital e downloads mais complexos.</p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
@@ -198,11 +198,11 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para locais com alto número de dispositívos conectados com multi acessos.</p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi + Power wi-fi</li>
+                                <li class="items-include-plan">Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 180 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
@@ -240,11 +240,11 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para locais com alto acesso a internet, tráfego de informações e dados.</p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi + Power wi-fi</li>
+                                <li class="items-include-plan">Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 250 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
@@ -282,11 +282,11 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para startups de têcnologia, marketing e uma infinidade de utilidades.</p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi + Power wi-fi</li>
+                                <li class="items-include-plan">Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 300 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
                             </ul>
@@ -324,11 +324,11 @@
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
+                                <p class="text-tip">Ideal para empresas com servidores internos  e uso complexo da internet. </p>
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi + Power wi-fi</li>
+                                <li class="items-include-plan">Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 500 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
                             </ul>
@@ -524,7 +524,8 @@
                     </div>
                     <div class="box-local-space two">
                         <div class="box-local-header-hover">
-                            Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
+                            Ligações LOCAIS ILIMITADAS para fixo e móvel,
+                            on e offnet de qualquer operadora.
                         </div>
                         <div class="box-local-footer-hover">Disponivel nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
                     </div>
@@ -543,7 +544,8 @@
                     </div>
                     <div class="box-national-space two">
                         <div class="box-national-header-hover">
-                            Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
+                            Ligações NACIONAIS ILIMITADAS para fixo e
+                            móvel, on e offnet de qualquer operadora.
                         </div>
                         <div class="box-national-footer-hover">Disponivel nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
                     </div>
@@ -562,7 +564,9 @@
                     </div>
                     <div class="box-international-space two">
                         <div class="box-international-header-hover">
-                            Ligação ilimitada para qualquer fixo do (DDD) do mesmo local.
+                            Ligações NACIONAIS ILIMITADAS para fixo
+                            e móvel, on e offnet de qualquer operadora
+                            + 150 minutos exclusivos para ligações LDI.
                         </div>
                         <div class="box-international-footer-hover">Disponivel nos planos <span class="text-spotligth">1 e 2 giga</span></div>
                     </div>

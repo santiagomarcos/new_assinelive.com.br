@@ -8,7 +8,7 @@
         <div class="title-channels">Canais de atendimento:</div>
         <ul class="content-channels">
             <li class="items-channels">{{ session('partner')['phone'] }}</li> |
-            <a href=""><li class="items-channels">WhatAapp</li></a> |
+            <a href=""><li class="items-channels">WhatsAapp</li></a> |
             <a href="" id="weCalling" data-toggle="modal" data-target="#weCall"><li class="items-channels">Me ligue</li></a> |
             <a href=""><li class="items-channels">Chat Online</li></a>
         </ul>
