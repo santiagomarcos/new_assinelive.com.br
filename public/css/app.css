@@ -12300,6 +12300,37 @@ input {
       @media (max-width: 992px) {
         .image-parallax .section:before {
           height: 50vh; } }
+    .image-parallax .section .caption-box-parallax {
+      position: absolute;
+      width: 322px;
+      bottom: 10px;
+      right: 0px;
+      z-index: 1040;
+      padding: 0px 5px;
+      border-radius: 50px; }
+      @media (max-width: 992px) {
+        .image-parallax .section .caption-box-parallax {
+          bottom: 145px;
+          width: 260px; } }
+      .image-parallax .section .caption-box-parallax .btn-contract {
+        text-shadow: 1px 1px 2px #000;
+        padding: 15px 10px;
+        width: 120px;
+        font-size: 16px;
+        float: right; }
+      .image-parallax .section .caption-box-parallax p {
+        font-size: 20px;
+        color: #d3f0f8;
+        text-align: right;
+        margin-bottom: 15px;
+        text-shadow: 1px 2px 3px #000; }
+        @media (max-width: 992px) {
+          .image-parallax .section .caption-box-parallax p {
+            font-size: 16px; } }
+      .image-parallax .section .caption-box-parallax button {
+        display: block;
+        margin: auto;
+        position: relative; }
     .image-parallax .section .caption-parallax {
       position: absolute;
       top: 0px;
@@ -12320,6 +12351,36 @@ input {
         text-shadow: 0px 0px 5px #000;
         text-align: center;
         text-transform: uppercase; }
+    .image-parallax .section .box-right-parallax {
+      margin-top: 100px;
+      border-left: solid 50px transparent;
+      border-top: solid 530px transparent;
+      border-bottom: solid 150px #042656;
+      border-right: solid 745px #042656;
+      opacity: .8;
+      position: relative;
+      display: block;
+      width: 560px;
+      height: 40vh;
+      float: right; }
+      @media (max-width: 992px) {
+        .image-parallax .section .box-right-parallax {
+          margin-top: 60px; } }
+    .image-parallax .section .box-right-top {
+      right: 0px;
+      margin-top: 0px;
+      border-left: solid 0px transparent;
+      border-top: solid 100px #042656;
+      border-left: solid 150px transparent;
+      opacity: .8;
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 5vh; }
+      @media (max-width: 992px) {
+        .image-parallax .section .box-right-top {
+          border-top: solid 60px #042656;
+          border-left: solid 90px transparent; } }
   .image-parallax .bg1:before {
     background-image: url("https://i.imgur.com/eeP7pMC.jpg"); }
 
