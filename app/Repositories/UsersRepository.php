@@ -29,7 +29,7 @@ class UsersRepository extends Repository
     public function findByUserAndPassword($user, $password)
     {
         return $this->getModel()
-            ->where('login', $user)
+            ->where('email', $user)
             ->where('password', md5($password))
             ->where('active', 1)
             ->get();

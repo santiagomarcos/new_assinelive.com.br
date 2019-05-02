@@ -19,7 +19,7 @@ class CheckUserAdminSession
      */
     public function handle($request, Closure $next)
     {
-        if (!$request->session()->exists('user-admin')) {
+        if (!$request->session()->exists('useradmin')) {
             return redirect()->route('admin.auth.login');
         }
         return $next($request);

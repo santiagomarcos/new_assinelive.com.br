@@ -43,7 +43,7 @@ class AdministrativeAuthService
      */
     public function authenticateWithModel(User $user)
     {
-        \session(['user-admin' => $user]);
+        \session(['useradmin' => $user]);
         return true;
     }
 

@@ -35,7 +35,9 @@ Route::group([ 'middleware' => 'analytics'], function() {
         });
 
         Route::group(['middleware' => 'usersession'], function () {
-
+            Route::get('/home', function () {
+                return view('pages.admin.pages.home');
+            })->name('home');
         });
 
     });
