@@ -576,13 +576,19 @@
     </section>
     <section class="image-parallax">
         <div class="section bg1">
+            <div class="caption-box-parallax">
+                <p>Faça parte dessa evolução também e aproveite tudo que a nossa
+                    <strong>Internet Ultra</strong> tem pra te oferecer.</p>
+                <button class="btn-contract">Eu quero !</button>
+            </div>
+
             <div class="caption-parallax">
                 <p class="title-spotlight-parallax">Tim live</p>
                 <div class="subtitle-spotligth">A evolução da internet.</div>
             </div>
-            <div class="box-right-parallax"> </div>
+            <div class="box-right-top"></div>
+            <div class="box-right-parallax"></div>
         </div>
-
     </section>
     <div class="speed-test-band">
         <a href="https://www.speedtest.net/pt" target="_blank" class="boxspeed-test">

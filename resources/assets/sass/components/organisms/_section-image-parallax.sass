@@ -34,6 +34,44 @@
       +breakpoint($tablet)
         height: 50vh
 
+    .caption-box-parallax
+      position: absolute
+      width: 322px
+      //background-image: linear-gradient(-35deg, #03a9f445, #0e2d5a05)
+      bottom: 10px
+      right: 0px
+      z-index: 1040
+      padding: 0px 5px
+      border-radius: 50px
+      //box-shadow: #606f7b
+
+      +breakpoint($tablet)
+        bottom: 145px
+        width: 260px
+
+
+      .btn-contract
+        text-shadow: 1px 1px 2px #000
+        padding: 15px 10px
+        width: 120px
+        font-size: 16px
+        float: right
+
+      p
+        font-size: 20px
+        color: $color-font-price
+        text-align: right
+        margin-bottom: 15px
+        text-shadow: 1px 2px 3px #000
+
+        +breakpoint($tablet)
+          font-size: 16px
+
+      button
+        display: block
+        margin: auto
+        position: relative
+
     .caption-parallax
       position: absolute
       top: 0px
@@ -61,18 +99,38 @@
         text-align: center
         text-transform: uppercase
 
-    //.box-right-parallax
-    //  //background-color: #042656
-    //  border-left: solid 150px transparent
-    //  border-top: solid 160px transparent
-    //  border-bottom: solid 160px $color-spotlight-title-section
-    //  border-right: solid 160px $color-spotlight-title-section
-    //  opacity: .6
-    //  position: relative
-    //  display: block
-    //  width: 350px
-    //  height: 150px
-    //  float: right
+
+    .box-right-parallax
+      margin-top: 100px
+      border-left: solid 50px transparent
+      border-top: solid 530px transparent
+      border-bottom: solid 150px #042656
+      border-right: solid 745px #042656
+      opacity: .8
+      position: relative
+      display: block
+      width: 560px
+      height: 40vh
+      float: right
+
+      +breakpoint($tablet)
+        margin-top: 60px
+
+    .box-right-top
+      right: 0px
+      margin-top: 0px
+      border-left: solid 0px transparent
+      border-top: solid 100px #042656
+      border-left: solid 150px transparent
+      opacity: .8
+      position: absolute
+      display: block
+      width: 50px
+      height: 5vh
+
+      +breakpoint($tablet)
+        border-top: solid 60px #042656
+        border-left: solid 90px transparent
 
 
 
