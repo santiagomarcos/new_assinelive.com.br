@@ -1,8 +1,8 @@
 @extends('layout.admin')
 @section('content')
     <div class="page-title">
-        <span class="title">Datatable</span>
-        <div class="description">with jquery Datatable for display data with most usage functional. such as search, ajax loading, pagination, etc.</div>
+        <span class="title">Afiliados</span>
+        <div class="description"></div>
     </div>
     <div class="row">
         <div class="col-xs-12">
@@ -39,7 +39,7 @@
                             <td>{{ $affiliate->name }}</td>
                             <td>{{ $affiliate->phone }}</td>
                             <td>{{ $affiliate->code }}</td>
-                            <td>{{ ($affiliate->status) ? "Ativo":"Inativo"  }}</td>
+                            <td>{{ ($affiliate->status == 1) ? "Ativo":"Inativo"  }}</td>
                             <td>{{ $affiliate->created_at }}</td>
                         </tr>
                             @endforeach

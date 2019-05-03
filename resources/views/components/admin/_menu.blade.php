@@ -12,7 +12,7 @@
     <div id="dropdown-element" class="panel-collapse collapse">
         <div class="panel-body">
             <ul class="nav navbar-nav">
-                <li><a href="ui-kits/theming.html">Gerenciar Afiliados</a>
+                <li><a href="{{ route('admin.affiliates.all') }}">Gerenciar Afiliados</a>
                 </li>
                 <li><a href="ui-kits/grid.html">Relatórios</a>
                 </li>
