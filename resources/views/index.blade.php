@@ -578,8 +578,8 @@
         <div class="section bg1">
             <div class="caption-box-parallax">
                 <p>Faça parte dessa evolução também e aproveite tudo que a nossa
-                    <strong>Internet Ultra</strong> tem pra te oferecer.</p>
-                <button class="btn-contract">Eu quero !</button>
+                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem pra te oferecer.</p>
+                <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-contract">Eu quero !</button></a>
             </div>
 
             <div class="caption-parallax">
