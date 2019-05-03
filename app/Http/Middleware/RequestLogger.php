@@ -29,7 +29,7 @@ class RequestLogger
         if ($response->exception != null) {
             $request = RequestLog::create([
                 'user' => ($partner['code'] == null) ? null:$partner['code'],
-                'url' => $request->getPathInfo(),
+                'url' => $request->getRequestUri(),
                 'method' => $request->method(),
                 'user_agent' => $request->userAgent(),
                 'response_time' => time() - $requestTime->timestamp,
@@ -42,7 +42,7 @@ class RequestLogger
         } else {
             $request = RequestLog::create([
                 'user' => ($partner['code'] == null) ? null:$partner['code'],
-                'url' => $request->getPathInfo(),
+                'url' => $request->getRequestUri(),
                 'method' => $request->method(),
                 'user_agent' => $request->userAgent(),
                 'response_time' => time() - $requestTime->timestamp,
