@@ -2,25 +2,25 @@
 /**
  * Created by PhpStorm.
  * User: Marcos Santiago
- * Date: 29/04/2019
- * Time: 12:42
+ * Date: 03/05/2019
+ * Time: 10:14
  */
 
 namespace App\Repositories;
 
 
-use App\Models\LeadViability;
+use App\Models\RequestLog;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
-class LeadsViabilityRepository extends Repository
+class RequestLoggerRepository extends Repository
 {
     /**
-     * @return LeadViability|Model
+     * @return RequestLog|Model
      */
     public function getModel()
     {
-        return (new LeadViability());
+        return (new RequestLog());
     }
 
     /**
@@ -35,7 +35,8 @@ class LeadsViabilityRepository extends Repository
 
         return $this->getModel()
             ->whereBetween('created_at',[$start, $end])
-            ->get();
+            ->get()
+            ->groupBy('ip');
     }
 
 

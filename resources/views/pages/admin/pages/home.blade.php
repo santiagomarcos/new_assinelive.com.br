@@ -7,8 +7,8 @@
                     <div class="card-body">
                         <i class="icon fa fa-inbox fa-4x"></i>
                         <div class="content">
-                            <div class="title">50</div>
-                            <div class="sub-title">Afiliados</div>
+                            <div class="title">{{ count($affiliates) }}</div>
+                            <div class="sub-title">Afiliados Ativos</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="card-body">
                         <i class="icon fa fa-comments fa-4x"></i>
                         <div class="content">
-                            <div class="title">100</div>
+                            <div class="title">{{ count($access) }}</div>
                             <div class="sub-title">Novos acessos</div>
                         </div>
                         <div class="clear-both"></div>
@@ -35,7 +35,7 @@
                     <div class="card-body">
                         <i class="icon fa fa-tags fa-4x"></i>
                         <div class="content">
-                            <div class="title">20</div>
+                            <div class="title">{{ count($leads) }}</div>
                             <div class="sub-title">Consultas de Viabilidades</div>
                         </div>
                         <div class="clear-both"></div>

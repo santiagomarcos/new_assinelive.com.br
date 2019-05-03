@@ -12,8 +12,14 @@
 */
 
 Route::group([ 'middleware' => 'analytics'], function() {
-    Route::get('/{code?}', function ($code = null) {
+    Route::get('/?ref={code?}', function ($code = null) {
 
+        $request = (new \Illuminate\Http\Request());
+        getPartner($code);
+        return view('index');
+
+    });
+    Route::get('/', function ($code = null) {
         $request = (new \Illuminate\Http\Request());
         getPartner($code);
         return view('index');
@@ -36,11 +42,7 @@ Route::group([ 'middleware' => 'analytics'], function() {
         });
 
         Route::group(['middleware' => 'usersession'], function () {
-            Route::get('/home', function () {
-                return view('pages.admin.pages.home');
-            })->name('home');
-
-
+            Route::get('/dashboard', 'Admin\\PagesController@dashboard')->name('home');
         });
 
     });
