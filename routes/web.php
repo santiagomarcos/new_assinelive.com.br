@@ -12,19 +12,8 @@
 */
 
 Route::group([ 'middleware' => 'analytics'], function() {
-    Route::get('/?ref={code?}', function ($code = null) {
 
-        $request = (new \Illuminate\Http\Request());
-        getPartner($code);
-        return view('index');
-
-    });
-    Route::get('/', function ($code = null) {
-        $request = (new \Illuminate\Http\Request());
-        getPartner($code);
-        return view('index');
-
-    })->name('home');
+    Route::get('', 'PagesController@home')->name('home');
 
     Route::group(['prefix' => 'pages', 'as' => 'pages.'], function () {
         Route::get('/verification', ['uses' => 'PagesController@verification', 'as' => 'verification']);
@@ -42,7 +31,7 @@ Route::group([ 'middleware' => 'analytics'], function() {
         });
 
         Route::group(['middleware' => 'usersession'], function () {
-            Route::get('/dashboard', 'Admin\\PagesController@dashboard')->name('home');
+            Route::get('', 'Admin\\PagesController@dashboard')->name('home');
         });
 
     });

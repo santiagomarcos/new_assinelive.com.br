@@ -13,6 +13,13 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+
+    public function home(Request $request)
+    {
+        dd($request->all());
+//        getPartner($code);
+        return view('index');
+    }
     public function verification()
     {
         return view('pages.function.verification');
