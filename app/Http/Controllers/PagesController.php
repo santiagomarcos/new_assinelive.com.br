@@ -16,8 +16,9 @@ class PagesController extends Controller
 
     public function home(Request $request)
     {
-        dd($request->all());
-//        getPartner($code);
+        $code = (!isset($request->all()['ref'])) ? null:$request->all()['ref'];
+
+        getPartner($code);
         return view('index');
     }
     public function verification()
