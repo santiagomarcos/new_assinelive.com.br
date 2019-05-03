@@ -10,8 +10,14 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\Http\Controllers\Controller;
+use App\Repositories\AffiliatesRepository;
 
 class AffiliatesController extends Controller
 {
+    public function all(AffiliatesRepository $affiliatesRepository)
+    {
+        return view('pages.admin.affiliates.all')
+            ->withAffiliates($affiliatesRepository->affiliateTable());
+    }
 
 }

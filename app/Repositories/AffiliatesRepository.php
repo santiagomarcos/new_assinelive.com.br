@@ -44,5 +44,11 @@ class AffiliatesRepository extends Repository
             ->get();
     }
 
+    public function affiliateTable()
+    {
+        return $this->getModel()
+            ->paginate(10);
+    }
+
 
 }
