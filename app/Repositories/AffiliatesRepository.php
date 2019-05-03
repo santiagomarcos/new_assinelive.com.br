@@ -34,5 +34,15 @@ class AffiliatesRepository extends Repository
             ->first();
     }
 
+    /**
+     * @return mixed
+     */
+    public function activeAffiliates()
+    {
+        return $this->getModel()
+            ->where('active', 1)
+            ->get();
+    }
+
 
 }
