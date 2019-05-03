@@ -39,5 +39,6 @@ const app = new Vue({
             c_2gb: function (e) {
                 this.plan_tablet = '2 giga'
             },
-    }
+        }
+
 });

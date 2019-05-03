@@ -32442,7 +32442,8 @@ const app = new Vue({
             c_2gb: function (e) {
                 this.plan_tablet = '2 giga'
             },
-    }
+        }
+
 });
 (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
     w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
@@ -32516,6 +32517,7 @@ $(document).ready(function () {
         $('#cnt_natgeo').hide();
         $('#cnt_looke').hide();
     }
+
     function show_channels($plan) {
         if ($plan == '40<br>MB'){
             hide_channels();
@@ -32649,6 +32651,7 @@ $(document).ready(function () {
 
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
+        $('.taxa-instalation').html('10,00');
         $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN40M');
     })
     $('#c_60mb').on('click',function () {
