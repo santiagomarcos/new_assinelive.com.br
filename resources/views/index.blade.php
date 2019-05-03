@@ -422,8 +422,8 @@
                                 <button class="btn-band-plan" id="c_150mb" @click="c_150mb">150<br>MB</button>
                                 <button class="btn-band-plan" id="c_300mb" @click="c_300mb">300<br>MB</button>
                                 <button class="btn-band-plan" id="c_500mb" @click="c_500mb">500<br>MB</button>
-                                <button class="btn-band-plan" id="c_1gb" @click="c_1gb">1 <br>GB</button>
-                                <button class="btn-band-plan" id="c_2gb" @click="c_2gb">2 <br>GB</button>
+                                <button class="btn-band-plan" id="c_1gb" @click="c_1gb">1<br>GB</button>
+                                <button class="btn-band-plan" id="c_2gb" @click="c_2gb">2<br>GB</button>
                             </div>
                             <img src="https://i.imgur.com/copuma5.png" alt="">
                         </div>

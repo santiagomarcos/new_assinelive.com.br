@@ -70,6 +70,7 @@ $(document).ready(function () {
         $('#cnt_natgeo').hide();
         $('#cnt_looke').hide();
     }
+
     function show_channels($plan) {
         if ($plan == '40<br>MB'){
             hide_channels();
@@ -203,6 +204,7 @@ $(document).ready(function () {
 
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
+        $('.taxa-instalation').html('10,00');
         $('#ancor_btn_contract').prop('href', '/pages/verifications/PLAN40M');
     })
     $('#c_60mb').on('click',function () {
