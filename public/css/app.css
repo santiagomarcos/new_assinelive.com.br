@@ -12299,7 +12299,7 @@ input {
       transform: translateX(-1px) scale(1.2); }
       @media (max-width: 992px) {
         .image-parallax .section:before {
-          height: 300px; } }
+          height: 50vh; } }
     .image-parallax .section .caption-box-parallax {
       position: absolute;
       width: 322px;
@@ -12313,7 +12313,7 @@ input {
           width: 250px; } }
       @media (max-width: 992px) {
         .image-parallax .section .caption-box-parallax {
-          bottom: 110px;
+          bottom: 130px;
           width: 195px; } }
       .image-parallax .section .caption-box-parallax .btn-contract {
         text-shadow: 1px 1px 2px #000;
