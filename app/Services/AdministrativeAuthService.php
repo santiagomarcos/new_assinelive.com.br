@@ -52,7 +52,7 @@ class AdministrativeAuthService
      */
     public function deauthenticate()
     {
-        Session::forget('user-admin');
+        Session::forget('useradmin');
         return true;
     }
 
