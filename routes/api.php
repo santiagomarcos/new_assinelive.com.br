@@ -29,7 +29,15 @@ Route::group(['prefix' => 'api', 'as' => 'api.'], function (){
 Route::group(['prefix' => 'v1', 'as' => 'v1.'], function(){
     Route::group(['prefix' => 'consult', 'as' => 'consult.'], function() {
         Route::post('/viability/create', 'API\\LeadsController@create')->name('viability');
-        Route::post('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
+        Route::get('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
+    });
+
+    Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+        Route::post('/get-affiliates', 'API\\AffiliatesController@getAffiliateReferrer')->name('consult-referrer');
+        Route::post('/create-affiliate', 'API\\AffiliatesController@createAffiliate')->name('create-affiliate');
+
     });
 });
+
+
 

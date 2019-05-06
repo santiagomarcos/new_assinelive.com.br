@@ -46,6 +46,7 @@
     @include('components.admin._footer')
         <!-- Javascript Libs -->
         <script type="text/javascript" src="/js/admin.js"></script>
+    @yield('extra-scripts')
 </div>
 </body>
 

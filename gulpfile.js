@@ -49,6 +49,8 @@ const buildJsAdmin = [
     "resources/assets/admin/js/select2.full.min.js",
     "resources/assets/admin/js/theming.js",
     "resources/assets/admin/js/ace/*.js",
+    "node_modules/jquery-mask-plugin/dist/jquery.mask.js",
+    "node_modules/axios/dist/axios.js",
 
 ];
 
