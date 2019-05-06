@@ -25,5 +25,4 @@ class LeadsController extends Controller
         $lead = $leadsRepository->create($request->all());
 //        return (!$lead) ? false:true;
     }
-
 }

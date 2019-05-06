@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Services\IpInfoService;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -17,9 +18,12 @@ class PagesController extends Controller
     public function home(Request $request)
     {
         $code = (!isset($request->all()['ref'])) ? null:$request->all()['ref'];
-
+        $service = (new IpInfoService());
+        $detail = $service->getIP($request->ip);
+        $city = $detail->getRegion();
         getPartner($code);
-        return view('index');
+        return view('index')
+            ->withCity($city);
     }
     public function verification()
     {
