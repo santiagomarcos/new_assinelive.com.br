@@ -12,7 +12,7 @@
             <a href="" id="weCalling" data-toggle="modal" data-target="#weCall"><li class="items-channels">Me ligue</li></a> |
             <a href=""><li class="items-channels">Chat Online</li></a>
         </ul>
-        <span class="location"><i class="fas fa-map-marker-alt"></i>São Paulo</span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i>{{ $city }}</span>
     </div>
     <nav class="content-navbar">
         <div class="header-navbar">
