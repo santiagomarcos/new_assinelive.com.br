@@ -76,7 +76,7 @@
                         <div class="content-gif">
                             <img src="/images/loader.gif" height="150" width="150" alt="">
                         </div>
-                        <h3>Aguarde... Estamos pesquisando a viabilidade.</h3>
+                        <h3 class="waitinig">Aguarde... Estamos pesquisando a viabilidade.</h3>
                     </div>
                     <span id="desc-limit-broadband"></span>
                     <div class="inviability-content" id="inviability-content">
