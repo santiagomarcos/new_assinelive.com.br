@@ -2238,7 +2238,8 @@ input {
     height: auto;
     padding: 10px 20px;
     border: 1px solid #A1A9A9;
-    box-shadow: inset -3px 3px 7px #082b3547; }
+    box-shadow: inset -3px 3px 7px #082b3547;
+    width: 100%; }
     @media (max-width: 767px) {
       #section-verification .content-verification .form-verification {
         height: auto; } }
@@ -2254,7 +2255,8 @@ input {
           width: 50%; } }
       @media (max-width: 767px) {
         #section-verification .content-verification .form-verification .box-form-verification {
-          width: 100%; }
+          width: 100%;
+          background-color: #654ccc; }
           #section-verification .content-verification .form-verification .box-form-verification input {
             width: 100%; } }
       #section-verification .content-verification .form-verification .box-form-verification .loading-viability {
