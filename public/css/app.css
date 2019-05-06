@@ -11381,9 +11381,14 @@ input {
     .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive {
       display: block;
       padding: 5px 10px; }
-      .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive .items-channels-responsive {
+      .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive a .items-channels-responsive {
         display: inline-block;
-        padding: 0px 2px; }
+        padding: 0px 2px;
+        text-decoration: none;
+        color: #A1A9A9; }
+        .menu-responsive-content .content-channels-sales-responsive .content-channels-responsive a .items-channels-responsive:hover {
+          color: #cc2229;
+          font-weight: 600; }
   .menu-responsive-content .line-bottom-responsive {
     width: 85%;
     height: 1px;
@@ -11403,6 +11408,9 @@ input {
       .menu-responsive-content .content-items-menu .content-menu-responsive a .items-menu-responsive {
         color: #A1A9A9;
         margin: 5px 0px; }
+        .menu-responsive-content .content-items-menu .content-menu-responsive a .items-menu-responsive:hover {
+          color: #cc2229;
+          font-weight: 600; }
 
 .content-navbar-bottom {
   background-color: #cc2229;
@@ -12540,6 +12548,9 @@ input {
         display: none; }
         #section-verification .content-verification .form-verification .box-form-verification .loading-viability img {
           display: none; }
+    #section-verification .content-verification .form-verification .waitinig {
+      font-weight: bold;
+      font-size: 16px; }
     #section-verification .content-verification .form-verification #btnVerification:disabled {
       background-color: rgba(7, 158, 7, 0.45);
       color: #ddd;
