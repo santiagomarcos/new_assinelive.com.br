@@ -190,6 +190,141 @@
             .modem
               margin: 10px 0px
 
+#section-contract-wttx
+    display: none
+    +container-fixed(10%)
+    .content-contract
+        +make-row(0px)
+        background-color: #1390d4
+        display: block
+        height: auto
+        margin-top: 30px
+        margin-bottom: 20px
+
+        +breakpoint($celular)
+            background-color: transparent
+
+        .description-plan-content
+            display: block
+            background-color: $color-font-car
+            padding: 1px
+            color: $white
+
+            +breakpoint($celular)
+                background-color: transparent
+
+            .description-plan-header
+                text-align: center
+                margin: 8px 0px
+
+                +breakpoint($celular)
+                    background-color: $color-font-car
+                    padding: 8px 0px
+                    margin: 0px
+
+                .title-choose-plan
+                    font-size: 22px
+
+
+            .description-plan-body
+                .sumary-price
+                    +make-sm-column(4,0px)
+                    background-image: linear-gradient($color-font-car, #354b51, $color-font-car)
+                    display: block
+                    //margin-top: 20px
+
+                    +breakpoint($celular)
+                        background-image: linear-gradient(to right top, #27265f, #4171a7, #29387a)
+                        background-color: #606f7b
+                        padding: 10px 0px
+                        text-shadow: 2px 2px 3px #100028
+                    .limit-broadband
+                        display: block
+                        text-align: center
+
+                        .description-item-broadband
+                            font-size: 16px
+                            font-weight: bold
+                            margin: 5px
+
+                            +breakpoint($celular)
+                                margin: 0px
+
+                        .desc-limit-broadband
+                            font-size: 35px
+
+                    .box-price-broadband
+                        text-align: center
+                        .type-money, .value-broadband
+                            font-size: 35px
+                            //background-color: #fff
+                            display: inline-block
+                            margin: 10px 0px
+                            font-weight: bold
+
+                        .payment-mounth
+                            font-size: 16px
+                            font-weight: bold
+
+                .box-info-plans
+                    +make-sm-column(4,0px)
+                    //background-color: #b8c2cc
+                    display: block
+                    //margin-top: 20px
+
+                    +breakpoint($celular)
+                        padding: 10px 10px
+                        color: #000
+                        border: 1px solid $color-font-body-ligth
+                        box-shadow: inset 0px -3px 7px #082b3547
+
+                    .title-info-plans
+                        font-size: 16px
+                        font-weight: bold
+                        text-align: center
+                        margin: 10px 5px
+
+                    .box-chanells-plans
+                        .description-chanells
+                            margin: 10px 5px
+
+                            +breakpoint($celular)
+                                margin: 35px 5px 0px 0px
+
+                        .chanells-content
+                            margin: 10px 5px
+                            text-align: center
+                            font-size: 13px
+
+                .box-contract-plan
+                    +make-sm-column(4,0px)
+                    //background-color: #64d5ca
+                    display: block
+                    //margin-top: 20px
+                    padding: 10px 10px
+                    +breakpoint($celular)
+                        color: #000
+                        border: 1px solid $color-font-body-ligth
+                        box-shadow: inset 0px 6px 8px #082b3547
+
+                    .contract-title
+                        text-align: center
+                        font-weight: bold
+                        margin: 5px
+
+                    .description-contract
+                        text-align: center
+                        font-size: 13px
+
+                        .desc-taxa
+                            margin: 10px 0px
+                        .loyatlity
+                            margin: 10px 0px
+
+                        .modem
+                            margin: 10px 0px
+
+
 .form-contract-content
   //background-color: #afd9ee
   border: 1px solid #c0c0c0

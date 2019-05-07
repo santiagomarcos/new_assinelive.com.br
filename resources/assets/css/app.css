@@ -2424,6 +2424,150 @@ input {
           #section-contract .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .modem {
             margin: 10px 0px; }
 
+#section-contract-wttx {
+  display: none;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto; }
+  #section-contract-wttx:before, #section-contract-wttx:after {
+    display: table;
+    content: " "; }
+  #section-contract-wttx:after {
+    clear: both; }
+  #section-contract-wttx .content-contract {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #1390d4;
+    display: block;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    #section-contract-wttx .content-contract:before, #section-contract-wttx .content-contract:after {
+      display: table;
+      content: " "; }
+    #section-contract-wttx .content-contract:after {
+      clear: both; }
+    @media (max-width: 767px) {
+      #section-contract-wttx .content-contract {
+        background-color: transparent; } }
+    #section-contract-wttx .content-contract .description-plan-content {
+      display: block;
+      background-color: #082b35;
+      padding: 1px;
+      color: #fff; }
+      @media (max-width: 767px) {
+        #section-contract-wttx .content-contract .description-plan-content {
+          background-color: transparent; } }
+      #section-contract-wttx .content-contract .description-plan-content .description-plan-header {
+        text-align: center;
+        margin: 8px 0px; }
+        @media (max-width: 767px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-header {
+            background-color: #082b35;
+            padding: 8px 0px;
+            margin: 0px; } }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-header .title-choose-plan {
+          font-size: 22px; }
+      #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        background-image: linear-gradient(#082b35, #354b51, #082b35);
+        display: block; }
+        @media (min-width: 768px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price {
+            float: left;
+            width: 33.33333%; } }
+        @media (max-width: 767px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price {
+            background-image: linear-gradient(to right top, #27265f, #4171a7, #29387a);
+            background-color: #606f7b;
+            padding: 10px 0px;
+            text-shadow: 2px 2px 3px #100028; } }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband {
+          display: block;
+          text-align: center; }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband .description-item-broadband {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px; }
+            @media (max-width: 767px) {
+              #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband .description-item-broadband {
+                margin: 0px; } }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .limit-broadband .desc-limit-broadband {
+            font-size: 35px; }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband {
+          text-align: center; }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband .type-money, #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband .value-broadband {
+            font-size: 35px;
+            display: inline-block;
+            margin: 10px 0px;
+            font-weight: bold; }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .sumary-price .box-price-broadband .payment-mounth {
+            font-size: 16px;
+            font-weight: bold; }
+      #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block; }
+        @media (min-width: 768px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans {
+            float: left;
+            width: 33.33333%; } }
+        @media (max-width: 767px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans {
+            padding: 10px 10px;
+            color: #000;
+            border: 1px solid #A1A9A9;
+            box-shadow: inset 0px -3px 7px #082b3547; } }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans .title-info-plans {
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          margin: 10px 5px; }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans .box-chanells-plans .description-chanells {
+          margin: 10px 5px; }
+          @media (max-width: 767px) {
+            #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans .box-chanells-plans .description-chanells {
+              margin: 35px 5px 0px 0px; } }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-info-plans .box-chanells-plans .chanells-content {
+          margin: 10px 5px;
+          text-align: center;
+          font-size: 13px; }
+      #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block;
+        padding: 10px 10px; }
+        @media (min-width: 768px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan {
+            float: left;
+            width: 33.33333%; } }
+        @media (max-width: 767px) {
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan {
+            color: #000;
+            border: 1px solid #A1A9A9;
+            box-shadow: inset 0px 6px 8px #082b3547; } }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan .contract-title {
+          text-align: center;
+          font-weight: bold;
+          margin: 5px; }
+        #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract {
+          text-align: center;
+          font-size: 13px; }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .desc-taxa {
+            margin: 10px 0px; }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .loyatlity {
+            margin: 10px 0px; }
+          #section-contract-wttx .content-contract .description-plan-content .description-plan-body .box-contract-plan .description-contract .modem {
+            margin: 10px 0px; }
+
 .form-contract-content {
   border: 1px solid #c0c0c0;
   display: block;
