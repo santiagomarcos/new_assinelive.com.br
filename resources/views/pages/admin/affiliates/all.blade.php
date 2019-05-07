@@ -109,8 +109,7 @@
                             <label for="referer">Referer:</label>
                             <input type="text" class="form-control" id="referer" pattern="^[a-zA-Z_\-]+$"
                                    placeholder="Url do Afiliado">
-                            <p class="help-block">Link: https://assinelive.com.br/?ref=
-                                <sd id="refcat">usuario</sd>
+                            <p class="help-block">Link: https://assinelive.com.br/?ref=<sd id="refcat">usuario</sd>
                             </p>
                             <p class="help-block" id="statusreferer"></p>
                         </div>
@@ -174,8 +173,7 @@
                             <label for="referer">Referer:</label>
                             <input type="text" class="form-control" id="edit-referer" disabled pattern="^[a-zA-Z_\-]+$"
                                    placeholder="Url do Afiliado">
-                            <p class="help-block">Link do Afiliado: https://assinelive.com.br/?ref=
-                                <sd id="edit-refcat">usuario</sd>
+                            <p class="help-block">Link do Afiliado: https://assinelive.com.br/?ref=<sd id="edit-refcat">usuario</sd>
                             </p>
                         </div>
 
