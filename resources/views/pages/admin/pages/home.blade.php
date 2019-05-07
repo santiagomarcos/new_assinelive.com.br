@@ -69,6 +69,7 @@
             <table class="table table-striped" cellspacing="0" width="100%">
                 <thead>
                 <tr>
+                    <th>Parceiro:</th>
                     <th>Nome:</th>
                     <th>Telefone:</th>
                     <th>Email:</th>
@@ -80,6 +81,7 @@
                 <tbody>
                 @foreach($reports->take(10) as $report)
                     <tr>
+                        <td>{{ $report->partner }}</td>
                         <td>{{ $report->name }}</td>
                         <td>{{ $report->phone }}</td>
                         <td>{{ $report->email }}</td>
