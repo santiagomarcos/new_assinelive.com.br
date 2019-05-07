@@ -583,13 +583,17 @@
                         var email = $("#l-email").val();
                         var zipcode = $("#zip-code").val();
                         var numberhome = $("#number-home").val();
+                        var user = '{{ session('partner')['name'] }}';
+
                         request_disabled_verify = true;
                         axios.post('{{ route('v1.consult.viability') }}', {
+                            partner: user,
                             name: name,
                             phone: phone,
                             email : email,
                             zip: zipcode,
                             number: numberhome,
+
                         });
                         axios.post('{{ route('v1.consult.search') }}', {
                                 zip: zipcode,
