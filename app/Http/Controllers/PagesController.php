@@ -19,7 +19,7 @@ class PagesController extends Controller
     {
         $code = (!isset($request->all()['ref'])) ? null:$request->all()['ref'];
         $service = (new IpInfoService());
-        $detail = $service->getIP($request->ip);
+        $detail = $service->getIP($request->getClientIp());
         $city = $detail->getRegion();
         getPartner($code);
         return view('index')
