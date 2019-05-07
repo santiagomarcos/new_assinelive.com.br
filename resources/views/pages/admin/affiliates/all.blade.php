@@ -24,20 +24,22 @@
                     <table class="datatable table table-striped" cellspacing="0" width="100%">
                         <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Telefone</th>
-                            <th>Codigo Site</th>
-                            <th>Status</th>
-                            <th>Criado em</th>
+                            <th>Nome:</th>
+                            <th>Telefone:</th>
+                            <th>Codigo Site:</th>
+                            <th>Status:</th>
+                            <th>Criado em:</th>
+                            <th>Ações:</th>
                         </tr>
                         </thead>
                         <tfoot>
                         <tr>
-                            <th>Nome</th>
-                            <th>Telefone</th>
-                            <th>Codigo Site</th>
-                            <th>Status</th>
-                            <th>Criado em</th>
+                            <th>Nome:</th>
+                            <th>Telefone:</th>
+                            <th>Codigo Site:</th>
+                            <th>Status:</th>
+                            <th>Criado em:</th>
+                            <th>Ações:</th>
                         </tr>
                         </tfoot>
                         <tbody>
@@ -48,6 +50,12 @@
                                 <td>{{ $affiliate->code }}</td>
                                 <td>{!! ($affiliate->active == 1) ? "<button class='btn btn-xs btn-success'>Ativo</button":"<button class='btn btn-xs btn-danger'>Inativo</button"  !!}</td>
                                 <td>{{ $affiliate->created_at }}</td>
+                                <td>
+                                    <button class="btn btn-xs btn-info edit-affiliate-modal"
+                                             data-toggle="modal"
+                                             data-target="#editAffiliate"
+                                             data-id="{{ $affiliate->id }}">Editar</button>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
@@ -115,7 +123,26 @@
     </div>
 @endsection
 @section('extra-scripts')
+
     <script type="text/javascript">
+        var Success = function (res){
+            $("#days_vip").text(res.data.vip_remaining);
+
+            $("#days_vip_premium").text(res.data.vip_premium_remaining);
+
+        };
+        var Fail = function (res){
+
+        };
+        $(document).on("click", ".edit-affiliate-modal", function () {
+            var id = $(this).data('id');
+            $("#id").val(id);
+            console.log(id)
+            axios.post('{{ route('api.customers.get-days') }}', {
+                id: id
+            }).then(Success, Fail);
+            $(".modal-header #id-modal").text(id);
+        });
         /**
          * Mask phone Generic
          */
@@ -136,6 +163,7 @@
                 $("#refcat").text(Trim($(this).val()));
                 $("#referer").val(Trim($(this).val()));
             });
+
             referer.blur(function () {
                 let request_disabled_verify = false;
 

@@ -39,7 +39,7 @@ class AffiliatesController extends Controller
     {
         $args = $request->all();
         $affiliate = $affiliatesRepository->create([
-                'name' => $args['name'],
+            'name' => strtoupper($args['name']),
             'email' => $args['email'],
             'phone' => $args['phone'],
             'code' => $args['code'],
