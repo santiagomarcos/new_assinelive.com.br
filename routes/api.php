@@ -34,8 +34,9 @@ Route::group(['prefix' => 'v1', 'as' => 'v1.'], function(){
 
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::post('/get-affiliates', 'API\\AffiliatesController@getAffiliateReferrer')->name('consult-referrer');
+        Route::post('/edit-affiliate', 'API\\AffiliatesController@editAffiliate')->name('edit-affiliate');
         Route::post('/create-affiliate', 'API\\AffiliatesController@createAffiliate')->name('create-affiliate');
-
+        Route::post('/update-affiliate', 'API\\AffiliatesController@updateAffiliate')->name('update-affiliate');
     });
 });
 

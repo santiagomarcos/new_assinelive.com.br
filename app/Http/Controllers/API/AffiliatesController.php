@@ -39,12 +39,43 @@ class AffiliatesController extends Controller
     {
         $args = $request->all();
         $affiliate = $affiliatesRepository->create([
-                'name' => $args['name'],
+            'name' => strtoupper($args['name']),
             'email' => $args['email'],
             'phone' => $args['phone'],
             'code' => $args['code'],
             'active' => 1
         ]);
+
+        return [
+            'success' => ($affiliate) ? true:false,
+        ];
+    }
+
+    /**
+     * @param Request $request
+     * @param AffiliatesRepository $affiliatesRepository
+     * @return mixed
+     */
+    public function editAffiliate(Request $request, AffiliatesRepository $affiliatesRepository)
+    {
+        $args = $request->all();
+        $affiliate = $affiliatesRepository->find($args['id']);
+        return $affiliate;
+    }
+
+    /**
+     * @param Request $request
+     * @param AffiliatesRepository $affiliatesRepository
+     * @return array
+     */
+    public function updateAffiliate(Request $request, AffiliatesRepository $affiliatesRepository)
+    {
+        $args = $request->all();
+        $affiliate = $affiliatesRepository->update([
+            'name' => $args['name'],
+            'phone' => $args['phone'],
+            'email' => $args['email']
+        ], $request->id);
 
         return [
             'success' => ($affiliate) ? true:false,

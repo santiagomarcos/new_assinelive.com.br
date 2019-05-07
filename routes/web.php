@@ -32,7 +32,6 @@ Route::group([ 'middleware' => 'analytics'], function() {
 
         Route::group(['middleware' => 'usersession'], function () {
             Route::get('', 'Admin\\PagesController@dashboard')->name('home');
-
             Route::group(['prefix' => 'affiliates', 'as' => 'affiliates.'], function(){
                 Route::get('', ['uses' => 'Admin\\AffiliatesController@all', 'as' => 'all']);
             });
