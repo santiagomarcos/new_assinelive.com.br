@@ -37,6 +37,7 @@
 @section('content')
     {{--@include('components._header')--}}
     @include('components._modal_calling')
+    @include('components._modal-wttx')
     <div id="main-verification">
         <section id="section-verification">
             <div class="content-verification">
@@ -297,6 +298,24 @@
         }
 
         $('document').ready(function () {
+
+            $('#owl_wttx.owl-carousel').owlCarousel({
+                margin:10,
+                loop:false,
+                nav:true,
+                dots:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:2
+                    }
+                }
+            });
 
             function inputEmpty(){
                 if ($('#name').val() == "" ||
