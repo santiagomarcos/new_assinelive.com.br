@@ -36,9 +36,13 @@ class PagesController extends Controller
         $plan = $request->plan;
         $plan = (is_null($plan)) ? "60" : $plan;
 //        dd($plan);
+        $service = (new IpInfoService());
+        $detail = $service->getIP($request->getClientIp());
+        $city = $detail->getRegion();
 
         return view('pages.function.verification')
-            ->withPlan($plan);
+            ->withPlan($plan)
+            ->withCity($city);
 
     }
 }
