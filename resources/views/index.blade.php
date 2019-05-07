@@ -22,7 +22,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +1 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 20 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
                             </ul>
@@ -67,7 +67,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +12 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 30 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
                             </ul>
@@ -113,8 +113,8 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
-                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> 60 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 60 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
                             </ul>
                             <div class="content-price">
@@ -159,8 +159,8 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
-                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> 60 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
+                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i><strong> 60 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
                             <div class="content-price">
@@ -202,7 +202,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 180 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
@@ -244,7 +244,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 250 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
@@ -286,7 +286,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 300 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
                             </ul>
@@ -328,7 +328,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 500 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
                             </ul>
@@ -348,6 +348,98 @@
                             </div>
                             <div class="content-btn-contract">
                                 <a href="{{ route('pages.verifications',['plan'=>'PLAN2G']) }}"><button class="btn-contract" >Contratar</button></a>
+                            </div>
+                        </div>
+                        {{--<div class="items-plan-footer">
+                            <a href="#">Mais beneficíos v</a>
+                        </div>--}}
+                    </div>
+                </div>
+
+                {{--Wttx items--}}
+                <div class="items-plan-content">
+                    <div class="items-plan-box">
+                        <div class="items-plan-header">
+                            <span class="focus-offer">
+                                <p class="icon-offer-focus"><i class="fas fa-haykal"></i></p>
+                            </span>
+                            <div class="desc-plan">
+                                <div class="number-plan">50</div>
+                                <div class="limit-band">Giga</div>
+                            </div>
+                        </div>
+                        <div class="items-plan-body">
+                            <div class="tip-for-usability">
+                                <p class="text-tip">Internet 4G para 50GB de franquia, sua casa com até 5 MEGA de velocidade.</p>
+                            </div>
+                            <ul class="content-items-include">
+                                <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
+                                <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
+                                <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
+                            </ul>
+                            <div class="content-price">
+                                {{--<div class="at-old-price">por apenas</div>--}}
+                                <div class="at-old-price">de <s>R$99,90</s>por</div>
+                                <div class="box-prices">
+                                    <span class="type-money">R$</span>
+                                    <span class="value">89</span>
+                                    <span class="mounth-and-cents">
+                                        <div class="cents">,90</div>
+                                        <div class="mounth">/mês</div>
+                                    </span>
+                                </div>
+                                <div class="rate-hability">
+                                    <p class="text">Permanência de 12 meses</p>
+                                </div>
+                            </div>
+                            <div class="content-btn-contract">
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN50GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                            </div>
+                        </div>
+                        {{--<div class="items-plan-footer">
+                            <a href="#">Mais beneficíos v</a>
+                        </div>--}}
+                    </div>
+                </div>
+                <div class="items-plan-content">
+                    <div class="items-plan-box">
+                        <div class="items-plan-header">
+                            <span class="focus-offer">
+                                <p class="icon-offer-focus"><i class="fas fa-haykal"></i></p>
+                            </span>
+                            <div class="desc-plan">
+                                <div class="number-plan">80</div>
+                                <div class="limit-band">Giga</div>
+                            </div>
+                        </div>
+                        <div class="items-plan-body">
+                            <div class="tip-for-usability">
+                                <p class="text-tip">Internet 4G para 80GB de franquia, sua casa com até 5 MEGA de velocidade.</p>
+                            </div>
+                            <ul class="content-items-include">
+                                <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
+                                <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
+                                <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
+                                <li class="items-include-plan"> <i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
+                            </ul>
+                            <div class="content-price">
+                                {{--<div class="at-old-price">por apenas</div>--}}
+                                <div class="at-old-price">de <s>R$127,00</s>por</div>
+                                <div class="box-prices">
+                                    <span class="type-money">R$</span>
+                                    <span class="value">117</span>
+                                    <span class="mounth-and-cents">
+                                        <div class="cents">,00</div>
+                                        <div class="mounth">/mês</div>
+                                    </span>
+                                </div>
+                                <div class="rate-hability">
+                                    <p class="text">Permanência de 12 meses</p>
+                                </div>
+                            </div>
+                            <div class="content-btn-contract">
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN80GW']) }}"><button class="btn-contract" >Contratar</button></a>
                             </div>
                         </div>
                         {{--<div class="items-plan-footer">
