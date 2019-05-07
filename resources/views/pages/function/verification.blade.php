@@ -325,7 +325,7 @@
                             <div class="box-price-broadband">
                                 <span class="type-money"></span>
                                 <span class="value-broadband">105,00</span> /mês
-                                {{--<p class="payment-mounth">por mês</p>--}}
+                                <p class="payment-mounth">por mês</p>
                             </div>
                         </div>
 
@@ -387,224 +387,225 @@
                             <label for="born">Data de nascimento:</label>
                             <input type="text" name="born" id="born" required>
                         </div>
-                        <div class="row">
-                            <div class="box-form-contract ">
-                                <label for="born">Tipo de documento:</label>
-                                <select name="doc_type"  required="">
-                                    <option value=""> -</option>
-                                    <option value="Identidade Estrangeira">Identidade Estrangeira</option>
-                                    <option value="Carteira de Identidade">Carteira de Identidade</option>
-                                    <option value="CNH">CNH</option>
-                                    <option value="Identidade Profissional">Identidade Profissional</option>
-                                    <option value="Identidade Militar">Identidade Militar</option>
-                                    <option value="Identidade Funcional">Identidade Funcional</option>
-                                    <option value="Carteira de Estrangeiro">Carteira de Estrangeiro</option>
-                                    <option value="Carteira de trabalho">Carteira de trabalho</option>
-                                    <option value="Certidão de Nascimento">Certidão de Nascimento</option>
-                                    <option value="Outros">Outros</option>
-                                </select>
-                            </div>
-                            <div class="box-form-contract" >
-                                <label for="born">Orgão Emissor:</label>
-                                <select name="doc_org">
-                                    <option value=""> -</option>
-                                    <option value="SSP - Secretaria de Segurança Pública do Estado">SSP - Secretaria de
-                                        Segurança Pública do Estado
-                                    </option>
-                                    <option value="Cartório Civil">Cartório Civil</option>
-                                    <option value="Polícia Federal">Polícia Federal</option>
-                                    <option value="Detran">Detran</option>
-                                    <option value="ABNC - Academia Brasileira de Neurocirurgia">ABNC - Academia Brasileira
-                                        de Neurocirurgia
-                                    </option>
-                                    <option
+                    </div>
+
+                    <div class="form-contract wttx-form">
+                        <div class="box-form-contract">
+                            <label for="born">Tipo de documento:</label>
+                            <select id="type_document"  name="doc_type"  required="">
+                                <option value=""> -</option>
+                                <option value="Identidade Estrangeira">Identidade Estrangeira</option>
+                                <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                <option value="CNH">CNH</option>
+                                <option value="Identidade Profissional">Identidade Profissional</option>
+                                <option value="Identidade Militar">Identidade Militar</option>
+                                <option value="Identidade Funcional">Identidade Funcional</option>
+                                <option value="Carteira de Estrangeiro">Carteira de Estrangeiro</option>
+                                <option value="Carteira de trabalho">Carteira de trabalho</option>
+                                <option value="Certidão de Nascimento">Certidão de Nascimento</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="box-form-contract" >
+                            <label for="born">Orgão Emissor:</label>
+                            <select id="issuing_body" name="doc_org">
+                                <option value=""> -</option>
+                                <option value="SSP - Secretaria de Segurança Pública do Estado">SSP - Secretaria de
+                                    Segurança Pública do Estado
+                                </option>
+                                <option value="Cartório Civil">Cartório Civil</option>
+                                <option value="Polícia Federal">Polícia Federal</option>
+                                <option value="Detran">Detran</option>
+                                <option value="ABNC - Academia Brasileira de Neurocirurgia">ABNC - Academia Brasileira
+                                    de Neurocirurgia
+                                </option>
+                                <option
                                         value="CGPI/DUREX/DPF - Coordenação Geral de Polícia de Imigração da Polícia Federal">
-                                        CGPI/DUREX/DPF - Coordenação Geral de Polícia de Imigração da Polícia Federal
-                                    </option>
-                                    <option value="CGPI - Coordenação-Geral de Privilégios e Imunidades">CGPI -
-                                        Coordenação-Geral de Privilégios e Imunidades
-                                    </option>
-                                    <option
+                                    CGPI/DUREX/DPF - Coordenação Geral de Polícia de Imigração da Polícia Federal
+                                </option>
+                                <option value="CGPI - Coordenação-Geral de Privilégios e Imunidades">CGPI -
+                                    Coordenação-Geral de Privilégios e Imunidades
+                                </option>
+                                <option
                                         value="CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras">
-                                        CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras
-                                    </option>
-                                    <option value="CNIG - Conselho Nacional de Imigração">CNIG - Conselho Nacional de
-                                        Imigração
-                                    </option>
-                                    <option value="CNT - Carteira Nacional de Habilitação">CNT - Carteira Nacional de
-                                        Habilitação
-                                    </option>
-                                    <option value="COREN - Conselho Regional de Enfermagem">COREN - Conselho Regional de
-                                        Enfermagem
-                                    </option>
-                                    <option value="CORECON - Conselho Regional de Economia">CORECON - Conselho Regional de
-                                        Economia
-                                    </option>
-                                    <option value="CRA - Conselho Regional de Administração">CRA - Conselho Regional de
-                                        Administração
-                                    </option>
-                                    <option value="CRAS - Centro de Referência de Assistência Social">CRAS - Centro de
-                                        Referência de Assistência Social
-                                    </option>
-                                    <option value="CRB - Conselho Regional de Biblioteconomia">CRB - Conselho Regional de
-                                        Biblioteconomia
-                                    </option>
-                                    <option value="CRC - Conselho Regional de Contabilidade">CRC - Conselho Regional de
-                                        Contabilidade
-                                    </option>
-                                    <option value="CRE - Conselho Regional de Estatística">CRE - Conselho Regional de
-                                        Estatística
-                                    </option>
-                                    <option value="CREA - Conselho Regional de Engenharia e Agronomia">CREA - Conselho
-                                        Regional de Engenharia e Agronomia
-                                    </option>
-                                    <option value="CRECI - Conselho Regional de Corretores de Imóveis">CRECI - Conselho
-                                        Regional de Corretores de Imóveis
-                                    </option>
-                                    <option value="CREFIT - Conselho Regional de Fisioterapia e Terapia Ocupacional">CREFIT
-                                        - Conselho Regional de Fisioterapia e Terapia Ocupacional
-                                    </option>
-                                    <option value="CRESS - Conselho Regional de Serviço Social">CRESS - Conselho Regional de
-                                        Serviço Social
-                                    </option>
-                                    <option value="CRF - Conselho Regional de Farmácia">CRF - Conselho Regional de
-                                        Farmácia
-                                    </option>
-                                    <option value="CRM - Conselho Regional de Medicina">CRM - Conselho Regional de
-                                        Medicina
-                                    </option>
-                                    <option value="CRN - Conselho Regional de Nutrição">CRN - Conselho Regional de
-                                        Nutrição
-                                    </option>
-                                    <option value="CRO - Conselho Regional de Odontologia">CRO - Conselho Regional de
-                                        Odontologia
-                                    </option>
-                                    <option value="CRP - Conselho Regional de Psicologia">CRP - Conselho Regional de
-                                        Psicologia
-                                    </option>
-                                    <option value="CRPRE - Conselho Regional de Profissionais de Relações Públicas">CRPRE -
-                                        Conselho Regional de Profissionais de Relações Públicas
-                                    </option>
-                                    <option value="CRQ - Conselho Regional de Química">CRQ - Conselho Regional de Química
-                                    </option>
-                                    <option value="CRRC - Conselho Regional de Representantes Comerciais">CRRC - Conselho
-                                        Regional de Representantes Comerciais
-                                    </option>
-                                    <option value="CRMV - Conselho Regional de Medicina Veterinária">CRMV - Conselho
-                                        Regional de Medicina Veterinária
-                                    </option>
-                                    <option value="CSC - Carteira Sede Carpina de Pernambuco">CSC - Carteira Sede Carpina de
-                                        Pernambuco
-                                    </option>
-                                    <option value="CTPS - Carteira de Trabalho e Previdência Social">CTPS - Carteira de
-                                        Trabalho e Previdência Social
-                                    </option>
-                                    <option value="DIC - Diretoria de Identificação Civil">DIC - Diretoria de Identificação
-                                        Civil
-                                    </option>
-                                    <option value="DIREX - Diretoria-Executiva">DIREX - Diretoria-Executiva</option>
-                                    <option value="DPMAF - Divisão de Polícia Marítima, Área e de Fronteiras">DPMAF -
-                                        Divisão de Polícia Marítima, Área e de Fronteiras
-                                    </option>
-                                    <option value="DPT - Departamento de Polícia Técnica Geral">DPT - Departamento de
-                                        Polícia Técnica Geral
-                                    </option>
-                                    <option value="DST - Programa Municipal DST/Aids">DST - Programa Municipal DST/Aids
-                                    </option>
-                                    <option value="FGTS - Fundo de Garantia do Tempo de Serviço">FGTS - Fundo de Garantia do
-                                        Tempo de Serviço
-                                    </option>
-                                    <option value="FIPE - Fundação Instituto de Pesquisas Econômicas">FIPE - Fundação
-                                        Instituto de Pesquisas Econômicas
-                                    </option>
-                                    <option value="FLS - Fundação Lyndolpho Silva">FLS - Fundação Lyndolpho Silva</option>
-                                    <option value="GOVGO - Governo do Estado de Goiás">GOVGO - Governo do Estado de Goiás
-                                    </option>
-                                    <option value="I CLA - Carteira de Identidade Classista">I CLA - Carteira de Identidade
-                                        Classista
-                                    </option>
-                                    <option value="IFP - Instituto Félix Pacheco">IFP - Instituto Félix Pacheco</option>
-                                    <option value="IGP - Instituto Geral de Perícias">IGP - Instituto Geral de Perícias
-                                    </option>
-                                    <option
+                                    CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras
+                                </option>
+                                <option value="CNIG - Conselho Nacional de Imigração">CNIG - Conselho Nacional de
+                                    Imigração
+                                </option>
+                                <option value="CNT - Carteira Nacional de Habilitação">CNT - Carteira Nacional de
+                                    Habilitação
+                                </option>
+                                <option value="COREN - Conselho Regional de Enfermagem">COREN - Conselho Regional de
+                                    Enfermagem
+                                </option>
+                                <option value="CORECON - Conselho Regional de Economia">CORECON - Conselho Regional de
+                                    Economia
+                                </option>
+                                <option value="CRA - Conselho Regional de Administração">CRA - Conselho Regional de
+                                    Administração
+                                </option>
+                                <option value="CRAS - Centro de Referência de Assistência Social">CRAS - Centro de
+                                    Referência de Assistência Social
+                                </option>
+                                <option value="CRB - Conselho Regional de Biblioteconomia">CRB - Conselho Regional de
+                                    Biblioteconomia
+                                </option>
+                                <option value="CRC - Conselho Regional de Contabilidade">CRC - Conselho Regional de
+                                    Contabilidade
+                                </option>
+                                <option value="CRE - Conselho Regional de Estatística">CRE - Conselho Regional de
+                                    Estatística
+                                </option>
+                                <option value="CREA - Conselho Regional de Engenharia e Agronomia">CREA - Conselho
+                                    Regional de Engenharia e Agronomia
+                                </option>
+                                <option value="CRECI - Conselho Regional de Corretores de Imóveis">CRECI - Conselho
+                                    Regional de Corretores de Imóveis
+                                </option>
+                                <option value="CREFIT - Conselho Regional de Fisioterapia e Terapia Ocupacional">CREFIT
+                                    - Conselho Regional de Fisioterapia e Terapia Ocupacional
+                                </option>
+                                <option value="CRESS - Conselho Regional de Serviço Social">CRESS - Conselho Regional de
+                                    Serviço Social
+                                </option>
+                                <option value="CRF - Conselho Regional de Farmácia">CRF - Conselho Regional de
+                                    Farmácia
+                                </option>
+                                <option value="CRM - Conselho Regional de Medicina">CRM - Conselho Regional de
+                                    Medicina
+                                </option>
+                                <option value="CRN - Conselho Regional de Nutrição">CRN - Conselho Regional de
+                                    Nutrição
+                                </option>
+                                <option value="CRO - Conselho Regional de Odontologia">CRO - Conselho Regional de
+                                    Odontologia
+                                </option>
+                                <option value="CRP - Conselho Regional de Psicologia">CRP - Conselho Regional de
+                                    Psicologia
+                                </option>
+                                <option value="CRPRE - Conselho Regional de Profissionais de Relações Públicas">CRPRE -
+                                    Conselho Regional de Profissionais de Relações Públicas
+                                </option>
+                                <option value="CRQ - Conselho Regional de Química">CRQ - Conselho Regional de Química
+                                </option>
+                                <option value="CRRC - Conselho Regional de Representantes Comerciais">CRRC - Conselho
+                                    Regional de Representantes Comerciais
+                                </option>
+                                <option value="CRMV - Conselho Regional de Medicina Veterinária">CRMV - Conselho
+                                    Regional de Medicina Veterinária
+                                </option>
+                                <option value="CSC - Carteira Sede Carpina de Pernambuco">CSC - Carteira Sede Carpina de
+                                    Pernambuco
+                                </option>
+                                <option value="CTPS - Carteira de Trabalho e Previdência Social">CTPS - Carteira de
+                                    Trabalho e Previdência Social
+                                </option>
+                                <option value="DIC - Diretoria de Identificação Civil">DIC - Diretoria de Identificação
+                                    Civil
+                                </option>
+                                <option value="DIREX - Diretoria-Executiva">DIREX - Diretoria-Executiva</option>
+                                <option value="DPMAF - Divisão de Polícia Marítima, Área e de Fronteiras">DPMAF -
+                                    Divisão de Polícia Marítima, Área e de Fronteiras
+                                </option>
+                                <option value="DPT - Departamento de Polícia Técnica Geral">DPT - Departamento de
+                                    Polícia Técnica Geral
+                                </option>
+                                <option value="DST - Programa Municipal DST/Aids">DST - Programa Municipal DST/Aids
+                                </option>
+                                <option value="FGTS - Fundo de Garantia do Tempo de Serviço">FGTS - Fundo de Garantia do
+                                    Tempo de Serviço
+                                </option>
+                                <option value="FIPE - Fundação Instituto de Pesquisas Econômicas">FIPE - Fundação
+                                    Instituto de Pesquisas Econômicas
+                                </option>
+                                <option value="FLS - Fundação Lyndolpho Silva">FLS - Fundação Lyndolpho Silva</option>
+                                <option value="GOVGO - Governo do Estado de Goiás">GOVGO - Governo do Estado de Goiás
+                                </option>
+                                <option value="I CLA - Carteira de Identidade Classista">I CLA - Carteira de Identidade
+                                    Classista
+                                </option>
+                                <option value="IFP - Instituto Félix Pacheco">IFP - Instituto Félix Pacheco</option>
+                                <option value="IGP - Instituto Geral de Perícias">IGP - Instituto Geral de Perícias
+                                </option>
+                                <option
                                         value="IICCECF/RO - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco de Rondônia">
-                                        IICCECF/RO - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco
-                                        de Rondônia
-                                    </option>
-                                    <option value="IIMG - Inter-institutional Monitoring Group">IIMG - Inter-institutional
-                                        Monitoring Group
-                                    </option>
-                                    <option value="IML - Instituto Médico-Legal">IML - Instituto Médico-Legal</option>
-                                    <option value="IPC - Índice de Preços ao Consumidor">IPC - Índice de Preços ao
-                                        Consumidor
-                                    </option>
-                                    <option value="IPF - Instituto Pereira Faustino">IPF - Instituto Pereira Faustino
-                                    </option>
-                                    <option value="MAE - Ministério da Aeronáutica">MAE - Ministério da Aeronáutica</option>
-                                    <option value="MEX - Ministério do Exército">MEX - Ministério do Exército</option>
-                                    <option value="MMA - Ministério da Marinha">MMA - Ministério da Marinha</option>
-                                    <option value="OAB - Ordem dos Advogados do Brasil">OAB - Ordem dos Advogados do
-                                        Brasil
-                                    </option>
-                                    <option value="OMB - Ordens dos Músicos do Brasil">OMB - Ordens dos Músicos do Brasil
-                                    </option>
-                                    <option value="PCMG - Policia Civil do Estado de Minas Gerais">PCMG - Policia Civil do
-                                        Estado de Minas Gerais
-                                    </option>
-                                    <option value="PMMG - Polícia Militar do Estado de Minas Gerais">PMMG - Polícia Militar
-                                        do Estado de Minas Gerais
-                                    </option>
-                                    <option value="POF ou DPF - Polícia Federal">POF ou DPF - Polícia Federal</option>
-                                    <option value="POM - Polícia Militar">POM - Polícia Militar</option>
-                                    <option value="SDS - Secretaria de Defesa Social (Pernambuco)">SDS - Secretaria de
-                                        Defesa Social (Pernambuco)
-                                    </option>
-                                    <option value="SNJ - Secretaria Nacional de Justiça / Departamento de Estrangeiros">SNJ
-                                        - Secretaria Nacional de Justiça / Departamento de Estrangeiros
-                                    </option>
-                                    <option value="SECC - Secretaria de Estado da Casa Civil">SECC - Secretaria de Estado da
-                                        Casa Civil
-                                    </option>
-                                    <option
+                                    IICCECF/RO - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco
+                                    de Rondônia
+                                </option>
+                                <option value="IIMG - Inter-institutional Monitoring Group">IIMG - Inter-institutional
+                                    Monitoring Group
+                                </option>
+                                <option value="IML - Instituto Médico-Legal">IML - Instituto Médico-Legal</option>
+                                <option value="IPC - Índice de Preços ao Consumidor">IPC - Índice de Preços ao
+                                    Consumidor
+                                </option>
+                                <option value="IPF - Instituto Pereira Faustino">IPF - Instituto Pereira Faustino
+                                </option>
+                                <option value="MAE - Ministério da Aeronáutica">MAE - Ministério da Aeronáutica</option>
+                                <option value="MEX - Ministério do Exército">MEX - Ministério do Exército</option>
+                                <option value="MMA - Ministério da Marinha">MMA - Ministério da Marinha</option>
+                                <option value="OAB - Ordem dos Advogados do Brasil">OAB - Ordem dos Advogados do
+                                    Brasil
+                                </option>
+                                <option value="OMB - Ordens dos Músicos do Brasil">OMB - Ordens dos Músicos do Brasil
+                                </option>
+                                <option value="PCMG - Policia Civil do Estado de Minas Gerais">PCMG - Policia Civil do
+                                    Estado de Minas Gerais
+                                </option>
+                                <option value="PMMG - Polícia Militar do Estado de Minas Gerais">PMMG - Polícia Militar
+                                    do Estado de Minas Gerais
+                                </option>
+                                <option value="POF ou DPF - Polícia Federal">POF ou DPF - Polícia Federal</option>
+                                <option value="POM - Polícia Militar">POM - Polícia Militar</option>
+                                <option value="SDS - Secretaria de Defesa Social (Pernambuco)">SDS - Secretaria de
+                                    Defesa Social (Pernambuco)
+                                </option>
+                                <option value="SNJ - Secretaria Nacional de Justiça / Departamento de Estrangeiros">SNJ
+                                    - Secretaria Nacional de Justiça / Departamento de Estrangeiros
+                                </option>
+                                <option value="SECC - Secretaria de Estado da Casa Civil">SECC - Secretaria de Estado da
+                                    Casa Civil
+                                </option>
+                                <option
                                         value="SEJUSP - Secretaria de Estado de Justiça e Segurança Pública – Mato Grosso">
-                                        SEJUSP - Secretaria de Estado de Justiça e Segurança Pública – Mato Grosso
-                                    </option>
-                                    <option value="SES ou EST - Carteira de Estrangeiro">SES ou EST - Carteira de
-                                        Estrangeiro
-                                    </option>
-                                    <option value="SESP - Secretaria de Estado da Segurança Pública do Paraná">SESP -
-                                        Secretaria de Estado da Segurança Pública do Paraná
-                                    </option>
-                                    <option value="SJS - Secretaria da Justiça e Segurança">SJS - Secretaria da Justiça e
-                                        Segurança
-                                    </option>
-                                    <option value="SJTC - Secretaria da Justiça do Trabalho e Cidadania">SJTC - Secretaria
-                                        da Justiça do Trabalho e Cidadania
-                                    </option>
-                                    <option value="SJTS - Secretaria da Justiça do Trabalho e Segurança">SJTS - Secretaria
-                                        da Justiça do Trabalho e Segurança
-                                    </option>
-                                    <option value="SPTC - Secretaria de Polícia Técnico-Científica">SPTC - Secretaria de
-                                        Polícia Técnico-Científica
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="box-form-contract">
-                                <label for="born">Número do Documento:</label>
-                                <input type="text" name="born" id="born" required>
-                            </div>
-                            <div class="box-form-contract">
-                                <label for="born">Naturalidade:</label>
-                                <input type="text" name="born" id="born" required>
-                            </div>
-                            <div class="box-form-contract">
-                                <label for="born">UF:</label>
-                                <input type="text" name="born" id="born" required>
-                            </div>
-                            <div class="box-form-contract">
-                                <label for="born">Data de Emissão do Documento:</label>
-                                <input type="text" name="born" id="born" required>
-                            </div>
+                                    SEJUSP - Secretaria de Estado de Justiça e Segurança Pública – Mato Grosso
+                                </option>
+                                <option value="SES ou EST - Carteira de Estrangeiro">SES ou EST - Carteira de
+                                    Estrangeiro
+                                </option>
+                                <option value="SESP - Secretaria de Estado da Segurança Pública do Paraná">SESP -
+                                    Secretaria de Estado da Segurança Pública do Paraná
+                                </option>
+                                <option value="SJS - Secretaria da Justiça e Segurança">SJS - Secretaria da Justiça e
+                                    Segurança
+                                </option>
+                                <option value="SJTC - Secretaria da Justiça do Trabalho e Cidadania">SJTC - Secretaria
+                                    da Justiça do Trabalho e Cidadania
+                                </option>
+                                <option value="SJTS - Secretaria da Justiça do Trabalho e Segurança">SJTS - Secretaria
+                                    da Justiça do Trabalho e Segurança
+                                </option>
+                                <option value="SPTC - Secretaria de Polícia Técnico-Científica">SPTC - Secretaria de
+                                    Polícia Técnico-Científica
+                                </option>
+                            </select>
+                        </div>
+                        <div class="box-form-contract">
+                            <label for="born">Número do Documento:</label>
+                            <input type="text" name="born" id="born" required>
+                        </div>
+                        <div class="box-form-contract">
+                            <label for="born">Naturalidade:</label>
+                            <input type="text" name="born" id="born" required>
+                        </div>
+                        <div class="box-form-contract">
+                            <label for="born">UF:</label>
+                            <input type="text" name="born" id="born" required>
+                        </div>
+                        <div class="box-form-contract">
+                            <label for="born">Data de Emissão do Documento:</label>
+                            <input type="text" name="born" id="born" required>
                         </div>
                     </div>
 
@@ -651,9 +652,12 @@
                                    disabled
                                    value="">
                         </div>
-                        <div class="box-form-contract-address city">
+                    </div>
+
+                    <div class="form-contract wttx-form-ref">
+                        <div class="box-form-contract">
                             <label for="state">Referencia para entrega do modem:</label>
-                            <textarea></textarea>
+                            <textarea rows="8" cols="60"></textarea>
                         </div>
                     </div>
 

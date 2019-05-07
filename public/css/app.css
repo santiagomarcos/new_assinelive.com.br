@@ -12552,8 +12552,7 @@ input {
           width: 50%; } }
       @media (max-width: 767px) {
         #section-verification .content-verification .form-verification .box-form-verification {
-          width: 100%;
-          background-color: #654ccc; }
+          width: 100%; }
           #section-verification .content-verification .form-verification .box-form-verification input {
             width: 100%; } }
       #section-verification .content-verification .form-verification .box-form-verification .loading-viability {
@@ -12879,7 +12878,7 @@ input {
     .form-contract-content .form-contract-body .data-people-content {
       margin-right: 0px;
       margin-left: 0px;
-      margin-top: 80px;
+      margin-top: 130px;
       display: block;
       position: relative; }
       .form-contract-content .form-contract-body .data-people-content:before, .form-contract-content .form-contract-body .data-people-content:after {
@@ -12895,7 +12894,8 @@ input {
         font-size: 20px;
         font-weight: bolder;
         text-transform: uppercase;
-        color: #082b35; }
+        color: #082b35;
+        display: inline; }
     .form-contract-content .form-contract-body .form-contract {
       display: block;
       position: relative;
@@ -12906,6 +12906,24 @@ input {
       .form-contract-content .form-contract-body .form-contract.conditions {
         height: auto;
         margin: 30px 0px; }
+      .form-contract-content .form-contract-body .form-contract.wttx-form {
+        display: inline-block; }
+        .form-contract-content .form-contract-body .form-contract.wttx-form select {
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px; }
+          @media (min-width: 992px) {
+            .form-contract-content .form-contract-body .form-contract.wttx-form select {
+              float: left;
+              width: 91.66667%; } }
+      .form-contract-content .form-contract-body .form-contract.wttx-form-ref .box-form-contract textarea {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px; }
       @media (max-width: 992px) {
         .form-contract-content .form-contract-body .form-contract {
           height: auto; } }
@@ -13110,7 +13128,7 @@ input {
       .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity {
         margin-top: 5px;
         padding: 0 10px;
-        display: block;
+        display: inline-block;
         position: relative; }
         .form-contract-content .form-contract-body .form-contract .box-form-contract-maturity .btn-radio {
           display: none; }
