@@ -13,7 +13,7 @@ gtag('config', 'UA-129140158-1');
 
 $(document).ready(function () {
     //owl carousel
-    $('.owl-carousel').owlCarousel({
+    $('#owl_index.owl-carousel').owlCarousel({
         margin:10,
         loop:false,
         nav:true,

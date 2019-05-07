@@ -1195,8 +1195,12 @@ input {
 
 .modal .modal-dialog .modal-content {
   background-image: linear-gradient(#082b35, #354b51, #082b35); }
+  .modal .modal-dialog .modal-content.wttx-content {
+    background-image: linear-gradient(#e1ecec, #f2fdff, #c5d0d1); }
   .modal .modal-dialog .modal-content .modal-header {
     border: none; }
+    .modal .modal-dialog .modal-content .modal-header.header-wttx {
+      background-image: linear-gradient(#182635, #082b35); }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: 0px !important;
       position: absolute;
@@ -1213,6 +1217,12 @@ input {
         text-shadow: 2px 2px 5px #6b7272;
         color: #fff;
         margin-bottom: 10px; }
+        .modal .modal-dialog .modal-content .modal-header .modal-title .first-title-modal.title-wttx {
+          padding: 20px;
+          font-size: 28px;
+          color: #fff;
+          text-shadow: 2px 1px 2px #17066b, #011553, #17066b;
+          font-weight: bold; }
         .modal .modal-dialog .modal-content .modal-header .modal-title .first-title-modal .limit-band-modal {
           color: #09a809;
           text-shadow: 1px 2px 2px #2a2625; }
@@ -1221,6 +1231,9 @@ input {
         font-weight: bolder;
         color: #fff;
         text-shadow: 1px 1px 3px #000; }
+        .modal .modal-dialog .modal-content .modal-header .modal-title .second-title-modal.title-wttx {
+          text-align: center;
+          font-size: 18px; }
     .modal .modal-dialog .modal-content .modal-header .close {
       margin-top: -50px; }
   .modal .modal-dialog .modal-content .modal-body .message_success {

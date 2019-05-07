@@ -6,7 +6,7 @@
     <section class="container-carousel">
         <div class="title-call">Confira nossas melhores <span class="title-spotlight">ofertas</span></div>
         <div class="content-carousel">
-            <div class="owl-carousel">
+            <div id="owl_index" class="owl-carousel">
                 <div class="items-plan-content">
                     <div class="items-plan-box">
                         <div class="items-plan-header">
@@ -700,7 +700,6 @@
 @endsection
 @section('extra-scripts')
     <script type="text/javascript">
-
         $(document).ready(function () {
             $('#inputPhone').mask('(00) 00000-0000');
             let request_disabled_verify = false;
