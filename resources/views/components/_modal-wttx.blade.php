@@ -52,7 +52,7 @@
                                             </div>
                                         </div>
                                         <div class="content-btn-contract">
-                                            <a href="{{ route('pages.verifications',['plan'=>'PLAN80GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                                            <button class="btn-contract" onclick="wttxfunction('80 GB')">Contratar</button>
                                         </div>
                                     </div>
                                     {{--<div class="items-plan-footer">
@@ -95,7 +95,7 @@
                                             </div>
                                         </div>
                                         <div class="content-btn-contract">
-                                            <a href="{{ route('pages.verifications',['plan'=>'PLAN50GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                                            <button class="btn-contract" onclick="wttxfunction('50 GB')">Contratar</button>
                                         </div>
                                     </div>
                                     {{--<div class="items-plan-footer">
