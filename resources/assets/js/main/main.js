@@ -70,7 +70,6 @@ $(document).ready(function () {
         $('#cnt_natgeo').hide();
         $('#cnt_looke').hide();
     }
-
     function show_channels($plan) {
         if ($plan == '40<br>MB'){
             hide_channels();
@@ -293,7 +292,4 @@ $(document).ready(function () {
     $('#btnVerification').on('click',function () {
 
     })
-
-
-
 })

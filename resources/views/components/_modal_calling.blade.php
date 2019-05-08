@@ -20,7 +20,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="message_success">Informações enviadas com sucesso</div>
+                <div class="message_success"></div>
+                <div class="message_fail"></div>
             </div>
             <div class="modal-footer">
             </div>

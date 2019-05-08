@@ -1,6 +1,6 @@
 #section-verification
     .content-verification
-      display: flex
+      display: none
       height: auto
       +container-fixed(10%)
       margin-top: 30px
@@ -190,7 +190,7 @@
               margin: 10px 0px
 
 #section-contract-wttx
-    display: none
+    display: block
     +container-fixed(10%)
     .content-contract
         +make-row(0px)
@@ -377,6 +377,9 @@
 
       &.maturity
         height: auto
+
+        +breakpoint($tablet)
+          display: inline-block
 
 
       &.conditions

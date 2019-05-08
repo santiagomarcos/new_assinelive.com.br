@@ -702,26 +702,55 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#inputPhone').mask('(00) 00000-0000');
+            function modal_caling_validate(){
+                if ($("#inputPhone").val() == '' || $("#inputName").val() == ''){
+                    return false;
+                } else{
+                    return true;
+                }
+            }
+            function clearInputs() {
+                $("#inputName").val("");
+                $("#inputPhone").val("");
+            }
+
             let request_disabled_verify = false;
             $('#sendData').click(function () {
-                if (!request_disabled_verify) {
+                if (modal_caling_validate()) {
 
                     var name = $('#inputName').val();
                     var phone = $('#inputPhone').val();
-                    request_disabled_verify = true;
-                    axios.post('{{ route('api.calling.send') }}', {
-                        name: name,
-                        phone: phone,
-                    });
-                    $('.form').hide();
-                    $('.message_success').show();
-                    $('.message_success').html('Informações enviadas com sucesso !!');
-                    setTimeout(function() {
-                        $('#weCall').modal('hide');
-                    }, 3500)
+
+                    if (!request_disabled_verify){
+                        axios.post('{{ route('api.calling.send') }}', {
+                            name: name,
+                            phone: phone,
+                        });
+                        request_disabled_verify = true;
+                        $('.form').hide();
+                        $('.message_fail').hide();
+                        $('.message_success').show();
+                        $('.message_success').html('Informações enviadas com sucesso !!');
+
+                        setTimeout(function() {
+                            $('#weCall').modal('hide');
+                            $('.form').show();
+                            clearInputs();
+                            $('.message_success').hide();
+                            $('.message_fail').hide();
+                            request_disabled_verify = false;
+                            $('.message_fail').hide();
+                        }, 2000)
+                    }
+                }else{
+                    if ($('#inputName').val() == ''){
+                        $('#inputName').focus();
+                    } else if ($('#inputPhone').val() == '') {
+                        $('#inputPhone').focus();
+                    }
+                    $('.message_fail').show();
+                    $('.message_fail').html('Preencha as informações corretamente');
                 }
-
-
             });
         });
 
