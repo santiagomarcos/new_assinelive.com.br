@@ -753,6 +753,5 @@
                 }
             });
         });
-
     </script>
 @endsection
