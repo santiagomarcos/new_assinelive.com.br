@@ -1247,6 +1247,17 @@ input {
     margin: auto;
     font-weight: bold;
     font-size: 18px; }
+  .modal .modal-dialog .modal-content .modal-body .message_fail {
+    display: none;
+    background: #cb3444;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px; }
   .modal .modal-dialog .modal-content .modal-body form {
     margin-left: 110px; }
     @media (max-width: 767px) {
@@ -2231,7 +2242,7 @@ input {
           position: relative; }
 
 #section-verification .content-verification {
-  display: flex;
+  display: none;
   height: auto;
   padding-right: 5%;
   padding-left: 5%;
@@ -2437,7 +2448,7 @@ input {
             margin: 10px 0px; }
 
 #section-contract-wttx {
-  display: none;
+  display: block;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
@@ -2627,6 +2638,9 @@ input {
       height: 200px; }
       .form-contract-content .form-contract-body .form-contract.maturity {
         height: auto; }
+        @media (max-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract.maturity {
+            display: inline-block; } }
       .form-contract-content .form-contract-body .form-contract.conditions {
         height: auto;
         margin: 30px 0px; }
