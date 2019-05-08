@@ -311,9 +311,12 @@
                             <ul class="content-items-include">
                                 <center>
                                     <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
-                                    <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
-                                    <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
-                                    <li class="items-include-plan"> <i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
+                                    <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos
+                                    </li>
+                                    <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect
+                                        Segurança
+                                    </li>
+                                    <li class="items-include-plan"><i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
                                 </center>
                             </ul>
                         </div>
@@ -337,7 +340,8 @@
                             <div class="description-contract">
                                 <p class="desc-taxa">
                                     Taxa de adesão/instalação
-                                    <s>12x de R$ 5,00</s> <strong>Gratuita</strong> <span class="taxa-instalation"></span>
+                                    <s>12x de R$ 5,00</s> <strong>Gratuita</strong> <span
+                                        class="taxa-instalation"></span>
                                 </p>
                                 <p class="loyatlity">Fidelização 12 meses</p>
                                 <p class="modem">Modem Wifi inclúido</p>
@@ -364,7 +368,8 @@
                         </div>
                         <div class="box-form-contract">
                             <label for="document">CPF:</label>
-                            <input type="text" name="document-wttx" id="document-wttx" onchange="enviaCPF(this.value);" id="document"
+                            <input type="text" name="document-wttx" id="document-wttx" onchange="enviaCPF(this.value);"
+                                   id="document"
                                    placeholder="___.___.___-__" required>
                         </div>
                         <div class="box-form-contract">
@@ -374,7 +379,8 @@
                         </div>
                         <div class="box-form-contract">
                             <label for="second-tel">Telefone:</label>
-                            <input type="tel" name="second-tel-wttx" id="second-tel-wttx" placeholder="(__)_____-____" required>
+                            <input type="tel" name="second-tel-wttx" id="second-tel-wttx" placeholder="(__)_____-____"
+                                   required>
                         </div>
                         <div class="box-form-contract">
                             <label for="email">E-mail:</label>
@@ -395,7 +401,7 @@
                     <div class="form-contract wttx-form">
                         <div class="box-form-contract">
                             <label for="born">Tipo de documento:</label>
-                            <select id="type_document_wttx"  name="doc_type_wttx"  required="">
+                            <select id="type_document_wttx" name="doc_type_wttx" required="">
                                 <option value=""> -</option>
                                 <option value="Identidade Estrangeira">Identidade Estrangeira</option>
                                 <option value="Carteira de Identidade">Carteira de Identidade</option>
@@ -409,7 +415,7 @@
                                 <option value="Outros">Outros</option>
                             </select>
                         </div>
-                        <div class="box-form-contract" >
+                        <div class="box-form-contract">
                             <label for="born">Orgão Emissor:</label>
                             <select id="org_emission_wttc" name="doc_org">
                                 <option value=""> -</option>
@@ -423,14 +429,14 @@
                                     de Neurocirurgia
                                 </option>
                                 <option
-                                        value="CGPI/DUREX/DPF - Coordenação Geral de Polícia de Imigração da Polícia Federal">
+                                    value="CGPI/DUREX/DPF - Coordenação Geral de Polícia de Imigração da Polícia Federal">
                                     CGPI/DUREX/DPF - Coordenação Geral de Polícia de Imigração da Polícia Federal
                                 </option>
                                 <option value="CGPI - Coordenação-Geral de Privilégios e Imunidades">CGPI -
                                     Coordenação-Geral de Privilégios e Imunidades
                                 </option>
                                 <option
-                                        value="CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras">
+                                    value="CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras">
                                     CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras
                                 </option>
                                 <option value="CNIG - Conselho Nacional de Imigração">CNIG - Conselho Nacional de
@@ -532,7 +538,7 @@
                                 <option value="IGP - Instituto Geral de Perícias">IGP - Instituto Geral de Perícias
                                 </option>
                                 <option
-                                        value="IICCECF/RO - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco de Rondônia">
+                                    value="IICCECF/RO - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco de Rondônia">
                                     IICCECF/RO - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco
                                     de Rondônia
                                 </option>
@@ -571,7 +577,7 @@
                                     Casa Civil
                                 </option>
                                 <option
-                                        value="SEJUSP - Secretaria de Estado de Justiça e Segurança Pública – Mato Grosso">
+                                    value="SEJUSP - Secretaria de Estado de Justiça e Segurança Pública – Mato Grosso">
                                     SEJUSP - Secretaria de Estado de Justiça e Segurança Pública – Mato Grosso
                                 </option>
                                 <option value="SES ou EST - Carteira de Estrangeiro">SES ou EST - Carteira de
@@ -600,7 +606,7 @@
                         </div>
                         <div class="box-form-contract">
                             <label for="born">Naturalidade:</label>
-                            <input type="text"  id="naturality_wttc" required>
+                            <input type="text" id="naturality_wttc" required>
                         </div>
                         <div class="box-form-contract">
                             <label for="born">UF:</label>
@@ -618,7 +624,8 @@
                         </div>
                         <div class="box-form-contract-address zip">
                             <label for="zip-code-show">CEP:</label>
-                            <input type="text" name="zip-code-show" id="zip-code-show-wttx" class="disabled-input" disabled
+                            <input type="text" name="zip-code-show" id="zip-code-show-wttx" class="disabled-input"
+                                   disabled
                                    value="">
                         </div>
                         <div class="box-form-contract-address addres">
@@ -669,18 +676,24 @@
                             <h3 class="title-maturity-invoice">Data de vencimento da fatura:</h3>
                         </div>
                         <div class="box-form-contract-maturity">
-                            <label class="day-wttx-" for="day-1">1</label>
-                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-1-wttx" value="1">
-                            <label class="day-wttx-" for="day-7">7</label>
-                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-7-wttx" value="7">
-                            <label class="day-wttx-" for="day-10">10</label>
-                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-10-wttx" value="10">
-                            <label class="day-wttx-" for="day-12">12</label>
-                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-12-wttx" value="12">
-                            <label class="day-wttx-" for="day-15">15</label>
-                            <input type="radio" name="day-maturity-invoice-=wttx" class="btn-radio" id="day-15-wttx" value="15">
-                            <label class="day-wttx-" for="day-20">20</label>
-                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-20-wttx" value="20">
+                            <label class="day-wttx-" for="day-wttx-1">1</label>
+                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-wttx-1"
+                                   value="1">
+                            <label class="day-wttx-" for="day-wttx-7">7</label>
+                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-wttx-7"
+                                   value="7">
+                            <label class="day-wttx-" for="day-wttx-10">10</label>
+                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-wttx-10"
+                                   value="10">
+                            <label class="day-wttx-" for="day-wttx-12">12</label>
+                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-wttx-12"
+                                   value="12">
+                            <label class="day-wttx-" for="day-wttx-15">15</label>
+                            <input type="radio" name="day-maturity-invoice-=wttx" class="btn-radio" id="day-wttx-15"
+                                   value="15">
+                            <label class="day-wttx-" for="day-wttx-20">20</label>
+                            <input type="radio" name="day-maturity-invoice-wttx" class="btn-radio" id="day-wttx-20"
+                                   value="20">
                         </div>
                     </div>
 
@@ -698,14 +711,14 @@
                     </div>
                 </div>
                 <!--gif reload-->
-                <div class="gif" id="loading" align="center">
+                <div class="gif" id="loading-wttx" align="center">
                     <div class="content-gif">
                         <img src="/images/loader.gif" height="150" width="150" alt="">
                     </div>
                     <h3>Estamos processando seu pedido...</h3>
                 </div>
 
-                <div class="sucess-content" id="sucess-content">
+                <div class="sucess-content" id="sucess-content-wttx">
                     <p>
                         Parabéns <strong class="name-client"> </strong>! seu pedido foi realizado com sucesso.
                         Se desejar pode conferir a descrição do plano contratado na caixa "PLANO ESCOLHIDO", o numero do
@@ -728,13 +741,15 @@
                 $.get("https://nox.ffxsistemas.com/api/v1/consult/document?document=" + obj, function (data) {
                     var arr = data.split('|');
                     $('#name').val(arr['0']);
+                    $('#name-wttx').val(arr['0']);
+
                     $('#sex').val(arr[1]);
                     $('#born').val(arr[2]);
                     $('#lifestatus').val(arr[3]);
                     $('#mother_name').val(arr[5]);
                     $('#name-wttx').val(arr['0']);
                     $('#sex-wttx').val(arr[1]);
-                    $('#born-wttx').val(arr[2]);
+                    $('#born_wttx').val(arr[2]);
                     $('#lifestatus-wttx').val(arr[3]);
                     $('#mother_name_wttx').val(arr[5]);
                 });
@@ -743,11 +758,11 @@
 
         function wttxfunction(value) {
             $("#section-verification").hide();
-            if(value == "50 GB") {
+            if (value == "50 GB") {
                 $("#plan_wttx").val(value);
                 $("#desc-limit-broadband-wttx").text("50 GB");
                 $("#value-broadband-wttx").text("89,90");
-            } else if(value == "80 GB")  {
+            } else if (value == "80 GB") {
                 $("#plan_wttx").val(value);
                 $("#desc-limit-broadband-wttx").text("80 GB");
                 $("#value-broadband-wttx").text("117,00");
@@ -760,24 +775,24 @@
         $('document').ready(function () {
 
             $('#owl_wttx.owl-carousel').owlCarousel({
-                margin:10,
-                loop:false,
-                nav:true,
-                dots:false,
-                responsive:{
-                    0:{
-                        items:1
+                margin: 10,
+                loop: false,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    600:{
-                        items:1
+                    600: {
+                        items: 1
                     },
-                    1000:{
-                        items:2
+                    1000: {
+                        items: 2
                     }
                 }
             });
 
-            function inputEmpty(){
+            function inputEmpty() {
                 if ($('#name').val() == "" ||
                     $('#document').val() == "" ||
                     $('#cellphone').val() == "" ||
@@ -785,6 +800,22 @@
                     $('#email').val() == "" ||
                     $('#mother_name').val() == "" ||
                     $('#born').val() == "") {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function inputEmptyWTTX() {
+                if ($('#name-wttx').val() == "" ||
+                    $('#document-wttx').val() == "" ||
+                    $('#cellphone-wttx').val() == "" ||
+                    $('#second-tel-wttx').val() == "" ||
+                    $('#email-wttx').val() == "" ||
+                    $('#mother_name_wttx').val() == "" ||
+                    $('#born_wttx').val() == "" ||
+                    $('#reference-wttx').val() == "") {
+
                     return false;
                 } else {
                     return true;
@@ -834,7 +865,7 @@
 
             $('input:radio[name="terms-conditions-wttx"]').change(function () {
                 if ($("input[name='terms-conditions-wttx']:checked")) {
-                    if (inputEmpty()) {
+                    if (inputEmptyWTTX()) {
                         $('#btnNextContractWTTX').prop('disabled', false);
                     } else {
                         if ($('#name-wttx').val() == "") {
@@ -861,10 +892,10 @@
                             $('#mother_name_wttx').prop('placeholder', 'Preencha este campo corretamente');
                             $('#mother_name_wttx').css('background', '#FFF5E7');
                             $('#mother_name_wttx').focus();
-                        } else if ($('#complement-wttx').val() == "") {
-                            $('#complement-wttx').prop('placeholder', 'Preencha este campo corretamente');
-                            $('#complement-wttx').css('background', '#FFF5E7');
-                            $('#complement-wttx').focus();
+                        } else if ($("#reference-wttx").val() == "") {
+                            $('#reference-wttx').prop('placeholder', 'Preencha este campo corretamente');
+                            $('#reference-wttx').css('background', '#FFF5E7');
+                            $('#reference-wttx').focus();
                         }
                         $(this).prop('checked', false);
                     }
@@ -927,6 +958,7 @@
             $('#document-wttx').mask('000.000.000-00');
             $('#born').mask('00/00/0000');
             $('#born_wttx').mask('00/00/0000');
+            $('#emission_wttx').mask('00/00/0000')
             $('#cellphone').mask('(00) 00000-0000');
             $('#second-tel').mask('(00) 00000-0000');
             $('#second-tel-wttx').mask('(00) 00000-0000');
@@ -1076,7 +1108,7 @@
                                     }
                                 });
                             } else {
-                                if(res.data.campaign == 5) {
+                                if (res.data.campaign == 5) {
                                     $("#wttx").modal();
                                 } else {
                                     $("#loading-viability").hide();
@@ -1270,6 +1302,117 @@
                     }).then(callbackInputSuccess, callbackInputFail);
                 }
             })
+            $("#btnNextContractWTTX").click(function () {
+
+                /**
+                 * Callback Success
+                 * @param res
+                 */
+                var callbackInputSuccess = function (res) {
+                    if (!res.data.success) {
+                        request_disabled_insert = false;
+                        $('#finalizado').hide();
+                    } else {
+                        var plan_wan = $("#confirm-plan-wan").val();
+                        $('#loading-wttx').hide();
+                        $('#waiting').hide();
+                        $(".name-client").val($("#name").val());
+                        $("#sucess-content-wttx").show();
+                        $("#contract-plan").html(plan_wan);
+                        $(".number-order").html(res.data.id);
+                        request_disabled_insert = false;
+                    }
+                };
+
+                /**
+                 * Callback Fail (Internet Disconnect or No returned Data).
+                 * @param res
+                 */
+                var callbackInputFail = function (res) {
+                    request_disabled_insert = false;
+                    $('#finalizado').show();
+                    $('#loading-wttx').hide();
+                    $('#waiting').hide();
+                };
+
+                /**
+                 * Variables for INPUT BASIC DATA
+                 */
+                var name = $("#name-wttx").val();
+                var user = '{{ session('partner')['name'] }}';
+                var document = $("#document-wttx").val();
+                var phone_cel = $("#cellphone-wttx").val();
+                var phone_fixo = $("#second-tel-wttx").val();
+                var mother = $("#mother_name_wttx").val();
+                var birth = $("#born_wttx").val();
+                var email = $("#email-wttx").val();
+                /**
+                 * INPUT Address
+                 * @type {*|jQuery}
+                 */
+                var zipcode = $('#zip-code-show-wttx').val();
+                var street = $('#address-show-wttx').val();
+                var number = $('#number-show-wttx').val();
+                var complement = $("#complement-wttx").val();
+                var neighborhood = $('#neighborhood-wttx').val();
+                var city = $('#city-wttx').val();
+                var state = $("#state-wttx").val();
+                /**
+                 * INPUT Plans
+                 * @type {*|jQuery}
+                 */
+                var doc_type = $("#type_document_wttx").val();
+                var doc_number = $("#number_doc_wttc").val();
+                var doc_emission = $("#emission_wttx").val();
+                var doc_naturality = $("#naturality_wttc").val();
+                var doc_org = $("#org_emission_wttc").val();
+                var doc_uf = $("#uf_wttx").val();
+                var reference = $("#reference-wttx").val();
+                var sex = "MASCULINO";
+                var plan_wttx = $("#plan_wttx").val();
+
+
+                if (!request_disabled_insert) {
+
+                    $(".form-contract-body").hide();
+                    $("#loading-wttx").show();
+
+                    request_disabled_insert = true;
+                    axios.post('https://nox.ffxsistemas.com/api/v1/inputs/site/wttx', {
+                        name: name,
+                        user: user,
+                        document: document,
+                        name_mother: mother,
+                        date_birth: birth,
+                        doc_type: doc_type,
+                        doc_emission: doc_emission,
+                        doc_number: doc_number,
+                        doc_naturality: doc_naturality,
+                        doc_org: doc_org,
+                        doc_uf: doc_uf,
+                        cep: zipcode,
+                        sex: sex,
+                        ENDERECO: street,
+                        CIDADE: city,
+                        UF: state,
+                        phone_fixo: phone_fixo,
+                        phone_cel: phone_cel,
+                        plan_wan: plan_wttx,
+                        BAIRRO: neighborhood,
+                        NUMEROEND: number,
+                        COMPLEMENTO: complement,
+                        email: email,
+                        maturity_date: 1,
+                        reference: reference,
+                        obs: "PEDIDO DO SITE"
+                    }, {
+                        headers: {
+                            'Access-Control-Allow-Origin': 'https://assinelive.com.br',
+                        }
+                    }).then(callbackInputSuccess, callbackInputFail);
+                }
+            })
+
         });
     </script>
 @endsection
