@@ -49,8 +49,8 @@
                     <div class="card-body">
                         <i class="icon fa fa-share-alt fa-4x"></i>
                         <div class="content">
-                            <div class="title">15</div>
-                            <div class="sub-title">Pedidos de Vendas</div>
+                            <div class="title">{{ count($conversion) }}</div>
+                            <div class="sub-title">Conversões</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
@@ -69,6 +69,7 @@
             <table class="table table-striped" cellspacing="0" width="100%">
                 <thead>
                 <tr>
+                    <th>Status:</th>
                     <th>Parceiro:</th>
                     <th>Nome:</th>
                     <th>Telefone:</th>
@@ -81,6 +82,8 @@
                 <tbody>
                 @foreach($reports->take(10) as $report)
                     <tr>
+                        <td>{!! ($report->conversion) ? "<button class='btn btn-xs btn-success'>Convertido</button":"<button class='btn btn-xs btn-danger'>Não Convertido</button"  !!}</td>
+
                         <td>{{ $report->partner }}</td>
                         <td>{{ $report->name }}</td>
                         <td>{{ $report->phone }}</td>

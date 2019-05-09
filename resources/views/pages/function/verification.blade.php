@@ -732,6 +732,8 @@
             </div>
         </section>
     </div>
+    <input type="hidden" id="conversion_id">
+
 
 @endsection
 @section('extra-scripts')
@@ -1086,6 +1088,7 @@
                         } else {
                             console.log(res.data.status);
                             if (res.data.status == "OK") {
+
                                 $.each(res.data.values, function (key, value) {
                                     if (key == plan_request) {
                                         have_plan = true;
@@ -1148,6 +1151,13 @@
                         var numberhome = $("#number-home").val();
                         var user = '{{ session('partner')['name'] }}';
 
+                        var successViability = function (res) {
+                            $("#conversion_id").val(res.data.id);
+                        };
+                        var failViabillity = function (res) {
+
+                        };
+
                         request_disabled_verify = true;
                         axios.post('{{ route('v1.consult.viability') }}', {
                             partner: user,
@@ -1156,8 +1166,7 @@
                             email: email,
                             zip: zipcode,
                             number: numberhome,
-
-                        });
+                        }).then(successViability,failViabillity);
                         axios.post('{{ route('v1.consult.search') }}', {
                                 zip: zipcode,
                                 number: numberhome,
@@ -1272,6 +1281,10 @@
                     $(".form-contract-body").hide();
                     $("#loading").show();
 
+                    var conversion = $("#conversion_id").val();
+                    axios.post('{{ route('v1.consult.viability-update') }}', {
+                        id: conversion,
+                    })
                     request_disabled_insert = true;
                     axios.post('https://nox.ffxsistemas.com/api/v1/inputs/site', {
                         name: name,
@@ -1378,6 +1391,10 @@
                     $("#loading-wttx").show();
 
                     request_disabled_insert = true;
+                    var conversion = $("#conversion_id").val();
+                    axios.post('{{ route('v1.consult.viability-update') }}', {
+                        id: conversion,
+                    })
                     axios.post('https://nox.ffxsistemas.com/api/v1/inputs/site/wttx', {
                         name: name,
                         user: user,

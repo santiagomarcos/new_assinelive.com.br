@@ -29,6 +29,7 @@ Route::group(['prefix' => 'api', 'as' => 'api.'], function (){
 Route::group(['prefix' => 'v1', 'as' => 'v1.'], function(){
     Route::group(['prefix' => 'consult', 'as' => 'consult.'], function() {
         Route::post('/viability/create', 'API\\LeadsController@create')->name('viability');
+        Route::post('/viability/update', 'API\\LeadsController@update')->name('viability-update');
         Route::post('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
     });
 
