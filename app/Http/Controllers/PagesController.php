@@ -14,7 +14,10 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function home(Request $request)
     {
         $code = (!isset($request->all()['ref'])) ? null:$request->all()['ref'];
@@ -25,11 +28,19 @@ class PagesController extends Controller
         return view('index')
             ->withCity($city);
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function verification()
     {
         return view('pages.function.verification');
     }
 
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function verifications(Request $request)
     {
 
