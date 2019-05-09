@@ -16,4 +16,12 @@ class Affiliate extends Model
     protected $guarded = [];
     protected $table = 'affiliates';
     public $timestamps = true;
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function leads()
+    {
+        return $this->hasMany(LeadViability::class,'partner','name');
+    }
 }
