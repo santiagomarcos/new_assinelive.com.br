@@ -28,6 +28,7 @@
                             <th>Telefone:</th>
                             <th>Codigo Site:</th>
                             <th>Status:</th>
+                            <th>Conversões</th>
                             <th>Criado em:</th>
                             <th>Ações:</th>
                         </tr>
@@ -38,6 +39,7 @@
                             <th>Telefone:</th>
                             <th>Codigo Site:</th>
                             <th>Status:</th>
+                            <th>Conversões</th>
                             <th>Criado em:</th>
                             <th>Ações:</th>
                         </tr>
@@ -49,7 +51,9 @@
                                 <td>{{ $affiliate->phone }}</td>
                                 <td>{{ $affiliate->code }}</td>
                                 <td>{!! ($affiliate->active == 1) ? "<button class='btn btn-xs btn-success'>Ativo</button":"<button class='btn btn-xs btn-danger'>Inativo</button"  !!}</td>
+                                <td>{{ count($affiliate->leads->where('conversion',1)) }}</td>
                                 <td>{{ $affiliate->created_at }}</td>
+
                                 <td>
                                     <button class="btn btn-xs btn-info edit-affiliate-modal"
                                             data-toggle="modal"
