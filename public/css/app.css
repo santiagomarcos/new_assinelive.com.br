@@ -12520,7 +12520,7 @@ input {
           position: relative; }
 
 #section-verification .content-verification {
-  display: none;
+  display: flex;
   height: auto;
   padding-right: 5%;
   padding-left: 5%;
@@ -12726,7 +12726,7 @@ input {
             margin: 10px 0px; }
 
 #section-contract-wttx {
-  display: block;
+  display: none;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
