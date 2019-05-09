@@ -12,9 +12,7 @@
 */
 
 Route::group(['middleware' => 'analytics'], function () {
-
-    Route::get('', 'PagesController@home')->name('home');
-
+    Route::get('/', 'PagesController@home')->name('home');
     Route::group(['prefix' => 'pages', 'as' => 'pages.'], function () {
         Route::get('/verification', ['uses' => 'PagesController@verification', 'as' => 'verification']);
         Route::get('/faq', ['uses' => 'PagesController@faq', 'as' => 'faq']);
@@ -26,7 +24,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     /**
      * Auth Routes
      */
-    Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => 'analytics'], function () {
+    Route::group(['prefix' => 'auth', 'as' => 'auth.'], function () {
         Route::get('/login', ['uses' => 'AuthController@login', 'as' => 'login']);
         Route::post('/login', ['uses' => 'AuthController@authenticate', 'as' => 'authenticate']);
         Route::get('/logout', ['uses' => 'AuthController@logout', 'as' => 'logout']);
