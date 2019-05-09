@@ -43,10 +43,8 @@ class PagesController extends Controller
      */
     public function verifications(Request $request)
     {
-
         $plan = $request->plan;
         $plan = (is_null($plan)) ? "60" : $plan;
-//        dd($plan);
         $service = (new IpInfoService());
         $detail = $service->getIP($request->getClientIp());
         $city = $detail->getRegion();
@@ -54,6 +52,5 @@ class PagesController extends Controller
         return view('pages.function.verification')
             ->withPlan($plan)
             ->withCity($city);
-
     }
 }

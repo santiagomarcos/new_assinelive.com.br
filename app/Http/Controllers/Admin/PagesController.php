@@ -31,7 +31,8 @@ class PagesController extends Controller
             ->withAffiliates($affiliatesRepository->activeAffiliates())
             ->withLeads($viabilityRepository->findByDay())
             ->withAccess($loggerRepository->findByDay())
-            ->withReports($viabilityRepository->findAllOrder());
+            ->withReports($viabilityRepository->findAllOrder())
+            ->withConversion($viabilityRepository->findByDayConversion());
     }
 
 }
