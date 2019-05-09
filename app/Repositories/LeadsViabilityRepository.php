@@ -62,5 +62,13 @@ class LeadsViabilityRepository extends Repository
             ->get();
     }
 
+    /**
+     * @return mixed
+     */
+    public function findAllOrderTable()
+    {
+        return $this->getModel()->orderBy('id','desc')->paginate(10);
+    }
+
 
 }
