@@ -32741,7 +32741,7 @@ $(document).ready(function () {
     })
 
     $('.container-items-questions a[href^="#"] > .items-questions').on('click',function (e) {
-        // alert("ta indo");
+            e.preventDefault();
             $(this).children('.items-answers').toggleClass('active');
             $(this).children('.title-items-questions').toggleClass('active');
         });
