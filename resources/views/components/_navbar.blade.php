@@ -25,7 +25,7 @@
             <ul class="content-menu">
                 <a href="#benefits"><li class="items-menu">Beneficios</li></a>|
                 <a href="#digital_services"><li class="items-menu">Canais digitais</li></a>|
-                <a href="#faq"><li class="items-menu">FAQ</li></a>
+                <a href="{{ route('pages.faq') }}"><li class="items-menu">Atendimento</li></a>
             </ul>
             <div class="box-button">
                 <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-buy-now" >Assine já</button></a>
