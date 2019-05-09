@@ -37,6 +37,10 @@ Route::group([ 'middleware' => 'analytics'], function() {
                 Route::get('', ['uses' => 'Admin\\AffiliatesController@all', 'as' => 'all']);
             });
 
+            Route::group(['prefix' => 'consults', 'as' => 'consults.'], function(){
+                Route::get('', ['uses' => 'Admin\\ConsultsController@all', 'as' => 'all']);
+            });
+
         });
 
     });
