@@ -1,6 +1,14 @@
-
+<div class="navbar-header">
+    <a class="navbar-brand" href="{{ route('admin.home') }}">
+        <div class="icon fa fa-paper-plane"></div>
+        <div class="title">Assine Live - Admin</div>
+    </a>
+    <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+        <i class="fa fa-times icon"></i>
+    </button>
+</div>
 <li class="active">
-    <a href="index.html">
+    <a href="{{ route('admin.home') }}">
         <span class="icon fa fa-tachometer"></span><span class="title">Dashboard</span>
     </a>
 </li>
