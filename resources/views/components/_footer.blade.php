@@ -1,12 +1,12 @@
 <footer class="content-footer">
     <div class="container-footer">
         <div id="faq" class="box-left">
-            <h2 class="title-box-footer">Perguntas frequentes ?</h2>
+            <h2 class="title-box-footer">Atendimento</h2>
 
             <ul class="content-question">
-                <a href="#"><li class="items-ask">Como saber os canais no meu plano ?</li></a>
-                <a href="#"><li class="items-ask">Como acesso os canais online para assistir a programação ?</li></a>
-                <a href="#"><li class="items-ask">Já tenho um número de telefone e quero manter o mesmo ?</li></a>
+                <a href="{{ route('pages.faq') }}"><li class="items-atendance">Perguntas frequentas</li></a>
+                <a href="#"><li class="items-atendance">Regulamento</li></a>
+                <a href="#"><li class="items-atendance">Medidor de velocidade</li></a>
             </ul>
         </div>
         <div class="box-rigth">

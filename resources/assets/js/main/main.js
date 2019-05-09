@@ -292,4 +292,10 @@ $(document).ready(function () {
     $('#btnVerification').on('click',function () {
 
     })
+
+    $('.container-items-questions a[href^="#"] > .items-questions').on('click',function (e) {
+        // alert("ta indo");
+            $(this).children('.items-answers').toggleClass('active');
+            $(this).children('.title-items-questions').toggleClass('active');
+        });
 })
