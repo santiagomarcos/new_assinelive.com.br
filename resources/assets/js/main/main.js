@@ -209,6 +209,8 @@ $(document).ready(function () {
         }
     }
 
+    $('.content-portability').hide();
+
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
         $('.taxa-instalation').html('10,00');
@@ -306,4 +308,14 @@ $(document).ready(function () {
             $(this).children('.items-answers').toggleClass('active');
             $(this).children('.title-items-questions').toggleClass('active');
         });
+
+
+    // check radio button
+    $('input[name="choose_portability"]').change(function () {
+        if ($('input[name="choose_portability"]:checked').val() === "yes") {
+            $('.content-portability').show();
+        } else {
+            $('.content-portability').hide();
+        }
+    });
 })
