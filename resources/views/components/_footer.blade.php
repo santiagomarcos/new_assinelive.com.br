@@ -5,8 +5,8 @@
 
             <ul class="content-question">
                 <a href="{{ route('pages.faq') }}"><li class="items-atendance">Perguntas frequentas</li></a>
-                <a href="#"><li class="items-atendance">Regulamento</li></a>
-                <a href="#"><li class="items-atendance">Medidor de velocidade</li></a>
+                <a href="{{ route('pages.regulaments') }}"><li class="items-atendance">Regulamento</li></a>
+                <a href="https://www.speedtest.net/pt" target="_blank"><li class="items-atendance">Medidor de velocidade</li></a>
             </ul>
         </div>
         <div class="box-rigth">
