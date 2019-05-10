@@ -11,7 +11,7 @@
                     </div>
                     <div class="type-money">R$</div>
                     <div class="price-band">
-                        <div class="description-value">de <s>R$130,00</s> por </div>
+                        <div class="description-value">de <s>R$ 115,00</s> por </div>
                         <div class="price">105</div>
                         <div class="zero-mounth">
                             <div class="zero">,80</div>
@@ -45,10 +45,10 @@
                     </div>
                     <div class="type-money">R$</div>
                     <div class="price-band">
-                        <div class="description-value">de <s>R$115,00</s> por </div>
-                        <div class="price">117</div>
+                        <div class="description-value">de <s>R$ 130,00</s> por </div>
+                        <div class="price">97</div>
                         <div class="zero-mounth">
-                            <div class="zero">,00</div>
+                            <div class="zero">,50</div>
                             <div class="mounth">/mês</div>
                         </div>
                     </div>
