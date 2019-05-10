@@ -63,4 +63,14 @@ class PagesController extends Controller
         return view('pages.function.faq')
             ->withCity($city);
     }
+
+    public function regulaments(Request $request)
+    {
+        $service = (new IpInfoService());
+        $detail = $service->getIP($request->getClientIp());
+        $city = $detail->getRegion();
+
+        return view('pages.function.regulaments')
+            ->withCity($city);
+    }
 }

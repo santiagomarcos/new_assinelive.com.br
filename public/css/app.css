@@ -10861,7 +10861,7 @@ input {
       margin-bottom: 30px; }
     .content-footer .container-footer .title-box-footer {
       color: #d3f0f8;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-shadow: 1px 1px 4px #000; }
     .content-footer .container-footer .box-left {
       position: relative;
@@ -10888,7 +10888,7 @@ input {
           text-decoration: none;
           color: #fff; }
           .content-footer .container-footer .box-left .content-question a .items-atendance {
-            margin: 10px 0px;
+            margin: 15px 0px;
             text-transform: uppercase;
             font-size: 13px; }
             @media (max-width: 992px) {
@@ -13242,5 +13242,41 @@ input {
           font-weight: normal;
           padding: 10px;
           width: 450px; }
+          @media (max-width: 595px) {
+            .main_faq .container-items-questions a .items-questions .items-answers {
+              width: 100%; } }
           .main_faq .container-items-questions a .items-questions .items-answers.active {
             display: block; }
+
+.services_regulaments {
+  padding-right: 8%;
+  padding-left: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  margin-top: 39px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: block;
+  position: relative; }
+  .services_regulaments:before, .services_regulaments:after {
+    display: table;
+    content: " "; }
+  .services_regulaments:after {
+    clear: both; }
+  .services_regulaments .container-services {
+    border: 1px solid #d2dbfa, #eeeef3;
+    padding: 20px; }
+    .services_regulaments .container-services .title-services {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 22px;
+      margin-bottom: 40px; }
+    .services_regulaments .container-services .items-services {
+      margin: 15px 0; }
+      .services_regulaments .container-services .items-services a {
+        text-decoration: none; }
+    .services_regulaments .container-services .services-box {
+      margin: 50px 0; }
+    .services_regulaments .container-services .title-box-services {
+      font-weight: 300; }
