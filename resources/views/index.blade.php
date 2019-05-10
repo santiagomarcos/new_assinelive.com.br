@@ -30,9 +30,9 @@
                                 <div class="begin-in">A partir de:</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">96</span>
+                                    <span class="value">78</span>
                                     <span class="mounth-and-cents">
-                                        <div class="cents">,60</div>
+                                        <div class="cents">,75</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>
@@ -76,9 +76,9 @@
                                 <div class="at-old-price">de <s>R$115,00</s>por</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">103</span>
+                                    <span class="value">86</span>
                                     <span class="mounth-and-cents">
-                                        <div class="cents">,50</div>
+                                        <div class="cents">,25</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>

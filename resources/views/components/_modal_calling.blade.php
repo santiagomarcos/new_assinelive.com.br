@@ -6,7 +6,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-title">
-                    <p class="first-title-modal">Em até 24hrs entraremos em contato !</p>
+                    <p class="first-title-modal">Em até 1 hora entraremos em contato !</p>
                     <p class="second-title-modal">Deixe seu número e telefone que nós te ligamos...</p>
                 </div>
             </div>
