@@ -50,16 +50,16 @@ label {
   margin: 5px 0;
   font-weight: normal; }
 
-input {
+input, select {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #082b35;
   padding: 5px;
   color: #777777; }
-  input::placeholder {
+  input::placeholder, select::placeholder {
     font-size: 13px;
     color: #A1A9A9; }
-  input:focus {
+  input:focus, select:focus {
     border: none;
     outline: 0;
     border-bottom: 1px solid #cc2229;
@@ -2244,7 +2244,7 @@ input {
           position: relative; }
 
 #section-verification .content-verification {
-  display: flex;
+  display: none;
   height: auto;
   padding-right: 5%;
   padding-left: 5%;
@@ -2306,7 +2306,7 @@ input {
       box-shadow: inset 2px 2px 3px rgba(5, 52, 5, 0.48); }
 
 #section-contract {
-  display: none;
+  display: block;
   padding-right: 5%;
   padding-left: 5%;
   margin-right: auto;
@@ -2638,6 +2638,9 @@ input {
       position: relative;
       width: 100%;
       height: 200px; }
+      @media (max-width: 992px) {
+        .form-contract-content .form-contract-body .form-contract.addres .data-people-content {
+          margin-top: 40px; } }
       .form-contract-content .form-contract-body .form-contract.maturity {
         height: auto; }
         @media (max-width: 992px) {
@@ -2664,6 +2667,20 @@ input {
         min-height: 1px;
         padding-right: 0px;
         padding-left: 0px; }
+      .form-contract-content .form-contract-body .form-contract.portability {
+        height: 120px;
+        display: block; }
+        .form-contract-content .form-contract-body .form-contract.portability .data-people-content {
+          margin-top: 40px; }
+        @media (max-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract.portability {
+            height: auto;
+            display: inline-block; } }
+        .form-contract-content .form-contract-body .form-contract.portability .content-portability {
+          display: block;
+          position: relative; }
+          .form-contract-content .form-contract-body .form-contract.portability .content-portability select {
+            width: 100%; }
       @media (max-width: 992px) {
         .form-contract-content .form-contract-body .form-contract {
           height: auto; } }
@@ -2698,6 +2715,15 @@ input {
             .form-contract-content .form-contract-body .form-contract .box-form-contract input {
               float: left;
               width: 91.66667%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract.port {
+          display: block;
+          padding: 5px;
+          width: 100%; }
+          .form-contract-content .form-contract-body .form-contract .box-form-contract.port input {
+            width: 20px;
+            float: none;
+            margin: 10px;
+            background-color: #3490dc; }
         @media (max-width: 992px) {
           .form-contract-content .form-contract-body .form-contract .box-form-contract {
             position: relative;

@@ -754,7 +754,5 @@
             });
         });
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129140158-1"></script>
 
 @endsection
