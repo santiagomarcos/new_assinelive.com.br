@@ -1,6 +1,6 @@
 #section-verification
     .content-verification
-      display: none
+      display: flex
       height: auto
       +container-fixed(10%)
       margin-top: 30px
@@ -56,7 +56,7 @@
             box-shadow: inset 2px 2px 3px rgba(5, 52, 5, 0.48)
 
 #section-contract
-  display: block
+  display: none
   +container-fixed(10%)
   .content-contract
     +make-row(0px)
@@ -408,7 +408,7 @@
       &.portability
         height: 120px
         //background-color: #e5e5e5
-        display: block
+        display: none
 
         .data-people-content
           margin-top: 40px
@@ -416,7 +416,7 @@
         +breakpoint($tablet)
           //z-index: -200
           height: auto
-          display: inline-block
+          //display: inline-block
 
         .content-portability
           //background-color: #888888
