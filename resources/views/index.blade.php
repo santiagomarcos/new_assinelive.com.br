@@ -456,8 +456,8 @@
                 <div class="call-section-digital-services">
                     <div class="title-main">Conheça nossos <strong class="title-spotlight">serviços digitais</strong></div>
                     <p class="description-call">
-                        Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
-                        surpresa na sua conta no final do mês.
+                        Além da nossa internet fibra de alta qualidade, você cliente TIM também desfruta de alguns dos nosso serviços
+                        digitais como canais online e aplicativos exclusivos para você.
                     </p>
                     <span class="line-bottom"></span>
                 </div>
@@ -595,8 +595,8 @@
                 <div class="call-section-benefits">
                     <div class="title-main">Mais alguns outros <strong class="title-spotlight">benefícios</strong> para você</div>
                     <p class="description-call">
-                        Além da nossa internet fibra de alta qualidade, você cliente TIM também desfruta de alguns dos nosso serviços
-                        digitais como canais online e aplicativos exclusivos para você.
+                        Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
+                        surpresa na sua conta no final do mês.
                     </p>
                     <span class="line-bottom"></span>
                 </div>
