@@ -10616,7 +10616,7 @@ input, select {
     @media (min-width: 768px) {
       .content-navbar .header-navbar .navbar-brand {
         float: left;
-        width: 25%; } }
+        width: 20.83333%; } }
     @media (max-width: 992px) {
       .content-navbar .header-navbar .navbar-brand {
         position: relative;
@@ -10693,7 +10693,7 @@ input, select {
     @media (min-width: 992px) {
       .content-navbar .header-navbar .content-menu {
         float: left;
-        width: 41.66667%; } }
+        width: 45.83333%; } }
     @media (max-width: 992px) {
       .content-navbar .header-navbar .content-menu {
         display: none; } }
@@ -10701,10 +10701,11 @@ input, select {
       color: #1390d4; }
       .content-navbar .header-navbar .content-menu a .items-menu {
         display: inline-block;
-        margin: 0 20px;
+        margin: 0 10px;
         text-transform: uppercase;
         transition: color .6s ease-in-out;
-        font-weight: 300; }
+        font-weight: 300;
+        font-size: 15px; }
         .content-navbar .header-navbar .content-menu a .items-menu:hover {
           color: #cc2229;
           cursor: pointer; }
@@ -10739,11 +10740,11 @@ input, select {
     min-height: 1px;
     padding-right: 0px;
     padding-left: 0px;
-    right: -5%; }
+    right: -3%; }
     @media (min-width: 992px) {
       .content-navbar .header-navbar .box-number {
         float: left;
-        width: 20.83333%; } }
+        width: 22.5%; } }
     @media (max-width: 992px) {
       .content-navbar .header-navbar .box-number {
         position: relative;

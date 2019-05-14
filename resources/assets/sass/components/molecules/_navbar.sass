@@ -126,7 +126,7 @@
 
 
     .navbar-brand
-      +make-sm-column(3,0px)
+      +make-sm-column(2.5,0px)
       //background-color: #f66D9b
 
       +breakpoint($tablet)
@@ -185,7 +185,7 @@
             margin-left: 50px
 
     .content-menu
-      +make-md-column(5,0px)
+      +make-md-column(5.5,0px)
       color: $white
       font-weight: $ligth
       line-height: 5
@@ -199,10 +199,11 @@
         color: $color-font-navbar
         .items-menu
           display: inline-block
-          margin: 0 20px
+          margin: 0 10px
           text-transform: uppercase
           transition: color .6s ease-in-out
           font-weight: $ligth
+          font-size: 15px
 
           &:hover
             color: $color-spotlight
@@ -212,6 +213,7 @@
       +make-md-column(1,0px)
       //background: #cc2229
       line-height: 4
+      //right: -30px
       //padding: 0
       
       +breakpoint($tablet)
@@ -223,8 +225,8 @@
         display: none
 
     .box-number
-      +make-md-column(2.5,0px)
-      right: -5%
+      +make-md-column(2.7,0px)
+      right: -3%
       //background: #4dc0b5
 
       +breakpoint($tablet)

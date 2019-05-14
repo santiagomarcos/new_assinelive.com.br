@@ -523,7 +523,7 @@
                 </div>
                 <div class="content-app">
                     <div class="call-app">
-                        <h2 class="title-app">Experiemnte o que nós trazemos para você cliente TIM</h2>
+                        <h2 class="title-app">Experiemente o que nós trazemos para você cliente TIM</h2>
                     </div>
                     <div class="row-up">
                         <div class="power-wifi">
@@ -670,7 +670,7 @@
         <div class="section bg1">
             <div class="caption-box-parallax">
                 <p>Faça parte dessa evolução também e aproveite tudo que a nossa
-                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem pra te oferecer.</p>
+                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem para te oferecer.</p>
                 <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-contract">Eu quero !</button></a>
             </div>
 
