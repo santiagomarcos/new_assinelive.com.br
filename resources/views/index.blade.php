@@ -475,7 +475,7 @@
                         <div class="tablet-channels">
                             <div class="tablet-body">
                                 <div class="tablet-title">
-                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteudo infantil.
+                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteúdo infantil.
                                 </div>
                                 <div class="band-limit-tablet" v-text="plan_tablet">@{{ plan_tablet }}</div>
                                 <div class="content-image-channel">
@@ -505,7 +505,7 @@
                         </div>
                         <div class="cellphone-channels">
                             <div class="cellphone-header">
-                                Clique nas velocidades para saber os canais disponiveís.
+                                Clique nas velocidades para saber os canais disponíveis.
                             </div>
                             <div class="cellphone-body">
                                 <button class="btn-band-plan" id="c_40mb" @click="c_40mb">40<br>MB</button>
@@ -536,7 +536,7 @@
                                     nenhuma perca ao navegador com dispositivos móveis.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -550,7 +550,7 @@
                                     completa, com mais de 40 cursos, divididos em diversas áreas do conhecimento.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -566,7 +566,7 @@
                                     sem gastar memória do celular.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel em <span class="spotiligh">Todos os planos</span>
+                                    Disponível em <span class="spotiligh">Todos os planos</span>
                                 </p>
                             </div>
                         </div>
@@ -580,7 +580,7 @@
                                     outros sem consumir da sua internet.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">40mb, 100mb, 500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">40mb, 100mb, 500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -619,7 +619,7 @@
                             Ligações LOCAIS ILIMITADAS para fixo e móvel,
                             on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-local-footer-hover">Disponivel nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
+                        <div class="box-local-footer-hover">Disponível nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
                     </div>
                 </div>
 
@@ -639,7 +639,7 @@
                             Ligações NACIONAIS ILIMITADAS para fixo e
                             móvel, on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-national-footer-hover">Disponivel nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
+                        <div class="box-national-footer-hover">Disponível nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
                     </div>
                 </div>
 
@@ -660,7 +660,7 @@
                             e móvel, on e offnet de qualquer operadora
                             + 150 minutos exclusivos para ligações LDI.
                         </div>
-                        <div class="box-international-footer-hover">Disponivel nos planos <span class="text-spotligth">1 e 2 giga</span></div>
+                        <div class="box-international-footer-hover">Disponível nos planos <span class="text-spotligth">1 e 2 giga</span></div>
                     </div>
                 </div>
             </div>

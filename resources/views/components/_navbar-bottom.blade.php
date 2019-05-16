@@ -26,7 +26,7 @@
             <span class="contten-button">
                 <span class="icon-button"><i class="fab fa-whatsapp"></i></span>
                 <span class="value-button">
-                    <p class="first-btn-title">Chame nosso</p>
+                    <p class="first-btn-title">Chame no nosso</p>
                     <p class="second-btn-title">Whatsapp</p>
                 </span>
             </span>
