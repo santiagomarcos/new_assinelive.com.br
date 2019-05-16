@@ -45,6 +45,9 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129140158-1"></script>
+
+<!-- Code mautic for mouseout show message-->
+<script src="//mautic.assinelive.com.br/focus/1.js" type="text/javascript" charset="utf-8" async="async"></script>
 @yield("extra-scripts")
 
 </html>
