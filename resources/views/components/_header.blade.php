@@ -36,7 +36,7 @@
             {{--<img src="https://i.imgur.com/xj2UOAS.jpg" alt="">--}}
             <div class="banner-caption cap2">
                 <div class="banner-call-plan">
-                    Esteja entre os tops dos rankings nos E-sports conectado com a <strong class="spoligth-cap2">tim fibra</strong>.
+                    Estejam entre os tops dos rankings nos E-sports conectado com a <strong class="spoligth-cap2">tim fibra</strong>.
                 </div>
                 <div class="banner-value-plan">
                     <div class="content-left">
