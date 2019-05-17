@@ -19,7 +19,6 @@
       +breakpoint($md_celular)
         text-align: center
 
-      
     .developing
       +make-sm-column(6,0px)
       //background-color: #cc2229
@@ -85,23 +84,134 @@
       +make-sm-column(5,0px)
       +make-sm-column-push(1)
 
+
       display: block
-      padding: 20px
+      padding: 10px 0px
       height: auto
       border: white 1px solid
       border-radius: 3px
+      color: $white
+      font-weight: $ligth
 
       +breakpoint($celular)
         text-align: center
 
-      color: $white
-      font-weight: $ligth
+      .title-box-footer
+        padding: 10px 0px 0px 10px
 
       .icons-redes
+        +make-sm-column(6,0px)
         font-size: 35px
-        margin-left: 20px
+        //margin-left: 20px
+        //background: #000
 
         i
           margin: 0 15px
 
+      .box-offer-footer
+        +make-sm-column(12,0px)
+        padding: 0px 10px
+        //background-color: #e4b9b9
+        display: block
+        width: 200px
+        //text-align: center
+        height: auto
+
+        .box-limit-brand-footer
+          +make-sm-column(5,0px)
+          +make-xs-column(6,0px)
+          //background-color: #7886d7
+          display: block
+          position: relative
+          text-align: right
+
+          +breakpoint($celular)
+            text-align: center
+
+          .band-footer
+            font-size: 40px
+            color: $color-spotlight
+            font-weight: 700
+
+          .descr-limit-footer
+            font-size: 20px
+            text-transform: uppercase
+            font-weight: 700
+
+        .price-footer
+          +make-sm-column(7,0px)
+          +make-sm-column(6,0px)
+          //background-color: #606f7b
+          display: block
+          position: relative
+          margin-left: 20px
+          margin-top: 14px
+
+          .type-footer
+            //background: #eeeeee
+            display: inline-block
+            color: $color-font-title-section
+
+
+          .value-footer
+            //background-color: #082b35
+            display: inline-block
+            color: $color-title-test-internet
+            font-size: 50px
+            font-weight: 700
+
+          .footer-mounth-and-cents
+            display: inline-block
+            //background-color: red
+            margin-left: -10px
+            font-size: 14px
+            .price-cents-footer
+              //background-color: #3490dc
+              display: block
+
+            .mounth-footer
+              //background-color: #ffc107
+              display: block
+
+
+        .channel-footer
+          +make-sm-column(12,0px)
+          //background-color: #e4b9c0
+          display: block
+          text-align: center
+
+          .icon-channels-footer
+            display: inline-block
+            top: 5px
+            position: relative
+            img
+              width: 35px
+
+          .icon-plus-footer
+            //background-color: #3490dc
+            display: inline-block
+            font-size: 25px
+            margin: 0px 5px
+
+          .count-channels
+            //background: #606f7b
+            display: inline-block
+
+            .number-plan-footer
+              //background-color: #6574cd
+              display: inline-block
+              font-size: 30px
+
+            .desc-online-footer
+              //background-color: #ffc107
+              display: inline-block
+              width: 50px
+              font-size: 14px
+
+        .box-button-footer
+          +make-sm-column(12,0px)
+          //background-color: #3490dc
+          display: block
+          position: relative
+          text-align: center
 
