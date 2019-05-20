@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="box-button-footer">
-                    <button class="btn-footer-buy">Contratar</button>
+                    <a href="{{ route('pages.verifications', ['plan'=>'PLAN150M']) }}"><button class="btn-footer-buy">Contratar</button></a>
                 </div>
             </div>
         </div>
