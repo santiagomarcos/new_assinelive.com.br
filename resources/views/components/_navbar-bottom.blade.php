@@ -12,7 +12,7 @@
                 </span>
             </button>
         </a>
-        <button class="buy-to-chat">
+        <button id="btnChatBt" class="buy-to-chat">
             <span class="contten-button">
                 <span class="icon-button"><i class="fas fa-comments"></i></span>
                 <span class="value-button">

@@ -3,15 +3,22 @@
 @section('extra-css')
     <style>
         .content-footer .container-footer .box-left {
-            display: none;
+            display: block;
+            width: 50%;
+            margin: auto;
+            position: relative;
+            float: none;
+        }
+        .content-footer .container-footer .box-left .content-question{
+            text-align: center;
+        }
+
+        .content-footer .container-footer .box-left .title-box-footer{
+            text-align: center;
         }
 
         .content-footer .container-footer .box-rigth {
-            float: none;
-            left: auto;
-            width: auto;
-            text-align: center;
-            height: auto;
+            display: none;
         }
 
         .content-navbar .header-navbar .content-menu, .box-button {

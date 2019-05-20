@@ -32765,4 +32765,14 @@ $(document).ready(function () {
             $('.content-portability').hide();
         }
     });
+
+    //chatboot
+    $('#btnChatBt').on('click',function (e) {
+        e.preventDefault();
+        $('#tf-btn').click();
+    });
+    $('#btnChatTp').on('click',function (e) {
+        e.preventDefault();
+        $('#tf-btn').click();
+    });
 })
