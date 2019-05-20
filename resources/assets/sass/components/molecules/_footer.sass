@@ -73,7 +73,7 @@
           color: $white
           .items-atendance
             margin: 15px 0px
-            text-transform: uppercase
+            //text-transform: uppercase
             font-size: 13px
 
             +breakpoint($tablet)
@@ -109,69 +109,78 @@
           margin: 0 15px
 
       .box-offer-footer
-        +make-sm-column(12,0px)
-        padding: 0px 10px
-        //background-color: #e4b9b9
-        display: block
-        width: 200px
-        //text-align: center
-        height: auto
-
-        .box-limit-brand-footer
-          +make-sm-column(5,0px)
-          +make-xs-column(6,0px)
-          //background-color: #7886d7
+        .content-price-and-band
+          +make-sm-column(12,0px)
+          padding: 0px 10px
+          //background-color: #e4b9b9
           display: block
-          position: relative
-          text-align: right
+          width: 200px
+          //text-align: center
+          height: auto
 
           +breakpoint($celular)
-            text-align: center
+            height: 62px
+            margin: auto
+            left: -25px
 
-          .band-footer
-            font-size: 40px
-            color: $color-spotlight
-            font-weight: 700
+          .box-limit-brand-footer
+            +make-sm-column(5,0px)
+            +make-xs-column(6,0px)
+            //background-color: #7886d7
+            display: block
+            position: relative
+            text-align: right
 
-          .descr-limit-footer
-            font-size: 20px
-            text-transform: uppercase
-            font-weight: 700
+            +breakpoint($celular)
+              text-align: center
 
-        .price-footer
-          +make-sm-column(7,0px)
-          +make-sm-column(6,0px)
-          //background-color: #606f7b
-          display: block
-          position: relative
-          margin-left: 20px
-          margin-top: 14px
+            .band-footer
+              font-size: 40px
+              color: $color-spotlight
+              font-weight: 700
 
-          .type-footer
-            //background: #eeeeee
-            display: inline-block
-            color: $color-font-title-section
+            .descr-limit-footer
+              font-size: 20px
+              text-transform: uppercase
+              font-weight: 700
+
+          .price-footer
+            +make-sm-column(7,0px)
+            +make-sm-column(6,0px)
+            //background-color: #606f7b
+            display: block
+            position: relative
+            margin-left: 20px
+            margin-top: 14px
+
+            +breakpoint($celular)
+              width: 200px
+
+            .type-footer
+              //background: #eeeeee
+              display: inline-block
+              color: $color-font-title-section
 
 
-          .value-footer
-            //background-color: #082b35
-            display: inline-block
-            color: $color-title-test-internet
-            font-size: 50px
-            font-weight: 700
+            .value-footer
+              //background-color: #082b35
+              display: inline-block
+              color: $color-title-test-internet
+              font-size: 50px
+              font-weight: 700
 
-          .footer-mounth-and-cents
-            display: inline-block
-            //background-color: red
-            margin-left: -10px
-            font-size: 14px
-            .price-cents-footer
-              //background-color: #3490dc
-              display: block
+            .footer-mounth-and-cents
+              display: inline-block
+              //background-color: red
+              margin-left: -10px
+              font-size: 14px
+              .price-cents-footer
+                //background-color: #3490dc
+                display: block
 
-            .mounth-footer
-              //background-color: #ffc107
-              display: block
+              .mounth-footer
+                //background-color: #ffc107
+                display: block
 
 
         .channel-footer
@@ -179,6 +188,9 @@
           //background-color: #e4b9c0
           display: block
           text-align: center
+
+          +breakpoint($celular)
+            width: 100%
 
           .icon-channels-footer
             display: inline-block

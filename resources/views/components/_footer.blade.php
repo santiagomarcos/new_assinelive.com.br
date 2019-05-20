@@ -17,17 +17,19 @@
                 <i class="fab fa-instagram"></i>
             </div>--}}
             <div class="box-offer-footer">
-                <div class="box-limit-brand-footer">
-                    <p class="band-footer">150</p>
-                    <p class="descr-limit-footer">Mega</p>
-                </div>
-                <div class="price-footer">
-                    <span class="type-footer">R$</span>
-                    <span class="value-footer">97</span>
-                    <span class="footer-mounth-and-cents">
+                <div class="content-price-and-band">
+                    <div class="box-limit-brand-footer">
+                        <p class="band-footer">150</p>
+                        <p class="descr-limit-footer">Mega</p>
+                    </div>
+                    <div class="price-footer">
+                        <span class="type-footer">R$</span>
+                        <span class="value-footer">97</span>
+                        <span class="footer-mounth-and-cents">
                         <span class="price-cents-footer">,50</span>
                         <span class="mounth-footer">/mês</span>
                     </span>
+                    </div>
                 </div>
                 <div class="channel-footer">
                     <div class="icon-channels-footer"><img src="https://i.imgur.com/4FHlcUo.png" alt=""></div>
