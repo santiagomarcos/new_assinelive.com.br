@@ -38,6 +38,12 @@
                 left: 0px;
             }
         }
+
+        @media (max-width: 768px) {
+            .content-footer .container-footer .box-left {
+                width: 100%;
+            }
+        }
     </style>
 @endsection
 
