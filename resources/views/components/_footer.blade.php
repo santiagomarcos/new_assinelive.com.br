@@ -24,9 +24,9 @@
                     </div>
                     <div class="price-footer">
                         <span class="type-footer">R$</span>
-                        <span class="value-footer">97</span>
+                        <span class="value-footer">120</span>
                         <span class="footer-mounth-and-cents">
-                        <span class="price-cents-footer">,50</span>
+                        <span class="price-cents-footer">,00</span>
                         <span class="mounth-footer">/mês</span>
                     </span>
                     </div>

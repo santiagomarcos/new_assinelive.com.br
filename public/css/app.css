@@ -11015,7 +11015,7 @@ input, select {
               width: 50%; } }
           @media (max-width: 767px) {
             .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer {
-              width: 200px; } }
+              width: 230px; } }
           .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .type-footer {
             display: inline-block;
             color: #cacccd; }
@@ -11026,8 +11026,11 @@ input, select {
             font-weight: 700; }
           .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents {
             display: inline-block;
-            margin-left: -10px;
+            margin-left: -5px;
             font-size: 14px; }
+            @media (max-width: 767px) {
+              .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents {
+                margin-left: -4px; } }
             .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents .price-cents-footer {
               display: block; }
             .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents .mounth-footer {
