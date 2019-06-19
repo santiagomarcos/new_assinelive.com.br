@@ -456,8 +456,8 @@
                 <div class="call-section-digital-services">
                     <div class="title-main">Conheça nossos <strong class="title-spotlight">serviços digitais</strong></div>
                     <p class="description-call">
-                        Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
-                        surpresa na sua conta no final do mês.
+                        Além da nossa internet fibra de alta qualidade, você cliente TIM também desfruta de alguns dos nosso serviços
+                        digitais como canais online e aplicativos exclusivos para você.
                     </p>
                     <span class="line-bottom"></span>
                 </div>
@@ -475,7 +475,7 @@
                         <div class="tablet-channels">
                             <div class="tablet-body">
                                 <div class="tablet-title">
-                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteudo infantil.
+                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteúdo infantil.
                                 </div>
                                 <div class="band-limit-tablet" v-text="plan_tablet">@{{ plan_tablet }}</div>
                                 <div class="content-image-channel">
@@ -505,7 +505,7 @@
                         </div>
                         <div class="cellphone-channels">
                             <div class="cellphone-header">
-                                Clique nas velocidades para saber os canais disponiveís.
+                                Clique nas velocidades para saber os canais disponíveis.
                             </div>
                             <div class="cellphone-body">
                                 <button class="btn-band-plan" id="c_40mb" @click="c_40mb">40<br>MB</button>
@@ -523,7 +523,7 @@
                 </div>
                 <div class="content-app">
                     <div class="call-app">
-                        <h2 class="title-app">Experiemnte o que nós trazemos para você cliente TIM</h2>
+                        <h2 class="title-app">Experiemente o que nós trazemos para você cliente TIM</h2>
                     </div>
                     <div class="row-up">
                         <div class="power-wifi">
@@ -536,7 +536,7 @@
                                     nenhuma perca ao navegador com dispositivos móveis.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -550,7 +550,7 @@
                                     completa, com mais de 40 cursos, divididos em diversas áreas do conhecimento.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -566,7 +566,7 @@
                                     sem gastar memória do celular.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel em <span class="spotiligh">Todos os planos</span>
+                                    Disponível em <span class="spotiligh">Todos os planos</span>
                                 </p>
                             </div>
                         </div>
@@ -580,7 +580,7 @@
                                     outros sem consumir da sua internet.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">40mb, 100mb, 500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">40mb, 100mb, 500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -595,8 +595,8 @@
                 <div class="call-section-benefits">
                     <div class="title-main">Mais alguns outros <strong class="title-spotlight">benefícios</strong> para você</div>
                     <p class="description-call">
-                        Além da nossa internet fibra de alta qualidade, você cliente TIM também desfruta de alguns dos nosso serviços
-                        digitais como canais online e aplicativos exclusivos para você.
+                        Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
+                        surpresa na sua conta no final do mês.
                     </p>
                     <span class="line-bottom"></span>
                 </div>
@@ -619,7 +619,7 @@
                             Ligações LOCAIS ILIMITADAS para fixo e móvel,
                             on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-local-footer-hover">Disponivel nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
+                        <div class="box-local-footer-hover">Disponível nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
                     </div>
                 </div>
 
@@ -639,7 +639,7 @@
                             Ligações NACIONAIS ILIMITADAS para fixo e
                             móvel, on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-national-footer-hover">Disponivel nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
+                        <div class="box-national-footer-hover">Disponível nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
                     </div>
                 </div>
 
@@ -660,7 +660,7 @@
                             e móvel, on e offnet de qualquer operadora
                             + 150 minutos exclusivos para ligações LDI.
                         </div>
-                        <div class="box-international-footer-hover">Disponivel nos planos <span class="text-spotligth">1 e 2 giga</span></div>
+                        <div class="box-international-footer-hover">Disponível nos planos <span class="text-spotligth">1 e 2 giga</span></div>
                     </div>
                 </div>
             </div>
@@ -670,7 +670,7 @@
         <div class="section bg1">
             <div class="caption-box-parallax">
                 <p>Faça parte dessa evolução também e aproveite tudo que a nossa
-                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem pra te oferecer.</p>
+                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem para te oferecer.</p>
                 <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-contract">Eu quero !</button></a>
             </div>
 
@@ -754,7 +754,5 @@
             });
         });
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129140158-1"></script>
 
 @endsection

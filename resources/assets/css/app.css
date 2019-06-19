@@ -50,16 +50,16 @@ label {
   margin: 5px 0;
   font-weight: normal; }
 
-input {
+input, select {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #082b35;
   padding: 5px;
   color: #777777; }
-  input::placeholder {
+  input::placeholder, select::placeholder {
     font-size: 13px;
     color: #A1A9A9; }
-  input:focus {
+  input:focus, select:focus {
     border: none;
     outline: 0;
     border-bottom: 1px solid #cc2229;
@@ -178,6 +178,21 @@ input {
         top: 5px;
         font-size: 20px;
         left: -2px; } }
+
+.btn-footer-buy {
+  background-color: #09a809;
+  color: #fff;
+  border: none;
+  width: 150px;
+  padding: 5px 10px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #146700;
+  cursor: pointer;
+  margin-top: 5px; }
+  .btn-footer-buy:active, .btn-footer-buy:visited, .btn-footer-buy:focus {
+    border: none; }
 
 .content-channels-sales {
   padding-right: 5%;
@@ -340,7 +355,7 @@ input {
     @media (min-width: 768px) {
       .content-navbar .header-navbar .navbar-brand {
         float: left;
-        width: 25%; } }
+        width: 20.83333%; } }
     @media (max-width: 992px) {
       .content-navbar .header-navbar .navbar-brand {
         position: relative;
@@ -417,7 +432,7 @@ input {
     @media (min-width: 992px) {
       .content-navbar .header-navbar .content-menu {
         float: left;
-        width: 41.66667%; } }
+        width: 45.83333%; } }
     @media (max-width: 992px) {
       .content-navbar .header-navbar .content-menu {
         display: none; } }
@@ -425,10 +440,11 @@ input {
       color: #1390d4; }
       .content-navbar .header-navbar .content-menu a .items-menu {
         display: inline-block;
-        margin: 0 20px;
+        margin: 0 10px;
         text-transform: uppercase;
         transition: color .6s ease-in-out;
-        font-weight: 300; }
+        font-weight: 300;
+        font-size: 15px; }
         .content-navbar .header-navbar .content-menu a .items-menu:hover {
           color: #cc2229;
           cursor: pointer; }
@@ -463,11 +479,11 @@ input {
     min-height: 1px;
     padding-right: 0px;
     padding-left: 0px;
-    right: -5%; }
+    right: -3%; }
     @media (min-width: 992px) {
       .content-navbar .header-navbar .box-number {
         float: left;
-        width: 20.83333%; } }
+        width: 22.5%; } }
     @media (max-width: 992px) {
       .content-navbar .header-navbar .box-number {
         position: relative;
@@ -613,7 +629,6 @@ input {
           color: #fff; }
           .content-footer .container-footer .box-left .content-question a .items-atendance {
             margin: 15px 0px;
-            text-transform: uppercase;
             font-size: 13px; }
             @media (max-width: 992px) {
               .content-footer .container-footer .box-left .content-question a .items-atendance {
@@ -624,7 +639,7 @@ input {
       padding-right: 0px;
       padding-left: 0px;
       display: block;
-      padding: 20px;
+      padding: 10px 0px;
       height: auto;
       border: white 1px solid;
       border-radius: 3px;
@@ -640,11 +655,155 @@ input {
       @media (max-width: 767px) {
         .content-footer .container-footer .box-rigth {
           text-align: center; } }
+      .content-footer .container-footer .box-rigth .title-box-footer {
+        padding: 10px 0px 0px 10px; }
       .content-footer .container-footer .box-rigth .icons-redes {
-        font-size: 35px;
-        margin-left: 20px; }
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 35px; }
+        @media (min-width: 768px) {
+          .content-footer .container-footer .box-rigth .icons-redes {
+            float: left;
+            width: 50%; } }
         .content-footer .container-footer .box-rigth .icons-redes i {
           margin: 0 15px; }
+      .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding: 0px 10px;
+        display: block;
+        width: 200px;
+        height: auto; }
+        @media (min-width: 768px) {
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band {
+            float: left;
+            width: 100%; } }
+        @media (max-width: 767px) {
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band {
+            height: 62px;
+            margin: auto;
+            left: -25px; } }
+        .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .box-limit-brand-footer {
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px;
+          position: relative;
+          float: left;
+          width: 50%;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px;
+          display: block;
+          position: relative;
+          text-align: right; }
+          @media (min-width: 768px) {
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .box-limit-brand-footer {
+              float: left;
+              width: 41.66667%; } }
+          @media (max-width: 767px) {
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .box-limit-brand-footer {
+              text-align: center; } }
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .box-limit-brand-footer .band-footer {
+            font-size: 40px;
+            color: #cc2229;
+            font-weight: 700; }
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .box-limit-brand-footer .descr-limit-footer {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700; }
+        .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer {
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px;
+          position: relative;
+          min-height: 1px;
+          padding-right: 0px;
+          padding-left: 0px;
+          display: block;
+          position: relative;
+          margin-left: 20px;
+          margin-top: 14px; }
+          @media (min-width: 768px) {
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer {
+              float: left;
+              width: 58.33333%; } }
+          @media (min-width: 768px) {
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer {
+              float: left;
+              width: 50%; } }
+          @media (max-width: 767px) {
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer {
+              width: 230px; } }
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .type-footer {
+            display: inline-block;
+            color: #cacccd; }
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .value-footer {
+            display: inline-block;
+            color: #87ebd5;
+            font-size: 50px;
+            font-weight: 700; }
+          .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents {
+            display: inline-block;
+            margin-left: -5px;
+            font-size: 14px; }
+            @media (max-width: 767px) {
+              .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents {
+                margin-left: -4px; } }
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents .price-cents-footer {
+              display: block; }
+            .content-footer .container-footer .box-rigth .box-offer-footer .content-price-and-band .price-footer .footer-mounth-and-cents .mounth-footer {
+              display: block; }
+      .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer {
+            float: left;
+            width: 100%; } }
+        @media (max-width: 767px) {
+          .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer {
+            width: 100%; } }
+        .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer .icon-channels-footer {
+          display: inline-block;
+          top: 5px;
+          position: relative; }
+          .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer .icon-channels-footer img {
+            width: 35px; }
+        .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer .icon-plus-footer {
+          display: inline-block;
+          font-size: 25px;
+          margin: 0px 5px; }
+        .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer .count-channels {
+          display: inline-block; }
+          .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer .count-channels .number-plan-footer {
+            display: inline-block;
+            font-size: 30px; }
+          .content-footer .container-footer .box-rigth .box-offer-footer .channel-footer .count-channels .desc-online-footer {
+            display: inline-block;
+            width: 50px;
+            font-size: 14px; }
+      .content-footer .container-footer .box-rigth .box-offer-footer .box-button-footer {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .content-footer .container-footer .box-rigth .box-offer-footer .box-button-footer {
+            float: left;
+            width: 100%; } }
 
 @keyframes slideUp {
   0% {
@@ -2638,6 +2797,9 @@ input {
       position: relative;
       width: 100%;
       height: 200px; }
+      @media (max-width: 992px) {
+        .form-contract-content .form-contract-body .form-contract.addres .data-people-content {
+          margin-top: 40px; } }
       .form-contract-content .form-contract-body .form-contract.maturity {
         height: auto; }
         @media (max-width: 992px) {
@@ -2664,6 +2826,19 @@ input {
         min-height: 1px;
         padding-right: 0px;
         padding-left: 0px; }
+      .form-contract-content .form-contract-body .form-contract.portability {
+        height: 120px;
+        display: none; }
+        .form-contract-content .form-contract-body .form-contract.portability .data-people-content {
+          margin-top: 40px; }
+        @media (max-width: 992px) {
+          .form-contract-content .form-contract-body .form-contract.portability {
+            height: auto; } }
+        .form-contract-content .form-contract-body .form-contract.portability .content-portability {
+          display: block;
+          position: relative; }
+          .form-contract-content .form-contract-body .form-contract.portability .content-portability select {
+            width: 100%; }
       @media (max-width: 992px) {
         .form-contract-content .form-contract-body .form-contract {
           height: auto; } }
@@ -2698,6 +2873,15 @@ input {
             .form-contract-content .form-contract-body .form-contract .box-form-contract input {
               float: left;
               width: 91.66667%; } }
+        .form-contract-content .form-contract-body .form-contract .box-form-contract.port {
+          display: block;
+          padding: 5px;
+          width: 100%; }
+          .form-contract-content .form-contract-body .form-contract .box-form-contract.port input {
+            width: 20px;
+            float: none;
+            margin: 10px;
+            background-color: #3490dc; }
         @media (max-width: 992px) {
           .form-contract-content .form-contract-body .form-contract .box-form-contract {
             position: relative;

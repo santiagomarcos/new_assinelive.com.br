@@ -10,7 +10,7 @@
             <li class="items-channels">{{ session('partner')['phone'] }}</li> |
             <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511968039943" target="_blank"><li class="items-channels">Whatsapp</li></a> |
             <a href="" id="weCalling" data-toggle="modal" data-target="#weCall"><li class="items-channels">Me ligue</li></a> |
-            <a href=""><li class="items-channels">Chat Online</li></a>
+            <a id="btnChatTp" href=""><li class="items-channels">Chat Online</li></a>
         </ul>
         <span class="location"><i class="fas fa-map-marker-alt"></i>{{ $city }}</span>
     </div>
@@ -23,7 +23,7 @@
                 </a>
             </div>
             <ul class="content-menu">
-                <a href="#benefits"><li class="items-menu">Beneficios</li></a>|
+                <a href="#benefits"><li class="items-menu">Benefícios</li></a>|
                 <a href="#digital_services"><li class="items-menu">Canais digitais</li></a>|
                 <a href="{{ route('pages.faq') }}"><li class="items-menu">Atendimento</li></a>
             </ul>

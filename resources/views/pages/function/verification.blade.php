@@ -3,15 +3,22 @@
 @section('extra-css')
     <style>
         .content-footer .container-footer .box-left {
-            display: none;
+            display: block;
+            width: 50%;
+            margin: auto;
+            position: relative;
+            float: none;
+        }
+        .content-footer .container-footer .box-left .content-question{
+            text-align: center;
+        }
+
+        .content-footer .container-footer .box-left .title-box-footer{
+            text-align: center;
         }
 
         .content-footer .container-footer .box-rigth {
-            float: none;
-            left: auto;
-            width: auto;
-            text-align: center;
-            height: auto;
+            display: none;
         }
 
         .content-navbar .header-navbar .content-menu, .box-button {
@@ -29,6 +36,12 @@
         @media (max-width: 992px) {
             .content-navbar .header-navbar .box-number {
                 left: 0px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-footer .container-footer .box-left {
+                width: 100%;
             }
         }
     </style>
@@ -201,9 +214,40 @@
                         </div>
                     </div>
 
-                    <div class="form-contract">
+                    <div class="form-contract portability">
                         <div class="data-people-content">
-                            <h1 class="title-form-contract">Endereço de instalação:</h1>
+                            <h1 class="title-form-contract">Portabilidade</h1>
+                        </div>
+                        <div class="box-form-contract port">
+                            <input type="radio" name="choose_portability" value="yes"> Sim <br>
+                            <input type="radio" name="choose_portability" checked value="no"> Não
+                        </div>
+                        <div class="content-portability">
+                            <div class="box-form-contract">
+                                <label for="">Número </label>
+                                <input type="tel" class="" id="number_portability" placeholder="N° portabilidade">
+                            </div>
+                            <div class="box-form-contract portability">
+                                <label for="company">Operadora</label>
+                                <select name="operator" id="comapny">
+                                    <option value="NENHUM">NENHUM</option>
+                                    <option value="ALGAR TELECOM">ALGAR TELECOM</option>
+                                    <option value="CLARO">CLARO</option>
+                                    <option value="GT GROUP">GT GROUP</option>
+                                    <option value="GVT">GVT</option>
+                                    <option value="NET/EMBRATEL">NET/EMBRATEL</option>
+                                    <option value="OI">OI</option>
+                                    <option value="SERCOMTEL">SERCOMTEL</option>
+                                    <option value="TELECALL BRASL">TELECALL BRASIL</option>
+                                    <option value="VIVO">VIVO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-contract addres">
+                        <div class="data-people-content">
+                            <h1 id="address_instal" class="title-form-contract">Endereço de instalação:</h1>
                         </div>
                         <div class="box-form-contract-address zip">
                             <label for="zip-code-show">CEP:</label>
@@ -278,6 +322,7 @@
                         </button>
                     </div>
                 </div>
+
                 <!--gif reload-->
                 <div class="gif" id="loading" align="center">
                     <div class="content-gif">
