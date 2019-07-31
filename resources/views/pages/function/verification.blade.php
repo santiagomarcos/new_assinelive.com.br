@@ -785,7 +785,7 @@
     <script type="text/javascript">
         function enviaCPF(obj) {
             if (obj != '') {
-                $.get("https://nox.ffxsistemas.com/api/v1/consult/document?document=" + obj, function (data) {
+                $.get("https://app.noxcrm.com.br/api/v1/consult/document?document=" + obj, function (data) {
                     var arr = data.split('|');
                     $('#name').val(arr['0']);
                     $('#name-wttx').val(arr['0']);
@@ -1331,7 +1331,7 @@
                         id: conversion,
                     })
                     request_disabled_insert = true;
-                    axios.post('https://nox.ffxsistemas.com/api/v1/inputs/site', {
+                    axios.post('https://app.noxcrm.com.br/api/v1/inputs/site', {
                         name: name,
                         user: user,
                         document: document,
@@ -1440,7 +1440,7 @@
                     axios.post('{{ route('v1.consult.viability-update') }}', {
                         id: conversion,
                     })
-                    axios.post('https://nox.ffxsistemas.com/api/v1/inputs/site/wttx', {
+                    axios.post('https://app.noxcrm.com.br/api/v1/inputs/site/wttx', {
                         name: name,
                         user: user,
                         document: document,
