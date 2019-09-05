@@ -1350,6 +1350,7 @@
                         email: email,
                         maturity_date: $('input[name=day-maturity-invoice]:checked').val(),
                         plan_phone: plan_phone,
+                        plan_phone2: "NENHUM",
                         number_portability: null,
                         portability: "NAO",
                         operator: "NENHUM"
