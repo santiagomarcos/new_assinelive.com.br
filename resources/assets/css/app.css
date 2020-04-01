@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Signika:300,400,600");
 /* == media queries == */
+.texto.pequeno {
+    font-size: 18px;
+    line-height: 14px;
+    color: #ffffff;
+}
+
 body {
   height: 100%;
   font-family: 'Signika', sans-serif !important;

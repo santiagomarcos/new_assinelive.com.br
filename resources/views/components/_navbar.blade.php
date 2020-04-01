@@ -18,8 +18,8 @@
         <div class="header-navbar">
             <div class="navbar-brand">
                 <a href="{{ route('home') }}" class="brand">
-                    <p class="brand-firstname"><b>A</b>ssine live</p>
-                    <p class="brand-secondname">Internet fibra</p>
+                    <img src="https://assets-global.website-files.com/5b240575932c8787ad2be1c5/5da4e83adfaa0e05cb8fbd77_LogoTIMLIVE2.svg" alt="TIM Live" width="150" class="logotipo menu">
+                    <div class="texto pequeno">Agente Autorizado</div>
                 </a>
             </div>
             <ul class="content-menu">

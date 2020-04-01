@@ -164,8 +164,7 @@
         </div>
         <div class="logo">
             <a href="http://localhost:8000" class="brand">
-                <p class="brand-firstname"><b>A</b>ssine live</p>
-                <p class="brand-secondname">Administração</p>
+                <img src="https://i.imgur.com/GgbsK5n.png">
             </a>
         </div>
         <div class="form-content" style="margin-left: 0px; margin-right: 0px;">
