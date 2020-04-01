@@ -30,7 +30,9 @@ class PagesController extends Controller
         return view('pages.admin.pages.home')
             ->withAffiliates($affiliatesRepository->activeAffiliates())
             ->withLeads($viabilityRepository->findByDay())
-            ->withAccess($loggerRepository->findByDay());
+            ->withAccess($loggerRepository->findByDay())
+            ->withReports($viabilityRepository->findAllOrder())
+            ->withConversion($viabilityRepository->findByDayConversion());
     }
 
 }

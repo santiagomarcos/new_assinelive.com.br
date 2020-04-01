@@ -2,6 +2,10 @@
   .modal-dialog
     .modal-content
       background-image: linear-gradient($color-font-car, #354b51, $color-font-car)
+
+      &.wttx-content
+        background-image: linear-gradient(#e1ecec, #f2fdff, #c5d0d1)
+
       .modal-header
         border: none
         //.modal-brand
@@ -11,6 +15,10 @@
         //    //background-color: #165cba
         //    display: block
         //    position: relative
+
+        &.header-wttx
+          background-image: linear-gradient(#182635, $color-font-car)
+
 
 
         .close
@@ -35,6 +43,13 @@
             color: $white
             margin-bottom: 10px
 
+            &.title-wttx
+              padding: 20px
+              font-size: 28px
+              color: $white
+              text-shadow: 2px 1px 2px $bg-navbar
+              font-weight: bold
+
             .limit-band-modal
               color: $button-buy-car
               text-shadow: 1px 2px 2px $color-font-body-dark
@@ -44,6 +59,10 @@
             font-weight: bolder
             color: $white
             text-shadow: 1px 1px 3px #000
+
+            &.title-wttx
+              text-align: center
+              font-size: 18px
 
         .close
           //background-color: #FFc
@@ -55,6 +74,18 @@
         .message_success
           display: none
           background: #299e43
+          padding: 10px
+          text-align: center
+          border-radius: 5px
+          color: white
+          width: 70%
+          margin: auto
+          font-weight: bold
+          font-size: 18px
+
+        .message_fail
+          display: none
+          background: #cb3444
           padding: 10px
           text-align: center
           border-radius: 5px

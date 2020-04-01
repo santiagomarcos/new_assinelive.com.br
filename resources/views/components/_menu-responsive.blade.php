@@ -16,7 +16,7 @@
         <ul class="content-menu-responsive">
             <a href="#benefits"><li class="items-menu-responsive">Beneficios</li></a>
             <a href="#digital_services"><li class="items-menu-responsive">Canais digitais</li></a>
-            <a href="#faq"><li class="items-menu-responsive">FAQ</li></a>
+            <a href="{{ route('pages.faq') }}"><li class="items-menu-responsive">Atendimento</li></a>
         </ul>
     </div>
 </div>

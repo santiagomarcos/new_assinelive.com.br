@@ -42,6 +42,19 @@
         }
     });
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129140158-1"></script>
+
+<!-- Code mautic for mouseout show message-->
+<script src="//mautic.assinelive.com.br/focus/1.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+<!--chatboot tim live-->
+{{--<script type="text/javascript">!function(t,e){"use strict";var r=function(t){try{var r=e.getElementsByTagName("body")[0],
+        a=e.createElement("script");a.setAttribute("type","text/javascript"),a.setAttribute("src",t),a.setAttribute("async","true")
+        ,a.setAttribute("defer","true"),r.appendChild(a)}catch(t){}};t.TF={chatId:"1410",
+        chatUrl:"https://chat.talkform.io/chat/47/a9d8de4243e65bfe86ba3b04d65f57ea015d1e735a03945d241740ebbcc673f8/index.html",
+        color:"#3a68a5" },r("https://s3-eu-west-1.amazonaws.com/talkform-eu/integration/talkform.min.js")}(window,document);</script>--}}
 @yield("extra-scripts")
 
 </html>

@@ -49,8 +49,8 @@
                     <div class="card-body">
                         <i class="icon fa fa-share-alt fa-4x"></i>
                         <div class="content">
-                            <div class="title">15</div>
-                            <div class="sub-title">Pedidos de Vendas</div>
+                            <div class="title">{{ count($conversion) }}</div>
+                            <div class="sub-title">Conversões</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
@@ -58,5 +58,44 @@
             </a>
         </div>
     </div>
+    <div class="card card-success">
+        <div class="card-header">
+            <div class="card-title">
+                <div class="title"><i class="fa fa-comments-o"></i> Ultimas consultas de Viabilidade:</div>
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="card-body no-padding">
+            <table class="table table-striped" cellspacing="0" width="100%">
+                <thead>
+                <tr>
+                    <th>Status:</th>
+                    <th>Parceiro:</th>
+                    <th>Nome:</th>
+                    <th>Telefone:</th>
+                    <th>Email:</th>
+                    <th>Cep/Num:</th>
+                    <th>Criado em:</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                @foreach($reports->take(10) as $report)
+                    <tr>
+                        <td>{!! ($report->conversion) ? "<button class='btn btn-xs btn-success'>Convertido</button":"<button class='btn btn-xs btn-danger'>Não Convertido</button"  !!}</td>
+
+                        <td>{{ $report->partner }}</td>
+                        <td>{{ $report->name }}</td>
+                        <td>{{ $report->phone }}</td>
+                        <td>{{ $report->email }}</td>
+                        <td>{{ $report->zip }} / {{ $report->number }}</td>
+                        <td>{{ $report->created_at }}</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p></p>
 
 @endsection

@@ -40,7 +40,7 @@ class SuperListController extends Controller
          * Ps: Morte ao Babaca que desenvolveu esse layout de bosta na lista.
          */
         if(!$search){
-            $wttxSearch = searchWttxSuperList($args['zip']);
+            $wttxSearch = searchWttxSuperList(str_replace('-','', $args['zip']));
 //            dd($wttxSearch);
             if(!$wttxSearch){
                 return [

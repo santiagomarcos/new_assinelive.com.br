@@ -1,0 +1,40 @@
+.main_faq
+  +container-fixed(20%)
+  //background: #7886d7
+
+  .content-faq
+    .title-faq
+      font-size: 28px
+      font-weight: bold
+      margin: 30px 0px
+
+  .container-items-questions
+    border: 1px solid #eeeeee
+    //padding:  30px
+    margin-bottom: 20px
+
+    a
+      color: $color-spotlight-title-section
+      font-weight: bold
+      &:hover
+        text-decoration: none
+      .items-questions
+        border-bottom: 1px solid #eeeeee
+        padding: 30px 10px
+
+        .title-items-questions
+          &.active
+            color: #CC2229
+
+        .items-answers
+          display: none
+          font-weight: normal
+          padding: 10px
+          //background-color: #e5e5e5
+          width: 450px
+
+          +breakpoint($md_celular)
+            width: 100%
+
+          &.active
+            display: block

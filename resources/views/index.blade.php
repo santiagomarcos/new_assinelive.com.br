@@ -6,7 +6,7 @@
     <section class="container-carousel">
         <div class="title-call">Confira nossas melhores <span class="title-spotlight">ofertas</span></div>
         <div class="content-carousel">
-            <div class="owl-carousel">
+            <div id="owl_index" class="owl-carousel">
                 <div class="items-plan-content">
                     <div class="items-plan-box">
                         <div class="items-plan-header">
@@ -22,7 +22,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +1 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 20 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
                             </ul>
@@ -30,9 +30,9 @@
                                 <div class="begin-in">A partir de:</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">96</span>
+                                    <span class="value">78</span>
                                     <span class="mounth-and-cents">
-                                        <div class="cents">,60</div>
+                                        <div class="cents">,75</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>
@@ -67,7 +67,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +12 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 30 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
                             </ul>
@@ -76,9 +76,9 @@
                                 <div class="at-old-price">de <s>R$115,00</s>por</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">103</span>
+                                    <span class="value">86</span>
                                     <span class="mounth-and-cents">
-                                        <div class="cents">,50</div>
+                                        <div class="cents">,25</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>
@@ -113,8 +113,8 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
-                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> 60 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 60 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
                             </ul>
                             <div class="content-price">
@@ -159,8 +159,8 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem de wi-fi</li>
-                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> 60 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
+                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i><strong> 60 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
                             <div class="content-price">
@@ -202,7 +202,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 180 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
@@ -244,7 +244,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 250 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
                             </ul>
@@ -286,7 +286,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 300 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
                             </ul>
@@ -328,7 +328,7 @@
                             </div>
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan">Modem + Power wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
                                 <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 500 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
                             </ul>
@@ -355,6 +355,98 @@
                         </div>--}}
                     </div>
                 </div>
+
+                {{--Wttx items--}}
+                <div class="items-plan-content">
+                    <div class="items-plan-box">
+                        <div class="items-plan-header">
+                            <span class="focus-offer">
+                                <p class="icon-offer-focus"><i class="fas fa-haykal"></i></p>
+                            </span>
+                            <div class="desc-plan">
+                                <div class="number-plan">50</div>
+                                <div class="limit-band">Giga</div>
+                            </div>
+                        </div>
+                        <div class="items-plan-body">
+                            <div class="tip-for-usability">
+                                <p class="text-tip">Internet 4G para 50GB de franquia, sua casa com até 5 MEGA de velocidade.</p>
+                            </div>
+                            <ul class="content-items-include">
+                                <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
+                                <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
+                                <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
+                            </ul>
+                            <div class="content-price">
+                                {{--<div class="at-old-price">por apenas</div>--}}
+                                <div class="at-old-price">de <s>R$99,90</s>por</div>
+                                <div class="box-prices">
+                                    <span class="type-money">R$</span>
+                                    <span class="value">89</span>
+                                    <span class="mounth-and-cents">
+                                        <div class="cents">,90</div>
+                                        <div class="mounth">/mês</div>
+                                    </span>
+                                </div>
+                                <div class="rate-hability">
+                                    <p class="text">Permanência de 12 meses</p>
+                                </div>
+                            </div>
+                            <div class="content-btn-contract">
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN50GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                            </div>
+                        </div>
+                        {{--<div class="items-plan-footer">
+                            <a href="#">Mais beneficíos v</a>
+                        </div>--}}
+                    </div>
+                </div>
+                <div class="items-plan-content">
+                    <div class="items-plan-box">
+                        <div class="items-plan-header">
+                            <span class="focus-offer">
+                                <p class="icon-offer-focus"><i class="fas fa-haykal"></i></p>
+                            </span>
+                            <div class="desc-plan">
+                                <div class="number-plan">80</div>
+                                <div class="limit-band">Giga</div>
+                            </div>
+                        </div>
+                        <div class="items-plan-body">
+                            <div class="tip-for-usability">
+                                <p class="text-tip">Internet 4G para 80GB de franquia, sua casa com até 5 MEGA de velocidade.</p>
+                            </div>
+                            <ul class="content-items-include">
+                                <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
+                                <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
+                                <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
+                                <li class="items-include-plan"> <i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
+                            </ul>
+                            <div class="content-price">
+                                {{--<div class="at-old-price">por apenas</div>--}}
+                                <div class="at-old-price">de <s>R$127,00</s>por</div>
+                                <div class="box-prices">
+                                    <span class="type-money">R$</span>
+                                    <span class="value">117</span>
+                                    <span class="mounth-and-cents">
+                                        <div class="cents">,00</div>
+                                        <div class="mounth">/mês</div>
+                                    </span>
+                                </div>
+                                <div class="rate-hability">
+                                    <p class="text">Permanência de 12 meses</p>
+                                </div>
+                            </div>
+                            <div class="content-btn-contract">
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN80GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                            </div>
+                        </div>
+                        {{--<div class="items-plan-footer">
+                            <a href="#">Mais beneficíos v</a>
+                        </div>--}}
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -364,8 +456,8 @@
                 <div class="call-section-digital-services">
                     <div class="title-main">Conheça nossos <strong class="title-spotlight">serviços digitais</strong></div>
                     <p class="description-call">
-                        Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
-                        surpresa na sua conta no final do mês.
+                        Além da nossa internet fibra de alta qualidade, você cliente TIM também desfruta de alguns dos nosso serviços
+                        digitais como canais online e aplicativos exclusivos para você.
                     </p>
                     <span class="line-bottom"></span>
                 </div>
@@ -383,7 +475,7 @@
                         <div class="tablet-channels">
                             <div class="tablet-body">
                                 <div class="tablet-title">
-                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteudo infantil.
+                                    Entreterimento pra toda família, futebol ao vivo, filmes, séries e conteúdo infantil.
                                 </div>
                                 <div class="band-limit-tablet" v-text="plan_tablet">@{{ plan_tablet }}</div>
                                 <div class="content-image-channel">
@@ -413,7 +505,7 @@
                         </div>
                         <div class="cellphone-channels">
                             <div class="cellphone-header">
-                                Clique nas velocidades para saber os canais disponiveís.
+                                Clique nas velocidades para saber os canais disponíveis.
                             </div>
                             <div class="cellphone-body">
                                 <button class="btn-band-plan" id="c_40mb" @click="c_40mb">40<br>MB</button>
@@ -431,7 +523,7 @@
                 </div>
                 <div class="content-app">
                     <div class="call-app">
-                        <h2 class="title-app">Experiemnte o que nós trazemos para você cliente TIM</h2>
+                        <h2 class="title-app">Experiemente o que nós trazemos para você cliente TIM</h2>
                     </div>
                     <div class="row-up">
                         <div class="power-wifi">
@@ -444,7 +536,7 @@
                                     nenhuma perca ao navegador com dispositivos móveis.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -458,7 +550,7 @@
                                     completa, com mais de 40 cursos, divididos em diversas áreas do conhecimento.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -474,7 +566,7 @@
                                     sem gastar memória do celular.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel em <span class="spotiligh">Todos os planos</span>
+                                    Disponível em <span class="spotiligh">Todos os planos</span>
                                 </p>
                             </div>
                         </div>
@@ -488,7 +580,7 @@
                                     outros sem consumir da sua internet.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponivel nos planos <span class="spotiligh">40mb, 100mb, 500mb, 1gb, 2gb</span>
+                                    Disponível nos planos <span class="spotiligh">40mb, 100mb, 500mb, 1gb, 2gb</span>
                                 </p>
                             </div>
                         </div>
@@ -503,8 +595,8 @@
                 <div class="call-section-benefits">
                     <div class="title-main">Mais alguns outros <strong class="title-spotlight">benefícios</strong> para você</div>
                     <p class="description-call">
-                        Além da nossa internet fibra de alta qualidade, você cliente TIM também desfruta de alguns dos nosso serviços
-                        digitais como canais online e aplicativos exclusivos para você.
+                        Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
+                        surpresa na sua conta no final do mês.
                     </p>
                     <span class="line-bottom"></span>
                 </div>
@@ -527,7 +619,7 @@
                             Ligações LOCAIS ILIMITADAS para fixo e móvel,
                             on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-local-footer-hover">Disponivel nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
+                        <div class="box-local-footer-hover">Disponível nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
                     </div>
                 </div>
 
@@ -547,7 +639,7 @@
                             Ligações NACIONAIS ILIMITADAS para fixo e
                             móvel, on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-national-footer-hover">Disponivel nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
+                        <div class="box-national-footer-hover">Disponível nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
                     </div>
                 </div>
 
@@ -568,7 +660,7 @@
                             e móvel, on e offnet de qualquer operadora
                             + 150 minutos exclusivos para ligações LDI.
                         </div>
-                        <div class="box-international-footer-hover">Disponivel nos planos <span class="text-spotligth">1 e 2 giga</span></div>
+                        <div class="box-international-footer-hover">Disponível nos planos <span class="text-spotligth">1 e 2 giga</span></div>
                     </div>
                 </div>
             </div>
@@ -578,7 +670,7 @@
         <div class="section bg1">
             <div class="caption-box-parallax">
                 <p>Faça parte dessa evolução também e aproveite tudo que a nossa
-                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem pra te oferecer.</p>
+                    <strong class="text-spotligth-parallax">Internet Ultra</strong> tem para te oferecer.</p>
                 <a href="{{ route('pages.verifications', ['plan'=>'PLAN60M']) }}"><button class="btn-contract">Eu quero !</button></a>
             </div>
 
@@ -608,31 +700,59 @@
 @endsection
 @section('extra-scripts')
     <script type="text/javascript">
-
         $(document).ready(function () {
             $('#inputPhone').mask('(00) 00000-0000');
+            function modal_caling_validate(){
+                if ($("#inputPhone").val() == '' || $("#inputName").val() == ''){
+                    return false;
+                } else{
+                    return true;
+                }
+            }
+            function clearInputs() {
+                $("#inputName").val("");
+                $("#inputPhone").val("");
+            }
+
             let request_disabled_verify = false;
             $('#sendData').click(function () {
-                if (!request_disabled_verify) {
+                if (modal_caling_validate()) {
 
                     var name = $('#inputName').val();
                     var phone = $('#inputPhone').val();
-                    request_disabled_verify = true;
-                    axios.post('{{ route('api.calling.send') }}', {
-                        name: name,
-                        phone: phone,
-                    });
-                    $('.form').hide();
-                    $('.message_success').show();
-                    $('.message_success').html('Informações enviadas com sucesso !!');
-                    setTimeout(function() {
-                        $('#weCall').modal('hide');
-                    }, 3500)
+
+                    if (!request_disabled_verify){
+                        axios.post('{{ route('api.calling.send') }}', {
+                            name: name,
+                            phone: phone,
+                        });
+                        request_disabled_verify = true;
+                        $('.form').hide();
+                        $('.message_fail').hide();
+                        $('.message_success').show();
+                        $('.message_success').html('Informações enviadas com sucesso !!');
+
+                        setTimeout(function() {
+                            $('#weCall').modal('hide');
+                            $('.form').show();
+                            clearInputs();
+                            $('.message_success').hide();
+                            $('.message_fail').hide();
+                            request_disabled_verify = false;
+                            $('.message_fail').hide();
+                        }, 2000)
+                    }
+                }else{
+                    if ($('#inputName').val() == ''){
+                        $('#inputName').focus();
+                    } else if ($('#inputPhone').val() == '') {
+                        $('#inputPhone').focus();
+                    }
+                    $('.message_fail').show();
+                    $('.message_fail').html('Preencha as informações corretamente');
                 }
-
-
             });
         });
-
     </script>
+
 @endsection

@@ -32458,9 +32458,17 @@ gtag('js', new Date());
 
 gtag('config', 'UA-129140158-1');
 
+
 $(document).ready(function () {
+    window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'bca0bbe50246b284a8f4eb900061230c9b45f870');
+
     //owl carousel
-    $('.owl-carousel').owlCarousel({
+    $('#owl_index.owl-carousel').owlCarousel({
         margin:10,
         loop:false,
         nav:true,
@@ -32517,7 +32525,6 @@ $(document).ready(function () {
         $('#cnt_natgeo').hide();
         $('#cnt_looke').hide();
     }
-
     function show_channels($plan) {
         if ($plan == '40<br>MB'){
             hide_channels();
@@ -32649,6 +32656,8 @@ $(document).ready(function () {
         }
     }
 
+    $('.content-portability').hide();
+
     $('#c_40mb').on('click',function () {
         show_channels($(this).html());
         $('.taxa-instalation').html('10,00');
@@ -32741,6 +32750,29 @@ $(document).ready(function () {
 
     })
 
+    $('.container-items-questions a[href^="#"] > .items-questions').on('click',function (e) {
+            e.preventDefault();
+            $(this).children('.items-answers').toggleClass('active');
+            $(this).children('.title-items-questions').toggleClass('active');
+        });
 
 
+    // check radio button
+    $('input[name="choose_portability"]').change(function () {
+        if ($('input[name="choose_portability"]:checked').val() === "yes") {
+            $('.content-portability').show();
+        } else {
+            $('.content-portability').hide();
+        }
+    });
+
+    //chatboot
+    $('#btnChatBt').on('click',function (e) {
+        e.preventDefault();
+        $('#tf-btn').click();
+    });
+    $('#btnChatTp').on('click',function (e) {
+        e.preventDefault();
+        $('#tf-btn').click();
+    });
 })
