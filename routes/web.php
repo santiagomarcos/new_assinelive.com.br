@@ -11,6 +11,26 @@
 |
 */
 
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    /**
+     * Auth Routes
+     */
+    Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => 'analytics'], function(){
+        Route::get('/login', ['uses' => 'AuthController@login', 'as' => 'login']);
+        Route::post('/login', ['uses' => 'AuthController@authenticate', 'as' => 'authenticate']);
+        Route::get('/logout', ['uses' => 'AuthController@logout', 'as' => 'logout']);
+    });
+
+    Route::group(['middleware' => 'usersession'], function () {
+        Route::get('', 'Admin\\PagesController@dashboard')->name('home');
+        Route::group(['prefix' => 'affiliates', 'as' => 'affiliates.'], function(){
+            Route::get('', ['uses' => 'Admin\\AffiliatesController@all', 'as' => 'all']);
+        });
+
+    });
+
+});
+
 Route::group([ 'middleware' => 'analytics'], function() {
 
     Route::get('', 'PagesController@home')->name('home');
@@ -20,24 +40,5 @@ Route::group([ 'middleware' => 'analytics'], function() {
         Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('verifications');
     });
 
-    Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-        /**
-         * Auth Routes
-         */
-        Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => 'analytics'], function(){
-            Route::get('/login', ['uses' => 'AuthController@login', 'as' => 'login']);
-            Route::post('/login', ['uses' => 'AuthController@authenticate', 'as' => 'authenticate']);
-            Route::get('/logout', ['uses' => 'AuthController@logout', 'as' => 'logout']);
-        });
-
-        Route::group(['middleware' => 'usersession'], function () {
-            Route::get('', 'Admin\\PagesController@dashboard')->name('home');
-            Route::group(['prefix' => 'affiliates', 'as' => 'affiliates.'], function(){
-                Route::get('', ['uses' => 'Admin\\AffiliatesController@all', 'as' => 'all']);
-            });
-
-        });
-
-    });
 });
 
