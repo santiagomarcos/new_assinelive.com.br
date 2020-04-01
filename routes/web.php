@@ -11,21 +11,11 @@
 |
 */
 
-Route::group(['middleware' => 'analytics'], function () {
-    Route::get('/', 'PagesController@home')->name('home');
-    Route::group(['prefix' => 'pages', 'as' => 'pages.'], function () {
-        Route::get('/verification', ['uses' => 'PagesController@verification', 'as' => 'verification']);
-        Route::get('/faq', ['uses' => 'PagesController@faq', 'as' => 'faq']);
-        Route::get('/regulaments', ['uses' => 'PagesController@regulaments', 'as' => 'regulaments']);
-        Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('verifications');
-    });
-});
-
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     /**
      * Auth Routes
      */
-    Route::group(['prefix' => 'auth', 'as' => 'auth.'], function () {
+    Route::group(['prefix' => 'auth', 'as' => 'auth.', 'middleware' => 'analytics'], function(){
         Route::get('/login', ['uses' => 'AuthController@login', 'as' => 'login']);
         Route::post('/login', ['uses' => 'AuthController@authenticate', 'as' => 'authenticate']);
         Route::get('/logout', ['uses' => 'AuthController@logout', 'as' => 'logout']);
@@ -33,16 +23,22 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
     Route::group(['middleware' => 'usersession'], function () {
         Route::get('', 'Admin\\PagesController@dashboard')->name('home');
-        Route::group(['prefix' => 'affiliates', 'as' => 'affiliates.'], function () {
+        Route::group(['prefix' => 'affiliates', 'as' => 'affiliates.'], function(){
             Route::get('', ['uses' => 'Admin\\AffiliatesController@all', 'as' => 'all']);
-        });
-
-        Route::group(['prefix' => 'consults', 'as' => 'consults.'], function () {
-            Route::get('', ['uses' => 'Admin\\ConsultsController@all', 'as' => 'all']);
         });
 
     });
 
 });
 
+Route::group([ 'middleware' => 'analytics'], function() {
+
+    Route::get('', 'PagesController@home')->name('home');
+
+    Route::group(['prefix' => 'pages', 'as' => 'pages.'], function () {
+        Route::get('/verification', ['uses' => 'PagesController@verification', 'as' => 'verification']);
+        Route::get('/verifications/{plan?}', 'PagesController@verifications')->name('verifications');
+    });
+
+});
 
