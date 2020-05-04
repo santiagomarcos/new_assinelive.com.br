@@ -10,52 +10,10 @@
                 <div class="items-plan-content">
                     <div class="items-plan-box">
                         <div class="items-plan-header">
-                            <span class="normal-offer"></span>
-                            <div class="desc-plan">
-                                <div class="number-plan">40</div>
-                                <div class="limit-band">Mega</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para redes sociais, pesquisa de estudos e diversos sites.</p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +1 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 20 MB</strong> de upload</li>
-                                <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
-                            </ul>
-                            <div class="content-price">
-                                <div class="begin-in">A partir de:</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">78</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,75</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$5,00</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN40M']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                        {{--<div class="items-plan-footer">--}}
-                            {{--<a href="#">Mais beneficíos v</a>--}}
-                        {{--</div>--}}
-                    </div>
-                </div>
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
                             <span class="focus-offer">
                                 <p class="icon-offer-focus">@</p>
                             </span>
-                            <span class="limit-time">Por tempo limitado</span>
+                            <span class="limit-time">(Valido para SP e RJ)</span>
                             <div class="desc-plan">
                                 <div class="number-plan">60</div>
                                 <div class="limit-band">Mega</div>
@@ -66,77 +24,31 @@
                                 <p class="text-tip">Ideal para aproveitar as melhores séries online, musicas e downloads.</p>
                             </div>
                             <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +12 canais online</li>
+                                <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
                                 <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 30 MB</strong> de upload</li>
-                                <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
+                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> Até <strong> 30 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-gamepad"></i> TIM Games & TIM Segurança Digital</li>
                             </ul>
                             <div class="content-price">
                                 {{--<div class="begin-in">A partir de:</div>--}}
-                                <div class="at-old-price">de <s>R$115,00</s>por</div>
+                                <div class="at-old-price">de <s>R$ 135,00</s>por</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">86</span>
+                                    <span class="value">115</span>
                                     <span class="mounth-and-cents">
-                                        <div class="cents">,25</div>
+                                        <div class="cents">,00</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>
                                 <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$5,00</p>
+                                    <p class="text">Habilitação 12x R$7,00</p>
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN60M']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN60M']) }}"><button class="btn-contract" >Contratar Agora</button></a>
                             </div>
                         </div>
                         {{--<div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>--}}
-                    </div>
-                </div>
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
-                            <span class="focus-offer">
-                                <p class="icon-offer-focus">@</p>
-                            </span>
-                            <span class="limit-time">Por tempo limitado</span>
-                            <div class="desc-plan">
-                                <div class="number-plan">100</div>
-                                <div class="limit-band">Mega</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para jogar online, streamings e outros tipos de midias digitais.</p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 60 MB</strong> de upload</li>
-                                <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada local</li>
-                            </ul>
-                            <div class="content-price">
-                                {{--<div class="begin-in">A partir de:</div>--}}
-                                <div class="at-old-price">de <s>R$130,00</s>por</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">97</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,50</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$10,00</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN100M']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                       {{-- <div class="items-plan-footer">
                             <a href="#">Mais beneficíos v</a>
                         </div>--}}
                     </div>
@@ -158,243 +70,28 @@
                                 <p class="text-tip">Ideal para produção de conteúdo digital e downloads mais complexos.</p>
                             </div>
                             <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
-                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i><strong> 60 MB</strong> de upload</li>
-                                <li class="items-include-plan"><i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
+                                <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem wi-fi</li>
+                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> Até <strong> 60 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-gamepad"></i> TIM Games & Looke</li>
                             </ul>
                             <div class="content-price">
                                 {{--<div class="begin-in">A partir de:</div>--}}
-                                <div class="at-old-price">de <s>R$160,00</s>por</div>
+                                <div class="at-old-price">de <s>R$180,00</s>por</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">120</span>
+                                    <span class="value">125</span>
                                     <span class="mounth-and-cents">
                                         <div class="cents">,00</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>
                                 <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$10,00</p>
+                                    <p class="text">Habilitação 12x R$15,00</p>
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN150M']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                        {{--<div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>--}}
-                    </div>
-                </div>
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
-                            <span class="normal-offer"></span>
-                            <div class="desc-plan">
-                                <div class="number-plan">300</div>
-                                <div class="limit-band">Mega</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para locais com alto número de dispositívos conectados com multi acessos.</p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 180 MB</strong> de upload</li>
-                                <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
-                            </ul>
-                            <div class="content-price">
-                                <div class="at-old-price">de <s>R$240,00</s>por</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">180</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,00</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$30,00</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN300M']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                        {{--<div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>--}}
-                    </div>
-                </div>
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
-                            <span class="normal-offer"></span>
-                            <div class="desc-plan">
-                                <div class="number-plan">500</div>
-                                <div class="limit-band">Mega</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para locais com alto acesso a internet, tráfego de informações e dados.</p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 250 MB</strong> de upload</li>
-                                <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil</li>
-                            </ul>
-                            <div class="content-price">
-                                <div class="at-old-price">por apenas</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">450</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,00</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$30,00</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN500M']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                        {{--<div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>--}}
-                    </div>
-                </div>
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
-                            <span class="normal-offer"></span>
-                            <div class="desc-plan">
-                                <div class="number-plan">1</div>
-                                <div class="limit-band">Giga</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para startups de têcnologia, marketing e uma infinidade de utilidades.</p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 300 MB</strong> de upload</li>
-                                <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
-                            </ul>
-                            <div class="content-price">
-                                <div class="at-old-price">por apenas</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">860</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,00</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$50,00</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN1G']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                        {{--<div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>--}}
-                    </div>
-                </div>
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
-                            <span class="normal-offer"></span>
-                            <div class="desc-plan">
-                                <div class="number-plan">2</div>
-                                <div class="limit-band">Giga</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Ideal para empresas com servidores internos  e uso complexo da internet. </p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-tv"></i> +13 canais online</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem + Power wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i><strong> 500 MB</strong> de upload</li>
-                                <li class="items-include-plan"> <i class="fas fa-phone-volume"></i> voz fixa ilimitada Brasil + LDI</li>
-                            </ul>
-                            <div class="content-price">
-                                <div class="at-old-price">por apenas</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">1560</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,00</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Habilitação 12x R$50,00</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN2G']) }}"><button class="btn-contract" >Contratar</button></a>
-                            </div>
-                        </div>
-                        {{--<div class="items-plan-footer">
-                            <a href="#">Mais beneficíos v</a>
-                        </div>--}}
-                    </div>
-                </div>
-
-                {{--Wttx items--}}
-                <div class="items-plan-content">
-                    <div class="items-plan-box">
-                        <div class="items-plan-header">
-                            <span class="focus-offer">
-                                <p class="icon-offer-focus"><i class="fas fa-haykal"></i></p>
-                            </span>
-                            <div class="desc-plan">
-                                <div class="number-plan">50</div>
-                                <div class="limit-band">Giga</div>
-                            </div>
-                        </div>
-                        <div class="items-plan-body">
-                            <div class="tip-for-usability">
-                                <p class="text-tip">Internet 4G para 50GB de franquia, sua casa com até 5 MEGA de velocidade.</p>
-                            </div>
-                            <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
-                                <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
-                                <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
-                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
-                            </ul>
-                            <div class="content-price">
-                                {{--<div class="at-old-price">por apenas</div>--}}
-                                <div class="at-old-price">de <s>R$99,90</s>por</div>
-                                <div class="box-prices">
-                                    <span class="type-money">R$</span>
-                                    <span class="value">89</span>
-                                    <span class="mounth-and-cents">
-                                        <div class="cents">,90</div>
-                                        <div class="mounth">/mês</div>
-                                    </span>
-                                </div>
-                                <div class="rate-hability">
-                                    <p class="text">Permanência de 12 meses</p>
-                                </div>
-                            </div>
-                            <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN50GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN150M']) }}"><button class="btn-contract" >Contratar Agora</button></a>
                             </div>
                         </div>
                         {{--<div class="items-plan-footer">
@@ -406,40 +103,40 @@
                     <div class="items-plan-box">
                         <div class="items-plan-header">
                             <span class="focus-offer">
-                                <p class="icon-offer-focus"><i class="fas fa-haykal"></i></p>
+                                <p class="icon-offer-focus">@</p>
                             </span>
+                            <span class="limit-time">Por Tempo limitado</span>
                             <div class="desc-plan">
-                                <div class="number-plan">80</div>
-                                <div class="limit-band">Giga</div>
+                                <div class="number-plan">200</div>
+                                <div class="limit-band">Mega</div>
                             </div>
                         </div>
                         <div class="items-plan-body">
                             <div class="tip-for-usability">
-                                <p class="text-tip">Internet 4G para 80GB de franquia, sua casa com até 5 MEGA de velocidade.</p>
+                                <p class="text-tip">GANHE O DOBRO DE VELOCIDADE ASSINANDO COM DÉBITO EM CONTA.</p>
                             </div>
                             <ul class="content-items-include">
-                                <li class="items-include-plan"><i class="fas fa-server"></i> Tim backup 150GB</li>
-                                <li class="items-include-plan"><i class="fas fa-user-lock"></i> Tim Protect Filhos</li>
-                                <li class="items-include-plan"><i class="fas fa-shield-alt"></i> Tim Protect Segurança</li>
-                                <li class="items-include-plan"> <i class="fas fa-wifi"></i> Tim Protect wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-tv"></i> +17 canais online</li>
+                                <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem wi-fi</li>
+                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i> Até <strong> 80 MB</strong> de upload</li>
+                                <li class="items-include-plan"> <i class="fas fa-gamepad"></i> Tim Games </li>
                             </ul>
                             <div class="content-price">
-                                {{--<div class="at-old-price">por apenas</div>--}}
-                                <div class="at-old-price">de <s>R$127,00</s>por</div>
+                                <div class="at-old-price">de <s>210,00</s>por</div>
                                 <div class="box-prices">
                                     <span class="type-money">R$</span>
-                                    <span class="value">117</span>
+                                    <span class="value">150</span>
                                     <span class="mounth-and-cents">
                                         <div class="cents">,00</div>
                                         <div class="mounth">/mês</div>
                                     </span>
                                 </div>
                                 <div class="rate-hability">
-                                    <p class="text">Permanência de 12 meses</p>
+                                    <p class="text">Habilitação 12x R$ 15,00</p>
                                 </div>
                             </div>
                             <div class="content-btn-contract">
-                                <a href="{{ route('pages.verifications',['plan'=>'PLAN80GW']) }}"><button class="btn-contract" >Contratar</button></a>
+                                <a href="{{ route('pages.verifications',['plan'=>'PLAN300M']) }}"><button class="btn-contract" >Contratar Agora</button></a>
                             </div>
                         </div>
                         {{--<div class="items-plan-footer">
@@ -466,7 +163,7 @@
 
                 <div class="content-channels">
                     <div class="call-channels">
-                        <h2 class="title-channels">Confira a quantidade de canias online que seu plano possui.</h2>
+                        <h2 class="title-channels">Confira a quantidade de canais online que seu plano possui.</h2>
                     </div>
                     <div class="content-show-channels">
                         <div class="monitor-channels">
@@ -508,14 +205,9 @@
                                 Clique nas velocidades para saber os canais disponíveis.
                             </div>
                             <div class="cellphone-body">
-                                <button class="btn-band-plan" id="c_40mb" @click="c_40mb">40<br>MB</button>
                                 <button class="btn-band-plan" id="c_60mb" @click="c_60mb">60<br>MB</button>
-                                <button class="btn-band-plan" id="c_100mb" @click="c_100mb">100<br>MB</button>
                                 <button class="btn-band-plan" id="c_150mb" @click="c_150mb">150<br>MB</button>
-                                <button class="btn-band-plan" id="c_300mb" @click="c_300mb">300<br>MB</button>
-                                <button class="btn-band-plan" id="c_500mb" @click="c_500mb">500<br>MB</button>
-                                <button class="btn-band-plan" id="c_1gb" @click="c_1gb">1<br>GB</button>
-                                <button class="btn-band-plan" id="c_2gb" @click="c_2gb">2<br>GB</button>
+                                <button class="btn-band-plan" id="c_300mb" @click="c_300mb">200<br>MB</button>
                             </div>
                             <img src="https://i.imgur.com/copuma5.png" alt="">
                         </div>
@@ -529,14 +221,13 @@
                         <div class="power-wifi">
                             <div class="box-space">
                                 <div class="box-title">
-                                    <h3 class="title-app">Tim power wi-fi</h3>
+                                    <h3 class="title-app">TIM Games Club</h3>
                                 </div>
                                 <div class="box-description-app">
-                                    Com o nosso amplificador de sinal a sua internet via wi-fi não sofrerá
-                                    nenhuma perca ao navegador com dispositivos móveis.
+                                    Tenha acesso a centenas de games premium no seu PC e no Celular.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponível nos planos <span class="spotiligh">300mb, 500mb, 1gb, 2gb</span>
+                                    Disponível em <span class="spotiligh">todos os Planos</span>
                                 </p>
                             </div>
                         </div>
@@ -566,7 +257,7 @@
                                     sem gastar memória do celular.
                                 </div>
                                 <p class="plan-disponibility">
-                                    Disponível em <span class="spotiligh">Todos os planos</span>
+                                    Disponível nos planos <span class="spotiligh">60 MEGA</span>
                                 </p>
                             </div>
                         </div>
@@ -593,7 +284,7 @@
         <div class="content-benefits">
             <div class="benefits-header">
                 <div class="call-section-benefits">
-                    <div class="title-main">Mais alguns outros <strong class="title-spotlight">benefícios</strong> para você</div>
+                    <div class="title-main">Mais alguns outros <strong class="title-spotlight">produtos</strong> para você</div>
                     <p class="description-call">
                         Ligações DDD regional e longa distância, nacional e internacional, já incluso no seu plano, sem
                         surpresa na sua conta no final do mês.
@@ -619,7 +310,7 @@
                             Ligações LOCAIS ILIMITADAS para fixo e móvel,
                             on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-local-footer-hover">Disponível nos planos <span class="text-spotligth">40, 60 e 100 mega</span></div>
+                        <div class="box-local-footer-hover">Valor do Plano <span class="text-spotligth">R$ 29,90</span></div>
                     </div>
                 </div>
 
@@ -639,7 +330,7 @@
                             Ligações NACIONAIS ILIMITADAS para fixo e
                             móvel, on e offnet de qualquer operadora.
                         </div>
-                        <div class="box-national-footer-hover">Disponível nos planos <span class="text-spotligth">150, 300 e 500 mega</span></div>
+                        <div class="box-national-footer-hover">Valor do Plano <span class="text-spotligth">R$ 39,90</span></div>
                     </div>
                 </div>
 
@@ -660,7 +351,7 @@
                             e móvel, on e offnet de qualquer operadora
                             + 150 minutos exclusivos para ligações LDI.
                         </div>
-                        <div class="box-international-footer-hover">Disponível nos planos <span class="text-spotligth">1 e 2 giga</span></div>
+                        <div class="box-international-footer-hover">Valor do Plano <span class="text-spotligth">R$ 59,90</span></div>
                     </div>
                 </div>
             </div>

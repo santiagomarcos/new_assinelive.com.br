@@ -19,12 +19,12 @@
             <div class="box-offer-footer">
                 <div class="content-price-and-band">
                     <div class="box-limit-brand-footer">
-                        <p class="band-footer">150</p>
+                        <p class="band-footer">200</p>
                         <p class="descr-limit-footer">Mega</p>
                     </div>
                     <div class="price-footer">
                         <span class="type-footer">R$</span>
-                        <span class="value-footer">120</span>
+                        <span class="value-footer">150</span>
                         <span class="footer-mounth-and-cents">
                         <span class="price-cents-footer">,00</span>
                         <span class="mounth-footer">/mês</span>
@@ -35,18 +35,18 @@
                     <div class="icon-channels-footer"><img src="https://i.imgur.com/4FHlcUo.png" alt=""></div>
                     <div class="icon-plus-footer">+</div>
                     <div class="count-channels">
-                        <div class="number-plan-footer">12</div>
+                        <div class="number-plan-footer">17</div>
                         <div class="desc-online-footer">canais online</div>
                     </div>
                 </div>
                 <div class="box-button-footer">
-                    <a href="{{ route('pages.verifications', ['plan'=>'PLAN150M']) }}"><button class="btn-footer-buy">Contratar</button></a>
+                    <a href="{{ route('pages.verifications', ['plan'=>'PLAN200M']) }}"><button class="btn-footer-buy">Contratar</button></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="content-after">
-        <div class="coopright">@ 2019 Assine Live. Todos os direitos reservados.</div>
+        <div class="coopright">@ 2020 Assine Live. Todos os direitos reservados.</div>
         <div class="developing">Desenvolvido por <a href="https://ffxsistemas.com">FFX Sistemas</a></div>
     </div>
 </footer>

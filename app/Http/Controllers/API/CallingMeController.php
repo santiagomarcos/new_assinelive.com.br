@@ -22,7 +22,6 @@ class CallingMeController
         $message = (new CallingMeRespository())->create([
             'name' => strtoupper($args['name']),
             'number_phone' => $args['phone'],
-
         ]);
     }
 }
