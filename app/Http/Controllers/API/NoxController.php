@@ -27,7 +27,6 @@ class NoxController extends Controller
             ->withValues($request->all());
 
         $mail = new PHPMailer();
-        $mail->SMTPDebug = 2; //Alternative to above constant
 
         $mail->isSMTP();
         $mail->Host = 'mail.assinelivetim.com.br';
@@ -41,7 +40,6 @@ class NoxController extends Controller
 
         $mail->Subject = 'Nova Venda';
         $mail->msgHTML(utf8_decode($test));
-        dd($mail->send());
         if (!$mail->send()) {
             echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
