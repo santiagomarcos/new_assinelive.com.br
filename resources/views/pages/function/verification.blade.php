@@ -300,8 +300,7 @@
                         <div class="box-form-contract-maturity">
 
                         <div class="col-sm-10">
-                            <select name="plan_wan" class="form-control"
-                                    onchange="plans($(this).val());">
+                            <select name="plan_wan" id="plan_wan-select" class="form-control">
                                 <option></option>
                                 <optgroup label="Plano Residencial - FTTC" id="FTTC_RESIDENCIAL">
                                     <option value="60 MEGA">TIM LIVE 60 MEGA PLUS</option>
@@ -375,10 +374,7 @@
 
                 <div class="sucess-content" id="sucess-content">
                     <p>
-                        Parabéns <strong class="name-client"> </strong>! seu pedido foi realizado com sucesso.
-                        Se desejar pode conferir a descrição do plano contratado na caixa "PLANO ESCOLHIDO", o numero do
-                        seu pedido é : N°
-                        <strong class="number-order"></strong>.<br>
+                        Parabéns <strong class="name-client"> </strong>! seu pedido foi realizado com sucesso.<br>
                         Em até 24hr entraremos em contato para a finalização da sua compra.
                     </p>
                     <div class="network-social"></div>
@@ -1315,13 +1311,10 @@
                         request_disabled_insert = false;
                         $('#finalizado').hide();
                     } else {
-                        var plan_wan = $("#confirm-plan-wan").val();
                         $('#loading').hide();
                         $('#waiting').hide();
                         $(".name-client").val($("#name").val());
                         $("#sucess-content").show();
-                        $("#contract-plan").html(plan_wan);
-                        $(".number-order").html(res.data.id);
                         request_disabled_insert = false;
                     }
                 };
@@ -1363,12 +1356,13 @@
                  * INPUT Plans
                  * @type {*|jQuery}
                  */
-                var plan_wan = $("#confirm-plan-wan").val();
+                var plan_wan = $("#plan_wan-select").val();
                 var maturity_date = $("#maturity_date").val();
                 var plan_phone = $("#confirm_plan_phone").val();
                 var portability = $("#portability").val();
                 var number_portability = $("#number_portability").val();
                 var operator = $("#operator").val();
+
 
                 if (!request_disabled_insert) {
 
@@ -1380,7 +1374,7 @@
                         id: conversion,
                     })
                     request_disabled_insert = true;
-                    axios.post('https://app.noxcrm.com.br/api/v1/inputs/site', {
+                    axios.post('{{ route('v1.consult.email') }}', {
                         name: name,
                         user: user,
                         document: document,
@@ -1390,7 +1384,7 @@
                         UF: state,
                         phone_fixo: phone_fixo,
                         phone_cel: phone_cel,
-                        plan_wan: plan_request,
+                        plan_wan: plan_wan,
                         name_mother: mother,
                         date_birth: birth,
                         BAIRRO: neighborhood,
@@ -1410,6 +1404,7 @@
                     }).then(callbackInputSuccess, callbackInputFail);
                 }
             })
+
             $("#btnNextContractWTTX").click(function () {
 
                 /**
@@ -1490,7 +1485,7 @@
                     axios.post('{{ route('v1.consult.viability-update') }}', {
                         id: conversion,
                     })
-                    axios.post('https://app.noxcrm.com.br/api/v1/inputs/site/wttx', {
+                    axios.post('{{ route('v1.consult.email') }}', {
                         name: name,
                         user: user,
                         document: document,
