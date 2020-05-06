@@ -25,7 +25,7 @@ class NoxController extends Controller
 
         $result = $mgClient->sendMessage($domain, array(
             'from'    => 'Assine Live <account@'.$domain.'>',
-            'to'      => "Digital <ecommerce@newtimesp.com.br>",
+            'to'      => "Digital <contato@assinelivetim.com.br	>",
             'subject' => 'Nova Venda',
             'html'    => $test
         ));
