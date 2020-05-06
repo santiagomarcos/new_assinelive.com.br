@@ -14,7 +14,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "mailgun/mailgun-php": "2.6"
+        "mailgun/mailgun-php": "2.6",
+        "phpmailer/phpmailer": "6.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -10,8 +10,11 @@ namespace App\Http\Controllers\API;
 
 
 use App\Http\Controllers\Controller;
+use App\Repositories\RecoveryPasswordRepository;
 use Illuminate\Http\Request;
 use Mailgun\Mailgun;
+use PHPMailer\PHPMailer\PHPMailer;
+
 
 class NoxController extends Controller
 {
@@ -23,17 +26,29 @@ class NoxController extends Controller
         $test = view('templates.emails.send')
             ->withValues($request->all());
 
-        $result = $mgClient->sendMessage($domain, array(
-            'from'    => 'Assine Live <account@'.$domain.'>',
-            'to'      => "Digital <contato@assinelivetim.com.br	>",
-            'subject' => 'Nova Venda',
-            'html'    => $test
-        ));
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = 'mail.assinelivetim.com.br';
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->Username = 'contato@assinelivetim.com.br';
+        $mail->Password = 'digital@2020';
+        $mail->setFrom('contato@assinelive.com.br', 'contato@assinelive.com.br');
+        $mail->addAddress('contato@assinelive.com.br');
 
-        return [
-            'success' => true
-        ];
 
+        $mail->Subject = 'Reset de Senha';
+        $mail->msgHTML(utf8_decode($test));
+        if (!$mail->send()) {
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+
+            return [
+                'success' => true,
+            ];
+
+
+        }
     }
 
 }
