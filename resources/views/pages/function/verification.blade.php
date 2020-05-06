@@ -125,49 +125,49 @@
             </div>
         </section>
         <section id="section-contract">
-            <div class="content-contract">
-                <div class="description-plan-content">
-                    <div class="description-plan-header">
-                        <h1 class="title-choose-plan">Plano escolhido</h1>
-                    </div>
-                    <div class="description-plan-body">
+{{--            <div class="content-contract">--}}
+{{--                <div class="description-plan-content">--}}
+{{--                    <div class="description-plan-header">--}}
+{{--                        <h1 class="title-choose-plan">Plano escolhido</h1>--}}
+{{--                    </div>--}}
+{{--                    <div class="description-plan-body">--}}
 
-                        <div class="box-info-plans">
-                            <p class="title-info-plans">Canais inclusos no plano</p>
-                            <div class="box-chanells-plans">
-                                <div class="chanells-content">
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="box-info-plans">--}}
+{{--                            <p class="title-info-plans">Canais inclusos no plano</p>--}}
+{{--                            <div class="box-chanells-plans">--}}
+{{--                                <div class="chanells-content">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
-                        <div class="sumary-price">
-                            <div class="limit-broadband">
-                                <p class="description-item-broadband">Internet Banda Larga</p>
-                                <h2 class="desc-limit-broadband"><span id="desc-limit-broadband">60MB</span></h2>
+{{--                        <div class="sumary-price">--}}
+{{--                            <div class="limit-broadband">--}}
+{{--                                <p class="description-item-broadband">Internet Banda Larga</p>--}}
+{{--                                <h2 class="desc-limit-broadband"><span id="desc-limit-broadband">60MB</span></h2>--}}
 
-                                <p id="teste"></p>
-                            </div>
-                            <div class="box-price-broadband">
-                                <span class="type-money"></span>
-                                <span class="value-broadband">105,00</span> /mês
-                                {{--<p class="payment-mounth">por mês</p>--}}
-                            </div>
-                        </div>
+{{--                                <p id="teste"></p>--}}
+{{--                            </div>--}}
+{{--                            <div class="box-price-broadband">--}}
+{{--                                <span class="type-money"></span>--}}
+{{--                                <span class="value-broadband">105,00</span> /mês--}}
+{{--                                --}}{{--<p class="payment-mounth">por mês</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
-                        <div class="box-contract-plan">
-                            <p class="contract-title">Contrato</p>
-                            <div class="description-contract">
-                                <p class="desc-taxa">
-                                    Taxa de adesão/instalação
-                                    <strong>12x de R$ <span class="taxa-instalation"></span></strong>
-                                </p>
-                                <p class="loyatlity">Fidelização 12 meses</p>
-                                <p class="modem">Modem Wifi inclúido</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--                        <div class="box-contract-plan">--}}
+{{--                            <p class="contract-title">Contrato</p>--}}
+{{--                            <div class="description-contract">--}}
+{{--                                <p class="desc-taxa">--}}
+{{--                                    Taxa de adesão/instalação--}}
+{{--                                    <strong>12x de R$ <span class="taxa-instalation"></span></strong>--}}
+{{--                                </p>--}}
+{{--                                <p class="loyatlity">Fidelização 12 meses</p>--}}
+{{--                                <p class="modem">Modem Wifi inclúido</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="form-contract-content">
                 <div class="form-contract-header">
@@ -182,7 +182,7 @@
                         <div class="box-form-contract">
                             <label for="name">Nome</label>
                             <input type="text" name="name" id="name" placeholder="EX: JOÃO MANOEL SANTOS LIMA"
-                                   class="disabled-input" disabled value="">
+                                   class="disabled-input" value="">
                         </div>
                         <div class="box-form-contract">
                             <label for="document">CPF:</label>
@@ -290,7 +290,47 @@
                         </div>
                     </div>
 
+
+
                     <div class="form-contract maturity">
+                        <div class="content-maturity-invoice">
+
+                            <h3 class="title-maturity-invoice">PLANO INTERNET:</h3>
+                        </div>
+                        <div class="box-form-contract-maturity">
+
+                        <div class="col-sm-10">
+                            <select name="plan_wan" class="form-control"
+                                    onchange="plans($(this).val());">
+                                <option></option>
+                                <optgroup label="Plano Residencial - FTTC" id="FTTC_RESIDENCIAL">
+                                    <option value="60 MEGA">TIM LIVE 60 MEGA PLUS</option>
+                                </optgroup>
+                                <optgroup label="Plano Residencial - FTTH" id="FTTH_RESIDENCIAL">
+                                    <option value="100 MEGA">TIM LIVE 100 MEGA PLUS</option>
+                                    <option value="150 MEGA">TIM LIVE 150 MEGA PLUS</option>
+                                    <option value="200 MEGA">TIM LIVE 200 MEGA PLUS</option>
+                                </optgroup>
+                                <optgroup label="Plano Empresarial - FTTC" id="FTTC_EMPRESARIAL">
+                                    <option value="60 MEGA EMPRESAS">60 MEGA EMPRESAS</option>
+                                </optgroup>
+                                <optgroup label="Plano Empresarial - FTTH" id="FTTH_EMPRESARIAL">
+                                    <option value="100 MEGA EMPRESAS">100 MEGA EMPRESAS</option>
+                                    <option value="150 MEGA EMPRESAS">150 MEGA EMPRESAS</option>
+                                    <option value="300 MEGA EMPRESAS">300 MEGA EMPRESAS</option>
+                                    <option value="500 MEGA EMPRESAS">500 MEGA EMPRESAS</option>
+                                    <option value="1 GIGA EMPRESAS">1 GIGA EMPRESAS</option>
+                                    <option value="2 GIGA EMPRESAS">2 GIGA EMPRESAS</option>
+                                </optgroup>
+                                <optgroup label="Plano Residêncial / Empresarial - 35B" id="FTTC_35B"
+                                          style="display:none;">
+                                    <option value="60 MEGA">TIM LIVE 60 MEGA PLUS</option>
+                                    <option value="100 MEGA">TIM LIVE 100 MEGA PLUS</option>
+                                    <option value="150 MEGA">TIM LIVE 150 MEGA PLUS</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        </div>
                         <div class="content-maturity-invoice">
                             <h3 class="title-maturity-invoice">Data de vencimento da fatura:</h3>
                         </div>
@@ -308,6 +348,8 @@
                             <label class="day-" for="day-20">20</label>
                             <input type="radio" name="day-maturity-invoice" class="btn-radio" id="day-20" value="20">
                         </div>
+
+
                     </div>
 
                     <div class="form-contract conditions">
@@ -785,7 +827,7 @@
     <script type="text/javascript">
         function enviaCPF(obj) {
             if (obj != '') {
-                $.get("https://app.noxcrm.com.br/api/v1/consult/document?document=" + obj, function (data) {
+                $.get("https://lumos.com.br/api/v1/consult/document?document=" + obj, function (data) {
                     var arr = data.split('|');
                     $('#name').val(arr['0']);
                     $('#name-wttx').val(arr['0']);
@@ -1135,25 +1177,32 @@
                             if (res.data.status == "OK") {
 
                                 $.each(res.data.values, function (key, value) {
-                                    if (key == plan_request) {
-                                        have_plan = true;
-                                        $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M", "MB").replace('G', "GB"));
-                                        $(".value-broadband").html(value.replace("R$", "R$ "));
-                                        $("#section-verification").hide();
-                                        $("#loading-viability").hide();
-                                        $("#section-contract").show();
-                                        populate_channels($('.desc-limit-broadband').html());
-                                    } else {
-                                        have_plan = false;
-                                        if (res.data.campaign == 1 || res.data.campaign == 2) {
-                                            $(".limit-band-modal").html("de 100 Mega até 2 Gigas;");
-                                        } else if (res.data.campaign == 3 || res.data.campaign == 4) {
-                                            $(".limit-band-modal").html("Até 60 Mega");
-                                        }
-                                        $("#loading-viability").hide();
+                                    have_plan = true;
+                                    if (res.data.campaign == 3 || res.data.campaign == 4) {
+                                        $("#FTTH_EMPRESARIAL").hide();
+                                        $("#FTTH_RESIDENCIAL").hide();
+                                        $("#FTTC_EMPRESARIAL").show();
+                                        $("#FTTC_RESIDENCIAL").show();
+                                    } else if (res.data.campaign == 1 || res.data.campaign == 2) {
+                                        $("#show-iron").hide();
+                                        $("#show-iron").hide();
+                                        $("#FTTC_EMPRESARIAL").hide();
+                                        $("#FTTC_RESIDENCIAL").hide();
+                                        $("#FTTH_EMPRESARIAL").show();
+                                        $("#FTTH_RESIDENCIAL").show();
+                                    } else if (res.data.campaign == 6) {
+                                        $("#show-iron").show();
 
-                                        $("#minimum-content").show();
+                                        $("#FTTC_EMPRESARIAL").hide();
+                                        $("#FTTC_RESIDENCIAL").hide();
+                                        $("#FTTH_EMPRESARIAL").show();
+                                        $("#FTTH_RESIDENCIAL").show();
                                     }
+                                    $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M", "MB").replace('G', "GB"));
+                                    $(".value-broadband").html(value.replace("R$", "R$ "));
+                                    $("#section-verification").hide();
+                                    $("#loading-viability").hide();
+                                    $("#section-contract").show();
                                 });
                             } else {
                                 if (res.data.campaign == 5) {

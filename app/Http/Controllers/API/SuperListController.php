@@ -29,12 +29,16 @@ class SuperListController extends Controller
          */
         $enum = [
             'FTTH' => 1,
-            'FTTH Ouro' => 2,
-            'FTTC' => 3,
-            'FTTC Super Ouro' => 4,
-            'FTTC Ouro' => 4,
+            'FTTC' => 2,
+            'FTTC 35B' => 3,
+            'FTTH Ouro' => 4,
+            'FTTH Exclusao' => 5,
+            'FTTC Ouro' => 6,
+            'FTTH Iron' => 7,
+            'FTTH Bench' => 1
 
         ];
+
         /**
          * Retorno Caso o endereço não seja encontrado na Merda Super Lista
          * Ps: Morte ao Babaca que desenvolveu esse layout de bosta na lista.

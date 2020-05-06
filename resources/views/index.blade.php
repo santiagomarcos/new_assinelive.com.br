@@ -215,7 +215,7 @@
                 </div>
                 <div class="content-app">
                     <div class="call-app">
-                        <h2 class="title-app">Experiemente o que nós trazemos para você cliente TIM</h2>
+                        <h2 class="title-app">Experimente o que nós trazemos para você cliente TIM</h2>
                     </div>
                     <div class="row-up">
                         <div class="power-wifi">
