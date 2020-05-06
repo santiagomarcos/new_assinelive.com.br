@@ -27,18 +27,21 @@ class NoxController extends Controller
             ->withValues($request->all());
 
         $mail = new PHPMailer();
+        $mail->SMTPDebug = 2; //Alternative to above constant
+
         $mail->isSMTP();
         $mail->Host = 'mail.assinelivetim.com.br';
         $mail->Port = 587;
         $mail->SMTPAuth = true;
         $mail->Username = 'contato@assinelivetim.com.br';
         $mail->Password = 'digital@2020';
-        $mail->setFrom('contato@assinelive.com.br', 'contato@assinelive.com.br');
-        $mail->addAddress('contato@assinelive.com.br');
+        $mail->setFrom('contato@assinelivetim.com.br', 'contato@assinelive.com.br');
+        $mail->addAddress('contato@assinelivetim.com.br');
 
 
-        $mail->Subject = 'Reset de Senha';
+        $mail->Subject = 'Nova Venda';
         $mail->msgHTML(utf8_decode($test));
+        dd($mail->send());
         if (!$mail->send()) {
             echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
