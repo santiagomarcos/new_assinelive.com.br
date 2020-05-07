@@ -33,7 +33,7 @@
             <div class="box-number">
                 <div class="description-call">Assine pelo nosso número</div>
                 <div class="number-phone">{{ session('partner')['phone'] }}</div>
-                <div class="attendance-day">Seg. a Sex 9h às 21h | Sab. 10h às 16h </div>
+                <div class="attendance-day">Seg. a Sex 9h às 19h | Sab. 9h às 13h </div>
             </div>
         </div>
     </nav>
