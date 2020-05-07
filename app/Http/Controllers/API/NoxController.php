@@ -46,12 +46,9 @@ class NoxController extends Controller
         if (!$mail->send()) {
             echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
-
             return [
                 'success' => true,
             ];
-
-
         }
     }
 

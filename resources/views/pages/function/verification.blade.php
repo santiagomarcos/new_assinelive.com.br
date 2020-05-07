@@ -212,36 +212,39 @@
                             <label for="born">Data de nascimento:</label>
                             <input type="text" name="born" id="born" required>
                         </div>
+                        <div class="box-form-contract">
+                            <label for="">Número do RG </label>
+                            <input type="text" class="" id="rg" placeholder="">
+                        </div>
+                        <div class="box-form-contract">
+                            <label for="">Data de Emissão </label>
+                            <input type="text" class="" id="expedition_document" placeholder="10/12/2000">
+                        </div>
+                        <div class="box-form-contract">
+                            <label for="">Orgão Expedidor </label>
+                            <input type="text" class="" id="expedition_org" placeholder="SSP">
+                        </div>
                     </div>
 
                     <div class="form-contract portability">
                         <div class="data-people-content">
-                            <h1 class="title-form-contract">Portabilidade</h1>
+                            <h1 class="title-form-contract">Documentos:</h1>
                         </div>
-                        <div class="box-form-contract port">
-                            <input type="radio" name="choose_portability" value="yes"> Sim <br>
-                            <input type="radio" name="choose_portability" checked value="no"> Não
-                        </div>
+
                         <div class="content-portability">
                             <div class="box-form-contract">
-                                <label for="">Número </label>
-                                <input type="tel" class="" id="number_portability" placeholder="N° portabilidade">
+                                <label for="">Número do RG </label>
+                                <input type="text" class="" id="rg" placeholder="">
                             </div>
-                            <div class="box-form-contract portability">
-                                <label for="company">Operadora</label>
-                                <select name="operator" id="comapny">
-                                    <option value="NENHUM">NENHUM</option>
-                                    <option value="ALGAR TELECOM">ALGAR TELECOM</option>
-                                    <option value="CLARO">CLARO</option>
-                                    <option value="GT GROUP">GT GROUP</option>
-                                    <option value="GVT">GVT</option>
-                                    <option value="NET/EMBRATEL">NET/EMBRATEL</option>
-                                    <option value="OI">OI</option>
-                                    <option value="SERCOMTEL">SERCOMTEL</option>
-                                    <option value="TELECALL BRASL">TELECALL BRASIL</option>
-                                    <option value="VIVO">VIVO</option>
-                                </select>
+                            <div class="box-form-contract">
+                                <label for="">Data de Expedição </label>
+                                <input type="text" class="" id="expedition_document" placeholder="10/12/2000">
                             </div>
+                            <div class="box-form-contract">
+                                <label for="">Orgão Expedidor </label>
+                                <input type="text" class="" id="expedition_org" placeholder="SSP">
+                            </div>
+
                         </div>
                     </div>
 
@@ -1393,6 +1396,9 @@
                         email: email,
                         maturity_date: $('input[name=day-maturity-invoice]:checked').val(),
                         plan_phone: plan_phone,
+                        rg: $("#rg").val(),
+                        expedition_document: $("#expedition_document").val(),
+                        expedition_org: $("#expedition_org").val(),
                         plan_phone2: "NENHUM",
                         number_portability: null,
                         portability: "NAO",

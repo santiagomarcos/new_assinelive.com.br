@@ -1,6 +1,9 @@
 Afiliado: {{$values['user']}}<br>
 Nome Completo: {{$values['name']}}<br>
 CPF: {{$values['document']}}<br>
+RG: {{$values['rg']}}<br>
+DATA DE EXPEDIÇÃO: {{$values['expedition_document']}}<br>
+ORGAO EXPEDIDOR: {{$values['expedition_org']}}<br>
 NOME DA MAE: {{$values['name_mother']}}<br>
 DATA DE NASCIMENTO: {{$values['date_birth']}}<br>
 TELEFONE FIXO: {{$values['phone_fixo']}}<br>
