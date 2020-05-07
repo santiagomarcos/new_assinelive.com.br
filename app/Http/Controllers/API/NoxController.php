@@ -29,10 +29,10 @@ class NoxController extends Controller
         $mail = new PHPMailer();
 
         $mail->isSMTP();
-        $mail->Host = 'mail.assinelivetim.com.br';
+        $mail->Host = 'mail.timlivego.com.br';
         $mail->Port = 587;
         $mail->SMTPAuth = true;
-        $mail->Username = 'contato@assinelivetim.com.br';
+        $mail->Username = 'contato@timlivego.com.br	';
         $mail->Password = 'digital@2020';
         $mail->setFrom('contato@timlivego.com.br', 'contato@timlivego.com.br');
         $mail->addAddress('consultoriakyrios@gmail.com');
