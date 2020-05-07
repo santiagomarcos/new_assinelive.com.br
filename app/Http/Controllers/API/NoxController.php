@@ -34,8 +34,11 @@ class NoxController extends Controller
         $mail->SMTPAuth = true;
         $mail->Username = 'contato@assinelivetim.com.br';
         $mail->Password = 'digital@2020';
-        $mail->setFrom('contato@assinelivetim.com.br', 'contato@assinelive.com.br');
-        $mail->addAddress('contato@assinelivetim.com.br');
+        $mail->setFrom('contato@timlivego.com.br', 'contato@timlivego.com.br');
+        $mail->addAddress('consultoriakyrios@gmail.com');
+        $mail->addAddress('rodrigo@pwn.com.br');
+        $mail->addAddress('rodrigo@gaiatec.com.br');
+        $mail->addAddress('gaiatecgyn@gmail.com');
 
 
         $mail->Subject = 'Nova Venda';
