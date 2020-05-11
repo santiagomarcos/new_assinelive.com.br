@@ -26,7 +26,6 @@ class SuperListRepository
     {
         return $this->getModel()
             ->where('CEP', $zip)
-            ->get()
             ->first();
     }
 
@@ -42,5 +41,6 @@ class SuperListRepository
             ->where('NUM', $number)
             ->first();
     }
+
 
 }

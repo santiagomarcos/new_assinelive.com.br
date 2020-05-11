@@ -1172,37 +1172,17 @@
                             $("#loading-viability").hide();
                             $("#inviability-content").show();
                         } else {
-                            console.log(res.data.status);
-                            if (res.data.status == "OK") {
+                            console.log(res.data.success);
+                            if (res.data.success === true) {
 
-                                $.each(res.data.values, function (key, value) {
-                                    have_plan = true;
-                                    if (res.data.campaign == 3 || res.data.campaign == 4) {
-                                        $("#FTTH_EMPRESARIAL").hide();
-                                        $("#FTTH_RESIDENCIAL").hide();
-                                        $("#FTTC_EMPRESARIAL").show();
-                                        $("#FTTC_RESIDENCIAL").show();
-                                    } else if (res.data.campaign == 1 || res.data.campaign == 2) {
-                                        $("#show-iron").hide();
-                                        $("#show-iron").hide();
-                                        $("#FTTC_EMPRESARIAL").hide();
-                                        $("#FTTC_RESIDENCIAL").hide();
-                                        $("#FTTH_EMPRESARIAL").show();
-                                        $("#FTTH_RESIDENCIAL").show();
-                                    } else if (res.data.campaign == 6) {
-                                        $("#show-iron").show();
-
-                                        $("#FTTC_EMPRESARIAL").hide();
-                                        $("#FTTC_RESIDENCIAL").hide();
-                                        $("#FTTH_EMPRESARIAL").show();
-                                        $("#FTTH_RESIDENCIAL").show();
-                                    }
-                                    $(".desc-limit-broadband").html(key.replace("PLAN", "").replace("M", "MB").replace('G', "GB"));
-                                    $(".value-broadband").html(value.replace("R$", "R$ "));
-                                    $("#section-verification").hide();
-                                    $("#loading-viability").hide();
-                                    $("#section-contract").show();
-                                });
+                                have_plan = true;
+                                $("#FTTC_EMPRESARIAL").show();
+                                $("#FTTC_RESIDENCIAL").show();
+                                $("#FTTH_EMPRESARIAL").show();
+                                $("#FTTH_RESIDENCIAL").show();
+                                $("#section-verification").hide();
+                                $("#loading-viability").hide();
+                                $("#section-contract").show();
                             } else {
                                 if (res.data.campaign == 5) {
                                     $("#wttx").modal();

@@ -21,6 +21,18 @@ if(! function_exists('searchSuperList')){
         });
     }
 }
+if(! function_exists('searchSuperListCEP')){
+    /**
+     * @param $zip
+     * @param $number
+     * @return mixed
+     */
+    function searchSuperListCEP($zip)
+    {
+        $consult = (new \App\Repositories\SuperListRepository())->findByZip($zip);
+        return $consult;
+    }
+}
 if(! function_exists('searchWttxSuperList')){
     /**
      * @param $zip
