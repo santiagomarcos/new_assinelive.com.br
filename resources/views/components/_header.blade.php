@@ -19,6 +19,7 @@
                         </div>
                     </div>
                     <div class="spotligth-channels">
+                        <p class="text">Habilitação 12x R$7,00</p>
 
                         <div class="icon-plus">+</div>
                         <div class="qtd-channels">
@@ -53,6 +54,8 @@
                         </div>
                     </div>
                     <div class="spotligth-channels">
+                        <p class="text">Habilitação 12x R$15,00</p>
+
                         <div class="icon-channels"><img src=https://i.imgur.com/3LTHDVO.png alt=""></div>
                         <div class="icon-plus">+</div>
                         <div class="qtd-channels">
@@ -87,6 +90,8 @@
                         </div>
                     </div>
                     <div class="spotligth-channels">
+                        <p class="text">Habilitação 12x R$15,00</p>
+
                         <div class="icon-channels"><img src="https://i.imgur.com/2c2HXuv.png" alt=""></div>
                         <div class="icon-plus">+</div>
                         <div class="qtd-channels">

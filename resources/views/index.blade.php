@@ -26,7 +26,7 @@
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +2 canais online</li>
                                 <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem de wi-fi</li>
-                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> Até <strong> 30 MB</strong> de upload</li>
+                                <li class="items-include-plan"> <i class="fas fa-arrow-up"></i> <strong> 30 MB</strong> de upload</li>
                                 <li class="items-include-plan"><i class="fas fa-gamepad"></i> TIM Games & TIM Segurança Digital</li>
                             </ul>
                             <div class="content-price">
@@ -118,7 +118,7 @@
                             <ul class="content-items-include">
                                 <li class="items-include-plan"><i class="fas fa-tv"></i> +17 canais online</li>
                                 <li class="items-include-plan"><i class="fas fa-wifi"></i> Modem wi-fi</li>
-                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i> Até <strong> 80 MB</strong> de upload</li>
+                                <li class="items-include-plan"><i class="fas fa-arrow-up"></i> <strong> 100 MB</strong> de upload</li>
                                 <li class="items-include-plan"> <i class="fas fa-gamepad"></i> Tim Games </li>
                             </ul>
                             <div class="content-price">
