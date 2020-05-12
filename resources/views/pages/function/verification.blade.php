@@ -213,6 +213,25 @@
                             <input type="text" name="born" id="born" required>
                         </div>
                         <div class="box-form-contract">
+                            <label for="">Tipo RG </label>
+                            <select class="form-control" name="documento-tipo" required="">
+                                <option value=""></option>
+                                <option value="Carteira de Estrangeiro">Carteira de Estrangeiro</option>
+                                <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                <option value="Carteira de trabalho">Carteira de trabalho</option>
+                                <option value="CNH">CNH</option>
+                                <option value="Documentos da Empresa">Documentos da Empresa</option>
+                                <option value="Ident. Funcional">Ident. Funcional</option>
+                                <option value="Ident. Indigena">Ident. Indigena</option>
+                                <option value="Ident. Indigena">Ident. Indigena</option>
+                                <option value="Ident. Militar">Ident. Militar</option>
+                                <option value="Ident. Profissional">Ident. Profissional</option>
+                                <option value="Identidade Estrang.">Identidade Estrang.</option>
+                                <option value="Passaporte">Passaporte</option>
+                                <option value="Passaporte Estrang.">Passaporte Estrang.</option>
+                            </select>
+                        </div>
+                        <div class="box-form-contract">
                             <label for="">Número do RG </label>
                             <input type="text" class="" id="rg" placeholder="">
                         </div>
@@ -1174,7 +1193,6 @@
                         } else {
                             console.log(res.data.success);
                             if (res.data.success === true) {
-
                                 have_plan = true;
                                 $("#FTTC_EMPRESARIAL").show();
                                 $("#FTTC_RESIDENCIAL").show();
@@ -1357,7 +1375,7 @@
                         id: conversion,
                     })
                     request_disabled_insert = true;
-                    axios.post('{{ route('v1.consult.email') }}', {
+                    axios.post('http://localhost:8005/api/v1/inputs/site', {
                         name: name,
                         user: user,
                         document: document,
@@ -1465,13 +1483,12 @@
 
                     $(".form-contract-body").hide();
                     $("#loading-wttx").show();
-
                     request_disabled_insert = true;
                     var conversion = $("#conversion_id").val();
                     axios.post('{{ route('v1.consult.viability-update') }}', {
                         id: conversion,
                     })
-                    axios.post('{{ route('v1.consult.email') }}', {
+                    axios.post('http://localhost:8005/api/v1/inputs/site', {
                         name: name,
                         user: user,
                         document: document,

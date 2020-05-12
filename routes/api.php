@@ -32,7 +32,6 @@ Route::group(['prefix' => 'v1', 'as' => 'v1.'], function(){
         Route::post('/viability/update', 'API\\LeadsController@update')->name('viability-update');
         Route::post('/superlist/search', ['uses' => 'API\\SuperListController@searchAddress', 'as' => 'search']);
         Route::post('/send', ['uses' => 'API\\NoxController@sendEmail', 'as' => 'email']);
-
     });
 
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
