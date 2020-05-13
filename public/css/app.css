@@ -13050,9 +13050,15 @@ input, select {
     .form-contract-content .form-contract-body .data-people-content {
       margin-right: 0px;
       margin-left: 0px;
-      margin-top: 130px;
+      margin-top: 10px;
       display: block;
       position: relative; }
+.form-contract-content .form-contract-body .data-people-content-1 {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 300px;
+    display: block;
+    position: relative; }
       .form-contract-content .form-contract-body .data-people-content:before, .form-contract-content .form-contract-body .data-people-content:after {
         display: table;
         content: " "; }
@@ -13075,7 +13081,9 @@ input, select {
       height: 200px; }
       @media (max-width: 992px) {
         .form-contract-content .form-contract-body .form-contract.addres .data-people-content {
-          margin-top: 40px; } }
+          margin-top: 40px; }
+          .form-contract-content .form-contract-body .data-people-content-1 {
+              margin-top: 30px; }}
       .form-contract-content .form-contract-body .form-contract.maturity {
         height: auto; }
         @media (max-width: 992px) {
@@ -13321,7 +13329,7 @@ input, select {
         .form-contract-content .form-contract-body .form-contract .content-maturity-invoice .title-maturity-invoice {
           font-size: 16px;
           font-weight: 400;
-          padding: 50px 0;
+          padding: 1px 0;
           color: #000; }
       .form-contract-content .form-contract-body .form-contract .terms-conditions {
         color: #cc2229; }
