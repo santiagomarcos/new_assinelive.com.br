@@ -21,7 +21,7 @@
                 </span>
             </span>
         </button>
-        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5562982005222"target="_blank">
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{ session('partner')['whatsapp'] }}" target="_blank">
             <button  class="chat-online">
             <span class="contten-button">
                 <span class="icon-button"><i class="fab fa-whatsapp"></i></span>

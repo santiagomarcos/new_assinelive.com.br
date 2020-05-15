@@ -37,6 +37,7 @@
                         <tr>
                             <th>Nome:</th>
                             <th>Telefone:</th>
+                            <th>Whatsapp:</th>
                             <th>Codigo Site:</th>
                             <th>Status:</th>
                             <th>Conversões</th>
@@ -49,6 +50,7 @@
                             <tr>
                                 <td>{{ $affiliate->name }}</td>
                                 <td>{{ $affiliate->phone }}</td>
+                                <td>{{ $affiliate->whatsapp }}</td>
                                 <td>{{ $affiliate->code }}</td>
                                 <td>{!! ($affiliate->active == 1) ? "<button class='btn btn-xs btn-success'>Ativo</button":"<button class='btn btn-xs btn-danger'>Inativo</button"  !!}</td>
                                 <td>{{ count($affiliate->leads->where('conversion',1)) }}</td>
@@ -110,10 +112,16 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="telephone">Whatsapp:</label>
+                            <input type="text" class="form-control" id="whatsapp"
+                                   placeholder="Fixo ou Celular com DDD">
+                        </div>
+
+                        <div class="form-group">
                             <label for="referer">Referer:</label>
                             <input type="text" class="form-control" id="referer" pattern="^[a-zA-Z_\-]+$"
                                    placeholder="Url do Afiliado">
-                            <p class="help-block">Link: https://assinelive.com.br/?ref=<sd id="refcat">usuario</sd>
+                            <p class="help-block">Link: https://planotimlive.com.br?ref=<sd id="refcat">usuario</sd>
                             </p>
                             <p class="help-block" id="statusreferer"></p>
                         </div>
@@ -174,10 +182,16 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="telephone">Whatsapp:</label>
+                            <input type="text" class="form-control" id="edit-whatsapp"
+                                   placeholder="Fixo ou Celular com DDD">
+                        </div>
+
+                        <div class="form-group">
                             <label for="referer">Referer:</label>
                             <input type="text" class="form-control" id="edit-referer" disabled pattern="^[a-zA-Z_\-]+$"
                                    placeholder="Url do Afiliado">
-                            <p class="help-block">Link do Afiliado: https://assinelive.com.br/?ref=<sd id="edit-refcat">usuario</sd>
+                            <p class="help-block">Link do Afiliado: https://planotimlive.com.br/?ref=<sd id="edit-refcat">usuario</sd>
                             </p>
                         </div>
 
@@ -228,6 +242,7 @@
             var name = $("#edit-name").val();
             var email = $("#edit-email").val();
             var phone = $("#edit-telephone").val();
+            var whatsapp = $("#edit-whatsapp").val();
 
 
             $("#edit-affiliate-form").hide();
@@ -238,6 +253,8 @@
                 name: name,
                 email: email,
                 phone: phone,
+                whatsapp: whatsapp,
+
             }).then(Success, Fail);
         });
 
@@ -249,6 +266,8 @@
                 $("#edit-name").val(res.data.name);
                 $("#edit-email").val(res.data.email);
                 $("#edit-telephone").val(res.data.phone);
+                $("#whatsapp").val(res.data.whatsapp);
+
                 $("#edit-referer").val(res.data.code);
                 $("#edit-refcat").text(res.data.code);
                 $("#loading-edit").hide();
@@ -371,13 +390,15 @@
                     var email = $("#email").val();
                     var phone = $("#telephone").val();
                     var code = $("#referer").val();
+                    var whatsapp = $("#whatsapp").val();
 
                     request_disabled_create = true;
                     axios.post('{{ route('v1.admin.create-affiliate') }}', {
                         name: name,
                         email: email,
                         phone: phone,
-                        code: code
+                        code: code,
+                        whatsapp: whatsapp
                     }).then(callbackInputSuccess, callbackInputFail);
                 }
             });

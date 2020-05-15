@@ -43,6 +43,7 @@ class AffiliatesController extends Controller
             'email' => $args['email'],
             'phone' => $args['phone'],
             'code' => $args['code'],
+            'whatsapp' => $args['whatsapp'],
             'active' => 1
         ]);
 
@@ -74,7 +75,8 @@ class AffiliatesController extends Controller
         $affiliate = $affiliatesRepository->update([
             'name' => $args['name'],
             'phone' => $args['phone'],
-            'email' => $args['email']
+            'email' => $args['email'],
+            'whatsapp' => $args['whatsapp'],
         ], $request->id);
 
         return [
