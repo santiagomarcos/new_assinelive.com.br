@@ -39,6 +39,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
         Route::group(['prefix' => 'consults', 'as' => 'consults.'], function () {
             Route::get('', ['uses' => 'Admin\\ConsultsController@all', 'as' => 'all']);
+            Route::get('/calling-me', ['uses' => 'Admin\\ConsultsController@callingMe', 'as' => 'calling-me']);
+
         });
 
     });

@@ -11,7 +11,7 @@ namespace App\Repositories;
 
 use App\Models\CallingMe;
 
-class CallingMeRespository extends Repository
+class CallingMeRepository extends Repository
 {
     /**
      * @return CallingMe
@@ -19,5 +19,10 @@ class CallingMeRespository extends Repository
     public function getModel()
     {
         return(new CallingMe());
+    }
+
+    public function findAllOrder()
+    {
+        return $this->getModel()->orderBy('id','desc')->paginate(10);
     }
 }

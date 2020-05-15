@@ -38,6 +38,8 @@
             <ul class="nav navbar-nav">
                 <li><a href="{{ route('admin.consults.all') }}">Consultas de Viabilidade</a>
                 </li>
+                <li><a href="{{ route('admin.consults.calling-me') }}">Contatos - Me Ligue</a>
+                </li>
                 <li><a href="#">Acessos</a>
                 </li>
             </ul>
