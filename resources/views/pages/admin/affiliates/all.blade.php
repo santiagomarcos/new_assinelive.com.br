@@ -109,12 +109,14 @@
                         <div class="form-group">
                             <label for="telephone">Telefone:</label>
                             <input type="text" class="form-control" id="telephone"
+                                   maxlength="15"
                                    placeholder="Fixo ou Celular com DDD">
                         </div>
 
                         <div class="form-group">
                             <label for="telephone">Whatsapp:</label>
                             <input type="text" class="form-control" id="whatsapp"
+                                   maxlength="15"
                                    placeholder="Fixo ou Celular com DDD">
                         </div>
 
@@ -207,7 +209,19 @@
     </div>
 @endsection
 @section('extra-scripts')
+
     <script type="text/javascript">
+        $(document).ready(function () {
+            var tel19o8 = function (val) {
+                return val.replace(/\D/g, '').length === 10 ? '(00) 0000-0009' : '(00) 00000-0009';
+            }
+            var tel19o9 = function (val) {
+                return val.replace(/\D/g, '').length === 10 ? '(00) 0000-0009' : '(00) 00000-0009';
+            };
+            $('#telephone').mask(tel19o8);
+            $('#edit-telephone').mask(tel19o8);
+
+        });
         /**
          * Update Modal Affiliate
          */
@@ -290,11 +304,7 @@
         /**
          * Mask phone Generic
          */
-        var tel19o9 = function (val) {
-            return val.replace(/\D/g, '').length === 10 ? '(00) 0000-0009' : '(00) 00000-0009';
-        };
-        $('#telephone').mask(tel19o9);
-        $('#edit-telephone').mask(tel19o9);
+
 
         /**
          * Function For clean escape
