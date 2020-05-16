@@ -26,6 +26,7 @@
                         <tr>
                             <th>Nome:</th>
                             <th>Telefone:</th>
+                            <th>Whatsapp:</th>
                             <th>Codigo Site:</th>
                             <th>Status:</th>
                             <th>Conversões</th>
@@ -206,7 +207,6 @@
     </div>
 @endsection
 @section('extra-scripts')
-
     <script type="text/javascript">
         /**
          * Update Modal Affiliate
@@ -266,8 +266,7 @@
                 $("#edit-name").val(res.data.name);
                 $("#edit-email").val(res.data.email);
                 $("#edit-telephone").val(res.data.phone);
-                $("#whatsapp").val(res.data.whatsapp);
-
+                $("#edit-whatsapp").val(res.data.whatsapp);
                 $("#edit-referer").val(res.data.code);
                 $("#edit-refcat").text(res.data.code);
                 $("#loading-edit").hide();
@@ -398,7 +397,7 @@
                         email: email,
                         phone: phone,
                         code: code,
-                        whatsapp: whatsapp
+                        whatsapp: whatsapp,
                     }).then(callbackInputSuccess, callbackInputFail);
                 }
             });
