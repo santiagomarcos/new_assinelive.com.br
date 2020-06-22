@@ -8,7 +8,7 @@
         <div class="title-channels">Canais de atendimento:</div>
         <ul class="content-channels">
             <li class="items-channels">{{ session('partner')['phone'] }}</li> |
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{ session('partner')['phone'] }}" target="_blank"><li class="items-channels">Whatsapp</li></a> |
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511986180093" target="_blank"><li class="items-channels">Whatsapp</li></a> |
             <a href="" id="weCalling" data-toggle="modal" data-target="#weCall"><li class="items-channels">Me ligue</li></a> |
             <a id="btnChatTp" href=""><li class="items-channels">Chat Online</li></a>
         </ul>

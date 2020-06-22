@@ -4,7 +4,7 @@
         <div class="title-channels-responsive">Canais de atendimento</div>
         <ul class="content-channels-responsive">
             {{--<li class="items-channels-responsive">(11) 4890-9324</li>|--}}
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511968039943" target="_blank"><li class="items-channels-responsive">WhatsApp</li></a> |
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511986180093" target="_blank"><li class="items-channels-responsive">WhatsApp</li></a> |
             <a href="" id="weCalling" data-toggle="modal" data-target="#weCall"><li class="items-channels-responsive">Me ligue</li></a>
             {{--<li class="items-channels-responsive">Chat Online</li>--}}
         </ul>
